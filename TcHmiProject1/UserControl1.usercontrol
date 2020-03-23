@@ -12,7 +12,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var paramVal = new TcHmi.Symbol('%pp%bPump_Internal%/pp%').read();\nif (paramVal) {\n\tinterval = setInterval(rotate, 100);\n} else {\n\tclearInterval(interval);\n}\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\trotatedElement.setTransform(\n\t[\n\t\t{\n\t\t    \"transformType\": \"Rotate\",\n\t\t    \"angle\": angle + 1.0,\n\t\t    \"angleUnit\": \"deg\"\n\t\t}\n\t])\n}"
+          "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bPump_Internal%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
         ],
         "injectContextObject": false,
         "asyncWait": true,
