@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px"
+	 height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<g id="hintergrund" display="none">
+	<g display="inline" opacity="0.5">
+		<rect fill="#FFFFFF" width="80" height="80"/>
+	</g>
+</g>
+<g id="grid" display="none">
+</g>
+<g id="pfade">
+	<g>
+		<path fill="none" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round" d="M39.749,46.705
+			c-3.384,0-6.137-2.752-6.137-6.137c0-3.384,2.753-6.135,6.137-6.135c3.383,0,6.137,2.751,6.137,6.135
+			C45.885,43.953,43.132,46.705,39.749,46.705z"/>
+		<g>
+			
+				<line fill="none" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round" x1="38.175" y1="39.023" x2="41.098" y2="41.947"/>
+			
+				<line fill="none" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round" x1="41.027" y1="39.023" x2="38.104" y2="41.947"/>
+		</g>
+	</g>
+	
+		<polygon fill="none" stroke="#AAAAAA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		39.748,20.103 42.681,16.388 44.639,20.697 48.375,17.791 49.246,22.444 53.569,20.517 53.301,25.243 57.959,24.407 56.567,28.931 
+		61.291,29.234 58.857,33.292 63.371,34.718 60.036,38.076 64.078,40.54 60.036,43.003 63.371,46.363 58.857,47.788 61.291,51.847 
+		56.567,52.149 57.959,56.674 53.301,55.838 53.569,60.562 49.246,58.635 48.375,63.288 44.639,60.383 42.681,64.692 39.748,60.977 
+		36.815,64.692 34.857,60.383 31.121,63.288 30.25,58.635 25.927,60.562 26.196,55.838 21.537,56.674 22.929,52.149 18.206,51.847 
+		20.639,47.788 16.125,46.363 19.461,43.003 15.418,40.54 19.461,38.076 16.125,34.718 20.639,33.292 18.206,29.234 22.929,28.931 
+		21.537,24.407 26.196,25.243 25.927,20.517 30.25,22.444 31.121,17.791 34.857,20.697 36.815,16.388 	"/>
+</g>
+</svg>
