@@ -83,6 +83,9 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="Imports\Images\warning.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\close_pressed.svg">
       <SubType>Content</SubType>
     </Content>
@@ -132,9 +135,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\toolbox_pressed.svg">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Imports\Images\warning.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControl1.usercontrol">
