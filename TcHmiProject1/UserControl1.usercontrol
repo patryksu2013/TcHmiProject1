@@ -1,7 +1,7 @@
 ﻿<div id="UserControl1" data-tchmi-type="tchmi-user-control"
      data-tchmi-top="0" data-tchmi-left="0"
      data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
-     data-tchmi-creator-viewport-width="400" data-tchmi-creator-viewport-height="480" data-tchmi-creator-visibility="Visible">
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible">
 
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -349,7 +349,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Auto_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -361,7 +361,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Off_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton_1::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -373,7 +373,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Speed1_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton_2::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -394,7 +394,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Auto_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -406,7 +406,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Off_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton_1::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -418,7 +418,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Speed1_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton_2::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -439,7 +439,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Auto_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -451,7 +451,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Off_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton_1::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -463,7 +463,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiCheckbox_Speed1_BMS::ToggleState%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiToggleButton_2::ToggleState%/ctrl%",
                 "valueType": "tchmi:framework#/definitions/ToggleState",
                 "value": {
                   "objectType": "StaticValue",
@@ -591,7 +591,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 0
             },
             "actions": [
@@ -612,7 +612,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 1
             },
             "actions": [
@@ -624,7 +624,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/String",
-                  "value": "OFF"
+                  "value": "M"
                 },
                 "asyncWait": true
               }
@@ -633,7 +633,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 2
             },
             "actions": [
@@ -654,7 +654,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 6
             },
             "actions": [
@@ -675,7 +675,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 7
             },
             "actions": [
@@ -696,7 +696,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:general#/definitions/INT",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 8
             },
             "actions": [
@@ -737,15 +737,15 @@
 
     </div>
 
-    <div id="TcHmiContainer_Popup" data-tchmi-type="tchmi-container" data-tchmi-height="575" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Visible" data-tchmi-creator-visibility="Visible" data-tchmi-left-unit="px" data-tchmi-left="347" data-tchmi-top="114" data-tchmi-top-unit="px" data-tchmi-zindex="10">
+    <div id="TcHmiContainer_Popup" data-tchmi-type="tchmi-container" data-tchmi-height="540" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Visible" data-tchmi-creator-visibility="Visible" data-tchmi-left-unit="px" data-tchmi-left="347" data-tchmi-top="114" data-tchmi-top-unit="px" data-tchmi-zindex="10">
 
-        <div id="TcHmiTextblock_Status" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="byState" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
-
-        </div>
-        <div id="TcHmiTextblock_Error" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-text="byError" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_Status" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="byState" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
         </div>
-        <div id="TcHmiEllipse_0" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="175" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiTextblock_Error" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-text="byError" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+        </div>
+        <div id="TcHmiEllipse_0" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -761,7 +761,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_1" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_1" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -777,7 +777,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -793,7 +793,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_3" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_3" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -809,7 +809,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="375" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -825,7 +825,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_5" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="425" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_5" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="390" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -841,7 +841,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_6" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="475" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_6" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="440" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -857,7 +857,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_7" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="525" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_7" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="490" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -873,7 +873,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_Error1" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="175" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_Error1" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -889,7 +889,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_Error2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_Error2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -905,7 +905,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_Error3" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_Error3" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -921,7 +921,7 @@
 
         </div>
 
-        <div id="TcHmiEllipse_Error4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
+        <div id="TcHmiEllipse_Error4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
                 {
@@ -937,51 +937,51 @@
 
         </div>
 
-        <div id="TcHmiTextblock_State0" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bEnable" data-tchmi-top="175" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State0" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bEnable" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_State1" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bPump" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State1" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bPump" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_State2" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bReqExternal" data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State2" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bReqExternal" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_State3" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bReqOutsideTemp" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State3" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bReqOutsideTemp" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_State4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bReqValve" data-tchmi-top="375" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bReqValve" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_State5" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bFeedbPump" data-tchmi-top="425" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State5" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bFeedbPump" data-tchmi-top="390" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_State6" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="NOT bManSwitch" data-tchmi-top="475" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State6" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="NOT bManSwitch" data-tchmi-top="440" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_State7" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bCtrlVoltage" data-tchmi-top="525" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_State7" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="bCtrlVoltage" data-tchmi-top="490" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_Error1" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bInvalidParameter" data-tchmi-top="175" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_Error1" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bInvalidParameter" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_Error2" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bError" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_Error2" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bError" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_Error3" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bErrorPumpProtec" data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_Error3" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bErrorPumpProtec" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
-        <div id="TcHmiTextblock_Error4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedb" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <div id="TcHmiTextblock_Error4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedb" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
         </div>
 
@@ -1032,18 +1032,18 @@
             }
         </script>
 
-<div id="TcHmiCheckbox_Auto_BMS" data-tchmi-type="tchmi-checkbox" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px">
+<div id="TcHmiToggleButton" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Auto" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "TcHmiCheckbox_Auto_BMS.onPressed",
+    "event": "TcHmiToggleButton.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%pp%eCtrlModeActuator_Internal%/pp%",
+        "symbolExpression": "%s%PLC1.MAIN.eCtrlModeActuator%/s%",
         "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
         "value": {
           "objectType": "StaticValue",
@@ -1058,18 +1058,18 @@
 </script>
 </div>
 
-<div id="TcHmiCheckbox_Off_BMS" data-tchmi-type="tchmi-checkbox" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="140" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px">
+<div id="TcHmiToggleButton_1" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="115" data-tchmi-left-unit="px" data-tchmi-text="Off" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "TcHmiCheckbox_Off_BMS.onPressed",
+    "event": "TcHmiToggleButton_1.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%pp%eCtrlModeActuator_Internal%/pp%",
+        "symbolExpression": "%s%PLC1.MAIN.eCtrlModeActuator%/s%",
         "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
         "value": {
           "objectType": "StaticValue",
@@ -1084,18 +1084,18 @@
 </script>
 </div>
 
-<div id="TcHmiCheckbox_Speed1_BMS" data-tchmi-type="tchmi-checkbox" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="270" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px">
+<div id="TcHmiToggleButton_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="Manual" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "TcHmiCheckbox_Speed1_BMS.onPressed",
+    "event": "TcHmiToggleButton_2.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%pp%eCtrlModeActuator_Internal%/pp%",
+        "symbolExpression": "%s%PLC1.MAIN.eCtrlModeActuator%/s%",
         "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
         "value": {
           "objectType": "StaticValue",
@@ -1108,18 +1108,6 @@
   }
 ]
 </script>
-</div>
-
-<div id="TcHmiTextblock_Auto_BMS" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Auto" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
-
-</div>
-
-<div id="TcHmiTextblock_Off_BMS" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="140" data-tchmi-left-unit="px" data-tchmi-text="Off" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
-
-</div>
-
-<div id="TcHmiTextblock_Speed1_BMS" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="270" data-tchmi-left-unit="px" data-tchmi-text="Manual" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
-
 </div>
 
 </div>
