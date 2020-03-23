@@ -11,7 +11,7 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10119</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10120</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3001</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
@@ -83,6 +83,12 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="UserControl4.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControl4.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControl3.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -156,6 +162,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControl1.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="View1.view">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />
@@ -333,11 +342,6 @@
     <Content Include="Images\Manifest\launcher-icon-4x.png">
       <SubType>Content</SubType>
       <Visible>true</Visible>
-    </Content>
-    <Content Include="Desktop.view">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
-      <Cache>True</Cache>
     </Content>
     <Folder Include="Properties" />
     <Content Include="Properties\tchmiconfig.tpl.json">

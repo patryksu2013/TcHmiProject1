@@ -3,7 +3,7 @@
   "basePath": "./Libraries",
   "locale": "client",
   "scaleMode": "None",
-  "startupView": "Desktop.view",
+  "startupView": "View1.view",
   "loginPage": null,
   "tcHmiServer": {
     "websocketIntervalTime": 500,
@@ -44,13 +44,16 @@
     },
     {
       "url": "UserControl3.usercontrol"
+    },
+    {
+      "url": "UserControl4.usercontrol"
     }
   ],
   "content": [],
   "views": [
     {
-      "url": "Desktop.view",
-      "preload": true
+      "url": "View1.view",
+      "preload": false
     }
   ],
   "userFunctions": [],
