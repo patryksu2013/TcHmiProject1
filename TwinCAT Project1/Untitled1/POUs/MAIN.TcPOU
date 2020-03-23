@@ -3,11 +3,21 @@
   <POU Name="MAIN" Id="{2a4304f3-537e-43d1-b89c-af5d9907262c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	bPump : BOOL;
-	bError : BOOL;
-	byError : BYTE;
-	byState : BYTE;
-	eCtrlModeActuator: E_HVACActuatorMode;
+	bPump:BOOL;
+	bError:BOOL;
+	byError:BYTE;
+	byState:BYTE;
+	eCtrlModeActuator:E_HVACActuatorMode;
+	eReqPump:E_HVACReqPump;
+	sTest:STRING:='Test';
+	bSetDefault:BOOL;
+	bReset:BOOL;
+	udiSecStopDelay:UDINT:=1;	
+	udiSecFeedbPumpDelay:UDINT:=2;
+	rOutsideTempHighLimit:REAL:=3.0;
+	rOutsideTempLowLimit:REAL:=4.1;
+	rValvePositionLimitOn:REAL:=5.2;
+	rValvePositionLimitOff:REAL:=6.3;
 END_VAR
 ]]></Declaration>
     <Implementation>

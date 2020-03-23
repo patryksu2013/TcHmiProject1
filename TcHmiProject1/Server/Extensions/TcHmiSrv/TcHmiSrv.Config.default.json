@@ -1,7 +1,7 @@
 {
     "ANALYZE_MAPPINGUSAGE": false,
     "AUTHCLIENTCERTIFICATE": false,
-    "AUTO_LOGINUSER": "",
+    "AUTO_LOGINUSER": "Operator",
     "AUTO_LOGOFF": "P30D",
     "CACHEENABLED": true,
     "CACHEMAXAGE": "P30D",
@@ -90,6 +90,59 @@
                         {
                             "label": "eHVACActuatorMode_Speed4_OP",
                             "value": 11
+                        }
+                    ]
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/INT16"
+                }
+            ]
+        },
+        "PLC1.Tc2_HVAC.E_HVACReqPump": {
+            "allOf": [
+                {
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ],
+                    "options": [
+                        {
+                            "label": "eHVACReqPump_No",
+                            "value": 0
+                        },
+                        {
+                            "label": "eHVACReqPump_OT_LL",
+                            "value": 1
+                        },
+                        {
+                            "label": "eHVACReqPump_OT_HL",
+                            "value": 2
+                        },
+                        {
+                            "label": "eHVACReqPump_VP",
+                            "value": 3
+                        },
+                        {
+                            "label": "eHVACReqPump_OT_LL_OR_VP",
+                            "value": 4
+                        },
+                        {
+                            "label": "eHVACReqPump_OT_HL_OR_VP",
+                            "value": 5
+                        },
+                        {
+                            "label": "eHVACReqPump_OT_LL_AND_VP",
+                            "value": 6
+                        },
+                        {
+                            "label": "eHVACReqPump_OT_HL_AND_VP",
+                            "value": 7
                         }
                     ]
                 },
@@ -1809,6 +1862,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.MAIN.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.MAIN.byError": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -1836,6 +1909,86 @@
             "MAPPING": "PLC1::MAIN::eCtrlModeActuator",
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.eReqPump": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::eReqPump",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACReqPump"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.rOutsideTempHighLimit": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::rOutsideTempHighLimit",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.rOutsideTempLowLimit": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::rOutsideTempLowLimit",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.rValvePositionLimitOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::rValvePositionLimitOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.rValvePositionLimitOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::rValvePositionLimitOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.sTest": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::sTest",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/STRING(80)"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.udiSecFeedbPumpDelay": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::udiSecFeedbPumpDelay",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UDINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.udiSecStopDelay": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::udiSecStopDelay",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UDINT"
             },
             "USEMAPPING": true
         },
@@ -2674,6 +2827,28 @@
     "THREADPOOLSIZE": 12,
     "UPLOADTIMEOUT": "PT5S",
     "USERGROUPS": {
+        "Operatorzy": {
+            "ENABLED": true,
+            "FILEACCESS": 3,
+            "FILES": {},
+            "SYMBOLACCESS": 3,
+            "SYMBOLS": {
+                "IsAuthRequired": 3,
+                "ListUsers": 3,
+                "Login": 3
+            }
+        },
+        "Serwisanci": {
+            "ENABLED": true,
+            "FILEACCESS": 3,
+            "FILES": {},
+            "SYMBOLACCESS": 3,
+            "SYMBOLS": {
+                "IsAuthRequired": 3,
+                "ListUsers": 3,
+                "Login": 3
+            }
+        },
         "__SystemAdministrators": {
             "ENABLED": true,
             "FILEACCESS": 3,
@@ -2738,6 +2913,26 @@
     },
     "USERGROUPUSERS": {
         "TcHmiUserManagement": {
+            "Operator": {
+                "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
+                "USERGROUPUSERS_GROUPS": [
+                    "__SystemUsers",
+                    "Operatorzy"
+                ],
+                "USERGROUPUSERS_LOCALE": "client",
+                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
+                "USERGROUPUSERS_TIMEZONE": "project"
+            },
+            "Serwisant": {
+                "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
+                "USERGROUPUSERS_GROUPS": [
+                    "__SystemUsers",
+                    "Serwisanci"
+                ],
+                "USERGROUPUSERS_LOCALE": "client",
+                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
+                "USERGROUPUSERS_TIMEZONE": "project"
+            },
             "__SystemAdministrator": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [

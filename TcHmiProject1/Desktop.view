@@ -6,10 +6,10 @@
      data-tchmi-min-height="100" data-tchmi-min-height-unit="%"
      data-tchmi-background-image="Images/Background.png"
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
-     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%">
+     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%">>TcHmiContainer_Dim
 
-<div id="UserControl1_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl1.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="200" data-tchmi-width-unit="px" data-tchmi-bpump_internal="%s%PLC1.MAIN.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.MAIN.bError%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.MAIN.eCtrlModeActuator%/s%" data-tchmi-viewname="Desktop" data-tchmi-bystate="%s%PLC1.MAIN.byState%/s%" data-tchmi-byerror="%s%PLC1.MAIN.byError%/s%">
+<div id="UserControl1_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.MAIN.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.MAIN.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControl1.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-bystate="%s%PLC1.MAIN.byState%/s%" data-tchmi-byerror="%s%PLC1.MAIN.byError%/s%" data-tchmi-berror_internal="%s%PLC1.MAIN.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.MAIN.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.MAIN.bReset%/s%" data-tchmi-udisecstopdelay="%s%PLC1.MAIN.udiSecStopDelay%/s%" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.MAIN.udiSecFeedbPumpDelay%/s%" data-tchmi-routsidetemphighlimit="%s%PLC1.MAIN.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.MAIN.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.MAIN.rValvePositionLimitOn%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.MAIN.rValvePositionLimitOff%/s%" data-tchmi-bpump_internal="%s%PLC1.MAIN.bPump%/s%" data-tchmi-sname="Instancja 1 test">
 
-</div>TcHmiContainer_Dim
+</div>
 
 </div>
