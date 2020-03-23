@@ -8,6 +8,7 @@ VAR
 	bError:BOOL;
 	byError:BYTE;
 	byState:BYTE;
+	eAntiBlockingMode:E_HVACAntiBlockingMode;
 	eCtrlModeActuator:E_HVACActuatorMode;
 	eReqPump:E_HVACReqPump;
 	sTest:STRING:='Test';

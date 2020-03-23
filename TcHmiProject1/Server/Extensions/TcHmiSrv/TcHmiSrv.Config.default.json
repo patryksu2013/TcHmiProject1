@@ -98,6 +98,34 @@
                 }
             ]
         },
+        "PLC1.Tc2_HVAC.E_HVACAntiBlockingMode": {
+            "allOf": [
+                {
+                    "enum": [
+                        0,
+                        1,
+                        2
+                    ],
+                    "options": [
+                        {
+                            "label": "eHVACAntiBlockingMode_Off",
+                            "value": 0
+                        },
+                        {
+                            "label": "eHVACAntiBlockingMode_Downtime",
+                            "value": 1
+                        },
+                        {
+                            "label": "eHVACAntiBlockingMode_Weekly",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/INT16"
+                }
+            ]
+        },
         "PLC1.Tc2_HVAC.E_HVACReqPump": {
             "allOf": [
                 {
@@ -155,7 +183,7 @@
     "DEFLATECOMPRESSIONLEVEL": 5,
     "DISCOVERY": 2,
     "ENDPOINTS": [
-        "http://127.0.0.1:3000"
+        "http://127.0.0.1:3001"
     ],
     "ETAGENABLED": true,
     "EXTENSIONS": {
@@ -1909,6 +1937,16 @@
             "MAPPING": "PLC1::MAIN::byState",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.eAntiBlockingMode": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::eAntiBlockingMode",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACAntiBlockingMode"
             },
             "USEMAPPING": true
         },

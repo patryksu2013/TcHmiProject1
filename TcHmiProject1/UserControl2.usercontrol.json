@@ -266,7 +266,7 @@
       "name": "data-tchmi-eantiblockingmode",
       "displayName": "eAntiBlockingMode",
       "visible": true,
-      "type": "tchmi:general#/definitions/INT",
+      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACAntiBlockingMode",
       "category": "FB_HVACAntiBlockingPump - Service",
       "description": "",
       "defaultValue": 0,

@@ -11,9 +11,9 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10117</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10119</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
-    <HmiCommunicationServerPort>3000</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3001</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
     <HmiRecent>1.10.1336.372</HmiRecent>
   </PropertyGroup>
@@ -83,6 +83,12 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="UserControl3.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControl3.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\pulse.svg">
       <SubType>Content</SubType>
     </Content>
