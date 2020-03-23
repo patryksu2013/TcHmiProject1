@@ -1862,6 +1862,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.MAIN.bQAntiBlocking": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::bQAntiBlocking",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.MAIN.bReset": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",

@@ -38,6 +38,9 @@
   "userControls": [
     {
       "url": "UserControl1.usercontrol"
+    },
+    {
+      "url": "UserControl2.usercontrol"
     }
   ],
   "content": [],

@@ -3,6 +3,7 @@
   <POU Name="MAIN" Id="{2a4304f3-537e-43d1-b89c-af5d9907262c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	bQAntiBlocking:BOOL;
 	bPump:BOOL;
 	bError:BOOL;
 	byError:BYTE;
