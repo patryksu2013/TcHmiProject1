@@ -668,7 +668,7 @@
             "value": {
               "objectType": "StaticValue",
               "valueType": "tchmi:framework#/definitions/Path",
-              "value": "Imports/Images/clock_yellow.svg"
+              "value": "Imports/Images/clock_red.svg"
             },
             "asyncWait": true
           },
