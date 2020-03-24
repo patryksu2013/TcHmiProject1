@@ -83,6 +83,12 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="Imports\Images\clock_red.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\clock_yellow.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControl4.usercontrol">
       <SubType>Content</SubType>
     </Content>

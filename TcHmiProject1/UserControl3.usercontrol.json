@@ -352,6 +352,8 @@
       "type": "tchmi:general#/definitions/BOOL",
       "category": "FB_HVACWork - Service",
       "description": "",
+      "defaultValue": false,
+      "defaultValueInternal": false,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,

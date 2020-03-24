@@ -1890,11 +1890,31 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.MAIN.bQAlarmLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::bQAlarmLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.MAIN.bQAntiBlocking": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "MAPPING": "PLC1::MAIN::bQAntiBlocking",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.bQWarnLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::bQWarnLevel",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
