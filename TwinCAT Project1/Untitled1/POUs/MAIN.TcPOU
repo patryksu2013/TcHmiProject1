@@ -3,6 +3,17 @@
   <POU Name="MAIN" Id="{2a4304f3-537e-43d1-b89c-af5d9907262c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	rHours:REAL;
+	uiCount:UINT;
+	uiWarnLevel:UINT;
+	uiLevel:UINT;
+	bEnableWarnLevel:BOOL;
+	bEnableAlarmLevel:BOOL;
+	iHoursDowntime:INT;  
+	iDayWeekly    :INT;  
+	iHour         :INT;  
+	iMinute       :INT;  
+	iLengthImpulse:INT;
 	bQWarnLevel:BOOL;
 	bQAlarmLevel:BOOL;
 	bQAntiBlocking:BOOL;

@@ -552,7 +552,7 @@
     ]
   },
   {
-    "event": "%pp%bEnableWarnLevel%/pp%",
+    "event": "%pp%bQWarnLevel%/pp%",
     "actions": [
       {
         "objectType": "Condition",
@@ -561,7 +561,7 @@
           {
             "compare1": {
               "objectType": "Symbol",
-              "symbolExpression": "%pp%bEnableWarnLevel%/pp%"
+              "symbolExpression": "%pp%bQWarnLevel%/pp%"
             },
             "compare2": {
               "objectType": "StaticValue",
@@ -584,6 +584,54 @@
               "value": "Imports/Images/clock_yellow.svg"
             },
             "asyncWait": true
+          },
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiImage_Work_2::Visibility%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Visibility",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": "Visible"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "Condition",
+            "active": true,
+            "expressions": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%bQAlarmLevel%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "true": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Work_2::Visibility%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              }
+            ],
+            "asyncWait": true
           }
         ],
         "asyncWait": true
@@ -591,7 +639,7 @@
     ]
   },
   {
-    "event": "%pp%bEnableAlarmLevel%/pp%",
+    "event": "%pp%bQAlarmLevel%/pp%",
     "actions": [
       {
         "objectType": "Condition",
@@ -600,7 +648,7 @@
           {
             "compare1": {
               "objectType": "Symbol",
-              "symbolExpression": "%pp%bEnableAlarmLevel%/pp%"
+              "symbolExpression": "%pp%bQAlarmLevel%/pp%"
             },
             "compare2": {
               "objectType": "StaticValue",
@@ -622,6 +670,54 @@
               "valueType": "tchmi:framework#/definitions/Path",
               "value": "Imports/Images/clock_red.svg"
             },
+            "asyncWait": true
+          },
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiImage_Work_2::Visibility%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Visibility",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": "Visible"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "Condition",
+            "active": true,
+            "expressions": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%bQWarnLevel%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "true": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Work_2::Visibility%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              }
+            ],
             "asyncWait": true
           }
         ],
