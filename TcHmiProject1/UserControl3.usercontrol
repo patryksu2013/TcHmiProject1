@@ -1365,7 +1365,7 @@
 
 </div>
 
-<div id="TcHmiToggleButton_bSetDefault_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-text="bSetDefault" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+<div id="TcHmiToggleButton_bSetDefault_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-text="bSetDefault" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -1403,85 +1403,18 @@
           {
             "compare1": {
               "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bSetDefault_2::ToggleState%/ctrl%"
+              "symbolExpression": "%pp%bSetDefault%/pp%"
             },
             "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bSetDefault_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "asyncWait": true
-          }
-        ],
-        "false": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bSetDefault_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "asyncWait": true
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  },
-  {
-    "event": "%ctrl%TcHmiToggleButton_bSetDefault_2::ToggleState%/ctrl%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "expressions": [
-          {
-            "compare1": {
-              "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bSetDefault_2::ToggleState%/ctrl%"
-            },
-            "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%pp%bSetDefault%/pp%",
-            "valueType": "tchmi:general#/definitions/BOOL",
-            "value": {
               "objectType": "StaticValue",
               "valueType": "tchmi:general#/definitions/BOOL",
               "value": true
             },
-            "asyncWait": true
+            "compareOperator": "==",
+            "logic": null
           }
         ],
-        "false": [
+        "true": [
           {
             "objectType": "WriteToSymbol",
             "active": true,
@@ -1495,6 +1428,20 @@
             "asyncWait": true
           }
         ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bSetDefault%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "asyncWait": true
+          }
+        ],
         "asyncWait": true
       }
     ]
@@ -1503,7 +1450,7 @@
 </script>
 </div>
 
-<div id="TcHmiToggleButton_bReset_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="480" data-tchmi-left-unit="px" data-tchmi-text="bReset" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+<div id="TcHmiToggleButton_bReset_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="480" data-tchmi-left-unit="px" data-tchmi-text="bReset" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -1539,85 +1486,18 @@
           {
             "compare1": {
               "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bReset_2::ToggleState%/ctrl%"
+              "symbolExpression": "%pp%bReset%/pp%"
             },
             "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bReset_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "asyncWait": true
-          }
-        ],
-        "false": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bReset_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "asyncWait": true
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  },
-  {
-    "event": "%ctrl%TcHmiToggleButton_bReset_2::ToggleState%/ctrl%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "expressions": [
-          {
-            "compare1": {
-              "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bReset_2::ToggleState%/ctrl%"
-            },
-            "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%pp%bReset%/pp%",
-            "valueType": "tchmi:general#/definitions/BOOL",
-            "value": {
               "objectType": "StaticValue",
               "valueType": "tchmi:general#/definitions/BOOL",
               "value": true
             },
-            "asyncWait": true
+            "compareOperator": "==",
+            "logic": null
           }
         ],
-        "false": [
+        "true": [
           {
             "objectType": "WriteToSymbol",
             "active": true,
@@ -1627,6 +1507,20 @@
               "objectType": "StaticValue",
               "valueType": "tchmi:general#/definitions/BOOL",
               "value": false
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bReset%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
             },
             "asyncWait": true
           }
@@ -2312,7 +2206,7 @@
 </script>
 </div>
 
-<div id="TcHmiToggleButton_bEnableWarnLevel_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-text="bEnableWarnLevel" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+<div id="TcHmiToggleButton_bEnableWarnLevel_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-text="bEnableWarnLevel" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bEnableWarnLevel%/pp%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -2350,85 +2244,18 @@
           {
             "compare1": {
               "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableWarnLevel_2::ToggleState%/ctrl%"
+              "symbolExpression": "%pp%bEnableWarnLevel%/pp%"
             },
             "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableWarnLevel_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "asyncWait": true
-          }
-        ],
-        "false": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableWarnLevel_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "asyncWait": true
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  },
-  {
-    "event": "%ctrl%TcHmiToggleButton_bEnableWarnLevel_2::ToggleState%/ctrl%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "expressions": [
-          {
-            "compare1": {
-              "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableWarnLevel_2::ToggleState%/ctrl%"
-            },
-            "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%pp%bEnableWarnLevel%/pp%",
-            "valueType": "tchmi:general#/definitions/BOOL",
-            "value": {
               "objectType": "StaticValue",
               "valueType": "tchmi:general#/definitions/BOOL",
               "value": true
             },
-            "asyncWait": true
+            "compareOperator": "==",
+            "logic": null
           }
         ],
-        "false": [
+        "true": [
           {
             "objectType": "WriteToSymbol",
             "active": true,
@@ -2442,6 +2269,20 @@
             "asyncWait": true
           }
         ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bEnableWarnLevel%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "asyncWait": true
+          }
+        ],
         "asyncWait": true
       }
     ]
@@ -2450,7 +2291,7 @@
 </script>
 </div>
 
-<div id="TcHmiToggleButton_bEnableAlarmLevel_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-text="bEnableAlarmLevel" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+<div id="TcHmiToggleButton_bEnableAlarmLevel_2" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-text="bEnableAlarmLevel" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bEnableAlarmLevel%/pp%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -2486,85 +2327,18 @@
           {
             "compare1": {
               "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableAlarmLevel_2::ToggleState%/ctrl%"
+              "symbolExpression": "%pp%bEnableAlarmLevel%/pp%"
             },
             "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableAlarmLevel_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "asyncWait": true
-          }
-        ],
-        "false": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableAlarmLevel_2::ToggleState%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/ToggleState",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "asyncWait": true
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  },
-  {
-    "event": "%ctrl%TcHmiToggleButton_bEnableAlarmLevel_2::ToggleState%/ctrl%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "expressions": [
-          {
-            "compare1": {
-              "objectType": "Symbol",
-              "symbolExpression": "%ctrl%TcHmiToggleButton_bEnableAlarmLevel_2::ToggleState%/ctrl%"
-            },
-            "compare2": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "compareOperator": "==",
-            "logic": null
-          }
-        ],
-        "true": [
-          {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%pp%bEnableAlarmLevel%/pp%",
-            "valueType": "tchmi:general#/definitions/BOOL",
-            "value": {
               "objectType": "StaticValue",
               "valueType": "tchmi:general#/definitions/BOOL",
               "value": true
             },
-            "asyncWait": true
+            "compareOperator": "==",
+            "logic": null
           }
         ],
-        "false": [
+        "true": [
           {
             "objectType": "WriteToSymbol",
             "active": true,
@@ -2574,6 +2348,20 @@
               "objectType": "StaticValue",
               "valueType": "tchmi:general#/definitions/BOOL",
               "value": false
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bEnableAlarmLevel%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
             },
             "asyncWait": true
           }
