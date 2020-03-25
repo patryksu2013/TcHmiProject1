@@ -19,8 +19,8 @@ VAR
 	bQAntiBlocking:BOOL;
 	bPump:BOOL;
 	bError:BOOL;
-	byError:BYTE;
-	byState:BYTE;
+	byError:BYTE:=2;
+	byState:BYTE:=5;
 	eAntiBlockingMode:E_HVACAntiBlockingMode;
 	eCtrlModeActuator:E_HVACActuatorMode;
 	eReqPump:E_HVACReqPump;

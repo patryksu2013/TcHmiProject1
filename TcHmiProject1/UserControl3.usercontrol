@@ -12,7 +12,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside_2');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bPump_Internal_2%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
+          "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside_2');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bPump_Internal%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -489,7 +489,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 255, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7_2'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -504,7 +504,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << (index + 1))) {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 255, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3_2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4_2'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << (index + 1))) {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setStrokeColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -995,10 +995,10 @@
         <div id="TcHmiEllipse_State0_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="175" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1011,10 +1011,10 @@
         <div id="TcHmiEllipse_State1_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1027,10 +1027,10 @@
         <div id="TcHmiEllipse_State2_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1043,10 +1043,10 @@
         <div id="TcHmiEllipse_State3_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1059,10 +1059,10 @@
         <div id="TcHmiEllipse_State4_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="375" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1075,10 +1075,10 @@
         <div id="TcHmiEllipse_State5_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="425" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1091,10 +1091,10 @@
         <div id="TcHmiEllipse_State6_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="475" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1107,10 +1107,10 @@
         <div id="TcHmiEllipse_State7_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="525" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1123,10 +1123,10 @@
         <div id="TcHmiEllipse_Error1_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="175" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1139,10 +1139,10 @@
         <div id="TcHmiEllipse_Error2_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1155,10 +1155,10 @@
         <div id="TcHmiEllipse_Error3_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="275" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
@@ -1171,10 +1171,10 @@
         <div id="TcHmiEllipse_Error4_2" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-top="325" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-stroke-thickness="20">
 
             <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
-                {
-                "color": "rgba(255, 0, 0, 1)"
-                }
-            </script>
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
                 {
