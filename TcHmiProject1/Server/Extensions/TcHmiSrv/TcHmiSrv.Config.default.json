@@ -3005,28 +3005,6 @@
     "THREADPOOLSIZE": 12,
     "UPLOADTIMEOUT": "PT5S",
     "USERGROUPS": {
-        "Operatorzy": {
-            "ENABLED": true,
-            "FILEACCESS": 3,
-            "FILES": {},
-            "SYMBOLACCESS": 3,
-            "SYMBOLS": {
-                "IsAuthRequired": 3,
-                "ListUsers": 3,
-                "Login": 3
-            }
-        },
-        "Serwisanci": {
-            "ENABLED": true,
-            "FILEACCESS": 3,
-            "FILES": {},
-            "SYMBOLACCESS": 3,
-            "SYMBOLS": {
-                "IsAuthRequired": 3,
-                "ListUsers": 3,
-                "Login": 3
-            }
-        },
         "__SystemAdministrators": {
             "ENABLED": true,
             "FILEACCESS": 3,
@@ -3094,8 +3072,7 @@
             "Operator": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [
-                    "__SystemUsers",
-                    "Operatorzy"
+                    "__SystemUsers"
                 ],
                 "USERGROUPUSERS_LOCALE": "client",
                 "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
@@ -3104,8 +3081,7 @@
             "Serwisant": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [
-                    "__SystemUsers",
-                    "Serwisanci"
+                    "__SystemUsers"
                 ],
                 "USERGROUPUSERS_LOCALE": "client",
                 "USERGROUPUSERS_TIMEFORMATLOCALE": "project",

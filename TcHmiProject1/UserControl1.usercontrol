@@ -1,7 +1,7 @@
 ﻿<div id="UserControl1" data-tchmi-type="tchmi-user-control"
-     data-tchmi-top="0" data-tchmi-left="0"
+
      data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
-     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%">
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -557,7 +557,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);"
+          "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -827,7 +827,7 @@
 </script>
 </div>
 
-    <div id="TcHmiContainer_Dim" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="-5" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px">
+    <div id="TcHmiContainer_Dim" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px">
 
         <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
@@ -837,7 +837,7 @@
 
     </div>
 
-    <div id="TcHmiContainer_Popup" data-tchmi-type="tchmi-container" data-tchmi-height="575" data-tchmi-height-unit="px" data-tchmi-width="610" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-left-unit="px" data-tchmi-left="200" data-tchmi-top="111" data-tchmi-top-unit="px" data-tchmi-zindex="10">
+    <div id="TcHmiContainer_Popup" data-tchmi-type="tchmi-container" data-tchmi-height="575" data-tchmi-height-unit="px" data-tchmi-width="610" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
         <div id="TcHmiTextblock_Status" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="byState" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
@@ -1735,4 +1735,8 @@
 </div>
 
 </div>
+
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[]
+</script>
 </div>
