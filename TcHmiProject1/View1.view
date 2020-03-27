@@ -10,18 +10,134 @@
 
 <div id="UserControl1_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.MAIN.byError%/s%" data-tchmi-bystate="%s%PLC1.MAIN.byState%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.MAIN.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.MAIN.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-routsidetemphighlimit="%s%PLC1.MAIN.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.MAIN.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.MAIN.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.MAIN.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControl1.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.MAIN.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.MAIN.udiSecStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="instancja 1" data-tchmi-bpump_internal="%s%PLC1.MAIN.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.MAIN.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.MAIN.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.MAIN.bReset%/s%">
 
+
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "Serwis",
+    "group": "Serwisanci",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "Operatorzy",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemGuests",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemUsers",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
 
 <div id="UserControl2_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.MAIN.byError%/s%" data-tchmi-bystate="%s%PLC1.MAIN.byState%/s%" data-tchmi-eantiblockingmode="%s%PLC1.MAIN.eAntiBlockingMode%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.MAIN.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.MAIN.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-idayweekly="%s%PLC1.MAIN.iDayWeekly%/s%" data-tchmi-ihour="%s%PLC1.MAIN.iHour%/s%" data-tchmi-ihoursdowntime="%s%PLC1.MAIN.iHoursDowntime%/s%" data-tchmi-ilengthimpulse="%s%PLC1.MAIN.iLengthImpulse%/s%" data-tchmi-iminute="%s%PLC1.MAIN.iMinute%/s%" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-routsidetemphighlimit="%s%PLC1.MAIN.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.MAIN.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.MAIN.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.MAIN.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControl2.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.MAIN.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.MAIN.udiSecStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="test 2" data-tchmi-bqantiblocking="%s%PLC1.MAIN.bQAntiBlocking%/s%" data-tchmi-bpump_internal="%s%PLC1.MAIN.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.MAIN.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.MAIN.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.MAIN.bReset%/s%">
 
+
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "Serwis",
+    "group": "Serwisanci",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "Operatorzy",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemGuests",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemUsers",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
 
 <div id="UserControl3_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.MAIN.byError%/s%" data-tchmi-bystate="%s%PLC1.MAIN.byState%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.MAIN.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.MAIN.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="230" data-tchmi-left-unit="px" data-tchmi-rhours="%s%PLC1.MAIN.rHours%/s%" data-tchmi-routsidetemphighlimit="%s%PLC1.MAIN.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.MAIN.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.MAIN.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.MAIN.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControl3.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.MAIN.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.MAIN.udiSecStopDelay%/s%" data-tchmi-uicount="%s%PLC1.MAIN.uiCount%/s%" data-tchmi-uilevel="%s%PLC1.MAIN.uiLevel%/s%" data-tchmi-uiwarnlevel="%s%PLC1.MAIN.uiWarnLevel%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="próba 3" data-tchmi-bpump_internal="%s%PLC1.MAIN.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.MAIN.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.MAIN.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.MAIN.bReset%/s%" data-tchmi-bqalarmlevel="%s%PLC1.MAIN.bQAlarmLevel%/s%" data-tchmi-bqwarnlevel="%s%PLC1.MAIN.bQWarnLevel%/s%" data-tchmi-benablewarnlevel="%s%PLC1.MAIN.bEnableWarnLevel%/s%" data-tchmi-benablealarmlevel="%s%PLC1.MAIN.bEnableAlarmLevel%/s%">
 
+
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "Serwis",
+    "group": "Serwisanci",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "Operatorzy",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemGuests",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemUsers",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
 
 <div id="UserControl4_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.MAIN.byError%/s%" data-tchmi-bystate="%s%PLC1.MAIN.byState%/s%" data-tchmi-eantiblockingmode="%s%PLC1.MAIN.eAntiBlockingMode%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.MAIN.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.MAIN.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-idayweekly="%s%PLC1.MAIN.iDayWeekly%/s%" data-tchmi-ihour="%s%PLC1.MAIN.iHour%/s%" data-tchmi-ihoursdowntime="%s%PLC1.MAIN.iHoursDowntime%/s%" data-tchmi-ilengthimpulse="%s%PLC1.MAIN.iLengthImpulse%/s%" data-tchmi-iminute="%s%PLC1.MAIN.iMinute%/s%" data-tchmi-left="340" data-tchmi-left-unit="px" data-tchmi-rhours="%s%PLC1.MAIN.rHours%/s%" data-tchmi-routsidetemphighlimit="%s%PLC1.MAIN.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.MAIN.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.MAIN.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.MAIN.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControl4.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.MAIN.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.MAIN.udiSecStopDelay%/s%" data-tchmi-uicount="%s%PLC1.MAIN.uiCount%/s%" data-tchmi-uilevel="%s%PLC1.MAIN.uiLevel%/s%" data-tchmi-uiwarnlevel="%s%PLC1.MAIN.uiWarnLevel%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="kontrolka 4" data-tchmi-bqantiblocking="%s%PLC1.MAIN.bQAntiBlocking%/s%" data-tchmi-bpump_internal="%s%PLC1.MAIN.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.MAIN.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.MAIN.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.MAIN.bReset%/s%" data-tchmi-bqalarmlevel="%s%PLC1.MAIN.bQAlarmLevel%/s%" data-tchmi-bqwarnlevel="%s%PLC1.MAIN.bQWarnLevel%/s%" data-tchmi-benablewarnlevel="%s%PLC1.MAIN.bEnableWarnLevel%/s%" data-tchmi-benablealarmlevel="%s%PLC1.MAIN.bEnableAlarmLevel%/s%">
 
+
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "Serwis",
+    "group": "Serwisanci",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "Operatorzy",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemGuests",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "Serwis",
+    "group": "__SystemUsers",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
 
 </div>

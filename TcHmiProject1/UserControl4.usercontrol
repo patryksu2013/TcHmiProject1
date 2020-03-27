@@ -9,16 +9,6 @@
     "event": "%pp%bPump_Internal%/pp%",
     "actions": [
       {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside_3');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bPump_Internal%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
         "objectType": "Condition",
         "active": true,
         "expressions": [
@@ -40,6 +30,18 @@
           {
             "objectType": "WriteToSymbol",
             "active": true,
+            "symbolExpression": "%pp%bRotate_Internal%/pp%",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": true
+            },
+            "asyncWait": true
+          },
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
             "symbolExpression": "%ctrl%TcHmiImage_Inside_3::Src%/ctrl%",
             "valueType": "tchmi:framework#/definitions/Path",
             "value": {
@@ -51,6 +53,18 @@
           }
         ],
         "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bRotate_Internal%/pp%",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": false
+            },
+            "asyncWait": true
+          },
           {
             "objectType": "SwitchCase",
             "active": true,
@@ -777,6 +791,21 @@
         "asyncWait": true
       }
     ]
+  },
+  {
+    "event": "UserControl4.onAttached",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside_3');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bRotate_Internal%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
   }
 ]
 </script>
@@ -785,22 +814,16 @@
 
     
 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-[]
+[
+  {
+    "virtualControlRight": "Serwis",
+    "controlRight": "operate"
+  }
+]
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -810,22 +833,16 @@
 
     
 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-[]
+[
+  {
+    "virtualControlRight": "Serwis",
+    "controlRight": "operate"
+  }
+]
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -836,6 +853,19 @@
 
 
 
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+[
+  {
+    "virtualControlRight": "Serwis",
+    "controlRight": "operate"
+  }
+]
+</script>
 </div>
 <div id="TcHmiImage_Work_3" data-tchmi-type="tchmi-image" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%"  data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="30" data-tchmi-width-unit="%" data-tchmi-src="Imports/Images/clock_yellow.svg" data-tchmi-visibility="Collapsed">
 
@@ -1014,22 +1044,16 @@
 
     
 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-[]
+[
+  {
+    "virtualControlRight": "Serwis",
+    "controlRight": "operate"
+  }
+]
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -1428,23 +1452,12 @@
 
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
 
 
 
@@ -1513,23 +1526,12 @@
 
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
 
 
 
@@ -1629,23 +1631,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service2_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="480" data-tchmi-left-unit="px" data-tchmi-text="udiSecFeedbPumpDelay" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
@@ -1685,23 +1676,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service3_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-text="rOutsideTempHighLimit" data-tchmi-top="210" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
@@ -1741,23 +1721,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service4_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="480" data-tchmi-left-unit="px" data-tchmi-text="rOutsideTempLowLimit" data-tchmi-top="210" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
@@ -1797,23 +1766,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service5_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-text="rValvePositionLimitOn" data-tchmi-top="280" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
@@ -1853,23 +1811,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service6_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="480" data-tchmi-left-unit="px" data-tchmi-text="rValvePositionLimitOff" data-tchmi-top="280" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
@@ -1909,23 +1856,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiLine_Separator1_3" data-tchmi-type="tchmi-line" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="330" data-tchmi-left-unit="px" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="10" data-tchmi-width-unit="px" data-tchmi-x1="5" data-tchmi-x2="5" data-tchmi-y1="0" data-tchmi-y2="520">
@@ -1991,23 +1927,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
                 [
@@ -2072,23 +1997,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -2153,23 +2067,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service10_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-text="iHour" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
@@ -2209,23 +2112,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service11_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-text="iMinute" data-tchmi-top="295" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
@@ -2265,23 +2157,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service12_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="630" data-tchmi-left-unit="px" data-tchmi-text="iLengthImpulse" data-tchmi-top="365" data-tchmi-top-unit="px" data-tchmi-width="250" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
@@ -2321,23 +2202,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
         <div id="TcHmiTextblock_Service13_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="910" data-tchmi-left-unit="px" data-tchmi-text="Work" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 
@@ -2384,23 +2254,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
         <div id="TcHmiTextblock_Service15_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="910" data-tchmi-left-unit="px" data-tchmi-text="uiCount" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 
@@ -2439,23 +2298,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
         <div id="TcHmiTextblock_Service16_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="910" data-tchmi-left-unit="px" data-tchmi-text="uiWarnLevel" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 
@@ -2494,23 +2342,12 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiTextblock_Service17_3" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="910" data-tchmi-left-unit="px" data-tchmi-text="uiLevel" data-tchmi-top="410" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
@@ -2550,46 +2387,24 @@
             </script>
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
         </div>
 
         <div id="TcHmiToggleButton_bEnableWarnLevel_3" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="910" data-tchmi-left-unit="px" data-tchmi-text="bEnableWarnLevel" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bEnableWarnLevel%/pp%">
 
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
 
 
 
@@ -2658,23 +2473,12 @@
 
 
             <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                []
-            </script>
+[]
+</script>
 
             <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                [
-                {
-                "accessright": "operate",
-                "group": "Serwisanci",
-                "permission": "Allow"
-                },
-                {
-                "accessright": "operate",
-                "group": "Operatorzy",
-                "permission": "Deny"
-                }
-                ]
-            </script>
+[]
+</script>
 
 
 

@@ -9,16 +9,6 @@
     "event": "%pp%bPump_Internal%/pp%",
     "actions": [
       {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bPump_Internal%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      },
-      {
         "objectType": "Condition",
         "active": true,
         "expressions": [
@@ -40,6 +30,18 @@
           {
             "objectType": "WriteToSymbol",
             "active": true,
+            "symbolExpression": "%pp%bRotate_Internal%/pp%",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": true
+            },
+            "asyncWait": true
+          },
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
             "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
             "valueType": "tchmi:framework#/definitions/Path",
             "value": {
@@ -51,6 +53,18 @@
           }
         ],
         "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bRotate_Internal%/pp%",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": false
+            },
+            "asyncWait": true
+          },
           {
             "objectType": "SwitchCase",
             "active": true,
@@ -544,6 +558,21 @@
         "active": true,
         "sourceLines": [
           "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "UserControl1.onAttached",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bRotate_Internal%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -1197,18 +1226,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 
 
@@ -1286,18 +1304,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 
 
@@ -1402,18 +1409,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -1458,18 +1454,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -1514,18 +1499,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -1570,18 +1544,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -1626,18 +1589,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -1682,18 +1634,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 </div>
 
@@ -1764,18 +1705,7 @@
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "operate",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "operate",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  }
-]
+[]
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
