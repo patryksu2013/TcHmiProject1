@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="Scheduler7ch" Id="{457a93d4-5947-499d-90e5-1395f69a941a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Scheduler7ch
+VAR
+	fbHVACScheduler7ch:FB_HVACScheduler7ch;
+	eDataSecurityType:E_HVACDataSecurityType;
+	bSetDefault:BOOL;
+	bEnable:BOOL;
+	dtSystemTime:DT;
+	uiOffsetBefore:UINT;
+	bReset:BOOL;
+	arrTimeChannel:ARRAY[1..7] OF ST_HVACTimeChannel;       (* 7 timer switch channels *)
+	bOutput:BOOL;
+	bEdgeOn:BOOL;
+	bEdgeOff:BOOL;
+	tNextOn:TIME;
+	tNextOff:TIME;
+	bInvalidParameter:BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACScheduler7ch(
+	eDataSecurityType:=eDataSecurityType , 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable , 
+	dtSystemTime:=dtSystemTime , 
+	uiOffsetBefore:=uiOffsetBefore, 
+	bReset:=bReset, 
+	arrTimeChannel:=arrTimeChannel, 
+	bOutput=>bOutput, 
+	bEdgeOn=>bEdgeOn, 
+	bEdgeOff=>bEdgeOff, 
+	tNextOn=>tNextOn, 
+	tNextOff=>tNextOff, 
+	bInvalidParameter=>bInvalidParameter
+);]]></ST>
+    </Implementation>
+    <LineIds Name="Scheduler7ch">
+      <LineId Id="21" Count="13" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

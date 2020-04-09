@@ -1,45 +1,45 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
-    "_UserControl1": {
+    "UserControls_FB_HVACScheduler7ch": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControl1.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACScheduler7ch.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/_UserControl1"
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACScheduler7ch"
     },
-    "_UserControl2": {
+    "UserControls_FB_HVACCirculationPumpEx": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControl2.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/_UserControl2"
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx"
     },
-    "_UserControl3": {
+    "UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControl3.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/_UserControl3"
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump"
     },
-    "_UserControl4": {
+    "UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump+Work": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControl4.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/_UserControl4"
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump+Work"
     },
-    "_UserControl5": {
+    "UserControls_FB_HVACCirculationPumpEx+Work": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControl5.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx+Work.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/_UserControl5"
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx+Work"
     }
   }
 }

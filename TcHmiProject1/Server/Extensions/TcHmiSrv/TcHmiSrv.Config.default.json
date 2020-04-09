@@ -248,7 +248,7 @@
     "DEFLATECOMPRESSIONLEVEL": 5,
     "DISCOVERY": 2,
     "ENDPOINTS": [
-        "http://127.0.0.1:3001"
+        "http://127.0.0.1:3002"
     ],
     "ETAGENABLED": true,
     "EXTENSIONS": {
@@ -2243,6 +2243,89 @@
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "MAPPING": "PLC1::MAIN::uiWarnLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.arrTimeChannel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::arrTimeChannel",
+            "OPTIONS": {
+                "comment": " 7 timer switch channels "
+            },
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..7) OF Tc2_HVAC.ST_HVACTimeChannel"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.bEnable": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::bEnable",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.bOutput": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::bOutput",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.tNextOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::tNextOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.tNextOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::tNextOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.uiOffsetBefore": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::uiOffsetBefore",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/UINT"
             },

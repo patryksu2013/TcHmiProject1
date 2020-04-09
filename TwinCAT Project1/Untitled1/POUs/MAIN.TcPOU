@@ -33,21 +33,6 @@ VAR
 	rOutsideTempLowLimit:REAL:=4.1;
 	rValvePositionLimitOn:REAL:=5.2;
 	rValvePositionLimitOff:REAL:=6.3;
-	//
-	fbHVACScheduler7ch:FB_HVACScheduler7ch;
-	eDataSecurityType:E_HVACDataSecurityType;
-	bSetDefault1:BOOL;
-	bEnable    :BOOL;
-	dtSystemTime:DT;
-	uiOffsetBefore:UINT;
-	bReset1: BOOL;
-	arrTimeChannel: ARRAY[1..7] OF ST_HVACTimeChannel;       (* 7 timer switch channels *)
-	bOutput    :BOOL;
-	bEdgeOn    :BOOL;
-	bEdgeOff   :BOOL;
-	tNextOn    :TIME;
-	tNextOff   :TIME;
-	bInvalidParameter: BOOL;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[IF bError THEN
@@ -59,21 +44,7 @@ IF (eCtrlModeActuator = 1 OR eCtrlModeActuator = 7) THEN
 	bPump := FALSE;
 END_IF
 
-fbHVACScheduler7ch(
-	eDataSecurityType:=eDataSecurityType , 
-	bSetDefault:=bSetDefault1, 
-	bEnable:=bEnable , 
-	dtSystemTime:=dtSystemTime , 
-	uiOffsetBefore:=uiOffsetBefore, 
-	bReset:=bReset1, 
-	arrTimeChannel:=arrTimeChannel, 
-	bOutput=>bOutput, 
-	bEdgeOn=>bEdgeOn, 
-	bEdgeOff=>bEdgeOff, 
-	tNextOn=>tNextOn, 
-	tNextOff=>tNextOff, 
-	bInvalidParameter=>bInvalidParameter
-);]]></ST>
+Scheduler7ch();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
@@ -83,9 +54,8 @@ fbHVACScheduler7ch(
       <LineId Id="30" Count="0" />
       <LineId Id="29" Count="0" />
       <LineId Id="31" Count="1" />
-      <LineId Id="68" Count="13" />
-      <LineId Id="67" Count="0" />
-      <LineId Id="105" Count="0" />
+      <LineId Id="154" Count="0" />
+      <LineId Id="153" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

@@ -3,7 +3,7 @@
   "basePath": "./Libraries",
   "locale": "client",
   "scaleMode": "None",
-  "startupView": "View1.view",
+  "startupView": "Default.view",
   "loginPage": null,
   "tcHmiServer": {
     "websocketIntervalTime": 500,
@@ -37,25 +37,25 @@
   ],
   "userControls": [
     {
-      "url": "UserControl1.usercontrol"
+      "url": "UserControls/FB_HVACCirculationPumpEx.usercontrol"
     },
     {
-      "url": "UserControl2.usercontrol"
+      "url": "UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol"
     },
     {
-      "url": "UserControl3.usercontrol"
+      "url": "UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol"
     },
     {
-      "url": "UserControl4.usercontrol"
+      "url": "UserControls/FB_HVACCirculationPumpEx+Work.usercontrol"
     },
     {
-      "url": "UserControl5.usercontrol"
+      "url": "UserControls/FB_HVACScheduler7ch.usercontrol"
     }
   ],
   "content": [],
   "views": [
     {
-      "url": "View1.view",
+      "url": "Default.view",
       "preload": false
     }
   ],

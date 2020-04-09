@@ -1,4 +1,4 @@
-﻿<div id="UserControl3" data-tchmi-type="tchmi-user-control"
+﻿<div id="FB_HVACCirculationPumpEx+Work" data-tchmi-type="tchmi-user-control"
      data-tchmi-top="0" data-tchmi-left="0"
      data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
      data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%">
@@ -527,7 +527,7 @@
     ]
   },
   {
-    "event": "UserControl3.onPressed",
+    "event": "FB_HVACCirculationPumpEx+Work.onPressed",
     "actions": [
       {
         "objectType": "WriteToSymbol",
@@ -740,7 +740,7 @@
     ]
   },
   {
-    "event": "UserControl3.onAttached",
+    "event": "FB_HVACCirculationPumpEx+Work.onAttached",
     "actions": [
       {
         "objectType": "JavaScript",
