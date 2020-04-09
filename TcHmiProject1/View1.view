@@ -140,4 +140,8 @@
 </script>
 </div>
 
+<div id="UserControl5_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControl5.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrtimechannel="%s%PLC1.MAIN.arrTimeChannel%/s%">
+
+</div>
+
 </div>

@@ -25,6 +25,15 @@
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
     "DEFINITIONS": {
+        "PLC1.ARRAY (1..7) OF Tc2_HVAC.ST_HVACTimeChannel": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_HVAC.ST_HVACTimeChannel"
+            },
+            "maxItems": 7,
+            "minItems": 7,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.Tc2_HVAC.E_HVACActuatorMode": {
             "allOf": [
                 {
@@ -178,6 +187,62 @@
                     "$ref": "tchmi:general#/definitions/INT16"
                 }
             ]
+        },
+        "PLC1.Tc2_HVAC.ST_HVACTimeChannel": {
+            "properties": {
+                "bAllDays": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bEnable": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bFriday": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bMonday": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bQ": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bResetAfterOn": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bSaturday": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bSunday": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bThursday": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bTuesday": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bWednesday": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "uiOff_hh": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOff_mm": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOff_ss": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOn_hh": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOn_mm": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOn_ss": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                }
+            },
+            "type": "object"
         }
     },
     "DEFLATECOMPRESSIONLEVEL": 5,
@@ -1867,6 +1932,19 @@
                 "writeValue": {
                     "type": "string"
                 }
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.arrTimeChannel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::arrTimeChannel",
+            "OPTIONS": {
+                "comment": " 7 timer switch channels "
+            },
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..7) OF Tc2_HVAC.ST_HVACTimeChannel"
             },
             "USEMAPPING": true
         },

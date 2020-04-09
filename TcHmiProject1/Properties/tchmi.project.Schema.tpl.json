@@ -32,6 +32,14 @@
       "frameworkUserControlConfig": "UserControl4.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/_UserControl4"
+    },
+    "_UserControl5": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControl5.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/_UserControl5"
     }
   }
 }
