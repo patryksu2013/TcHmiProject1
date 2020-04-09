@@ -1,0 +1,45 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "UserControls_FB_HVACScheduler7ch": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACScheduler7ch.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACScheduler7ch"
+    },
+    "UserControls_FB_HVACCirculationPumpEx": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx"
+    },
+    "UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump"
+    },
+    "UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump+Work": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx+AntiBlockingPump+Work"
+    },
+    "UserControls_FB_HVACCirculationPumpEx+Work": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx+Work.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx+Work"
+    }
+  }
+}
