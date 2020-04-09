@@ -197,18 +197,18 @@
 
 	</div>
 
-<div id="TcHmiTextblock_tNextOn_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="tNextOn" data-tchmi-top="37.5" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%FB_HVACScheduler7ch::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right-unit="%" data-tchmi-right="6.4">
+<div id="TcHmiTextblock_tNextOn_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="tNextOn" data-tchmi-top="37.5" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOn_Text_4::RenderedHeight%/ctrl%" data-tchmi-right-unit="%" data-tchmi-right="6.4">
 
 </div>
-<div id="TcHmiTextblock_tNextOn_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="%pp%tNextOn%/pp%" data-tchmi-top="52.2" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%FB_HVACScheduler7ch::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right-unit="%" data-tchmi-right="6.4">
-
-</div>
-
-<div id="TcHmiTextblock_tNextOff_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="66.8" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="tNextOff" data-tchmi-text-font-size="%f%%ctrl%FB_HVACScheduler7ch::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
+<div id="TcHmiTextblock_tNextOn_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="%pp%tNextOn%/pp%" data-tchmi-top="52.2" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="6.4" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOn_Value_4::RenderedHeight%/ctrl%">
 
 </div>
 
-<div id="TcHmiTextblock_tNextOff_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="81.4" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%tNextOff%/pp%" data-tchmi-text-font-size="%f%%ctrl%FB_HVACScheduler7ch::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
+<div id="TcHmiTextblock_tNextOff_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="66.8" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="tNextOff" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOff_Text_4::RenderedHeight%/ctrl%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
+
+</div>
+
+<div id="TcHmiTextblock_tNextOff_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="81.4" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%tNextOff%/pp%" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOff_Value_4::RenderedHeight%/ctrl%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
 
 </div>
 <div id="TcHmiContainer_Dim_4" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
