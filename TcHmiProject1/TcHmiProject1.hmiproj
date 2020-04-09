@@ -83,7 +83,13 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
-    <Content Include="Imports\Images\calendar-outline.svg">
+    <Content Include="Imports\Images\calendar.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\calendar_green.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\calendar_yellow.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControl5.usercontrol">

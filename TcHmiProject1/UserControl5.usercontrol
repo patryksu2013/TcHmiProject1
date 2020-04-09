@@ -1,54 +1,217 @@
 ﻿<div id="UserControl1_2" data-tchmi-type="tchmi-user-control" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%">
 
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-	[
-	  {
-		"event": "UserControl1_2.onPressed",
-		"actions": [
-		  {
-			"objectType": "WriteToSymbol",
-			"active": true,
-			"symbolExpression": "%ctrl%TcHmiContainer_Dim_4::Visibility%/ctrl%",
-			"valueType": "tchmi:framework#/definitions/Visibility",
-			"value": {
-			  "objectType": "StaticValue",
-			  "valueType": "tchmi:framework#/definitions/Visibility",
-			  "value": "Visible"
-			},
-			"asyncWait": true
-		  },
-		  {
-			"objectType": "WriteToSymbol",
-			"active": true,
-			"symbolExpression": "%ctrl%TcHmiContainer_Popup_4::Visibility%/ctrl%",
-			"valueType": "tchmi:framework#/definitions/Visibility",
-			"value": {
-			  "objectType": "StaticValue",
-			  "valueType": "tchmi:framework#/definitions/Visibility",
-			  "value": "Visible"
-			},
-			"asyncWait": true
-		  },
-		  {
-			"objectType": "JavaScript",
-			"active": true,
-			"sourceLines": [
-			  "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim_4');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup_4');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
-			],
-			"injectContextObject": false,
-			"asyncWait": true,
-			"waitMode": "Synchronous"
-		  }
-		]
-	  }
-	]
-	</script>
-
-    <div id="TcHmiImage_Calendar_4" data-tchmi-type="tchmi-image" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-background-image-width-unit="px" data-tchmi-src="Imports/Images/calendar-outline.svg" data-tchmi-creator-visibility="Visible" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0">
+[
+  {
+    "event": "UserControl1_2.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Dim_4::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Popup_4::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim_4');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup_4');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "%pp%bOutput%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bOutput%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiImage_Calendar_4::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Path",
+              "value": "Imports/Images/calendar_green.svg"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "Condition",
+            "active": true,
+            "expressions": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%bInvalidParameter%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "true": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Calendar_4::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/calendar.svg"
+                },
+                "asyncWait": true
+              }
+            ],
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%bInvalidParameter%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bInvalidParameter%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiImage_Calendar_4::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Path",
+              "value": "Imports/Images/calendar_yellow.svg"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "Condition",
+            "active": true,
+            "expressions": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%bOutput%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/Boolean",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "true": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Calendar_4::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/calendar.svg"
+                },
+                "asyncWait": true
+              }
+            ],
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+<div id="TcHmiImage_Calendar_4" data-tchmi-type="tchmi-image" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-background-image-width-unit="px" data-tchmi-src="Imports/Images/calendar.svg" data-tchmi-creator-visibility="Visible" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0">
 
 	</div>
 
-    <div id="TcHmiContainer_Dim_4" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+<div id="TcHmiTextblock_tNextOn_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="tNextOn" data-tchmi-top="37.5" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%UserControl1_2::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right-unit="%" data-tchmi-right="6.4">
+
+</div>
+<div id="TcHmiTextblock_tNextOn_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="%pp%tNextOn%/pp%" data-tchmi-top="52.2" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%UserControl1_2::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right-unit="%" data-tchmi-right="6.4">
+
+</div>
+
+<div id="TcHmiTextblock_tNextOff_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="66.8" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="tNextOff" data-tchmi-text-font-size="%f%%ctrl%UserControl1_2::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
+
+</div>
+
+<div id="TcHmiTextblock_tNextOff_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="81.4" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%tNextOff%/pp%" data-tchmi-text-font-size="%f%%ctrl%UserControl1_2::RenderedHeight%/ctrl%/8%/f%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
+
+</div>
+<div id="TcHmiContainer_Dim_4" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
         <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
@@ -57,10 +220,9 @@
         </script>
 
     </div>
-
-    <div id="TcHmiContainer_Popup_4" data-tchmi-type="tchmi-container" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+<div id="TcHmiContainer_Popup_4" data-tchmi-type="tchmi-container" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
         
-		<div id="TcHmiContainer_4" data-tchmi-type="tchmi-container" data-tchmi-height="400" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px">
+		<div id="TcHmiContainer_4" data-tchmi-type="tchmi-container" data-tchmi-height="400" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-visibility="Visible">
             
 			<div id="TcHmiTextblock_Enable_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Enable" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
@@ -809,7 +971,7 @@
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_ss%/pp%">
+            <div id="TcHmiTextbox_OnTime_Second_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_ss%/pp%" data-tchmi-visibility="Visible">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
