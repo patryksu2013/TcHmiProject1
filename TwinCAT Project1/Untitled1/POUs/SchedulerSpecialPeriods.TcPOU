@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="SchedulerSpecialPeriods" Id="{a8ef4002-70ed-4a1b-98fa-af5413d321aa}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM SchedulerSpecialPeriods
+VAR
+	fbHVACSchedulerSpecialPeriods:FB_HVACSchedulerSpecialPeriods;
+	eDataSecurityType:E_HVACDataSecurityType;
+	bSetDefault:BOOL;
+	bEnable:BOOL;
+	dtSystemTime:DT;
+	bReset:BOOL;
+	arrPeriod:ARRAY[1..20] OF ST_HVACPeriod;       (* 7 timer switch channels *)
+	bOutput:BOOL;
+	bEdgeOn:BOOL;
+	bEdgeOff:BOOL;
+	tNextOn:TIME;
+	tNextOff:TIME;
+	bInvalidParameter:BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACSchedulerSpecialPeriods(
+	eDataSecurityType:=eDataSecurityType , 
+	bSetDefault:=bSetDefault , 
+	bEnable:=bEnable , 
+	dtSystemTime:=dtSystemTime, 
+	bReset:=bReset, 
+	arrPeriod:=arrPeriod, 
+	bOutput=>bOutput, 
+	bEdgeOn=>bEdgeOn, 
+	bEdgeOff=>bEdgeOff, 
+	tNextOn=>tNextOn, 
+	tNextOff=>tNextOff, 
+	bInvalidParameter=>bInvalidParameter);]]></ST>
+    </Implementation>
+    <LineIds Name="SchedulerSpecialPeriods">
+      <LineId Id="69" Count="11" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

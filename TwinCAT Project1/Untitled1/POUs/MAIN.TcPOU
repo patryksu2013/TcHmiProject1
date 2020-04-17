@@ -45,7 +45,8 @@ IF (eCtrlModeActuator = 1 OR eCtrlModeActuator = 7) THEN
 END_IF
 
 Scheduler7ch();
-Scheduler28ch();]]></ST>
+Scheduler28ch();
+SchedulerSpecialPeriods();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
@@ -58,6 +59,7 @@ Scheduler28ch();]]></ST>
       <LineId Id="154" Count="0" />
       <LineId Id="153" Count="0" />
       <LineId Id="187" Count="0" />
+      <LineId Id="220" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

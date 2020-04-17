@@ -48,6 +48,14 @@
       "frameworkUserControlConfig": "UserControls\\FB_HVACScheduler7ch.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_FB_HVACScheduler7ch"
+    },
+    "UserControls_FB_HVACSchedulerSpecialPeriods": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACSchedulerSpecialPeriods.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACSchedulerSpecialPeriods"
     }
   }
 }

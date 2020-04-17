@@ -29,6 +29,9 @@
     <Compile Include="POUs\Scheduler28ch.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\SchedulerSpecialPeriods.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DUTs" />

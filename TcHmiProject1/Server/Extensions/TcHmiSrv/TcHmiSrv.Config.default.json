@@ -25,6 +25,15 @@
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
     "DEFINITIONS": {
+        "PLC1.ARRAY (1..20) OF Tc2_HVAC.ST_HVACPeriod": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_HVAC.ST_HVACPeriod"
+            },
+            "maxItems": 20,
+            "minItems": 20,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY (1..28) OF Tc2_HVAC.ST_HVACTimeChannel": {
             "items": {
                 "$ref": "#/definitions/PLC1.Tc2_HVAC.ST_HVACTimeChannel"
@@ -196,6 +205,44 @@
                     "$ref": "tchmi:general#/definitions/INT16"
                 }
             ]
+        },
+        "PLC1.Tc2_HVAC.ST_HVACPeriod": {
+            "properties": {
+                "bEnable": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bQ": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bResetAfterOn": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "uiOff_Day": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOff_Month": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOff_hh": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOff_mm": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOn_Day": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOn_Month": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOn_hh": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                },
+                "uiOn_mm": {
+                    "$ref": "tchmi:general#/definitions/UINT"
+                }
+            },
+            "type": "object"
         },
         "PLC1.Tc2_HVAC.ST_HVACTimeChannel": {
             "properties": {
@@ -2337,6 +2384,19 @@
             "MAPPING": "PLC1::Scheduler7ch::uiOffsetBefore",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/UINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.arrPeriod": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::arrPeriod",
+            "OPTIONS": {
+                "comment": " 7 timer switch channels "
+            },
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..20) OF Tc2_HVAC.ST_HVACPeriod"
             },
             "USEMAPPING": true
         },
