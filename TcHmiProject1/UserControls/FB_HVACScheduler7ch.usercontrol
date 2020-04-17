@@ -193,25 +193,25 @@
   }
 ]
 </script>
-<div id="TcHmiImage_Calendar_4" data-tchmi-type="tchmi-image" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-background-image-width-unit="px" data-tchmi-src="Imports/Images/calendar.svg" data-tchmi-creator-visibility="Visible" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0">
+<div id="TcHmiImage_Calendar_4" data-tchmi-type="tchmi-image" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-background-image-width-unit="px" data-tchmi-src="Imports/Images/calendar.svg" data-tchmi-creator-visibility="Collapsed" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0">
 
 	</div>
 
-<div id="TcHmiTextblock_tNextOn_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="tNextOn" data-tchmi-top="37.5" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOn_Text_4::RenderedHeight%/ctrl%" data-tchmi-right-unit="%" data-tchmi-right="6.4">
+<div id="TcHmiTextblock_tNextOn_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="tNextOn" data-tchmi-top="37.5" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOn_Text_4::RenderedHeight%/ctrl%" data-tchmi-right-unit="%" data-tchmi-right="6.4" data-tchmi-creator-visibility="Collapsed">
 
 </div>
-<div id="TcHmiTextblock_tNextOn_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="%pp%tNextOn%/pp%" data-tchmi-top="52.2" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="6.4" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOn_Value_4::RenderedHeight%/ctrl%">
-
-</div>
-
-<div id="TcHmiTextblock_tNextOff_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="66.8" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="tNextOff" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOff_Text_4::RenderedHeight%/ctrl%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
+<div id="TcHmiTextblock_tNextOn_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-text="%pp%tNextOn%/pp%" data-tchmi-top="52.2" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="6.4" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOn_Value_4::RenderedHeight%/ctrl%" data-tchmi-creator-visibility="Collapsed">
 
 </div>
 
-<div id="TcHmiTextblock_tNextOff_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="81.4" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%tNextOff%/pp%" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOff_Value_4::RenderedHeight%/ctrl%" data-tchmi-right="6.4" data-tchmi-right-unit="%">
+<div id="TcHmiTextblock_tNextOff_Text_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="66.8" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="tNextOff" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOff_Text_4::RenderedHeight%/ctrl%" data-tchmi-right="6.4" data-tchmi-right-unit="%" data-tchmi-creator-visibility="Collapsed">
 
 </div>
-<div id="TcHmiContainer_Dim_4" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+
+<div id="TcHmiTextblock_tNextOff_Value_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="12.5" data-tchmi-height-unit="%" data-tchmi-left="6.4" data-tchmi-left-unit="%" data-tchmi-top="81.4" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%tNextOff%/pp%" data-tchmi-text-font-size="%ctrl%TcHmiTextblock_tNextOff_Value_4::RenderedHeight%/ctrl%" data-tchmi-right="6.4" data-tchmi-right-unit="%" data-tchmi-creator-visibility="Collapsed">
+
+</div>
+<div id="TcHmiContainer_Dim_4" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-creator-visibility="Visible">
 
         <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
@@ -220,62 +220,62 @@
         </script>
 
     </div>
-<div id="TcHmiContainer_Popup_4" data-tchmi-type="tchmi-container" data-tchmi-height="470" data-tchmi-height-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+<div id="TcHmiContainer_Popup_4" data-tchmi-type="tchmi-container" data-tchmi-height="460" data-tchmi-height-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px">
         
-		<div id="TcHmiContainer_4" data-tchmi-type="tchmi-container" data-tchmi-height="400" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-visibility="Visible">
+		<div id="TcHmiContainer_4" data-tchmi-type="tchmi-container" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="885" data-tchmi-width-unit="px" data-tchmi-visibility="Visible" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
             
-			<div id="TcHmiTextblock_Enable_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Enable" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+			<div id="TcHmiTextblock_Enable_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Enable" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_AllDays_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-text="all Days" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_AllDays_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="all Days" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_ResetAfterOn_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="Reset after on" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_ResetAfterOn_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-text="Reset after on" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_Mon_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="Pon." data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Mon_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-text="Pon." data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_Tue_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="Wt." data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Tue_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="Wt." data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_Wed_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-text="Śr." data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Wed_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-text="Śr." data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_Thu_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-text="Czw." data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Thu_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-text="Czw." data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_Fri_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-text="Pt." data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Fri_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-text="Pt." data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_Sat_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-text="Sob." data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Sat_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-text="Sob." data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-            <div id="TcHmiTextblock_Sun_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-text="Nd." data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Sun_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-text="Nd." data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 			
-			<div id="TcHmiTextblock_OnTime_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-text="OnTime hh:mm:ss" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+			<div id="TcHmiTextblock_OnTime_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-text="OnTime hh:mm:ss" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextblock_OffTime_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-text="OffTime hh:mm:ss" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_OffTime_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-text="OffTime hh:mm:ss" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
-<div id="TcHmiTextblock_Q_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-text="Q" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_Q_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-text="Q" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiCheckbox_Enable_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bEnable%/pp%">
+            <div id="TcHmiCheckbox_Enable_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bEnable%/pp%">
 
             
 
@@ -339,7 +339,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_AllDays_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bAllDays%/pp%">
+            <div id="TcHmiCheckbox_AllDays_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bAllDays%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -401,7 +401,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_ResetAfterOn_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bResetAfterOn%/pp%">
+            <div id="TcHmiCheckbox_ResetAfterOn_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bResetAfterOn%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -463,7 +463,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Mon_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bMonday%/pp%">
+            <div id="TcHmiCheckbox_Mon_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bMonday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -525,7 +525,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Tue_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bTuesday%/pp%">
+            <div id="TcHmiCheckbox_Tue_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bTuesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -587,7 +587,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Wed_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bWednesday%/pp%">
+            <div id="TcHmiCheckbox_Wed_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bWednesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -649,7 +649,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Thu_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bThursday%/pp%">
+            <div id="TcHmiCheckbox_Thu_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bThursday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -711,7 +711,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Fri_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bFriday%/pp%">
+            <div id="TcHmiCheckbox_Fri_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bFriday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -773,7 +773,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sat_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bSaturday%/pp%">
+            <div id="TcHmiCheckbox_Sat_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bSaturday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -835,7 +835,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sun_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bSunday%/pp%">
+            <div id="TcHmiCheckbox_Sun_0_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[0]::bSunday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -897,7 +897,7 @@
 </script>
 </div>
 
-            <div id="TcHmiTextbox_OnTime_Hour_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_hh%/pp%">
+            <div id="TcHmiTextbox_OnTime_Hour_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -930,11 +930,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator1_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator1_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Minute_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="565" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_mm%/pp%">
+            <div id="TcHmiTextbox_OnTime_Minute_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -967,11 +967,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator2_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator2_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_ss%/pp%" data-tchmi-visibility="Visible">
+            <div id="TcHmiTextbox_OnTime_Second_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="610" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOn_ss%/pp%" data-tchmi-visibility="Visible">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1004,11 +1004,11 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Separator3_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="670" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator3_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="660" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Hour_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOff_hh%/pp%">
+            <div id="TcHmiTextbox_OffTime_Hour_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOff_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1041,11 +1041,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator4_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator4_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Minute_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="750" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOff_mm%/pp%">
+            <div id="TcHmiTextbox_OffTime_Minute_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="740" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOff_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1078,11 +1078,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator5_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator5_0_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Second_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="805" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOff_ss%/pp%">
+            <div id="TcHmiTextbox_OffTime_Second_0_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[0]::uiOff_ss%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1114,7 +1114,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiEllipse_Q_0_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-top="50" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Q_0_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-top="40" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
 
 
@@ -1190,7 +1190,7 @@
 </script>
 </div>
 			
-			<div id="TcHmiCheckbox_Enable_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bEnable%/pp%">
+			<div id="TcHmiCheckbox_Enable_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bEnable%/pp%">
 
             
 
@@ -1254,7 +1254,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_AllDays_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bAllDays%/pp%">
+            <div id="TcHmiCheckbox_AllDays_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bAllDays%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1316,7 +1316,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_ResetAfterOn_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bResetAfterOn%/pp%">
+            <div id="TcHmiCheckbox_ResetAfterOn_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bResetAfterOn%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1378,7 +1378,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Mon_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bMonday%/pp%">
+            <div id="TcHmiCheckbox_Mon_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bMonday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1440,7 +1440,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Tue_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bTuesday%/pp%">
+            <div id="TcHmiCheckbox_Tue_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bTuesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1502,7 +1502,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Wed_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bWednesday%/pp%">
+            <div id="TcHmiCheckbox_Wed_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bWednesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1564,7 +1564,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Thu_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bThursday%/pp%">
+            <div id="TcHmiCheckbox_Thu_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bThursday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1626,7 +1626,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Fri_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bFriday%/pp%">
+            <div id="TcHmiCheckbox_Fri_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bFriday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1688,7 +1688,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sat_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bSaturday%/pp%">
+            <div id="TcHmiCheckbox_Sat_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bSaturday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1750,7 +1750,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sun_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bSunday%/pp%">
+            <div id="TcHmiCheckbox_Sun_1_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[1]::bSunday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1812,7 +1812,7 @@
 </script>
 </div>
 
-            <div id="TcHmiTextbox_OnTime_Hour_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOn_hh%/pp%">
+            <div id="TcHmiTextbox_OnTime_Hour_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOn_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1845,11 +1845,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator1_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator1_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Minute_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="565" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOn_mm%/pp%">
+            <div id="TcHmiTextbox_OnTime_Minute_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOn_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1882,11 +1882,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator2_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator2_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOn_ss%/pp%">
+            <div id="TcHmiTextbox_OnTime_Second_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="611" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOn_ss%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1919,11 +1919,11 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Separator3_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="670" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator3_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="660" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Hour_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOff_hh%/pp%">
+            <div id="TcHmiTextbox_OffTime_Hour_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOff_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1956,11 +1956,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator4_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator4_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Minute_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="750" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOff_mm%/pp%">
+            <div id="TcHmiTextbox_OffTime_Minute_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="740" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOff_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1993,11 +1993,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator5_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator5_1_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Second_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="805" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOff_ss%/pp%">
+            <div id="TcHmiTextbox_OffTime_Second_1_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[1]::uiOff_ss%/pp%">
 			
 			
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2021,7 +2021,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiEllipse_Q_1_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-top="100" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Q_1_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-top="90" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
 
 
@@ -2095,7 +2095,7 @@
 </script>
 </div>
 			
-			<div id="TcHmiCheckbox_Enable_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bEnable%/pp%">
+			<div id="TcHmiCheckbox_Enable_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bEnable%/pp%">
 
             
 
@@ -2159,7 +2159,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_AllDays_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bAllDays%/pp%">
+            <div id="TcHmiCheckbox_AllDays_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bAllDays%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2221,7 +2221,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_ResetAfterOn_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bResetAfterOn%/pp%">
+            <div id="TcHmiCheckbox_ResetAfterOn_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bResetAfterOn%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2283,7 +2283,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Mon_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bMonday%/pp%">
+            <div id="TcHmiCheckbox_Mon_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bMonday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2345,7 +2345,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Tue_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bTuesday%/pp%">
+            <div id="TcHmiCheckbox_Tue_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bTuesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2407,7 +2407,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Wed_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bWednesday%/pp%">
+            <div id="TcHmiCheckbox_Wed_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bWednesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2469,7 +2469,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Thu_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bThursday%/pp%">
+            <div id="TcHmiCheckbox_Thu_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bThursday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2531,7 +2531,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Fri_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bFriday%/pp%">
+            <div id="TcHmiCheckbox_Fri_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bFriday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2593,7 +2593,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sat_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bSaturday%/pp%">
+            <div id="TcHmiCheckbox_Sat_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bSaturday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2655,7 +2655,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sun_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bSunday%/pp%">
+            <div id="TcHmiCheckbox_Sun_2_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[2]::bSunday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2717,7 +2717,7 @@
 </script>
 </div>
 
-            <div id="TcHmiTextbox_OnTime_Hour_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOn_hh%/pp%">
+            <div id="TcHmiTextbox_OnTime_Hour_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOn_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -2750,11 +2750,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator1_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator1_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Minute_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="565" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOn_mm%/pp%">
+            <div id="TcHmiTextbox_OnTime_Minute_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOn_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -2787,11 +2787,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator2_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator2_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOn_ss%/pp%">
+            <div id="TcHmiTextbox_OnTime_Second_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="611" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOn_ss%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -2824,11 +2824,11 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Separator3_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="670" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator3_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="660" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Hour_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOff_hh%/pp%">
+            <div id="TcHmiTextbox_OffTime_Hour_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOff_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -2861,11 +2861,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator4_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator4_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Minute_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="750" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOff_mm%/pp%">
+            <div id="TcHmiTextbox_OffTime_Minute_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="740" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOff_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -2898,11 +2898,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator5_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator5_2_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Second_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="805" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOff_ss%/pp%">
+            <div id="TcHmiTextbox_OffTime_Second_2_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[2]::uiOff_ss%/pp%">
 			
 		
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -2926,7 +2926,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiEllipse_Q_2_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-top="150" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Q_2_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
 
 
@@ -3000,7 +3000,7 @@
 </script>
 </div>
 		
-			<div id="TcHmiCheckbox_Enable_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bEnable%/pp%">
+			<div id="TcHmiCheckbox_Enable_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bEnable%/pp%">
 
             
 
@@ -3064,7 +3064,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_AllDays_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bAllDays%/pp%">
+            <div id="TcHmiCheckbox_AllDays_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bAllDays%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3126,7 +3126,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_ResetAfterOn_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bResetAfterOn%/pp%">
+            <div id="TcHmiCheckbox_ResetAfterOn_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bResetAfterOn%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3188,7 +3188,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Mon_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bMonday%/pp%">
+            <div id="TcHmiCheckbox_Mon_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bMonday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3250,7 +3250,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Tue_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bTuesday%/pp%">
+            <div id="TcHmiCheckbox_Tue_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bTuesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3312,7 +3312,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Wed_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bWednesday%/pp%">
+            <div id="TcHmiCheckbox_Wed_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bWednesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3374,7 +3374,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Thu_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bThursday%/pp%">
+            <div id="TcHmiCheckbox_Thu_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bThursday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3436,7 +3436,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Fri_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bFriday%/pp%">
+            <div id="TcHmiCheckbox_Fri_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bFriday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3498,7 +3498,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sat_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bSaturday%/pp%">
+            <div id="TcHmiCheckbox_Sat_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bSaturday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3560,7 +3560,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sun_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bSunday%/pp%">
+            <div id="TcHmiCheckbox_Sun_3_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[3]::bSunday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3622,7 +3622,7 @@
 </script>
 </div>
 
-            <div id="TcHmiTextbox_OnTime_Hour_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOn_hh%/pp%">
+            <div id="TcHmiTextbox_OnTime_Hour_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOn_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -3655,11 +3655,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator1_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator1_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Minute_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="565" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOn_mm%/pp%">
+            <div id="TcHmiTextbox_OnTime_Minute_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOn_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -3692,11 +3692,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator2_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator2_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOn_ss%/pp%">
+            <div id="TcHmiTextbox_OnTime_Second_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="611" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOn_ss%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -3729,11 +3729,11 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Separator3_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="670" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator3_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="660" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Hour_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOff_hh%/pp%">
+            <div id="TcHmiTextbox_OffTime_Hour_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOff_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -3766,11 +3766,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator4_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator4_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Minute_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="750" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOff_mm%/pp%">
+            <div id="TcHmiTextbox_OffTime_Minute_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="740" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOff_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -3803,11 +3803,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator5_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator5_3_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Second_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="805" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOff_ss%/pp%">
+            <div id="TcHmiTextbox_OffTime_Second_3_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[3]::uiOff_ss%/pp%">
 		
 	
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -3831,7 +3831,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiEllipse_Q_3_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Q_3_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
 
 
@@ -3905,7 +3905,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Enable_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bEnable%/pp%">
+            <div id="TcHmiCheckbox_Enable_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bEnable%/pp%">
 
             
 
@@ -3969,7 +3969,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_AllDays_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bAllDays%/pp%">
+            <div id="TcHmiCheckbox_AllDays_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bAllDays%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4031,7 +4031,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_ResetAfterOn_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bResetAfterOn%/pp%">
+            <div id="TcHmiCheckbox_ResetAfterOn_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bResetAfterOn%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4093,7 +4093,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Mon_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bMonday%/pp%">
+            <div id="TcHmiCheckbox_Mon_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bMonday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4155,7 +4155,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Tue_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bTuesday%/pp%">
+            <div id="TcHmiCheckbox_Tue_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bTuesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4217,7 +4217,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Wed_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bWednesday%/pp%">
+            <div id="TcHmiCheckbox_Wed_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bWednesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4279,7 +4279,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Thu_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bThursday%/pp%">
+            <div id="TcHmiCheckbox_Thu_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bThursday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4341,7 +4341,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Fri_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bFriday%/pp%">
+            <div id="TcHmiCheckbox_Fri_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bFriday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4403,7 +4403,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sat_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bSaturday%/pp%">
+            <div id="TcHmiCheckbox_Sat_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bSaturday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4465,7 +4465,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sun_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bSunday%/pp%">
+            <div id="TcHmiCheckbox_Sun_4_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[4]::bSunday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4527,7 +4527,7 @@
 </script>
 </div>
 
-            <div id="TcHmiTextbox_OnTime_Hour_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOn_hh%/pp%">
+            <div id="TcHmiTextbox_OnTime_Hour_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOn_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -4560,11 +4560,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator1_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator1_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Minute_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="565" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOn_mm%/pp%">
+            <div id="TcHmiTextbox_OnTime_Minute_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOn_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -4597,11 +4597,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator2_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator2_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOn_ss%/pp%">
+            <div id="TcHmiTextbox_OnTime_Second_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="611" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOn_ss%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -4634,11 +4634,11 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Separator3_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="670" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator3_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="660" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Hour_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOff_hh%/pp%">
+            <div id="TcHmiTextbox_OffTime_Hour_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOff_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -4671,11 +4671,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator4_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator4_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Minute_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="750" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOff_mm%/pp%">
+            <div id="TcHmiTextbox_OffTime_Minute_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="740" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOff_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -4708,11 +4708,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator5_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator5_4_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Second_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="805" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOff_ss%/pp%">
+            <div id="TcHmiTextbox_OffTime_Second_4_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[4]::uiOff_ss%/pp%">
 			
 			
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4736,7 +4736,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiEllipse_Q_4_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-top="250" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Q_4_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
 
 
@@ -4810,7 +4810,7 @@
 </script>
 </div>
 		
-            <div id="TcHmiCheckbox_Enable_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bEnable%/pp%">
+            <div id="TcHmiCheckbox_Enable_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bEnable%/pp%">
 
             
 
@@ -4874,7 +4874,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_AllDays_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bAllDays%/pp%">
+            <div id="TcHmiCheckbox_AllDays_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bAllDays%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4936,7 +4936,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_ResetAfterOn_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bResetAfterOn%/pp%">
+            <div id="TcHmiCheckbox_ResetAfterOn_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bResetAfterOn%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -4998,7 +4998,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Mon_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bMonday%/pp%">
+            <div id="TcHmiCheckbox_Mon_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bMonday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5060,7 +5060,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Tue_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bTuesday%/pp%">
+            <div id="TcHmiCheckbox_Tue_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bTuesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5122,7 +5122,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Wed_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bWednesday%/pp%">
+            <div id="TcHmiCheckbox_Wed_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bWednesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5184,7 +5184,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Thu_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bThursday%/pp%">
+            <div id="TcHmiCheckbox_Thu_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bThursday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5246,7 +5246,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Fri_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bFriday%/pp%">
+            <div id="TcHmiCheckbox_Fri_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bFriday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5308,7 +5308,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sat_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bSaturday%/pp%">
+            <div id="TcHmiCheckbox_Sat_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bSaturday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5370,7 +5370,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sun_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bSunday%/pp%">
+            <div id="TcHmiCheckbox_Sun_5_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[5]::bSunday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5432,7 +5432,7 @@
 </script>
 </div>
 
-            <div id="TcHmiTextbox_OnTime_Hour_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOn_hh%/pp%">
+            <div id="TcHmiTextbox_OnTime_Hour_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOn_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -5465,11 +5465,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator1_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator1_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Minute_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="565" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOn_mm%/pp%">
+            <div id="TcHmiTextbox_OnTime_Minute_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOn_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -5502,11 +5502,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator2_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator2_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOn_ss%/pp%">
+            <div id="TcHmiTextbox_OnTime_Second_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="611" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOn_ss%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -5539,11 +5539,11 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Separator3_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="670" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator3_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="660" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Hour_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOff_hh%/pp%">
+            <div id="TcHmiTextbox_OffTime_Hour_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOff_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -5576,11 +5576,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator4_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator4_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Minute_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="750" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOff_mm%/pp%">
+            <div id="TcHmiTextbox_OffTime_Minute_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="740" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOff_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -5613,11 +5613,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator5_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator5_5_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Second_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="805" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOff_ss%/pp%">
+            <div id="TcHmiTextbox_OffTime_Second_5_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[5]::uiOff_ss%/pp%">
 			
 			
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5641,7 +5641,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiEllipse_Q_5_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-top="300" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Q_5_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
 
 
@@ -5715,7 +5715,7 @@
 </script>
 </div>
 		
-            <div id="TcHmiCheckbox_Enable_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bEnable%/pp%">
+            <div id="TcHmiCheckbox_Enable_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bEnable%/pp%">
 
             
 
@@ -5779,7 +5779,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_AllDays_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="60" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bAllDays%/pp%">
+            <div id="TcHmiCheckbox_AllDays_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bAllDays%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5841,7 +5841,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_ResetAfterOn_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bResetAfterOn%/pp%">
+            <div id="TcHmiCheckbox_ResetAfterOn_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="100" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bResetAfterOn%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5903,7 +5903,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Mon_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bMonday%/pp%">
+            <div id="TcHmiCheckbox_Mon_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="150" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bMonday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -5965,7 +5965,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Tue_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bTuesday%/pp%">
+            <div id="TcHmiCheckbox_Tue_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bTuesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6027,7 +6027,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Wed_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="260" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bWednesday%/pp%">
+            <div id="TcHmiCheckbox_Wed_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="250" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bWednesday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6089,7 +6089,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Thu_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="310" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bThursday%/pp%">
+            <div id="TcHmiCheckbox_Thu_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="300" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bThursday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6151,7 +6151,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Fri_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="360" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bFriday%/pp%">
+            <div id="TcHmiCheckbox_Fri_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="350" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bFriday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6213,7 +6213,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sat_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="410" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bSaturday%/pp%">
+            <div id="TcHmiCheckbox_Sat_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="400" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bSaturday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6275,7 +6275,7 @@
 </script>
 </div>
 
-            <div id="TcHmiCheckbox_Sun_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="460" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bSunday%/pp%">
+            <div id="TcHmiCheckbox_Sun_6_4" data-tchmi-type="tchmi-checkbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-state-symbol="%pp%arrTimeChannel[6]::bSunday%/pp%">
 
             
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6337,7 +6337,7 @@
 </script>
 </div>
 
-            <div id="TcHmiTextbox_OnTime_Hour_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="510" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOn_hh%/pp%">
+            <div id="TcHmiTextbox_OnTime_Hour_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="500" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOn_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -6370,11 +6370,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator1_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="550" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator1_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="540" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Minute_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="565" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOn_mm%/pp%">
+            <div id="TcHmiTextbox_OnTime_Minute_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="555" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOn_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -6407,11 +6407,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator2_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="605" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator2_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="595" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OnTime_Second_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="621" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOn_ss%/pp%">
+            <div id="TcHmiTextbox_OnTime_Second_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="611" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOn_ss%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -6444,11 +6444,11 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Separator3_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="670" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator3_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="660" data-tchmi-left-unit="px" data-tchmi-text="=>" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Hour_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="695" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOff_hh%/pp%">
+            <div id="TcHmiTextbox_OffTime_Hour_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOff_hh%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -6481,11 +6481,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator4_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="735" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator4_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="725" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Minute_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="750" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOff_mm%/pp%">
+            <div id="TcHmiTextbox_OffTime_Minute_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="740" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOff_mm%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -6518,11 +6518,11 @@
 </script>
 </div>
 			
-            <div id="TcHmiTextblock_Separator5_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="790" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Separator5_6_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="780" data-tchmi-left-unit="px" data-tchmi-text=":" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="15" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiTextbox_OffTime_Second_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="805" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOff_ss%/pp%">
+            <div id="TcHmiTextbox_OffTime_Second_6_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%arrTimeChannel[6]::uiOff_ss%/pp%">
 			
 			
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6546,7 +6546,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiEllipse_Q_6_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="855" data-tchmi-left-unit="px" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Q_6_4" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
 
 
@@ -6619,45 +6619,19 @@
 ]
 </script>
 </div>
-		
-		<div id="TcHmiButton_Close_4" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-text="Close" data-tchmi-top="410" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
 
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_Close_4.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Dim_4::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Popup_4::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
 </div>
-<div id="TcHmiToggleButton_bEnable_4" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="bEnable" data-tchmi-top="410" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bEnable%/pp%">
+<div id="TcHmiTextblock_sName_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="TcHmiTextblock_sName_4" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="395" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+</div>
+	
+	
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+<div id="TcHmiToggleButton_bEnable_4" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="415" data-tchmi-left-unit="px" data-tchmi-text="bEnable" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bEnable%/pp%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6719,7 +6693,11 @@
 </script>
 </div>
 
-<div id="TcHmiTextbox_uiOffsetBefore_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="125" data-tchmi-left-unit="px" data-tchmi-top="435" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%uiOffsetBefore%/pp%">
+<div id="TcHmiTextblock_uiOffsetBefore_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="525" data-tchmi-left-unit="px" data-tchmi-text="uiOffsetBefore" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+</div>
+
+<div id="TcHmiTextbox_uiOffsetBefore_4" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="525" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%uiOffsetBefore%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -6752,11 +6730,7 @@
 </script>
 </div>
 
-<div id="TcHmiTextblock_uiOffsetBefore_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="125" data-tchmi-left-unit="px" data-tchmi-text="uiOffsetBefore" data-tchmi-top="410" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
-
-</div>
-
-<div id="TcHmiToggleButton_bReset_4" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="292" data-tchmi-left-unit="px" data-tchmi-text="bReset" data-tchmi-top="410" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
+<div id="TcHmiToggleButton_bReset_4" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="685" data-tchmi-left-unit="px" data-tchmi-text="bReset" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -6818,14 +6792,44 @@
 </script>
 </div>
 
-</div>
-	
-	
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "rgba(255, 255, 255, 1)"
-}
+<div id="TcHmiButton_Close_4" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="795" data-tchmi-left-unit="px" data-tchmi-text="Close" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_Close_4.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Dim_4::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Popup_4::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
 </script>
+</div>
+
 </div>
 
 </div>
