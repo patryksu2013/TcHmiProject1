@@ -222,7 +222,10 @@
     </div>
 <div id="TcHmiContainer_Popup_4" data-tchmi-type="tchmi-container" data-tchmi-height="460" data-tchmi-height-unit="px" data-tchmi-width="905" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px">
         
-		<div id="TcHmiContainer_4" data-tchmi-type="tchmi-container" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="885" data-tchmi-width-unit="px" data-tchmi-visibility="Visible" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+		<div id="TcHmiTextblock_sName_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="%pp%sName%/pp%" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="395" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+</div>
+<div id="TcHmiContainer_4" data-tchmi-type="tchmi-container" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="885" data-tchmi-width-unit="px" data-tchmi-visibility="Visible" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
             
 			<div id="TcHmiTextblock_Enable_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Enable" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
@@ -6619,9 +6622,6 @@
 ]
 </script>
 </div>
-
-</div>
-<div id="TcHmiTextblock_sName_4" data-tchmi-type="tchmi-textblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="TcHmiTextblock_sName_4" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="395" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
 
 </div>
 	

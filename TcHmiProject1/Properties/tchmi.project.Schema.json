@@ -1,14 +1,6 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
-    "UserControls_FB_HVACScheduler7ch": {
-      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
-      "frameworkControlType": "tchmi-user-control-host",
-      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControls\\FB_HVACScheduler7ch.usercontrol.json",
-      "type": "object",
-      "id": "tchmi:project#/definitions/UserControls_FB_HVACScheduler7ch"
-    },
     "UserControls_FB_HVACCirculationPumpEx": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
@@ -40,6 +32,22 @@
       "frameworkUserControlConfig": "UserControls\\FB_HVACCirculationPumpEx+Work.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_FB_HVACCirculationPumpEx+Work"
+    },
+    "UserControls_FB_HVACScheduler28ch": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACScheduler28ch.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACScheduler28ch"
+    },
+    "UserControls_FB_HVACScheduler7ch": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\FB_HVACScheduler7ch.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_FB_HVACScheduler7ch"
     }
   }
 }

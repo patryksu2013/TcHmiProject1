@@ -44,7 +44,8 @@ IF (eCtrlModeActuator = 1 OR eCtrlModeActuator = 7) THEN
 	bPump := FALSE;
 END_IF
 
-Scheduler7ch();]]></ST>
+Scheduler7ch();
+Scheduler28ch();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
@@ -56,6 +57,7 @@ Scheduler7ch();]]></ST>
       <LineId Id="31" Count="1" />
       <LineId Id="154" Count="0" />
       <LineId Id="153" Count="0" />
+      <LineId Id="187" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

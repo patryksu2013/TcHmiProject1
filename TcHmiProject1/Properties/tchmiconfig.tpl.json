@@ -49,6 +49,9 @@
       "url": "UserControls/FB_HVACCirculationPumpEx+Work.usercontrol"
     },
     {
+      "url": "UserControls/FB_HVACScheduler28ch.usercontrol"
+    },
+    {
       "url": "UserControls/FB_HVACScheduler7ch.usercontrol"
     }
   ],

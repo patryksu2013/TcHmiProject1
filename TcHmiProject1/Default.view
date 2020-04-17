@@ -144,4 +144,8 @@
 
 </div>
 
+<div id="FB_HVACScheduler28ch_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACScheduler28ch.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrtimechannel="%s%PLC1.Scheduler28ch.arrTimeChannel2%/s%">
+
+</div>
+
 </div>

@@ -25,6 +25,15 @@
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
     "DEFINITIONS": {
+        "PLC1.ARRAY (1..28) OF Tc2_HVAC.ST_HVACTimeChannel": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_HVAC.ST_HVACTimeChannel"
+            },
+            "maxItems": 28,
+            "minItems": 28,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY (1..7) OF Tc2_HVAC.ST_HVACTimeChannel": {
             "items": {
                 "$ref": "#/definitions/PLC1.Tc2_HVAC.ST_HVACTimeChannel"
@@ -1935,19 +1944,6 @@
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.arrTimeChannel": {
-            "ACCESS": 3,
-            "CUSTOMERDATA": "",
-            "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::arrTimeChannel",
-            "OPTIONS": {
-                "comment": " 7 timer switch channels "
-            },
-            "SCHEMA": {
-                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..7) OF Tc2_HVAC.ST_HVACTimeChannel"
-            },
-            "USEMAPPING": true
-        },
         "PLC1.MAIN.bEnableAlarmLevel": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -2245,6 +2241,19 @@
             "MAPPING": "PLC1::MAIN::uiWarnLevel",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/UINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.arrTimeChannel2": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::arrTimeChannel2",
+            "OPTIONS": {
+                "comment": " 7 timer switch channels "
+            },
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..28) OF Tc2_HVAC.ST_HVACTimeChannel"
             },
             "USEMAPPING": true
         },
