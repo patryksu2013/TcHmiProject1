@@ -46,7 +46,8 @@ END_IF
 
 Scheduler7ch();
 Scheduler28ch();
-SchedulerSpecialPeriods();]]></ST>
+SchedulerSpecialPeriods();
+SchedulerPublicHolidays();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="2" Count="0" />
@@ -60,6 +61,7 @@ SchedulerSpecialPeriods();]]></ST>
       <LineId Id="153" Count="0" />
       <LineId Id="187" Count="0" />
       <LineId Id="220" Count="0" />
+      <LineId Id="253" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

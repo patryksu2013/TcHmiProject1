@@ -55,6 +55,9 @@
       "url": "UserControls/FB_HVACScheduler7ch.usercontrol"
     },
     {
+      "url": "UserControls/FB_HVACSchedulerPublicHolidays.usercontrol"
+    },
+    {
       "url": "UserControls/FB_HVACSchedulerSpecialPeriods.usercontrol"
     }
   ],

@@ -10,7 +10,7 @@ VAR
 	dtSystemTime:DT;
 	uiOffsetBefore:UINT;
 	bReset:BOOL;
-	arrTimeChannel2:ARRAY[1..28] OF ST_HVACTimeChannel;       (* 7 timer switch channels *)
+	arrTimeChannel2:ARRAY[1..28] OF ST_HVACTimeChannel;
 	bOutput:BOOL;
 	bEdgeOn:BOOL;
 	bEdgeOff:BOOL;

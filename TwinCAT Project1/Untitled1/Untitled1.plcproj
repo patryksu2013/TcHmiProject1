@@ -32,6 +32,9 @@
     <Compile Include="POUs\SchedulerSpecialPeriods.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\SchedulerPublicHolidays.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DUTs" />
