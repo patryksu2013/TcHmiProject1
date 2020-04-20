@@ -20,6 +20,12 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\AntiBlockingPump.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\CirculationPumpEx.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +39,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\SchedulerPublicHolidays.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Work.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

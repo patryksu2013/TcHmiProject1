@@ -461,8 +461,8 @@
       "propertyGetterName": "getUiWarnLevel"
     },
     {
-      "name": "data-tchmi-uilevel",
-      "displayName": "uiLevel",
+      "name": "data-tchmi-uialarmlevel",
+      "displayName": "uiAlarmLevel",
       "visible": true,
       "type": "tchmi:general#/definitions/UINT",
       "category": "FB_HVACWork - Service",
@@ -473,9 +473,9 @@
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "uiLevel",
-      "propertySetterName": "setUiLevel",
-      "propertyGetterName": "getUiLevel"
+      "propertyName": "uiAlarmLevel",
+      "propertySetterName": "setUiAlarmLevel",
+      "propertyGetterName": "getUiAlarmLevel"
     },
     {
       "name": "data-tchmi-benablewarnlevel",

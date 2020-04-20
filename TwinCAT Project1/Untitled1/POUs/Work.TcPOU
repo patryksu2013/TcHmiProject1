@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="Work" Id="{b9737889-12cb-4d36-b1d4-37b8d941cb2b}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Work
+VAR
+	fbHVACWork: FB_HVACWork;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bOn: BOOL;
+	bResetHours: BOOL;
+	bResetCount: BOOL;
+	dtSystemTime: DATE_AND_TIME;
+	bStartWarnLevel: BOOL;
+	bStartAlarmLevel: BOOL;
+	bSysTakt1Hz: BOOL;
+	bReset: BOOL;
+	rHours: REAL;
+	uiCount: UINT;
+	uiWarnLevel: UINT;
+	uiAlarmLevel: UINT;
+	bEnableWarnLevel: BOOL;
+	bEnableAlarmLevel: BOOL;
+	bQAlarmLevel: BOOL;
+	bQWarnLevel: BOOL;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACWork(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bOn:=bOn, 
+	bResetHours:=bResetHours, 
+	bResetCount:=bResetCount, 
+	dtSystemTime:=dtSystemTime, 
+	bStartWarnLevel:=bStartWarnLevel, 
+	bStartAlarmLevel:=bStartAlarmLevel, 
+	bSysTakt1Hz:=bSysTakt1Hz, 
+	bReset:=bReset, 
+	rHours:=rHours, 
+	uiCount:=uiCount, 
+	uiWarnLevel:=uiWarnLevel, 
+	uiAlarmLevel:=uiAlarmLevel, 
+	bEnableWarnLevel:=bEnableWarnLevel, 
+	bEnableAlarmLevel:=bEnableAlarmLevel, 
+	bQAlarmLevel=>bQAlarmLevel, 
+	bQWarnLevel=>bQWarnLevel, 
+	bInvalidParameter=>bInvalidParameter);]]></ST>
+    </Implementation>
+    <LineIds Name="Work">
+      <LineId Id="7" Count="18" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

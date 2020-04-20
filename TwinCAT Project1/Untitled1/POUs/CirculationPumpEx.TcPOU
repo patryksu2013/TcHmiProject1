@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="CirculationPumpEx" Id="{bbd60188-3b66-4f5b-beae-ecdf6c5e6254}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM CirculationPumpEx
+VAR
+	fbHVACCirculationPumpEx: FB_HVACCirculationPumpEx;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	bExternal: BOOL;
+	eCtrlModeActuator: E_HVACActuatorMode;
+	rOutsideTemp: REAL;
+	rValvePosition: REAL;
+	bFeedbPump: BOOL;
+	bPumpProtec: BOOL;
+	bManSwitch: BOOL;
+	bCtrlVoltage: BOOL;
+	bReset: BOOL;
+	bPump: BOOL;
+	byState: BYTE;
+	bReqExternal: BOOL;
+	bReqOutsideTemp: BOOL;
+	bReqValve: BOOL;
+	bStateManSwitch: BOOL;
+	udiSecRT_StopDelay: UDINT;
+	udiSecRT_FeedbPumpDelay: UDINT;
+	eStateModeActuator: Tc2_HVAC.E_HVACActuatorMode;
+	bError: BOOL;
+	byError: BYTE;
+	bErrorPumpProtec: BOOL;
+	bErrorFeedb: BOOL;
+	bInvalidParameter: BOOL;
+	udiSecStopDelay: UDINT;
+	udiSecFeedbPumpDelay: UDINT;
+	rOutsideTempHighLimit: REAL;
+	rOutsideTempLowLimit: REAL;
+	rValvePositionLimitOn: REAL;
+	rValvePositionLimitOff: REAL;
+	eReqPump: E_HVACReqPump;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACCirculationPumpEx(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	bExternal:=bExternal, 
+	eCtrlModeActuator:=eCtrlModeActuator, 
+	rOutsideTemp:=rOutsideTemp, 
+	rValvePosition:=rValvePosition, 
+	bFeedbPump:=bFeedbPump, 
+	bPumpProtec:=bPumpProtec, 
+	bManSwitch:=bManSwitch, 
+	bCtrlVoltage:=bCtrlVoltage, 
+	bReset:=bReset, 
+	bPump=>bPump, 
+	byState=>byState, 
+	bReqExternal=>bReqExternal, 
+	bReqOutsideTemp=>bReqOutsideTemp, 
+	bReqValve=>bReqValve, 
+	bStateManSwitch=>bStateManSwitch, 
+	udiSecRT_StopDelay=>udiSecRT_StopDelay, 
+	udiSecRT_FeedbPumpDelay=>udiSecRT_FeedbPumpDelay, 
+	eStateModeActuator=>eStateModeActuator, 
+	bError=>bError, 
+	byError=>byError, 
+	bErrorPumpProtec=>bErrorPumpProtec, 
+	bErrorFeedb=>bErrorFeedb, 
+	bInvalidParameter=>bInvalidParameter, 
+	udiSecStopDelay:=udiSecStopDelay, 
+	udiSecFeedbPumpDelay:=udiSecFeedbPumpDelay, 
+	rOutsideTempHighLimit:=rOutsideTempHighLimit, 
+	rOutsideTempLowLimit:=rOutsideTempLowLimit, 
+	rValvePositionLimitOn:=rValvePositionLimitOn, 
+	rValvePositionLimitOff:=rValvePositionLimitOff, 
+	eReqPump:=eReqPump);]]></ST>
+    </Implementation>
+    <LineIds Name="CirculationPumpEx">
+      <LineId Id="7" Count="32" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

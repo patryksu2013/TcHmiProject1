@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="AntiBlockingPump" Id="{39b28447-0fe7-43dd-ad6f-709d33adec0a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM AntiBlockingPump
+VAR
+	fbHVACAntiBlockingPump: FB_HVACAntiBlockingPump;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	bDisable: BOOL;
+	bIn: BOOL;
+	dtSystemTime: DATE_AND_TIME;
+	bReset: BOOL;
+	eAntiBlockingMode: E_HVACAntiBlockingMode;
+	iHoursDowntime: INT;
+	iDayWeekly: INT;
+	iHour: INT;
+	iMinute: INT;
+	iLenghtImpulse: INT;
+	bOut: BOOL;
+	bOutAndAntiBlocking: BOOL;
+	bQAntiBlocking: BOOL;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACAntiBlockingPump(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	bDisable:=bDisable, 
+	bIn:=bIn, 
+	dtSystemTime:=dtSystemTime, 
+	bReset:=bReset, 
+	eAntiBlockingMode:=eAntiBlockingMode, 
+	iHoursDowntime:=iHoursDowntime, 
+	iDayWeekly:=iDayWeekly, 
+	iHour:=iHour, 
+	iMinute:=iMinute, 
+	iLenghtImpulse:=iLenghtImpulse, 
+	bOut=>bOut, 
+	bOutAndAntiBlocking=>bOutAndAntiBlocking, 
+	bQAntiBlocking=>bQAntiBlocking, 
+	bInvalidParameter=>bInvalidParameter);]]></ST>
+    </Implementation>
+    <LineIds Name="AntiBlockingPump">
+      <LineId Id="7" Count="16" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

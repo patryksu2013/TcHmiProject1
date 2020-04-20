@@ -3,61 +3,19 @@
   <POU Name="MAIN" Id="{2a4304f3-537e-43d1-b89c-af5d9907262c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	rHours:REAL;
-	uiCount:UINT;
-	uiWarnLevel:UINT;
-	uiLevel:UINT;
-	bEnableWarnLevel:BOOL;
-	bEnableAlarmLevel:BOOL;
-	iHoursDowntime:INT;  
-	iDayWeekly    :INT;  
-	iHour         :INT;  
-	iMinute       :INT;  
-	iLengthImpulse:INT;
-	bQWarnLevel:BOOL;
-	bQAlarmLevel:BOOL;
-	bQAntiBlocking:BOOL;
-	bPump:BOOL;
-	bError:BOOL;
-	byError:BYTE:=2;
-	byState:BYTE:=5;
-	eAntiBlockingMode:E_HVACAntiBlockingMode;
-	eCtrlModeActuator:E_HVACActuatorMode;
-	eReqPump:E_HVACReqPump;
-	sTest:STRING:='Test';
-	bSetDefault:BOOL;
-	bReset:BOOL;
-	udiSecStopDelay:UDINT:=1;	
-	udiSecFeedbPumpDelay:UDINT:=2;
-	rOutsideTempHighLimit:REAL:=3.0;
-	rOutsideTempLowLimit:REAL:=4.1;
-	rValvePositionLimitOn:REAL:=5.2;
-	rValvePositionLimitOff:REAL:=6.3;
 END_VAR]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF bError THEN
-	bPump := FALSE;
-	byError := 2;
-END_IF
-
-IF (eCtrlModeActuator = 1 OR eCtrlModeActuator = 7) THEN
-	bPump := FALSE;
-END_IF
-
+      <ST><![CDATA[CirculationPumpEx();
+AntiBlockingPump();
+Work();
 Scheduler7ch();
 Scheduler28ch();
 SchedulerSpecialPeriods();
 SchedulerPublicHolidays();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
-      <LineId Id="2" Count="0" />
-      <LineId Id="8" Count="0" />
-      <LineId Id="20" Count="0" />
-      <LineId Id="9" Count="0" />
-      <LineId Id="30" Count="0" />
-      <LineId Id="29" Count="0" />
-      <LineId Id="31" Count="1" />
       <LineId Id="154" Count="0" />
+      <LineId Id="289" Count="1" />
       <LineId Id="153" Count="0" />
       <LineId Id="187" Count="0" />
       <LineId Id="220" Count="0" />

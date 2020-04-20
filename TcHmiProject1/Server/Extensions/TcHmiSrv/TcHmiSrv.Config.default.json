@@ -25,6 +25,15 @@
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
     "DEFINITIONS": {
+        "PLC1.ARRAY (1..2) OF Tc2_HVAC.FB_HVACTimeConSec": {
+            "items": {
+                "$ref": "#/definitions/PLC1.Tc2_HVAC.FB_HVACTimeConSec"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY (1..20) OF Tc2_HVAC.ST_HVACHoliday": {
             "items": {
                 "$ref": "#/definitions/PLC1.Tc2_HVAC.ST_HVACHoliday"
@@ -162,6 +171,29 @@
                 }
             ]
         },
+        "PLC1.Tc2_HVAC.E_HVACDataSecurityType": {
+            "allOf": [
+                {
+                    "enum": [
+                        0,
+                        1
+                    ],
+                    "options": [
+                        {
+                            "label": "eHVACDataSecurityType_Persistent",
+                            "value": 0
+                        },
+                        {
+                            "label": "eHVACDataSecurityType_Idle",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/INT16"
+                }
+            ]
+        },
         "PLC1.Tc2_HVAC.E_HVACReqPump": {
             "allOf": [
                 {
@@ -214,6 +246,389 @@
                     "$ref": "tchmi:general#/definitions/INT16"
                 }
             ]
+        },
+        "PLC1.Tc2_HVAC.FB_HVACAntiBlockingPump": {
+            "properties": {
+                "RTrigSetDefault": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                },
+                "bDisable": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bEnable": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bFirstSPSCycle": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bIn": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bInvalidParameter": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bOut": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bOutAndAntiBlocking": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bParamsChanged": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bQAntiBlocking": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReady": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReset": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bSetDefault": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "dtSystemLast": {
+                    "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+                },
+                "dtSystemTime": {
+                    "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+                },
+                "eAntiBlockingMode_D": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACAntiBlockingMode"
+                },
+                "eAntiBlockingMode_P": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACAntiBlockingMode"
+                },
+                "eDataSecurityType": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+                },
+                "iBtrbStd_100": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iDayWeekly_D": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iDayWeekly_P": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iHour_D": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iHour_P": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iHoursDowntime_D": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iHoursDowntime_P": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iLenghtImpulse_D": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iLenghtImpulse_P": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iMinute_D": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iMinute_P": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "rHoursDown": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rtrigbReset": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                },
+                "tCTS": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.Tc2_Utilities.TIMESTRUCT"
+                },
+                "tWritePersistentTimer": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                },
+                "tpLenghtImpulse": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TP"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_HVAC.FB_HVACCirculationPumpEx": {
+            "properties": {
+                "RTrigSetDefault": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                },
+                "bCtrlVoltage": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bEnable": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bEnableFeedb": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bError": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bErrorFeedb": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bErrorPumpProtec": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bExternal": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bFeedbActive": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bFeedbPump": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bFirstSPSCycle": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bInvalidParameter": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bManSwitch": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bModeAuto": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bModeManual": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bModeOff": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bParamsChanged": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bPump": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bPumpProtec": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReady": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReqExternal": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReqOutsideTemp": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReqValve": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bRequest": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReset": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bSetDefault": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bStateManSwitch": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "byError": {
+                    "$ref": "tchmi:general#/definitions/BYTE"
+                },
+                "byState": {
+                    "$ref": "tchmi:general#/definitions/BYTE"
+                },
+                "c_rOutsideTempLimitMax": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "c_rOutsideTempLimitMin": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "c_rValvePositionLimitMax": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "c_rValvePositionLimitMin": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "eCtrlModeActuator": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode"
+                },
+                "eCtrlModeActuatorOld": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode"
+                },
+                "eDataSecurityType": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+                },
+                "eReqPumpCMP": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACReqPump"
+                },
+                "eReqPumpOld": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACReqPump"
+                },
+                "eReqPump_D": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACReqPump"
+                },
+                "eReqPump_P": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACReqPump"
+                },
+                "eStateModeActuator": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode"
+                },
+                "fbFeedbCtrl": {
+                    "$ref": "#/definitions/PLC1.Tc2_HVAC.FB_HVACFeedbCtrl"
+                },
+                "fbR_TrigReset": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                },
+                "fbTimeConSec": {
+                    "$ref": "#/definitions/PLC1.ARRAY (1..2) OF Tc2_HVAC.FB_HVACTimeConSec"
+                },
+                "fbTimeConSecRT": {
+                    "$ref": "#/definitions/PLC1.ARRAY (1..2) OF Tc2_HVAC.FB_HVACTimeConSec"
+                },
+                "fbTonFeedb": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                },
+                "fbTonStop": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                },
+                "iFeedb": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "iStepAuto": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "rOutsideTemp": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rOutsideTempHighLimitOld": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rOutsideTempHighLimit_D": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rOutsideTempHighLimit_P": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rOutsideTempLowLimitOld": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rOutsideTempLowLimit_D": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rOutsideTempLowLimit_P": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rValvePosition": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rValvePositionLimitOffOld": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rValvePositionLimitOff_D": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rValvePositionLimitOff_P": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rValvePositionLimitOnOld": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rValvePositionLimitOn_D": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "rValvePositionLimitOn_P": {
+                    "$ref": "tchmi:general#/definitions/REAL"
+                },
+                "tFeedbPumpDelay": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "tRT_FeedbPumpDelay": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "tRT_StopDelay": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "tStopDelay": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "tWritePersistentTimer": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                },
+                "udiSecFeedbPumpDelay_D": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                },
+                "udiSecFeedbPumpDelay_P": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                },
+                "udiSecRT_FeedbPumpDelay": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                },
+                "udiSecRT_StopDelay": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                },
+                "udiSecStopDelay_D": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                },
+                "udiSecStopDelay_P": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_HVAC.FB_HVACFeedbCtrl": {
+            "properties": {
+                "bActuator": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bEnable": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bError": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bFeedb": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "bReset": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "fbR_TrigReset": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.R_TRIG"
+                },
+                "fbTonFeedb": {
+                    "$ref": "#/definitions/PLC1.Tc2_Standard.TON"
+                },
+                "iFeedb": {
+                    "$ref": "tchmi:general#/definitions/INT"
+                },
+                "tFeedbDelay": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "tRT": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_HVAC.FB_HVACTimeConSec": {
+            "properties": {
+                "tTime_OLD": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "udiConTimeSec": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                },
+                "udiSec_OLD": {
+                    "$ref": "tchmi:general#/definitions/UDINT"
+                }
+            },
+            "type": "object"
         },
         "PLC1.Tc2_HVAC.ST_HVACHoliday": {
             "properties": {
@@ -331,6 +746,92 @@
                 },
                 "uiOn_ss": {
                     "$ref": "tchmi:general#/definitions/UINT"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_HVAC.Tc2_Utilities.TIMESTRUCT": {
+            "properties": {
+                "wDay": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                },
+                "wDayOfWeek": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                },
+                "wHour": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                },
+                "wMilliseconds": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                },
+                "wMinute": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                },
+                "wMonth": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                },
+                "wSecond": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                },
+                "wYear": {
+                    "$ref": "tchmi:general#/definitions/WORD"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_Standard.R_TRIG": {
+            "properties": {
+                "CLK": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "M": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "Q": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_Standard.TON": {
+            "properties": {
+                "ET": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "IN": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "M": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "PT": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "Q": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "StartTime": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                }
+            },
+            "type": "object"
+        },
+        "PLC1.Tc2_Standard.TP": {
+            "properties": {
+                "ET": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "IN": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "PT": {
+                    "$ref": "tchmi:general#/definitions/TIME"
+                },
+                "Q": {
+                    "$ref": "tchmi:general#/definitions/BOOL"
+                },
+                "StartTime": {
+                    "$ref": "tchmi:general#/definitions/TIME"
                 }
             },
             "type": "object"
@@ -2026,303 +2527,503 @@
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bEnableAlarmLevel": {
+        "PLC1.AntiBlockingPump.bDisable": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bEnableAlarmLevel",
+            "MAPPING": "PLC1::AntiBlockingPump::bDisable",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bEnableWarnLevel": {
+        "PLC1.AntiBlockingPump.bEnable": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bEnableWarnLevel",
+            "MAPPING": "PLC1::AntiBlockingPump::bEnable",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bError": {
+        "PLC1.AntiBlockingPump.bIn": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bError",
+            "MAPPING": "PLC1::AntiBlockingPump::bIn",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bPump": {
+        "PLC1.AntiBlockingPump.bInvalidParameter": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bPump",
+            "MAPPING": "PLC1::AntiBlockingPump::bInvalidParameter",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bQAlarmLevel": {
+        "PLC1.AntiBlockingPump.bOut": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bQAlarmLevel",
+            "MAPPING": "PLC1::AntiBlockingPump::bOut",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bQAntiBlocking": {
+        "PLC1.AntiBlockingPump.bOutAndAntiBlocking": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bQAntiBlocking",
+            "MAPPING": "PLC1::AntiBlockingPump::bOutAndAntiBlocking",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bQWarnLevel": {
+        "PLC1.AntiBlockingPump.bQAntiBlocking": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bQWarnLevel",
+            "MAPPING": "PLC1::AntiBlockingPump::bQAntiBlocking",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bReset": {
+        "PLC1.AntiBlockingPump.bReset": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bReset",
+            "MAPPING": "PLC1::AntiBlockingPump::bReset",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.bSetDefault": {
+        "PLC1.AntiBlockingPump.bSetDefault": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::bSetDefault",
+            "MAPPING": "PLC1::AntiBlockingPump::bSetDefault",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.byError": {
+        "PLC1.AntiBlockingPump.dtSystemTime": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::byError",
+            "MAPPING": "PLC1::AntiBlockingPump::dtSystemTime",
             "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/BYTE"
+                "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.byState": {
+        "PLC1.AntiBlockingPump.eAntiBlockingMode": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::byState",
-            "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/BYTE"
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.MAIN.eAntiBlockingMode": {
-            "ACCESS": 3,
-            "CUSTOMERDATA": "",
-            "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::eAntiBlockingMode",
+            "MAPPING": "PLC1::AntiBlockingPump::eAntiBlockingMode",
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACAntiBlockingMode"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.eCtrlModeActuator": {
+        "PLC1.AntiBlockingPump.eDataSecurityType": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::eCtrlModeActuator",
+            "MAPPING": "PLC1::AntiBlockingPump::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AntiBlockingPump.iDayWeekly": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AntiBlockingPump::iDayWeekly",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AntiBlockingPump.iHour": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AntiBlockingPump::iHour",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AntiBlockingPump.iHoursDowntime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AntiBlockingPump::iHoursDowntime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AntiBlockingPump.iLenghtImpulse": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AntiBlockingPump::iLenghtImpulse",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AntiBlockingPump.iMinute": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AntiBlockingPump::iMinute",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bCtrlVoltage": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bCtrlVoltage",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bEnable": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bEnable",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bError": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bError",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bErrorFeedb": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bErrorFeedb",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bErrorPumpProtec": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bErrorPumpProtec",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bExternal": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bExternal",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bFeedbPump": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bFeedbPump",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bManSwitch": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bManSwitch",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bPump": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bPump",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bPumpProtec": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bPumpProtec",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bReqExternal": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bReqExternal",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bReqOutsideTemp": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bReqOutsideTemp",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bReqValve": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bReqValve",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.bStateManSwitch": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::bStateManSwitch",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.byError": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::byError",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.byState": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::byState",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.eCtrlModeActuator": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::eCtrlModeActuator",
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.eReqPump": {
+        "PLC1.CirculationPumpEx.eDataSecurityType": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::eReqPump",
+            "MAPPING": "PLC1::CirculationPumpEx::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.CirculationPumpEx.eReqPump": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::CirculationPumpEx::eReqPump",
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACReqPump"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.iDayWeekly": {
+        "PLC1.CirculationPumpEx.eStateModeActuator": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::iDayWeekly",
+            "MAPPING": "PLC1::CirculationPumpEx::eStateModeActuator",
             "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/INT"
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.iHour": {
+        "PLC1.CirculationPumpEx.rOutsideTemp": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::iHour",
-            "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/INT"
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.MAIN.iHoursDowntime": {
-            "ACCESS": 3,
-            "CUSTOMERDATA": "",
-            "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::iHoursDowntime",
-            "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/INT"
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.MAIN.iLengthImpulse": {
-            "ACCESS": 3,
-            "CUSTOMERDATA": "",
-            "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::iLengthImpulse",
-            "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/INT"
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.MAIN.iMinute": {
-            "ACCESS": 3,
-            "CUSTOMERDATA": "",
-            "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::iMinute",
-            "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/INT"
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.MAIN.rHours": {
-            "ACCESS": 3,
-            "CUSTOMERDATA": "",
-            "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::rHours",
+            "MAPPING": "PLC1::CirculationPumpEx::rOutsideTemp",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.rOutsideTempHighLimit": {
+        "PLC1.CirculationPumpEx.rOutsideTempHighLimit": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::rOutsideTempHighLimit",
+            "MAPPING": "PLC1::CirculationPumpEx::rOutsideTempHighLimit",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.rOutsideTempLowLimit": {
+        "PLC1.CirculationPumpEx.rOutsideTempLowLimit": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::rOutsideTempLowLimit",
+            "MAPPING": "PLC1::CirculationPumpEx::rOutsideTempLowLimit",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.rValvePositionLimitOff": {
+        "PLC1.CirculationPumpEx.rValvePosition": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::rValvePositionLimitOff",
+            "MAPPING": "PLC1::CirculationPumpEx::rValvePosition",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.rValvePositionLimitOn": {
+        "PLC1.CirculationPumpEx.rValvePositionLimitOff": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::rValvePositionLimitOn",
+            "MAPPING": "PLC1::CirculationPumpEx::rValvePositionLimitOff",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.sTest": {
+        "PLC1.CirculationPumpEx.rValvePositionLimitOn": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::sTest",
+            "MAPPING": "PLC1::CirculationPumpEx::rValvePositionLimitOn",
             "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/STRING(80)"
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.udiSecFeedbPumpDelay": {
+        "PLC1.CirculationPumpEx.udiSecFeedbPumpDelay": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::udiSecFeedbPumpDelay",
+            "MAPPING": "PLC1::CirculationPumpEx::udiSecFeedbPumpDelay",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/UDINT"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.udiSecStopDelay": {
+        "PLC1.CirculationPumpEx.udiSecRT_FeedbPumpDelay": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::udiSecStopDelay",
+            "MAPPING": "PLC1::CirculationPumpEx::udiSecRT_FeedbPumpDelay",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/UDINT"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.uiCount": {
+        "PLC1.CirculationPumpEx.udiSecRT_StopDelay": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::uiCount",
+            "MAPPING": "PLC1::CirculationPumpEx::udiSecRT_StopDelay",
             "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/UINT"
+                "$ref": "tchmi:general#/definitions/UDINT"
             },
             "USEMAPPING": true
         },
-        "PLC1.MAIN.uiLevel": {
+        "PLC1.CirculationPumpEx.udiSecStopDelay": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::uiLevel",
+            "MAPPING": "PLC1::CirculationPumpEx::udiSecStopDelay",
             "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/UINT"
-            },
-            "USEMAPPING": true
-        },
-        "PLC1.MAIN.uiWarnLevel": {
-            "ACCESS": 3,
-            "CUSTOMERDATA": "",
-            "DOMAIN": "ADS",
-            "MAPPING": "PLC1::MAIN::uiWarnLevel",
-            "SCHEMA": {
-                "$ref": "tchmi:general#/definitions/UINT"
+                "$ref": "tchmi:general#/definitions/UDINT"
             },
             "USEMAPPING": true
         },
@@ -2331,11 +3032,128 @@
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "MAPPING": "PLC1::Scheduler28ch::arrTimeChannel2",
-            "OPTIONS": {
-                "comment": " 7 timer switch channels "
-            },
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..28) OF Tc2_HVAC.ST_HVACTimeChannel"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.bEdgeOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::bEdgeOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.bEdgeOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::bEdgeOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.bEnable": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::bEnable",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.bOutput": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::bOutput",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.dtSystemTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::dtSystemTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.tNextOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::tNextOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.tNextOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::tNextOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler28ch.uiOffsetBefore": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler28ch::uiOffsetBefore",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UINT"
             },
             "USEMAPPING": true
         },
@@ -2344,11 +3162,28 @@
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "MAPPING": "PLC1::Scheduler7ch::arrTimeChannel",
-            "OPTIONS": {
-                "comment": " 7 timer switch channels "
-            },
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..7) OF Tc2_HVAC.ST_HVACTimeChannel"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.bEdgeOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::bEdgeOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.bEdgeOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::bEdgeOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
@@ -2392,6 +3227,36 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Scheduler7ch.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.dtSystemTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::dtSystemTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Scheduler7ch.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Scheduler7ch::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Scheduler7ch.tNextOff": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -2432,16 +3297,423 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.SchedulerPublicHolidays.bEdgeOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::bEdgeOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.bEdgeOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::bEdgeOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.bEnable": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::bEnable",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.bOutput": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::bOutput",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.dtSystemTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::dtSystemTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.tNextOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::tNextOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerPublicHolidays.tNextOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerPublicHolidays::tNextOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.SchedulerSpecialPeriods.arrPeriod": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "MAPPING": "PLC1::SchedulerSpecialPeriods::arrPeriod",
-            "OPTIONS": {
-                "comment": " 7 timer switch channels "
-            },
             "SCHEMA": {
                 "$ref": "tchmi:server#/definitions/PLC1.ARRAY (1..20) OF Tc2_HVAC.ST_HVACPeriod"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.bEdgeOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::bEdgeOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.bEdgeOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::bEdgeOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.bEnable": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::bEnable",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.bOutput": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::bOutput",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.dtSystemTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::dtSystemTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.tNextOff": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::tNextOff",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.SchedulerSpecialPeriods.tNextOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::SchedulerSpecialPeriods::tNextOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bEnableAlarmLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bEnableAlarmLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bEnableWarnLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bEnableWarnLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bOn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bQAlarmLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bQAlarmLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bQWarnLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bQWarnLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bResetCount": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bResetCount",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bResetHours": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bResetHours",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bStartAlarmLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bStartAlarmLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bStartWarnLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bStartWarnLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.bSysTakt1Hz": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::bSysTakt1Hz",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.dtSystemTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::dtSystemTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/DATE_AND_TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.rHours": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::rHours",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.uiAlarmLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::uiAlarmLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.uiCount": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::uiCount",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Work.uiWarnLevel": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::Work::uiWarnLevel",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/UINT"
             },
             "USEMAPPING": true
         },
