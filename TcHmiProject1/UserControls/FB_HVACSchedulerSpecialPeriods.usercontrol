@@ -503,10 +503,10 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": -1,
-  "right": -1,
-  "top": -1,
-  "bottom": -1,
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -646,10 +646,10 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": -1,
-  "right": -1,
-  "top": -1,
-  "bottom": -1,
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -789,10 +789,10 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": -1,
-  "right": -1,
-  "top": -1,
-  "bottom": -1,
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -932,10 +932,10 @@
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": -1,
-  "right": -1,
-  "top": -1,
-  "bottom": -1,
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 1,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",

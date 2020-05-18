@@ -59,6 +59,9 @@
     },
     {
       "url": "UserControls/FB_HVACSchedulerSpecialPeriods.usercontrol"
+    },
+    {
+      "url": "UserControls2/FB_HVACMotor1Speed.usercontrol"
     }
   ],
   "content": [],

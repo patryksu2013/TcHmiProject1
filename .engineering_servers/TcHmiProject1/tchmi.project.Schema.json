@@ -64,6 +64,14 @@
       "frameworkUserControlConfig": "UserControls\\FB_HVACSchedulerSpecialPeriods.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_FB_HVACSchedulerSpecialPeriods"
+    },
+    "UserControls2_FB_HVACMotor1Speed": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls2\\FB_HVACMotor1Speed.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls2_FB_HVACMotor1Speed"
     }
   }
 }

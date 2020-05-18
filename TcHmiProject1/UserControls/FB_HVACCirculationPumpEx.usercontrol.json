@@ -33,8 +33,8 @@
       "propertyGetterName": "getSName"
     },
     {
-      "name": "data-tchmi-bpump_internal",
-      "displayName": "bPump_Internal",
+      "name": "data-tchmi-bpump",
+      "displayName": "bPump",
       "visible": true,
       "type": "tchmi:general#/definitions/BOOL",
       "category": "FB_HVACCirculationPumpEx - Operator",
@@ -43,13 +43,13 @@
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "bPump_Internal",
-      "propertySetterName": "setBPump_Internal",
-      "propertyGetterName": "getBPump_Internal"
+      "propertyName": "bPump",
+      "propertySetterName": "setBPump",
+      "propertyGetterName": "getBPump"
     },
     {
-      "name": "data-tchmi-berror_internal",
-      "displayName": "bError_Internal",
+      "name": "data-tchmi-berror",
+      "displayName": "bError",
       "visible": true,
       "type": "tchmi:general#/definitions/BOOL",
       "category": "FB_HVACCirculationPumpEx - Operator",
@@ -58,13 +58,13 @@
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "bError_Internal",
-      "propertySetterName": "setBError_Internal",
-      "propertyGetterName": "getBError_Internal"
+      "propertyName": "bError",
+      "propertySetterName": "setBError",
+      "propertyGetterName": "getBError"
     },
     {
-      "name": "data-tchmi-ectrlmodeactuator_internal",
-      "displayName": "eCtrlModeActuator_Internal",
+      "name": "data-tchmi-ectrlmodeactuator",
+      "displayName": "eCtrlModeActuator",
       "visible": true,
       "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
       "category": "FB_HVACCirculationPumpEx - Operator",
@@ -75,9 +75,9 @@
       "readOnly": false,
       "bindable": true,
       "heritable": true,
-      "propertyName": "eCtrlModeActuator_Internal",
-      "propertySetterName": "setECtrlModeActuator_Internal",
-      "propertyGetterName": "getECtrlModeActuator_Internal"
+      "propertyName": "eCtrlModeActuator",
+      "propertySetterName": "setECtrlModeActuator",
+      "propertyGetterName": "getECtrlModeActuator"
     },
     {
       "name": "data-tchmi-bystate",

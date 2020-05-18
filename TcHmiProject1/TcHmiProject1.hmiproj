@@ -98,6 +98,9 @@
     <Content Include="Imports\Images\clock_yellow.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\Motor\symbol_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\pulse.svg">
       <SubType>Content</SubType>
     </Content>
@@ -155,6 +158,12 @@
     <Content Include="Imports\Images\toolbox_pressed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls2\FB_HVACMotor1Speed.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls2\FB_HVACMotor1Speed.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls\FB_HVACSchedulerPublicHolidays.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -207,6 +216,7 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />
+    <Folder Include="Imports\Images\Motor" />
     <Folder Include="Libraries" />
     <Folder Include="Images" />
     <Folder Include="Images\Manifest" />
@@ -214,6 +224,7 @@
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\Videos" />
     <Folder Include="Localization" />
+    <Folder Include="UserControls2" />
     <Folder Include="Server\Extensions\ADS" />
     <Folder Include="Server\Extensions\TcHmiEventLogger" />
     <Folder Include="Server\Extensions\TcHmiLua" />
