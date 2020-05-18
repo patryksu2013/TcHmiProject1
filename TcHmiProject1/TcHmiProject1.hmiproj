@@ -98,7 +98,19 @@
     <Content Include="Imports\Images\clock_yellow.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Imports\Images\Motor\symbol_normal.svg">
+    <Content Include="Imports\Images\Motor\symbol_inside_black.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Motor\symbol_inside_gray.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Motor\symbol_inside_green.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Motor\symbol_inside_red.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Motor\symbol_outside.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\pulse.svg">
@@ -156,6 +168,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\toolbox_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls2\FB_HVACMotor2Speed.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls2\FB_HVACMotor2Speed.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls2\FB_HVACMotor1Speed.usercontrol">

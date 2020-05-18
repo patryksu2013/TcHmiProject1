@@ -62,6 +62,9 @@
     },
     {
       "url": "UserControls2/FB_HVACMotor1Speed.usercontrol"
+    },
+    {
+      "url": "UserControls2/FB_HVACMotor2Speed.usercontrol"
     }
   ],
   "content": [],
