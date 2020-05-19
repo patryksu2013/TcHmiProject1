@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="Motor1Speed" Id="{c58c5a8f-8c81-458f-bb7a-c11646322c46}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Motor1Speed
+VAR
+	fbHVACMotor1Speed: FB_HVACMotor1Speed;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	bAuto: BOOL;
+	eCtrlModeActuator: E_HVACActuatorMode;
+	bMotorProtec: BOOL;
+	bFeedbContactor: BOOL;
+	bFeedbProcess: BOOL;
+	bRepairSwitch: BOOL;
+	bManSwitch: BOOL;
+	bCtrlVoltage: BOOL;
+	bReset: BOOL;
+	bMotor: BOOL;
+	byState: BYTE;
+	bStateAuto: BOOL;
+	bStateRepairSwitch: BOOL;
+	bStateManSwitch: BOOL;
+	eStateModeActuator: Tc2_HVAC.E_HVACActuatorMode;
+	bErrorGeneral: BOOL;
+	byError: BYTE;
+	bErrorMotorprotec: BOOL;
+	bErrorFeedbContactor: BOOL;
+	bErrorFeedbProcess: BOOL;
+	bInvalidParameter: BOOL;
+	tStartDelay: TIME;
+	tStopDelay: TIME;
+	tDelayFeedbContactor: TIME;
+	tFeedbProcessTimer: TIME;
+	tDelayFeedbProcess: TIME;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACMotor1Speed(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	bAuto:=bAuto, 
+	eCtrlModeActuator:=eCtrlModeActuator, 
+	bMotorProtec:=bMotorProtec, 
+	bFeedbContactor:=bFeedbContactor, 
+	bFeedbProcess:=bFeedbProcess, 
+	bRepairSwitch:=bRepairSwitch, 
+	bManSwitch:=bManSwitch, 
+	bCtrlVoltage:=bCtrlVoltage, 
+	bReset:=bReset, 
+	bMotor=>bMotor, 
+	byState=>byState, 
+	bStateAuto=>bStateAuto, 
+	bStateRepairSwitch=>bStateRepairSwitch, 
+	bStateManSwitch=>bStateManSwitch, 
+	eStateModeActuator=>eStateModeActuator, 
+	bErrorGeneral=>bErrorGeneral, 
+	byError=>byError, 
+	bErrorMotorprotec=>bErrorMotorprotec, 
+	bErrorFeedbContactor=>bErrorFeedbContactor, 
+	bErrorFeedbProcess=>bErrorFeedbProcess, 
+	bInvalidParameter=>bInvalidParameter, 
+	tStartDelay:=tStartDelay, 
+	tStopDelay:=tStopDelay, 
+	tDelayFeedbContactor:=tDelayFeedbContactor, 
+	tFeedbProcessTimer:=tFeedbProcessTimer, 
+	tDelayFeedbProcess:=tDelayFeedbProcess);]]></ST>
+    </Implementation>
+    <LineIds Name="Motor1Speed">
+      <LineId Id="7" Count="28" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

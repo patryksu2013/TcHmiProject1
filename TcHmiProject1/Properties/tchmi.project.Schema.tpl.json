@@ -80,6 +80,14 @@
       "frameworkUserControlConfig": "UserControls2\\FB_HVACMotor2Speed.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls2_FB_HVACMotor2Speed"
+    },
+    "UserControls2_FB_HVACMotor3Speed": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls2\\FB_HVACMotor3Speed.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls2_FB_HVACMotor3Speed"
     }
   }
 }

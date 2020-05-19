@@ -403,6 +403,27 @@
             "caseValue": {
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 6
             },
             "actions": [
@@ -461,6 +482,27 @@
                 "asyncWait": true
               }
             ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 9
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }
+            ]
           }
         ],
         "caseDefault": {
@@ -473,7 +515,7 @@
               "value": {
                 "objectType": "StaticValue",
                 "valueType": "tchmi:general#/definitions/String",
-                "value": null
+                "value": ""
               },
               "asyncWait": true
             }
@@ -1634,7 +1676,7 @@
         "valueType": "tchmi:general#/definitions/TIME",
         "value": {
           "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service5_9::Text%/ctrl%"
+          "symbolExpression": "%ctrl%TcHmiTextbox_Service6_9::Text%/ctrl%"
         },
         "asyncWait": true
       }
@@ -1682,7 +1724,7 @@
         "valueType": "tchmi:general#/definitions/TIME",
         "value": {
           "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service5_9::Text%/ctrl%"
+          "symbolExpression": "%ctrl%TcHmiTextbox_Service7_9::Text%/ctrl%"
         },
         "asyncWait": true
       }
@@ -1723,7 +1765,7 @@
         "valueType": "tchmi:general#/definitions/TIME",
         "value": {
           "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service5_9::Text%/ctrl%"
+          "symbolExpression": "%ctrl%TcHmiTextbox_Service8_9::Text%/ctrl%"
         },
         "asyncWait": true
       }
@@ -1768,7 +1810,7 @@
         "valueType": "tchmi:general#/definitions/TIME",
         "value": {
           "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service5_9::Text%/ctrl%"
+          "symbolExpression": "%ctrl%TcHmiTextbox_Service9_9::Text%/ctrl%"
         },
         "asyncWait": true
       }

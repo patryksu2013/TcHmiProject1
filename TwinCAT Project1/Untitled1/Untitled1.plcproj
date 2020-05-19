@@ -29,6 +29,15 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Motor1Speed.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Motor2Speed.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\Motor3Speed.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\Scheduler7ch.TcPOU">
       <SubType>Code</SubType>
     </Compile>

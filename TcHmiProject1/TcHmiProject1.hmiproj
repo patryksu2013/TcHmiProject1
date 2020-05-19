@@ -170,6 +170,12 @@
     <Content Include="Imports\Images\toolbox_pressed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls2\FB_HVACMotor3Speed.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls2\FB_HVACMotor3Speed.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls2\FB_HVACMotor2Speed.usercontrol">
       <SubType>Content</SubType>
     </Content>

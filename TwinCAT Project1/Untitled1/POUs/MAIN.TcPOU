@@ -11,7 +11,10 @@ Work();
 Scheduler7ch();
 Scheduler28ch();
 SchedulerSpecialPeriods();
-SchedulerPublicHolidays();]]></ST>
+SchedulerPublicHolidays();
+Motor1Speed();
+Motor2Speed();
+Motor3Speed();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="154" Count="0" />
@@ -20,6 +23,7 @@ SchedulerPublicHolidays();]]></ST>
       <LineId Id="187" Count="0" />
       <LineId Id="220" Count="0" />
       <LineId Id="253" Count="0" />
+      <LineId Id="293" Count="2" />
     </LineIds>
   </POU>
 </TcPlcObject>

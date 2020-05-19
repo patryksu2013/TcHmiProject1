@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="Motor3Speed" Id="{147e5b12-8167-4678-a5c9-2933abda1e85}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Motor3Speed
+VAR
+	fbHVACMotor3Speed: FB_HVACMotor3Speed;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	bAutoSpeed1: BOOL;
+	bAutoSpeed2: BOOL;
+	bAutoSpeed3: BOOL;
+	eCtrlModeActuator: E_HVACActuatorMode;
+	bMotorProtecSpeed1: BOOL;
+	bMotorProtecSpeed2: BOOL;
+	bMotorProtecSpeed3: BOOL;
+	bFeedbContactorSpeed1: BOOL;
+	bFeedbContactorSpeed2: BOOL;
+	bFeedbContactorSpeed3: BOOL;
+	bFeedbProcess: BOOL;
+	bRepairSwitch: BOOL;
+	bManSwitch: BOOL;
+	bCtrlVoltage: BOOL;
+	bReset: BOOL;
+	bMotorSpeed1: BOOL;
+	bMotorSpeed2: BOOL;
+	bMotorSpeed3: BOOL;
+	wState: WORD;
+	bStateAutoSpeed1: BOOL;
+	bStateAutoSpeed2: BOOL;
+	bStateAutoSpeed3: BOOL;
+	bStateRepairSwitch: BOOL;
+	bStateManSwitch: BOOL;
+	eStateModeActuator: Tc2_HVAC.E_HVACActuatorMode;
+	bErrorGeneral: BOOL;
+	wError: WORD;
+	bErrorMotorprotecSpeed1: BOOL;
+	bErrorMotorprotecSpeed2: BOOL;
+	bErrorMotorprotecSpeed3: BOOL;
+	bErrorFeedbContactorSpeed1: BOOL;
+	bErrorFeedbContactorSpeed2: BOOL;
+	bErrorFeedbContactorSpeed3: BOOL;
+	bErrorFeedbProcess: BOOL;
+	bInvalidParameter: BOOL;
+	tStartDelay: TIME;
+	tStopDelay: TIME;
+	tDelayFeedbContactorSpeed1: TIME;
+	tDelayFeedbContactorSpeed2: TIME;
+	tDelayFeedbContactorSpeed3: TIME;
+	tFeedbProcessTimer: TIME;
+	tDelayFeedbProcess: TIME;
+	tDelaySpeed1: TIME;
+	tDelaySpeed2: TIME;
+	tDelaySpeed1ToSpeed2ToSpeed3: TIME;
+	tDelaySpeed2ToSpeed1: TIME;
+	tDelaySpeed3ToSpeed2: TIME;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACMotor3Speed(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	bAutoSpeed1:=bAutoSpeed1, 
+	bAutoSpeed2:=bAutoSpeed2, 
+	bAutoSpeed3:=bAutoSpeed3, 
+	eCtrlModeActuator:=eCtrlModeActuator, 
+	bMotorProtecSpeed1:=bMotorProtecSpeed1, 
+	bMotorProtecSpeed2:=bMotorProtecSpeed2, 
+	bMotorProtecSpeed3:=bMotorProtecSpeed3, 
+	bFeedbContactorSpeed1:=bFeedbContactorSpeed1, 
+	bFeedbContactorSpeed2:=bFeedbContactorSpeed2, 
+	bFeedbContactorSpeed3:=bFeedbContactorSpeed2, 
+	bFeedbProcess:=bFeedbProcess, 
+	bRepairSwitch:=bRepairSwitch, 
+	bManSwitch:=bManSwitch, 
+	bCtrlVoltage:=bCtrlVoltage, 
+	bReset:=bReset, 
+	bMotorSpeed1=>bMotorSpeed1, 
+	bMotorSpeed2=>bMotorSpeed2, 
+	bMotorSpeed3=>bMotorSpeed3, 
+	wState=>wState, 
+	bStateAutoSpeed1=>bStateAutoSpeed1, 
+	bStateAutoSpeed2=>bStateAutoSpeed2, 
+	bStateAutoSpeed3=>bStateAutoSpeed3, 
+	bStateRepairSwitch=>bStateRepairSwitch, 
+	bStateManSwitch=>bStateManSwitch, 
+	eStateModeActuator=>eStateModeActuator, 
+	bErrorGeneral=>bErrorGeneral, 
+	wError=>wError, 
+	bErrorMotorprotecSpeed1=>bErrorMotorprotecSpeed1, 
+	bErrorMotorprotecSpeed2=>bErrorMotorprotecSpeed2, 
+	bErrorMotorprotecSpeed3=>bErrorMotorprotecSpeed3, 
+	bErrorFeedbContactorSpeed1=>bErrorFeedbContactorSpeed1, 
+	bErrorFeedbContactorSpeed2=>bErrorFeedbContactorSpeed2, 
+	bErrorFeedbContactorSpeed3=>bErrorFeedbContactorSpeed3, 
+	bErrorFeedbProcess=>bErrorFeedbProcess, 
+	bInvalidParameter=>bInvalidParameter, 
+	tStartDelay:=tStartDelay, 
+	tStopDelay:=tStopDelay, 
+	tDelayFeedbContactorSpeed1:=tDelayFeedbContactorSpeed1, 
+	tDelayFeedbContactorSpeed2:=tDelayFeedbContactorSpeed2, 
+	tDelayFeedbContactorSpeed3:=tDelayFeedbContactorSpeed3, 
+	tFeedbProcessTimer:=tFeedbProcessTimer, 
+	tDelayFeedbProcess:=tDelayFeedbProcess, 
+	tDelaySpeed1:=tDelaySpeed1, 
+	tDelaySpeed2:=tDelaySpeed2, 
+	tDelaySpeed1ToSpeed2ToSpeed3:=tDelaySpeed1ToSpeed2ToSpeed3, 
+	tDelaySpeed2ToSpeed1:=tDelaySpeed2ToSpeed1, 
+	tDelaySpeed3ToSpeed2:=tDelaySpeed3ToSpeed2);]]></ST>
+    </Implementation>
+    <LineIds Name="Motor3Speed">
+      <LineId Id="131" Count="49" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
