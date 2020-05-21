@@ -20,6 +20,27 @@
             "caseValue": {
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 0
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 1
             },
             "actions": [
@@ -62,6 +83,90 @@
             "caseValue": {
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 5
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 6
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 7
             },
             "actions": [
@@ -84,6 +189,69 @@
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 8
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 9
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 10
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_8::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 11
             },
             "actions": [
               {
@@ -361,6 +529,69 @@
             "caseValue": {
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_8::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_8::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 5
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_8::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 6
             },
             "actions": [
@@ -404,6 +635,69 @@
               "objectType": "StaticValue",
               "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
               "value": 8
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_8::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 9
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_8::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 10
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_8::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+              "value": 11
             },
             "actions": [
               {
