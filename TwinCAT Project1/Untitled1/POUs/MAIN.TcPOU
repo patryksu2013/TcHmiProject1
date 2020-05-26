@@ -14,7 +14,9 @@ SchedulerSpecialPeriods();
 SchedulerPublicHolidays();
 Motor1Speed();
 Motor2Speed();
-Motor3Speed();]]></ST>
+Motor3Speed();
+TwoPointActuatorMode();
+ThreePointActuatorMode();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="154" Count="0" />
@@ -24,6 +26,8 @@ Motor3Speed();]]></ST>
       <LineId Id="220" Count="0" />
       <LineId Id="253" Count="0" />
       <LineId Id="293" Count="2" />
+      <LineId Id="298" Count="0" />
+      <LineId Id="301" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

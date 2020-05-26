@@ -50,6 +50,12 @@
     <Compile Include="POUs\SchedulerPublicHolidays.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\ThreePointActuatorMode.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\TwoPointActuatorMode.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\Work.TcPOU">
       <SubType>Code</SubType>
     </Compile>

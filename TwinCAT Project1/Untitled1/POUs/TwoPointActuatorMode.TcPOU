@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="TwoPointActuatorMode" Id="{cdb39446-830f-45fb-bd98-129bacd43e40}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM TwoPointActuatorMode
+VAR
+	fbHVAC2PointActuator: FB_HVAC2PointActuator;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	bIn: BOOL;
+	eCtrlModeActuator: E_HVAC2PointActuatorMode;
+	bManSwitch: BOOL;
+	bLimitSwitchClose: BOOL;
+	bLimitSwitchOpen: BOOL;
+	bCtrlVoltage: BOOL;
+	bReset: BOOL;
+	bEnableLimitSwitch: BOOL;
+	tStrokeTime: TIME;
+	bOut: BOOL;
+	byState: BYTE;
+	eStateModeActuator: Tc2_HVAC.E_HVAC2PointActuatorMode;
+	bErrorLimitSwitch: BOOL;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVAC2PointActuator(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	bIn:=bIn, 
+	eCtrlModeActuator:=eCtrlModeActuator, 
+	bManSwitch:=bManSwitch, 
+	bLimitSwitchClose:=bLimitSwitchClose, 
+	bLimitSwitchOpen:=bLimitSwitchOpen, 
+	bCtrlVoltage:=bCtrlVoltage, 
+	bReset:=bReset, 
+	bOut=>bOut, 
+	byState=>byState, 
+	eStateModeActuator=>eStateModeActuator, 
+	bErrorLimitSwitch=>bErrorLimitSwitch, 
+	bInvalidParameter=>bInvalidParameter, 
+	bEnableLimitSwitch:=bEnableLimitSwitch, 
+	tStrokeTime:=tStrokeTime);]]></ST>
+    </Implementation>
+    <LineIds Name="TwoPointActuatorMode">
+      <LineId Id="7" Count="16" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

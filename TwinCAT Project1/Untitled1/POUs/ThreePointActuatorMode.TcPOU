@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="ThreePointActuatorMode" Id="{13b0f26e-9d80-4e1f-941a-2f4b51cb14bd}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM ThreePointActuatorMode
+VAR
+	fbHVAC3PointActuator: FB_HVAC3PointActuator;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	bAutoOpen: BOOL;
+	bAutoClose: BOOL;
+	eCtrlModeActuator: E_HVAC3PointActuatorMode;
+	bManSwitch: BOOL;
+	rFeedb: REAL;
+	bCtrlVoltage: BOOL;
+	bReset: BOOL;
+	bEnableFeedbCtrl: BOOL;
+	rMinValueFeedb: REAL;
+	rMaxValueFeedb: REAL;
+	rHysteresisFeedb: REAL;
+	tStrokeTime: TIME;
+	bOpen: BOOL;
+	bClose: BOOL;
+	byState: BYTE;
+	eStateModeActuator: Tc2_HVAC.E_HVAC3PointActuatorMode;
+	bErrorFeedb: BOOL;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVAC3PointActuator(
+	eDataSecurityType:=eDataSecurityType,
+	bSetDefault:=bSetDefault,
+	bEnable:=bEnable,
+	bAutoOpen:=bAutoOpen,
+	bAutoClose:=bAutoClose,
+	eCtrlModeActuator:=eCtrlModeActuator,
+	bManSwitch:=bManSwitch,
+	rFeedb:=rFeedb,
+	bCtrlVoltage:=bCtrlVoltage,
+	bReset:=bReset,
+	bOpen=>bOpen,
+	bClose=>bClose,
+	byState=>byState,
+	eStateModeActuator=>eStateModeActuator,
+	bErrorFeedb=>bErrorFeedb,
+	bInvalidParameter=>bInvalidParameter,
+	bEnableFeedbCtrl:=bEnableFeedbCtrl,
+	rMinValueFeedb:=rMinValueFeedb,
+	rMaxValueFeedb:=rMaxValueFeedb,
+	rHysteresisFeedb:=rHysteresisFeedb,
+	tStrokeTime:=tStrokeTime);]]></ST>
+    </Implementation>
+    <LineIds Name="ThreePointActuatorMode">
+      <LineId Id="7" Count="20" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

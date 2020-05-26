@@ -70,6 +70,102 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode": {
+            "allOf": [
+                {
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5
+                    ],
+                    "options": [
+                        {
+                            "label": "eHVAC2PointActuatorMode_Auto_BMS",
+                            "value": 0
+                        },
+                        {
+                            "label": "eHVAC2PointActuatorMode_Open_BMS",
+                            "value": 1
+                        },
+                        {
+                            "label": "eHVAC2PointActuatorMode_Close_BMS",
+                            "value": 2
+                        },
+                        {
+                            "label": "eHVAC2PointActuatorMode_Auto_OP",
+                            "value": 3
+                        },
+                        {
+                            "label": "eHVAC2PointActuatorMode_Open_OP",
+                            "value": 4
+                        },
+                        {
+                            "label": "eHVAC2PointActuatorMode_Close_OP",
+                            "value": 5
+                        }
+                    ]
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/INT16"
+                }
+            ]
+        },
+        "PLC1.Tc2_HVAC.E_HVAC3PointActuatorMode": {
+            "allOf": [
+                {
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7
+                    ],
+                    "options": [
+                        {
+                            "label": "eHVAC3PointActuatorMode_Auto_BMS",
+                            "value": 0
+                        },
+                        {
+                            "label": "eHVAC3PointActuatorMode_Open_BMS",
+                            "value": 1
+                        },
+                        {
+                            "label": "eHVAC3PointActuatorMode_Close_BMS",
+                            "value": 2
+                        },
+                        {
+                            "label": "eHVAC3PointActuatorMode_Stop_BMS",
+                            "value": 3
+                        },
+                        {
+                            "label": "eHVAC3PointActuatorMode_Auto_OP",
+                            "value": 4
+                        },
+                        {
+                            "label": "eHVAC3PointActuatorMode_Open_OP",
+                            "value": 5
+                        },
+                        {
+                            "label": "eHVAC3PointActuatorMode_Close_OP",
+                            "value": 6
+                        },
+                        {
+                            "label": "eHVAC3PointActuatorMode_Stop_OP",
+                            "value": 7
+                        }
+                    ]
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/INT16"
+                }
+            ]
+        },
         "PLC1.Tc2_HVAC.E_HVACActuatorMode": {
             "allOf": [
                 {
@@ -4712,6 +4808,386 @@
             "CUSTOMERDATA": "",
             "DOMAIN": "ADS",
             "MAPPING": "PLC1::SchedulerSpecialPeriods::tNextOn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bAutoClose": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bAutoClose",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bAutoOpen": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bAutoOpen",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bClose": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bClose",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bCtrlVoltage": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bCtrlVoltage",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bEnable": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bEnable",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bEnableFeedbCtrl": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bEnableFeedbCtrl",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bErrorFeedb": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bErrorFeedb",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bManSwitch": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bManSwitch",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bOpen": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bOpen",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.byState": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::byState",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.eCtrlModeActuator": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::eCtrlModeActuator",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC3PointActuatorMode"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.eStateModeActuator": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::eStateModeActuator",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC3PointActuatorMode"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.rFeedb": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::rFeedb",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.rHysteresisFeedb": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::rHysteresisFeedb",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.rMaxValueFeedb": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::rMaxValueFeedb",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.rMinValueFeedb": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::rMinValueFeedb",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.ThreePointActuatorMode.tStrokeTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::ThreePointActuatorMode::tStrokeTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bCtrlVoltage": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bCtrlVoltage",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bEnable": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bEnable",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bEnableLimitSwitch": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bEnableLimitSwitch",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bErrorLimitSwitch": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bErrorLimitSwitch",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bIn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bIn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bLimitSwitchClose": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bLimitSwitchClose",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bLimitSwitchOpen": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bLimitSwitchOpen",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bManSwitch": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bManSwitch",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bOut": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bOut",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.byState": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::byState",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.eCtrlModeActuator": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::eCtrlModeActuator",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.eStateModeActuator": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::eStateModeActuator",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.TwoPointActuatorMode.tStrokeTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::TwoPointActuatorMode::tStrokeTime",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/TIME"
             },

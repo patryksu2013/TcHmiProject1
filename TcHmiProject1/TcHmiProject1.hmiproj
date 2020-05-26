@@ -11,11 +11,11 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10127</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10128</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
-    <HmiRecent>1.10.1336.404</HmiRecent>
+    <HmiRecent>1.10.1336.372</HmiRecent>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -83,6 +83,15 @@
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <Target Name="Clean" DependsOnTargets="BaseClean" />
   <ItemGroup>
+    <Content Include="Imports\Images\Actuator\symbol_inside_black.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Actuator\symbol_inside_red.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Actuator\symbol_outside.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\calendar.svg">
       <SubType>Content</SubType>
     </Content>
@@ -170,6 +179,18 @@
     <Content Include="Imports\Images\toolbox_pressed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls2\FB_HVAC3PointActuator.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls2\FB_HVAC3PointActuator.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls2\FB_HVAC2PointActuator.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls2\FB_HVAC2PointActuator.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls2\FB_HVACMotor3Speed.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -241,6 +262,7 @@
     </Content>
     <Folder Include=".hmipkgs" />
     <Folder Include="Imports\Images\Motor" />
+    <Folder Include="Imports\Images\Actuator" />
     <Folder Include="Libraries" />
     <Folder Include="Images" />
     <Folder Include="Images\Manifest" />
