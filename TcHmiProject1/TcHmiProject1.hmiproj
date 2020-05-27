@@ -11,7 +11,7 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10128</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10129</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
@@ -90,6 +90,15 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\Actuator\symbol_outside.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Actuator_2\2_way_valve_closed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Actuator_2\2_way_valve_error.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Actuator_2\2_way_valve_opened.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\calendar.svg">
@@ -179,34 +188,34 @@
     <Content Include="Imports\Images\toolbox_pressed.svg">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVAC3PointActuator.usercontrol">
+    <Content Include="UserControls_2\FB_HVAC3PointActuator.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVAC3PointActuator.usercontrol.json">
+    <Content Include="UserControls_2\FB_HVAC3PointActuator.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVAC2PointActuator.usercontrol">
+    <Content Include="UserControls_2\FB_HVAC2PointActuator.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVAC2PointActuator.usercontrol.json">
+    <Content Include="UserControls_2\FB_HVAC2PointActuator.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVACMotor3Speed.usercontrol">
+    <Content Include="UserControls_2\FB_HVACMotor3Speed.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVACMotor3Speed.usercontrol.json">
+    <Content Include="UserControls_2\FB_HVACMotor3Speed.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVACMotor2Speed.usercontrol">
+    <Content Include="UserControls_2\FB_HVACMotor2Speed.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVACMotor2Speed.usercontrol.json">
+    <Content Include="UserControls_2\FB_HVACMotor2Speed.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVACMotor1Speed.usercontrol">
+    <Content Include="UserControls_2\FB_HVACMotor1Speed.usercontrol">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls2\FB_HVACMotor1Speed.usercontrol.json">
+    <Content Include="UserControls_2\FB_HVACMotor1Speed.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACSchedulerPublicHolidays.usercontrol">
@@ -260,7 +269,13 @@
     <Content Include="Default.view">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_2\FB_HVAC2PointActuator.usercontrol.json" />
+    <Content Include="UserControls_2\FB_HVAC3PointActuator.usercontrol.json" />
+    <Content Include="UserControls_2\FB_HVACMotor1Speed.usercontrol.json" />
+    <Content Include="UserControls_2\FB_HVACMotor2Speed.usercontrol.json" />
+    <Content Include="UserControls_2\FB_HVACMotor3Speed.usercontrol.json" />
     <Folder Include=".hmipkgs" />
+    <Folder Include="Imports\Images\Actuator_2" />
     <Folder Include="Imports\Images\Motor" />
     <Folder Include="Imports\Images\Actuator" />
     <Folder Include="Libraries" />
@@ -270,7 +285,7 @@
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\Videos" />
     <Folder Include="Localization" />
-    <Folder Include="UserControls2" />
+    <Folder Include="UserControls_2" />
     <Folder Include="Server\Extensions\ADS" />
     <Folder Include="Server\Extensions\TcHmiEventLogger" />
     <Folder Include="Server\Extensions\TcHmiLua" />

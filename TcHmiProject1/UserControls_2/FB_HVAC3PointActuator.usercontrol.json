@@ -48,6 +48,23 @@
       "propertyGetterName": "getBClose"
     },
     {
+      "name": "data-tchmi-rfeedb",
+      "displayName": "rFeedb",
+      "visible": true,
+      "type": "tchmi:general#/definitions/REAL",
+      "category": "FB_HVAC3PointActuator",
+      "description": "",
+      "defaultValue": 0.0,
+      "defaultValueInternal": 0.0,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "rFeedb",
+      "propertySetterName": "setRFeedb",
+      "propertyGetterName": "getRFeedb"
+    },
+    {
       "name": "data-tchmi-berrorfeedb",
       "displayName": "bErrorFeedb",
       "visible": true,

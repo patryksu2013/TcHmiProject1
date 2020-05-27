@@ -1,4 +1,4 @@
-﻿<div id="View1" 
+﻿<div id="View1"
      data-tchmi-type="tchmi-view"
      data-tchmi-top="0" data-tchmi-left="0"
      data-tchmi-width-mode="Content"
@@ -8,222 +8,221 @@
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
      data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-background-image="Images/Background.png">
 
-<div id="FB_HVACCirculationPumpEx_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-sname="FB_HVACCirculationPumpEx" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%">
+    <div id="FB_HVACCirculationPumpEx_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%" data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-sname="FB_HVACCirculationPumpEx" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%">
 
 
-<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-[]
-</script>
+        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+            []
+        </script>
 
-<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "Serwis",
-    "group": "Serwisanci",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemGuests",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemUsers",
-    "permission": "Deny"
-  }
-]
-</script>
-</div>
+        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+            [
+            {
+            "accessright": "Serwis",
+            "group": "Serwisanci",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "Operatorzy",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemGuests",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemUsers",
+            "permission": "Deny"
+            }
+            ]
+        </script>
+    </div>
 
-<div id="FB_HVACCirculationPumpEx+AntiBlockingPump_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-eantiblockingmode="%s%PLC1.AntiBlockingPump.eAntiBlockingMode%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-idayweekly="%s%PLC1.AntiBlockingPump.iDayWeekly%/s%" data-tchmi-ihour="%s%PLC1.AntiBlockingPump.iHour%/s%" data-tchmi-ihoursdowntime="%s%PLC1.AntiBlockingPump.iHoursDowntime%/s%" data-tchmi-ilengthimpulse="%s%PLC1.AntiBlockingPump.iLenghtImpulse%/s%" data-tchmi-iminute="%s%PLC1.AntiBlockingPump.iMinute%/s%" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACCirculationPumpEx+AntiBlockingPump" data-tchmi-bqantiblocking="%s%PLC1.AntiBlockingPump.bQAntiBlocking%/s%" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%">
-
-
-<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-[]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "Serwis",
-    "group": "Serwisanci",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemGuests",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemUsers",
-    "permission": "Deny"
-  }
-]
-</script>
-</div>
-
-<div id="FB_HVACCirculationPumpEx+Work_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="230" data-tchmi-left-unit="px" data-tchmi-rhours="%s%PLC1.Work.rHours%/s%" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx+Work.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-uicount="%s%PLC1.Work.uiCount%/s%" data-tchmi-uiwarnlevel="%s%PLC1.Work.uiWarnLevel%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACCirculationPumpEx+Work" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-bqalarmlevel="%s%PLC1.Work.bQAlarmLevel%/s%" data-tchmi-bqwarnlevel="%s%PLC1.Work.bQWarnLevel%/s%" data-tchmi-benablewarnlevel="%s%PLC1.Work.bEnableWarnLevel%/s%" data-tchmi-benablealarmlevel="%s%PLC1.Work.bEnableAlarmLevel%/s%" data-tchmi-uialarmlevel="%s%PLC1.Work.uiAlarmLevel%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%">
+    <div id="FB_HVACCirculationPumpEx+AntiBlockingPump_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-eantiblockingmode="%s%PLC1.AntiBlockingPump.eAntiBlockingMode%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-idayweekly="%s%PLC1.AntiBlockingPump.iDayWeekly%/s%" data-tchmi-ihour="%s%PLC1.AntiBlockingPump.iHour%/s%" data-tchmi-ihoursdowntime="%s%PLC1.AntiBlockingPump.iHoursDowntime%/s%" data-tchmi-ilengthimpulse="%s%PLC1.AntiBlockingPump.iLenghtImpulse%/s%" data-tchmi-iminute="%s%PLC1.AntiBlockingPump.iMinute%/s%" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%" data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACCirculationPumpEx+AntiBlockingPump" data-tchmi-bqantiblocking="%s%PLC1.AntiBlockingPump.bQAntiBlocking%/s%" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%">
 
 
-<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-[]
-</script>
+        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+            []
+        </script>
 
-<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "Serwis",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemGuests",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemUsers",
-    "permission": "Deny"
-  }
-]
-</script>
-</div>
+        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+            [
+            {
+            "accessright": "Serwis",
+            "group": "Serwisanci",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "Operatorzy",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemGuests",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemUsers",
+            "permission": "Deny"
+            }
+            ]
+        </script>
+    </div>
 
-<div id="FB_HVACCirculationPumpEx+AntiBlockingPump+Work_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-eantiblockingmode="%s%PLC1.AntiBlockingPump.eAntiBlockingMode%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-idayweekly="%s%PLC1.AntiBlockingPump.iDayWeekly%/s%" data-tchmi-ihour="%s%PLC1.AntiBlockingPump.iHour%/s%" data-tchmi-ihoursdowntime="%s%PLC1.AntiBlockingPump.iHoursDowntime%/s%" data-tchmi-ilengthimpulse="%s%PLC1.AntiBlockingPump.iLenghtImpulse%/s%" data-tchmi-iminute="%s%PLC1.AntiBlockingPump.iMinute%/s%" data-tchmi-left="340" data-tchmi-left-unit="px" data-tchmi-rhours="%s%PLC1.Work.rHours%/s%" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%"  data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-uicount="%s%PLC1.Work.uiCount%/s%" data-tchmi-uiwarnlevel="%s%PLC1.Work.uiWarnLevel%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACCirculationPumpEx+AntiBlockingPump+Work" data-tchmi-bqantiblocking="%s%PLC1.AntiBlockingPump.bQAntiBlocking%/s%" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-bqalarmlevel="%s%PLC1.Work.bQAlarmLevel%/s%" data-tchmi-bqwarnlevel="%s%PLC1.Work.bQWarnLevel%/s%" data-tchmi-benablewarnlevel="%s%PLC1.Work.bEnableWarnLevel%/s%" data-tchmi-benablealarmlevel="%s%PLC1.Work.bEnableAlarmLevel%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%">
-
-
-<script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-[]
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-[
-  {
-    "accessright": "Serwis",
-    "group": "Serwisanci",
-    "permission": "Allow"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "Operatorzy",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemGuests",
-    "permission": "Deny"
-  },
-  {
-    "accessright": "Serwis",
-    "group": "__SystemUsers",
-    "permission": "Deny"
-  }
-]
-</script>
-</div>
-
-<div id="FB_HVACScheduler7ch_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACScheduler7ch.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrtimechannel="%s%PLC1.Scheduler7ch.arrTimeChannel%/s%" data-tchmi-tnexton="%s%PLC1.Scheduler7ch.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.Scheduler7ch.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.Scheduler7ch.bInvalidParameter%/s%" data-tchmi-boutput="%s%PLC1.Scheduler7ch.bOutput%/s%" data-tchmi-benable="%s%PLC1.Scheduler7ch.bEnable%/s%" data-tchmi-uioffsetbefore="%s%PLC1.Scheduler7ch.uiOffsetBefore%/s%" data-tchmi-breset="%s%PLC1.Scheduler7ch.bReset%/s%" data-tchmi-sname="FB_HVACScheduler7ch">
-
-</div>
-
-<div id="FB_HVACScheduler28ch_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACScheduler28ch.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrtimechannel="%s%PLC1.Scheduler28ch.arrTimeChannel2%/s%" data-tchmi-sname="FB_HVACScheduler28ch" data-tchmi-boutput="%s%PLC1.Scheduler28ch.bOutput%/s%" data-tchmi-tnexton="%s%PLC1.Scheduler28ch.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.Scheduler28ch.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.Scheduler28ch.bInvalidParameter%/s%" data-tchmi-benable="%s%PLC1.Scheduler28ch.bEnable%/s%" data-tchmi-uioffsetbefore="%s%PLC1.Scheduler28ch.uiOffsetBefore%/s%" data-tchmi-breset="%s%PLC1.Scheduler28ch.bReset%/s%">
-
-</div>
-
-<div id="FB_HVACSchedulerSpecialPeriods_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="230" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACSchedulerSpecialPeriods.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACSchedulerSpecialPeriods" data-tchmi-boutput="%s%PLC1.SchedulerSpecialPeriods.bOutput%/s%" data-tchmi-tnexton="%s%PLC1.SchedulerSpecialPeriods.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.SchedulerSpecialPeriods.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.SchedulerSpecialPeriods.bInvalidParameter%/s%" data-tchmi-arrperiod="%s%PLC1.SchedulerSpecialPeriods.arrPeriod%/s%" data-tchmi-benable="%s%PLC1.SchedulerSpecialPeriods.bEnable%/s%" data-tchmi-breset="%s%PLC1.SchedulerSpecialPeriods.bReset%/s%">
-
-</div>
-
-<div id="FB_HVACSchedulerPublicHolidays_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="340" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACSchedulerPublicHolidays.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrholiday="%s%PLC1.SchedulerPublicHolidays.arrHoliday%/s%" data-tchmi-breset="%s%PLC1.SchedulerPublicHolidays.bReset%/s%" data-tchmi-benable="%s%PLC1.SchedulerPublicHolidays.bEnable%/s%" data-tchmi-sname="FB_HVACSchedulerPublicHolidays" data-tchmi-boutput="%s%PLC1.SchedulerPublicHolidays.bOutput%/s%" data-tchmi-tnexton="%s%PLC1.SchedulerPublicHolidays.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.SchedulerPublicHolidays.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.SchedulerPublicHolidays.bInvalidParameter%/s%">
-
-</div>
-
-<div id="FB_HVACMotor1Speed_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.Motor1Speed.byError%/s%" data-tchmi-bystate="%s%PLC1.Motor1Speed.byState%/s%" data-tchmi-ectrlmodeactuator_internal="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControls2/FB_HVACMotor1Speed.usercontrol" data-tchmi-tdelayfeedbcontactor="%s%PLC1.Motor1Speed.tDelayFeedbContactor%/s%" data-tchmi-tdelayfeedbprocess="%s%PLC1.Motor1Speed.tDelayFeedbProcess%/s%" data-tchmi-tfeedbprocesstimer="%s%PLC1.Motor1Speed.tFeedbProcessTimer%/s%" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstartdelay="%s%PLC1.Motor1Speed.tStartDelay%/s%" data-tchmi-tstopdelay="%s%PLC1.Motor1Speed.tStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACMotor1Speed" data-tchmi-bmotor="%s%PLC1.Motor1Speed.bMotor%/s%" data-tchmi-berrorgeneral="%s%PLC1.Motor1Speed.bErrorGeneral%/s%" data-tchmi-estatemodeactuator="%s%PLC1.Motor1Speed.eStateModeActuator%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.Motor1Speed.eCtrlModeActuator%/s%" data-tchmi-bsetdefault="%s%PLC1.Motor1Speed.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.Motor1Speed.bReset%/s%">
-
-</div>
-
-<div id="FB_HVACMotor2Speed_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.Motor2Speed.byError%/s%" data-tchmi-bystate="%s%PLC1.Motor2Speed.byState%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.Motor2Speed.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.Motor2Speed.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControls2/FB_HVACMotor2Speed.usercontrol" data-tchmi-tdelayfeedbcontactorspeed1="%s%PLC1.Motor2Speed.tDelayFeedbContactorSpeed1%/s%" data-tchmi-tdelayfeedbcontactorspeed2="%s%PLC1.Motor2Speed.tDelayFeedbContactorSpeed2%/s%" data-tchmi-tdelayfeedbprocess="%s%PLC1.Motor2Speed.tDelayFeedbProcess%/s%" data-tchmi-tdelayspeed1="%s%PLC1.Motor2Speed.tDelaySpeed1%/s%" data-tchmi-tdelayspeed1tospeed2="%s%PLC1.Motor2Speed.tDelaySpeed1ToSpeed2%/s%" data-tchmi-tdelayspeed2tospeed1="%s%PLC1.Motor2Speed.tDelaySpeed2ToSpeed1%/s%" data-tchmi-tfeedbprocesstimer="%s%PLC1.Motor2Speed.tFeedbProcessTimer%/s%" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstartdelay="%s%PLC1.Motor2Speed.tStartDelay%/s%" data-tchmi-tstopdelay="%s%PLC1.Motor2Speed.tStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACMotor2Speed" data-tchmi-bmotorspeed1="%s%PLC1.Motor2Speed.bMotorSpeed1%/s%" data-tchmi-bmotorspeed2="%s%PLC1.Motor2Speed.bMotorSpeed2%/s%" data-tchmi-berrorgeneral="%s%PLC1.Motor2Speed.bErrorGeneral%/s%" data-tchmi-bsetdefault="%s%PLC1.Motor2Speed.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.Motor2Speed.bReset%/s%">
-
-</div>
-<div id="FB_HVACMotor3Speed_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-ectrlmodeactuator="%s%PLC1.Motor3Speed.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.Motor3Speed.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="230" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControls2/FB_HVACMotor3Speed.usercontrol" data-tchmi-tdelayfeedbcontactorspeed1="%s%PLC1.Motor3Speed.tDelayFeedbContactorSpeed1%/s%" data-tchmi-tdelayfeedbcontactorspeed2="%s%PLC1.Motor3Speed.tDelayFeedbContactorSpeed2%/s%" data-tchmi-tdelayfeedbcontactorspeed3="%s%PLC1.Motor3Speed.tDelayFeedbContactorSpeed3%/s%" data-tchmi-tdelayfeedbprocess="%s%PLC1.Motor3Speed.tDelayFeedbProcess%/s%" data-tchmi-tdelayspeed1="%s%PLC1.Motor3Speed.tDelaySpeed1%/s%" data-tchmi-tdelayspeed1tospeed2tospeed3="%s%PLC1.Motor3Speed.tDelaySpeed1ToSpeed2ToSpeed3%/s%" data-tchmi-tdelayspeed2="%s%PLC1.Motor3Speed.tDelaySpeed2%/s%" data-tchmi-tdelayspeed2tospeed1="%s%PLC1.Motor3Speed.tDelaySpeed2ToSpeed1%/s%" data-tchmi-tdelayspeed3tospeed2="%s%PLC1.Motor3Speed.tDelaySpeed3ToSpeed2%/s%" data-tchmi-tfeedbprocesstimer="%s%PLC1.Motor3Speed.tFeedbProcessTimer%/s%" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstartdelay="%s%PLC1.Motor3Speed.tStartDelay%/s%" data-tchmi-tstopdelay="%s%PLC1.Motor3Speed.tStopDelay%/s%" data-tchmi-werror="%s%PLC1.Motor3Speed.wError%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-wstate="%s%PLC1.Motor3Speed.wState%/s%" data-tchmi-sname="FB_HVACMotor3Speed" data-tchmi-bmotorspeed1="%s%PLC1.Motor3Speed.bMotorSpeed1%/s%" data-tchmi-bmotorspeed2="%s%PLC1.Motor3Speed.bMotorSpeed2%/s%" data-tchmi-bmotorspeed3="%s%PLC1.Motor3Speed.bMotorSpeed3%/s%" data-tchmi-berrorgeneral="%s%PLC1.Motor3Speed.bErrorGeneral%/s%" data-tchmi-bsetdefault="%s%PLC1.Motor3Speed.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.Motor3Speed.bReset%/s%">
-
-</div>
-<div id="FB_HVAC2PointActuator_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="0" data-tchmi-bystate="%s%PLC1.TwoPointActuatorMode.byState%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.TwoPointActuatorMode.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.TwoPointActuatorMode.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="340" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControls2/FB_HVAC2PointActuator.usercontrol" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstroketime="%s%PLC1.TwoPointActuatorMode.tStrokeTime%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVAC2PointActuator" data-tchmi-bout="%s%PLC1.TwoPointActuatorMode.bOut%/s%" data-tchmi-berrorlimitswitch="%s%PLC1.TwoPointActuatorMode.bErrorLimitSwitch%/s%" data-tchmi-binvalidparameter="%s%PLC1.TwoPointActuatorMode.bInvalidParameter%/s%" data-tchmi-bsetdefault="%s%PLC1.TwoPointActuatorMode.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.TwoPointActuatorMode.bReset%/s%" data-tchmi-benablelimitswitch="%s%PLC1.TwoPointActuatorMode.bEnableLimitSwitch%/s%">
-
-</div>
-
-<div id="TcHmiDateTimePicker" data-tchmi-type="tchmi-date-time-picker" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+    <div id="FB_HVACCirculationPumpEx+Work_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="230" data-tchmi-left-unit="px" data-tchmi-rhours="%s%PLC1.Work.rHours%/s%" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%" data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx+Work.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-uicount="%s%PLC1.Work.uiCount%/s%" data-tchmi-uiwarnlevel="%s%PLC1.Work.uiWarnLevel%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACCirculationPumpEx+Work" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-bqalarmlevel="%s%PLC1.Work.bQAlarmLevel%/s%" data-tchmi-bqwarnlevel="%s%PLC1.Work.bQWarnLevel%/s%" data-tchmi-benablewarnlevel="%s%PLC1.Work.bEnableWarnLevel%/s%" data-tchmi-benablealarmlevel="%s%PLC1.Work.bEnableAlarmLevel%/s%" data-tchmi-uialarmlevel="%s%PLC1.Work.uiAlarmLevel%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%">
 
 
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 1,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
+        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+            []
+        </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-{
-  "left": "Solid",
-  "right": "Solid",
-  "top": "Solid",
-  "bottom": "Solid"
-}
-</script>
-</div>
+        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+            [
+            {
+            "accessright": "Serwis",
+            "group": "Serwisanci",
+            "permission": "Allow"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "Operatorzy",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemGuests",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemUsers",
+            "permission": "Deny"
+            }
+            ]
+        </script>
+    </div>
 
-<div id="TcHmiTimespanPicker" data-tchmi-type="tchmi-timespan-picker" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+    <div id="FB_HVACCirculationPumpEx+AntiBlockingPump+Work_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.CirculationPumpEx.byError%/s%" data-tchmi-bystate="%s%PLC1.CirculationPumpEx.byState%/s%" data-tchmi-eantiblockingmode="%s%PLC1.AntiBlockingPump.eAntiBlockingMode%/s%" data-tchmi-ectrlmodeactuator_internal="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-ereqpump="%s%PLC1.CirculationPumpEx.eReqPump%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-idayweekly="%s%PLC1.AntiBlockingPump.iDayWeekly%/s%" data-tchmi-ihour="%s%PLC1.AntiBlockingPump.iHour%/s%" data-tchmi-ihoursdowntime="%s%PLC1.AntiBlockingPump.iHoursDowntime%/s%" data-tchmi-ilengthimpulse="%s%PLC1.AntiBlockingPump.iLenghtImpulse%/s%" data-tchmi-iminute="%s%PLC1.AntiBlockingPump.iMinute%/s%" data-tchmi-left="340" data-tchmi-left-unit="px" data-tchmi-rhours="%s%PLC1.Work.rHours%/s%" data-tchmi-routsidetemphighlimit="%s%PLC1.CirculationPumpEx.rOutsideTempHighLimit%/s%" data-tchmi-routsidetemplowlimit="%s%PLC1.CirculationPumpEx.rOutsideTempLowLimit%/s%" data-tchmi-rvalvepositionlimitoff="%s%PLC1.CirculationPumpEx.rValvePositionLimitOff%/s%" data-tchmi-rvalvepositionlimiton="%s%PLC1.CirculationPumpEx.rValvePositionLimitOn%/s%" data-tchmi-target-user-control="UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-udisecfeedbpumpdelay="%s%PLC1.CirculationPumpEx.udiSecFeedbPumpDelay%/s%" data-tchmi-udisecstopdelay="%s%PLC1.CirculationPumpEx.udiSecStopDelay%/s%" data-tchmi-uicount="%s%PLC1.Work.uiCount%/s%" data-tchmi-uiwarnlevel="%s%PLC1.Work.uiWarnLevel%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACCirculationPumpEx+AntiBlockingPump+Work" data-tchmi-bqantiblocking="%s%PLC1.AntiBlockingPump.bQAntiBlocking%/s%" data-tchmi-bpump_internal="%s%PLC1.CirculationPumpEx.bPump%/s%" data-tchmi-berror_internal="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bsetdefault="%s%PLC1.CirculationPumpEx.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.CirculationPumpEx.bReset%/s%" data-tchmi-bqalarmlevel="%s%PLC1.Work.bQAlarmLevel%/s%" data-tchmi-bqwarnlevel="%s%PLC1.Work.bQWarnLevel%/s%" data-tchmi-benablewarnlevel="%s%PLC1.Work.bEnableWarnLevel%/s%" data-tchmi-benablealarmlevel="%s%PLC1.Work.bEnableAlarmLevel%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.CirculationPumpEx.eCtrlModeActuator%/s%" data-tchmi-berror="%s%PLC1.CirculationPumpEx.bError%/s%" data-tchmi-bpump="%s%PLC1.CirculationPumpEx.bPump%/s%">
 
 
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 1,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
+        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+            []
+        </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-{
-  "left": "Solid",
-  "right": "Solid",
-  "top": "Solid",
-  "bottom": "Solid"
-}
-</script>
-</div>
+        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+            [
+            {
+            "accessright": "Serwis",
+            "group": "Serwisanci",
+            "permission": "Allow"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "Operatorzy",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemGuests",
+            "permission": "Deny"
+            },
+            {
+            "accessright": "Serwis",
+            "group": "__SystemUsers",
+            "permission": "Deny"
+            }
+            ]
+        </script>
+    </div>
 
-<div id="FB_HVAC3PointActuator_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-bystate="%s%PLC1.ThreePointActuatorMode.byState%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.ThreePointActuatorMode.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.ThreePointActuatorMode.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-rhysteresisfeedb="%s%PLC1.ThreePointActuatorMode.rHysteresisFeedb%/s%" data-tchmi-rmaxvaluefeedb="%s%PLC1.ThreePointActuatorMode.rMaxValueFeedb%/s%" data-tchmi-rminvaluefeedb="%s%PLC1.ThreePointActuatorMode.rMinValueFeedb%/s%"  data-tchmi-target-user-control="UserControls2/FB_HVAC3PointActuator.usercontrol" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstroketime="%s%PLC1.ThreePointActuatorMode.tStrokeTime%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVAC3PointActuator" data-tchmi-bopen="%s%PLC1.ThreePointActuatorMode.bOpen%/s%" data-tchmi-bclose="%s%PLC1.ThreePointActuatorMode.bClose%/s%" data-tchmi-berrorfeedb="%s%PLC1.ThreePointActuatorMode.bErrorFeedb%/s%" data-tchmi-binvalidparameter="%s%PLC1.ThreePointActuatorMode.bInvalidParameter%/s%" data-tchmi-bsetdefault="%s%PLC1.ThreePointActuatorMode.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.ThreePointActuatorMode.bReset%/s%" data-tchmi-benablefeedbctrl="%s%PLC1.ThreePointActuatorMode.bEnableFeedbCtrl%/s%">
+    <div id="FB_HVACScheduler7ch_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACScheduler7ch.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrtimechannel="%s%PLC1.Scheduler7ch.arrTimeChannel%/s%" data-tchmi-tnexton="%s%PLC1.Scheduler7ch.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.Scheduler7ch.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.Scheduler7ch.bInvalidParameter%/s%" data-tchmi-boutput="%s%PLC1.Scheduler7ch.bOutput%/s%" data-tchmi-benable="%s%PLC1.Scheduler7ch.bEnable%/s%" data-tchmi-uioffsetbefore="%s%PLC1.Scheduler7ch.uiOffsetBefore%/s%" data-tchmi-breset="%s%PLC1.Scheduler7ch.bReset%/s%" data-tchmi-sname="FB_HVACScheduler7ch">
 
-</div>
+    </div>
 
+    <div id="FB_HVACScheduler28ch_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACScheduler28ch.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrtimechannel="%s%PLC1.Scheduler28ch.arrTimeChannel2%/s%" data-tchmi-sname="FB_HVACScheduler28ch" data-tchmi-boutput="%s%PLC1.Scheduler28ch.bOutput%/s%" data-tchmi-tnexton="%s%PLC1.Scheduler28ch.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.Scheduler28ch.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.Scheduler28ch.bInvalidParameter%/s%" data-tchmi-benable="%s%PLC1.Scheduler28ch.bEnable%/s%" data-tchmi-uioffsetbefore="%s%PLC1.Scheduler28ch.uiOffsetBefore%/s%" data-tchmi-breset="%s%PLC1.Scheduler28ch.bReset%/s%">
+
+    </div>
+
+    <div id="FB_HVACSchedulerSpecialPeriods_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="230" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACSchedulerSpecialPeriods.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACSchedulerSpecialPeriods" data-tchmi-boutput="%s%PLC1.SchedulerSpecialPeriods.bOutput%/s%" data-tchmi-tnexton="%s%PLC1.SchedulerSpecialPeriods.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.SchedulerSpecialPeriods.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.SchedulerSpecialPeriods.bInvalidParameter%/s%" data-tchmi-arrperiod="%s%PLC1.SchedulerSpecialPeriods.arrPeriod%/s%" data-tchmi-benable="%s%PLC1.SchedulerSpecialPeriods.bEnable%/s%" data-tchmi-breset="%s%PLC1.SchedulerSpecialPeriods.bReset%/s%">
+
+    </div>
+
+    <div id="FB_HVACSchedulerPublicHolidays_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="340" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/FB_HVACSchedulerPublicHolidays.usercontrol" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-arrholiday="%s%PLC1.SchedulerPublicHolidays.arrHoliday%/s%" data-tchmi-breset="%s%PLC1.SchedulerPublicHolidays.bReset%/s%" data-tchmi-benable="%s%PLC1.SchedulerPublicHolidays.bEnable%/s%" data-tchmi-sname="FB_HVACSchedulerPublicHolidays" data-tchmi-boutput="%s%PLC1.SchedulerPublicHolidays.bOutput%/s%" data-tchmi-tnexton="%s%PLC1.SchedulerPublicHolidays.tNextOn%/s%" data-tchmi-tnextoff="%s%PLC1.SchedulerPublicHolidays.tNextOff%/s%" data-tchmi-binvalidparameter="%s%PLC1.SchedulerPublicHolidays.bInvalidParameter%/s%">
+
+    </div>
+
+    <div id="FB_HVACMotor1Speed_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.Motor1Speed.byError%/s%" data-tchmi-bystate="%s%PLC1.Motor1Speed.byState%/s%" data-tchmi-ectrlmodeactuator_internal="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls_2/FB_HVACMotor1Speed.usercontrol" data-tchmi-tdelayfeedbcontactor="%s%PLC1.Motor1Speed.tDelayFeedbContactor%/s%" data-tchmi-tdelayfeedbprocess="%s%PLC1.Motor1Speed.tDelayFeedbProcess%/s%" data-tchmi-tfeedbprocesstimer="%s%PLC1.Motor1Speed.tFeedbProcessTimer%/s%" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstartdelay="%s%PLC1.Motor1Speed.tStartDelay%/s%" data-tchmi-tstopdelay="%s%PLC1.Motor1Speed.tStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACMotor1Speed" data-tchmi-bmotor="%s%PLC1.Motor1Speed.bMotor%/s%" data-tchmi-berrorgeneral="%s%PLC1.Motor1Speed.bErrorGeneral%/s%" data-tchmi-estatemodeactuator="%s%PLC1.Motor1Speed.eStateModeActuator%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.Motor1Speed.eCtrlModeActuator%/s%" data-tchmi-bsetdefault="%s%PLC1.Motor1Speed.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.Motor1Speed.bReset%/s%">
+
+    </div>
+
+    <div id="FB_HVACMotor2Speed_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="%s%PLC1.Motor2Speed.byError%/s%" data-tchmi-bystate="%s%PLC1.Motor2Speed.byState%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.Motor2Speed.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.Motor2Speed.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls_2/FB_HVACMotor2Speed.usercontrol" data-tchmi-tdelayfeedbcontactorspeed1="%s%PLC1.Motor2Speed.tDelayFeedbContactorSpeed1%/s%" data-tchmi-tdelayfeedbcontactorspeed2="%s%PLC1.Motor2Speed.tDelayFeedbContactorSpeed2%/s%" data-tchmi-tdelayfeedbprocess="%s%PLC1.Motor2Speed.tDelayFeedbProcess%/s%" data-tchmi-tdelayspeed1="%s%PLC1.Motor2Speed.tDelaySpeed1%/s%" data-tchmi-tdelayspeed1tospeed2="%s%PLC1.Motor2Speed.tDelaySpeed1ToSpeed2%/s%" data-tchmi-tdelayspeed2tospeed1="%s%PLC1.Motor2Speed.tDelaySpeed2ToSpeed1%/s%" data-tchmi-tfeedbprocesstimer="%s%PLC1.Motor2Speed.tFeedbProcessTimer%/s%" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstartdelay="%s%PLC1.Motor2Speed.tStartDelay%/s%" data-tchmi-tstopdelay="%s%PLC1.Motor2Speed.tStopDelay%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACMotor2Speed" data-tchmi-bmotorspeed1="%s%PLC1.Motor2Speed.bMotorSpeed1%/s%" data-tchmi-bmotorspeed2="%s%PLC1.Motor2Speed.bMotorSpeed2%/s%" data-tchmi-berrorgeneral="%s%PLC1.Motor2Speed.bErrorGeneral%/s%" data-tchmi-bsetdefault="%s%PLC1.Motor2Speed.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.Motor2Speed.bReset%/s%">
+
+    </div>
+    <div id="FB_HVACMotor3Speed_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-ectrlmodeactuator="%s%PLC1.Motor3Speed.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.Motor3Speed.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="230" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls_2/FB_HVACMotor3Speed.usercontrol" data-tchmi-tdelayfeedbcontactorspeed1="%s%PLC1.Motor3Speed.tDelayFeedbContactorSpeed1%/s%" data-tchmi-tdelayfeedbcontactorspeed2="%s%PLC1.Motor3Speed.tDelayFeedbContactorSpeed2%/s%" data-tchmi-tdelayfeedbcontactorspeed3="%s%PLC1.Motor3Speed.tDelayFeedbContactorSpeed3%/s%" data-tchmi-tdelayfeedbprocess="%s%PLC1.Motor3Speed.tDelayFeedbProcess%/s%" data-tchmi-tdelayspeed1="%s%PLC1.Motor3Speed.tDelaySpeed1%/s%" data-tchmi-tdelayspeed1tospeed2tospeed3="%s%PLC1.Motor3Speed.tDelaySpeed1ToSpeed2ToSpeed3%/s%" data-tchmi-tdelayspeed2="%s%PLC1.Motor3Speed.tDelaySpeed2%/s%" data-tchmi-tdelayspeed2tospeed1="%s%PLC1.Motor3Speed.tDelaySpeed2ToSpeed1%/s%" data-tchmi-tdelayspeed3tospeed2="%s%PLC1.Motor3Speed.tDelaySpeed3ToSpeed2%/s%" data-tchmi-tfeedbprocesstimer="%s%PLC1.Motor3Speed.tFeedbProcessTimer%/s%" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstartdelay="%s%PLC1.Motor3Speed.tStartDelay%/s%" data-tchmi-tstopdelay="%s%PLC1.Motor3Speed.tStopDelay%/s%" data-tchmi-werror="%s%PLC1.Motor3Speed.wError%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-wstate="%s%PLC1.Motor3Speed.wState%/s%" data-tchmi-sname="FB_HVACMotor3Speed" data-tchmi-bmotorspeed1="%s%PLC1.Motor3Speed.bMotorSpeed1%/s%" data-tchmi-bmotorspeed2="%s%PLC1.Motor3Speed.bMotorSpeed2%/s%" data-tchmi-bmotorspeed3="%s%PLC1.Motor3Speed.bMotorSpeed3%/s%" data-tchmi-berrorgeneral="%s%PLC1.Motor3Speed.bErrorGeneral%/s%" data-tchmi-bsetdefault="%s%PLC1.Motor3Speed.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.Motor3Speed.bReset%/s%">
+
+    </div>
+    <div id="FB_HVAC2PointActuator_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="0" data-tchmi-bystate="%s%PLC1.TwoPointActuatorMode.byState%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.TwoPointActuatorMode.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.TwoPointActuatorMode.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="340" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls_2/FB_HVAC2PointActuator.usercontrol" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstroketime="%s%PLC1.TwoPointActuatorMode.tStrokeTime%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVAC2PointActuator" data-tchmi-bout="%s%PLC1.TwoPointActuatorMode.bOut%/s%" data-tchmi-berrorlimitswitch="%s%PLC1.TwoPointActuatorMode.bErrorLimitSwitch%/s%" data-tchmi-binvalidparameter="%s%PLC1.TwoPointActuatorMode.bInvalidParameter%/s%" data-tchmi-bsetdefault="%s%PLC1.TwoPointActuatorMode.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.TwoPointActuatorMode.bReset%/s%" data-tchmi-benablelimitswitch="%s%PLC1.TwoPointActuatorMode.bEnableLimitSwitch%/s%">
+
+    </div>
+
+    <div id="FB_HVAC3PointActuator_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-bystate="%s%PLC1.ThreePointActuatorMode.byState%/s%" data-tchmi-ectrlmodeactuator="%s%PLC1.ThreePointActuatorMode.eCtrlModeActuator%/s%" data-tchmi-estatemodeactuator="%s%PLC1.ThreePointActuatorMode.eStateModeActuator%/s%" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px" data-tchmi-rhysteresisfeedb="%s%PLC1.ThreePointActuatorMode.rHysteresisFeedb%/s%" data-tchmi-rmaxvaluefeedb="%s%PLC1.ThreePointActuatorMode.rMaxValueFeedb%/s%" data-tchmi-rminvaluefeedb="%s%PLC1.ThreePointActuatorMode.rMinValueFeedb%/s%" data-tchmi-target-user-control="UserControls_2/FB_HVAC3PointActuator.usercontrol" data-tchmi-top="230" data-tchmi-top-unit="px" data-tchmi-tstroketime="%s%PLC1.ThreePointActuatorMode.tStrokeTime%/s%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVAC3PointActuator" data-tchmi-bopen="%s%PLC1.ThreePointActuatorMode.bOpen%/s%" data-tchmi-bclose="%s%PLC1.ThreePointActuatorMode.bClose%/s%" data-tchmi-berrorfeedb="%s%PLC1.ThreePointActuatorMode.bErrorFeedb%/s%" data-tchmi-binvalidparameter="%s%PLC1.ThreePointActuatorMode.bInvalidParameter%/s%" data-tchmi-bsetdefault="%s%PLC1.ThreePointActuatorMode.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.ThreePointActuatorMode.bReset%/s%" data-tchmi-benablefeedbctrl="%s%PLC1.ThreePointActuatorMode.bEnableFeedbCtrl%/s%" data-tchmi-rfeedb="%s%PLC1.ThreePointActuatorMode.rFeedb%/s%">
+
+    </div>
+
+    <div id="TcHmiDateTimePicker" data-tchmi-type="tchmi-date-time-picker" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+    </div>
+
+    <div id="TcHmiTimespanPicker" data-tchmi-type="tchmi-timespan-picker" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px" data-tchmi-text="TcHmiButton" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True">
+
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 1,
+            "right": 1,
+            "top": 1,
+            "bottom": 1,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+    </div>
 </div>

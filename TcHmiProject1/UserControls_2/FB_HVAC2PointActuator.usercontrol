@@ -6,7 +6,7 @@
     <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%pp%bOut%/pp%",
+    "event": "%pp%eStateModeActuator%/pp%",
     "actions": [
       {
         "objectType": "Condition",
@@ -67,63 +67,144 @@
             "asyncWait": true
           },
           {
-            "objectType": "Condition",
+            "objectType": "SwitchCase",
             "active": true,
-            "expressions": [
+            "compare": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%eStateModeActuator%/pp%"
+            },
+            "cases": [
               {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%bOut%/pp%"
-                },
-                "compare2": {
+                "caseValue": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 1
                 },
-                "compareOperator": "==",
-                "logic": null
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": 40.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 2
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": -45.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 4
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": 40.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 5
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": -45.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
               }
             ],
-            "true": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/TransformList",
-                "value": {
-                  "objectType": "StaticValue",
+            "caseDefault": {
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
                   "valueType": "tchmi:framework#/definitions/TransformList",
-                  "value": [
-                    {
-                      "transformType": "Rotate",
-                      "angle": 45.0,
-                      "angleUnit": "deg"
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ],
-            "false": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/TransformList",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/TransformList",
-                  "value": [
-                    {
-                      "transformType": "Rotate",
-                      "angle": -45.0,
-                      "angleUnit": "deg"
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ],
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": [
+                      {
+                        "transformType": "Rotate",
+                        "angle": 0.0,
+                        "angleUnit": "deg"
+                      }
+                    ]
+                  },
+                  "asyncWait": true
+                }
+              ]
+            },
             "asyncWait": true
           }
         ],
@@ -193,63 +274,144 @@
             "asyncWait": true
           },
           {
-            "objectType": "Condition",
+            "objectType": "SwitchCase",
             "active": true,
-            "expressions": [
+            "compare": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%eStateModeActuator%/pp%"
+            },
+            "cases": [
               {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%bOut%/pp%"
-                },
-                "compare2": {
+                "caseValue": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 1
                 },
-                "compareOperator": "==",
-                "logic": null
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": 40.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 2
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": -45.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 4
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": 40.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 5
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": -45.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
               }
             ],
-            "true": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/TransformList",
-                "value": {
-                  "objectType": "StaticValue",
+            "caseDefault": {
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
                   "valueType": "tchmi:framework#/definitions/TransformList",
-                  "value": [
-                    {
-                      "transformType": "Rotate",
-                      "angle": 45.0,
-                      "angleUnit": "deg"
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ],
-            "false": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/TransformList",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/TransformList",
-                  "value": [
-                    {
-                      "transformType": "Rotate",
-                      "angle": -45.0,
-                      "angleUnit": "deg"
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ],
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": [
+                      {
+                        "transformType": "Rotate",
+                        "angle": 0.0,
+                        "angleUnit": "deg"
+                      }
+                    ]
+                  },
+                  "asyncWait": true
+                }
+              ]
+            },
             "asyncWait": true
           }
         ],
@@ -319,63 +481,144 @@
             "asyncWait": true
           },
           {
-            "objectType": "Condition",
+            "objectType": "SwitchCase",
             "active": true,
-            "expressions": [
+            "compare": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%eStateModeActuator%/pp%"
+            },
+            "cases": [
               {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%bOut%/pp%"
-                },
-                "compare2": {
+                "caseValue": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 1
                 },
-                "compareOperator": "==",
-                "logic": null
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": 40.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 2
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": -45.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 4
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": 40.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+                  "value": 5
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/TransformList",
+                      "value": [
+                        {
+                          "transformType": "Rotate",
+                          "angle": -45.0,
+                          "angleUnit": "deg"
+                        }
+                      ]
+                    },
+                    "asyncWait": true
+                  }
+                ]
               }
             ],
-            "true": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/TransformList",
-                "value": {
-                  "objectType": "StaticValue",
+            "caseDefault": {
+              "actions": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
                   "valueType": "tchmi:framework#/definitions/TransformList",
-                  "value": [
-                    {
-                      "transformType": "Rotate",
-                      "angle": 45.0,
-                      "angleUnit": "deg"
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ],
-            "false": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiImage_Inside_11::Transform%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/TransformList",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/TransformList",
-                  "value": [
-                    {
-                      "transformType": "Rotate",
-                      "angle": -45.0,
-                      "angleUnit": "deg"
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ],
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/TransformList",
+                    "value": [
+                      {
+                        "transformType": "Rotate",
+                        "angle": 0.0,
+                        "angleUnit": "deg"
+                      }
+                    ]
+                  },
+                  "asyncWait": true
+                }
+              ]
+            },
             "asyncWait": true
           }
         ],

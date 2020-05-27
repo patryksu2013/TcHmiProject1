@@ -65,45 +65,45 @@
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_FB_HVACSchedulerSpecialPeriods"
     },
-    "UserControls2_FB_HVAC2PointActuator": {
+    "UserControls_2_FB_HVAC2PointActuator": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControls2\\FB_HVAC2PointActuator.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls_2\\FB_HVAC2PointActuator.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/UserControls2_FB_HVAC2PointActuator"
+      "id": "tchmi:project#/definitions/UserControls_2_FB_HVAC2PointActuator"
     },
-    "UserControls2_FB_HVAC3PointActuator": {
+    "UserControls_2_FB_HVAC3PointActuator": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControls2\\FB_HVAC3PointActuator.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls_2\\FB_HVAC3PointActuator.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/UserControls2_FB_HVAC3PointActuator"
+      "id": "tchmi:project#/definitions/UserControls_2_FB_HVAC3PointActuator"
     },
-    "UserControls2_FB_HVACMotor1Speed": {
+    "UserControls_2_FB_HVACMotor1Speed": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControls2\\FB_HVACMotor1Speed.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls_2\\FB_HVACMotor1Speed.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/UserControls2_FB_HVACMotor1Speed"
+      "id": "tchmi:project#/definitions/UserControls_2_FB_HVACMotor1Speed"
     },
-    "UserControls2_FB_HVACMotor2Speed": {
+    "UserControls_2_FB_HVACMotor2Speed": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControls2\\FB_HVACMotor2Speed.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls_2\\FB_HVACMotor2Speed.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/UserControls2_FB_HVACMotor2Speed"
+      "id": "tchmi:project#/definitions/UserControls_2_FB_HVACMotor2Speed"
     },
-    "UserControls2_FB_HVACMotor3Speed": {
+    "UserControls_2_FB_HVACMotor3Speed": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControls2\\FB_HVACMotor3Speed.usercontrol.json",
+      "frameworkUserControlConfig": "UserControls_2\\FB_HVACMotor3Speed.usercontrol.json",
       "type": "object",
-      "id": "tchmi:project#/definitions/UserControls2_FB_HVACMotor3Speed"
+      "id": "tchmi:project#/definitions/UserControls_2_FB_HVACMotor3Speed"
     }
   }
 }

@@ -61,19 +61,19 @@
       "url": "UserControls/FB_HVACSchedulerSpecialPeriods.usercontrol"
     },
     {
-      "url": "UserControls2/FB_HVAC2PointActuator.usercontrol"
+      "url": "UserControls_2/FB_HVAC2PointActuator.usercontrol"
     },
     {
-      "url": "UserControls2/FB_HVAC3PointActuator.usercontrol"
+      "url": "UserControls_2/FB_HVAC3PointActuator.usercontrol"
     },
     {
-      "url": "UserControls2/FB_HVACMotor1Speed.usercontrol"
+      "url": "UserControls_2/FB_HVACMotor1Speed.usercontrol"
     },
     {
-      "url": "UserControls2/FB_HVACMotor2Speed.usercontrol"
+      "url": "UserControls_2/FB_HVACMotor2Speed.usercontrol"
     },
     {
-      "url": "UserControls2/FB_HVACMotor3Speed.usercontrol"
+      "url": "UserControls_2/FB_HVACMotor3Speed.usercontrol"
     }
   ],
   "content": [],
