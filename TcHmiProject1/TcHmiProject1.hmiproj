@@ -281,11 +281,6 @@
     <Content Include="Default.view">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UserControls_2\FB_HVAC2PointActuator.usercontrol.json" />
-    <Content Include="UserControls_2\FB_HVAC3PointActuator.usercontrol.json" />
-    <Content Include="UserControls_2\FB_HVACMotor1Speed.usercontrol.json" />
-    <Content Include="UserControls_2\FB_HVACMotor2Speed.usercontrol.json" />
-    <Content Include="UserControls_2\FB_HVACMotor3Speed.usercontrol.json" />
     <Folder Include=".hmipkgs" />
     <Folder Include="Imports\Images\Actuator_2" />
     <Folder Include="Imports\Images\Motor" />

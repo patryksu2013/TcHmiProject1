@@ -658,6 +658,206 @@
         "waitMode": "Synchronous"
       }
     ]
+  },
+  {
+    "event": "%pp%rFeedb%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bErrorFeedb%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          },
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bInvalidParameter%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": "OR"
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiImage_Symbol_14::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Path",
+              "value": "Imports/Images/Actuator_2/2_way_valve_error.svg"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "SwitchCase",
+            "active": true,
+            "compare": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%eStateModeActuator%/pp%"
+            },
+            "cases": [
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC3PointActuatorMode",
+                  "value": 1
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Symbol_14::Src%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/Path",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": "Imports/Images/Actuator_2/2_way_valve_opened.svg"
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC3PointActuatorMode",
+                  "value": 2
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Symbol_14::Src%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/Path",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": "Imports/Images/Actuator_2/2_way_valve_closed.svg"
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC3PointActuatorMode",
+                  "value": 5
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Symbol_14::Src%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/Path",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": "Imports/Images/Actuator_2/2_way_valve_opened.svg"
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "caseValue": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC3PointActuatorMode",
+                  "value": 6
+                },
+                "actions": [
+                  {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Symbol_14::Src%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/Path",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": "Imports/Images/Actuator_2/2_way_valve_closed.svg"
+                    },
+                    "asyncWait": true
+                  }
+                ]
+              }
+            ],
+            "caseDefault": {
+              "actions": [
+                {
+                  "objectType": "Condition",
+                  "active": true,
+                  "expressions": [
+                    {
+                      "compare1": {
+                        "objectType": "Symbol",
+                        "symbolExpression": "%pp%rFeedb%/pp%"
+                      },
+                      "compare2": {
+                        "objectType": "Symbol",
+                        "symbolExpression": "%pp%rMinValueFeedb%/pp%"
+                      },
+                      "compareOperator": ">",
+                      "logic": null
+                    }
+                  ],
+                  "true": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Symbol_14::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Actuator_2/2_way_valve_opened.svg"
+                      },
+                      "asyncWait": true
+                    }
+                  ],
+                  "false": [
+                    {
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Symbol_14::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Actuator_2/2_way_valve_closed.svg"
+                      },
+                      "asyncWait": true
+                    }
+                  ],
+                  "asyncWait": true
+                }
+              ]
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
   }
 ]
 </script>
