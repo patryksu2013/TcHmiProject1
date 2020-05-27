@@ -16,7 +16,7 @@ VAR
 	bReset: BOOL;
 	bEnableFeedbCtrl: BOOL;
 	rMinValueFeedb: REAL;
-	rMaxValueFeedb: REAL;
+	rMaxValueFeedb: REAL := 100;
 	rHysteresisFeedb: REAL;
 	tStrokeTime: TIME;
 	bOpen: BOOL;
