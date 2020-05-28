@@ -220,7 +220,7 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45+((90/%pp%rMaxValueFeedb%/pp%-%pp%rMinValueFeedb%/pp%)*%pp%rFeedb%/pp%)%/f%"
+                            "angle": "%f%40%/f%"
                           }
                         ]
                       },
@@ -239,7 +239,8 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45%/f%"
+                            "angle": "%f%-45%/f%",
+                            "angleUnit": "deg"
                           }
                         ]
                       },
@@ -472,7 +473,7 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45+((90/%pp%rMaxValueFeedb%/pp%-%pp%rMinValueFeedb%/pp%)*%pp%rFeedb%/pp%)%/f%"
+                            "angle": "%f%40%/f%"
                           }
                         ]
                       },
@@ -491,7 +492,8 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45%/f%"
+                            "angle": "%f%-45%/f%",
+                            "angleUnit": "deg"
                           }
                         ]
                       },
@@ -724,7 +726,7 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45+((90/%pp%rMaxValueFeedb%/pp%-%pp%rMinValueFeedb%/pp%)*%pp%rFeedb%/pp%)%/f%"
+                            "angle": "%f%40%/f%"
                           }
                         ]
                       },
@@ -743,7 +745,8 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45%/f%"
+                            "angle": "%f%-45%/f%",
+                            "angleUnit": "deg"
                           }
                         ]
                       },
@@ -1030,7 +1033,7 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45+((90/%pp%rMaxValueFeedb%/pp%-%pp%rMinValueFeedb%/pp%)*%pp%rFeedb%/pp%)%/f%"
+                            "angle": "%f%40%/f%"
                           }
                         ]
                       },
@@ -1049,7 +1052,8 @@
                         "value": [
                           {
                             "transformType": "Rotate",
-                            "angle": "%f%-45%/f%"
+                            "angle": "%f%-45%/f%",
+                            "angleUnit": "deg"
                           }
                         ]
                       },
