@@ -16,7 +16,8 @@ Motor1Speed();
 Motor2Speed();
 Motor3Speed();
 TwoPointActuatorMode();
-ThreePointActuatorMode();]]></ST>
+ThreePointActuatorMode();
+TemperatureSensorEx2();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="154" Count="0" />
@@ -28,6 +29,7 @@ ThreePointActuatorMode();]]></ST>
       <LineId Id="293" Count="2" />
       <LineId Id="298" Count="0" />
       <LineId Id="301" Count="0" />
+      <LineId Id="304" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

@@ -120,6 +120,14 @@
       "frameworkUserControlConfig": "UserControls_2\\FB_HVACMotor3Speed.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_2_FB_HVACMotor3Speed"
+    },
+    "UserControls_3_FB_HVACTemperatureSensorEx2": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls_3\\FB_HVACTemperatureSensorEx2.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_3_FB_HVACTemperatureSensorEx2"
     }
   }
 }

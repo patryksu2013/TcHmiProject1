@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="TemperatureSensorEx2" Id="{b03110b6-15c7-4a96-83f5-3e5144d93627}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM TemperatureSensorEx2
+VAR
+	fbHVACTemperatureSensorEx2: FB_HVACTemperatureSensorEx2;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	iRawValue: INT;
+	byStatusRawValue: BYTE;
+	iConversionFactor: INT;
+	bEnableLimitCtrl: BOOL;
+	bReset: BOOL;
+	rOffset: REAL;
+	rHighLimit: REAL;
+	rLowLimit: REAL;
+	rReplacementValue: REAL;
+	rSmoothFactor: REAL;
+	iTemperatureSensorMode: INT;
+	rPresentValue: REAL;
+	bErrorGeneral: BOOL;
+	udiError: UDINT;
+	bErrorSensor: BOOL;
+	bErrorHighLimit: BOOL;
+	bErrorLowLimit: BOOL;
+	bErrorConversionFactor: BOOL;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACTemperatureSensorEx2(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	iRawValue:=iRawValue, 
+	byStatusRawValue:=byStatusRawValue, 
+	iConversionFactor:=iConversionFactor, 
+	bEnableLimitCtrl:=bEnableLimitCtrl, 
+	bReset:=bReset, 
+	rPresentValue=>rPresentValue, 
+	bErrorGeneral=>bErrorGeneral, 
+	udiError=>udiError, 
+	bErrorSensor=>bErrorSensor, 
+	bErrorHighLimit=>bErrorHighLimit, 
+	bErrorLowLimit=>bErrorLowLimit, 
+	bErrorConversionFactor=>bErrorConversionFactor, 
+	bInvalidParameter=>bInvalidParameter, 
+	rOffset:=rOffset, 
+	rHighLimit:=rHighLimit, 
+	rLowLimit:=rLowLimit, 
+	rReplacementValue:=rReplacementValue, 
+	rSmoothFactor:=rSmoothFactor, 
+	iTemperatureSensorMode:=iTemperatureSensorMode);]]></ST>
+    </Implementation>
+    <LineIds Name="TemperatureSensorEx2">
+      <LineId Id="8" Count="21" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
