@@ -101,6 +101,12 @@
     <Content Include="Imports\Images\Actuator_2\2_way_valve_opened.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\Actuator_common\rotate_left.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Actuator_common\rotate_right.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\calendar.svg">
       <SubType>Content</SubType>
     </Content>
@@ -284,6 +290,12 @@
     <Content Include="Default.view">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -294,6 +306,7 @@
     <Folder Include="Imports\Images\Actuator_2" />
     <Folder Include="Imports\Images\Motor" />
     <Folder Include="Imports\Images\Actuator" />
+    <Folder Include="Imports\Images\Actuator_common" />
     <Folder Include="Imports\Images\Temperature" />
     <Folder Include="Libraries" />
     <Folder Include="Images" />

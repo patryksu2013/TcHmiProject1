@@ -38,6 +38,9 @@
     <Compile Include="POUs\Motor3Speed.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\OverwriteAnalog.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\Scheduler7ch.TcPOU">
       <SubType>Code</SubType>
     </Compile>

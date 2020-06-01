@@ -267,6 +267,29 @@
                 }
             ]
         },
+        "PLC1.Tc2_HVAC.E_HVACCtrlMode": {
+            "allOf": [
+                {
+                    "enum": [
+                        0,
+                        1
+                    ],
+                    "options": [
+                        {
+                            "label": "eHVACCtrlMode_Auto",
+                            "value": 0
+                        },
+                        {
+                            "label": "eHVACCtrlMode_Manual",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/INT16"
+                }
+            ]
+        },
         "PLC1.Tc2_HVAC.E_HVACDataSecurityType": {
             "allOf": [
                 {
@@ -4310,6 +4333,46 @@
             "MAPPING": "PLC1::Motor3Speed::wState",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/WORD"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.OverwriteAnalog.eCtrlMode": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::OverwriteAnalog::eCtrlMode",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACCtrlMode"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.OverwriteAnalog.rManualValueIn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::OverwriteAnalog::rManualValueIn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.OverwriteAnalog.rValueIn": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::OverwriteAnalog::rValueIn",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.OverwriteAnalog.rValueOut": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::OverwriteAnalog::rValueOut",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },

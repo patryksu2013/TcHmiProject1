@@ -128,6 +128,14 @@
       "frameworkUserControlConfig": "UserControls_3\\FB_HVACTemperatureSensorEx2.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_3_FB_HVACTemperatureSensorEx2"
+    },
+    "UserControls_3_FB_HVACTemperatureSensorEx2+OverwriteAnalog": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls_3\\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_3_FB_HVACTemperatureSensorEx2+OverwriteAnalog"
     }
   }
 }

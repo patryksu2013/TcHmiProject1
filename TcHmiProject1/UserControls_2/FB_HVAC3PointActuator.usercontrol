@@ -1073,7 +1073,7 @@
   }
 ]
 </script>
-    <div id="TcHmiImage_Outside_12" data-tchmi-type="tchmi-image" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Actuator/symbol_outside.svg">
+    <div id="TcHmiImage_Outside_12" data-tchmi-type="tchmi-image" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Visible" data-tchmi-src="Imports/Images/Actuator/symbol_outside.svg">
 
 
 
@@ -1109,6 +1109,207 @@
             []
         </script>
     </div>
+<div id="TcHmiImage_Direction_12" data-tchmi-type="tchmi-image" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-width="30" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Visible">
+
+
+
+
+        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+            [
+            {
+            "virtualControlRight": "Serwis",
+            "controlRight": "operate"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+            []
+        </script>
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%bOpen%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bOpen%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiImage_Direction_12::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Path",
+              "value": "Imports/Images/Actuator_common/rotate_right.svg"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "Condition",
+            "active": true,
+            "expressions": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%bClose%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "true": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Direction_12::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Actuator_common/rotate_left.svg"
+                },
+                "asyncWait": true
+              }
+            ],
+            "false": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Direction_12::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": null
+                },
+                "asyncWait": true
+              }
+            ],
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%bClose%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bClose%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiImage_Direction_12::Src%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Path",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Path",
+              "value": "Imports/Images/Actuator_common/rotate_left.svg"
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "Condition",
+            "active": true,
+            "expressions": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%bOpen%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "true": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Direction_12::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Actuator_common/rotate_right.svg"
+                },
+                "asyncWait": true
+              }
+            ],
+            "false": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Direction_12::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": ""
+                },
+                "asyncWait": true
+              }
+            ],
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
 <div id="TcHmiTextblock_Feedb_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_12::RenderedHeight%/ctrl%/3%/f%" data-tchmi-creator-visibility="Visible" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-top-unit="%" data-tchmi-top="0" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rFeedb%/pp%, 0),'%')%/f%">
 
         <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
@@ -1583,8 +1784,7 @@
                 }
             </script>
         </div>
-
-        <div id="TcHmiContainer_Operator_12" data-tchmi-type="tchmi-container" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+<div id="TcHmiContainer_Operator_12" data-tchmi-type="tchmi-container" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
             <div id="TcHmiTextblock_SelectMode_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Wybór trybu pracy" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 

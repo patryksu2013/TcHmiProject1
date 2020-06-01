@@ -83,6 +83,9 @@
     },
     {
       "url": "UserControls_3/FB_HVACTemperatureSensorEx2.usercontrol"
+    },
+    {
+      "url": "UserControls_3/FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol"
     }
   ],
   "content": [],

@@ -67,4 +67,8 @@
 
 </div>
 
+<div id="FB_HVACTemperatureSensorEx2+OverwriteAnalog_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="120" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControls_3/FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACTemperatureSensorEx2+OverwriteAnalog_1" data-tchmi-rvalueout="%s%PLC1.OverwriteAnalog.rValueOut%/s%" data-tchmi-ectrlmode="%s%PLC1.OverwriteAnalog.eCtrlMode%/s%" data-tchmi-rmanualvalue="%s%PLC1.OverwriteAnalog.rManualValueIn%/s%" data-tchmi-rpresentvalue="%s%PLC1.TemperatureSensorEx2.rPresentValue%/s%" data-tchmi-udierror="%s%PLC1.TemperatureSensorEx2.udiError%/s%" data-tchmi-bsetdefault="%s%PLC1.TemperatureSensorEx2.bSetDefault%/s%" data-tchmi-breset="%s%PLC1.TemperatureSensorEx2.bReset%/s%" data-tchmi-iconversionfactor="%s%PLC1.TemperatureSensorEx2.iConversionFactor%/s%" data-tchmi-roffset="%s%PLC1.TemperatureSensorEx2.rOffset%/s%" data-tchmi-rhighlimit="%s%PLC1.TemperatureSensorEx2.rHighLimit%/s%" data-tchmi-rlowlimit="%s%PLC1.TemperatureSensorEx2.rLowLimit%/s%" data-tchmi-rreplacementvalue="%s%PLC1.TemperatureSensorEx2.rReplacementValue%/s%" data-tchmi-rsmoothfactor="%s%PLC1.TemperatureSensorEx2.rSmoothFactor%/s%" data-tchmi-itemperaturesensormode="%s%PLC1.TemperatureSensorEx2.iTemperatureSensorMode%/s%">
+
+</div>
+
 </div>
