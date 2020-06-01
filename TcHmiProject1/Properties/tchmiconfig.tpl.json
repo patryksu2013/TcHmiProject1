@@ -82,6 +82,9 @@
       "url": "UserControls_2/FB_HVACMotor3Speed.usercontrol"
     },
     {
+      "url": "UserControls_3/FB_HVACAnalogInput.usercontrol"
+    },
+    {
       "url": "UserControls_3/FB_HVACTemperatureSensorEx2.usercontrol"
     },
     {

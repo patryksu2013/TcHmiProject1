@@ -107,6 +107,12 @@
     <Content Include="Imports\Images\Actuator_common\rotate_right.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\Analog\symbol_analog.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\Analog\symbol_analog_error.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\calendar.svg">
       <SubType>Content</SubType>
     </Content>
@@ -290,6 +296,12 @@
     <Content Include="Default.view">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogInput.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogInput.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -307,6 +319,7 @@
     <Folder Include="Imports\Images\Motor" />
     <Folder Include="Imports\Images\Actuator" />
     <Folder Include="Imports\Images\Actuator_common" />
+    <Folder Include="Imports\Images\Analog" />
     <Folder Include="Imports\Images\Temperature" />
     <Folder Include="Libraries" />
     <Folder Include="Images" />

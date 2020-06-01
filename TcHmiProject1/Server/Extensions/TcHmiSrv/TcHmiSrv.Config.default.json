@@ -313,6 +313,254 @@
                 }
             ]
         },
+        "PLC1.Tc2_HVAC.E_HVACErrorCodes": {
+            "allOf": [
+                {
+                    "enum": [
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46
+                    ],
+                    "options": [
+                        {
+                            "label": "eHVACErrorCodes_NoError",
+                            "value": 0
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_tTaskCycleTime",
+                            "value": 1
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_tCtrlCycleTime",
+                            "value": 2
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_rDeadRange",
+                            "value": 3
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_rDeadBand",
+                            "value": 4
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_rKpIsLessThanZero",
+                            "value": 5
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_tTi",
+                            "value": 6
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_tTv",
+                            "value": 7
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_tTd",
+                            "value": 8
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_fBaseTime",
+                            "value": 9
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_rYMaxIsLessThanrYMin",
+                            "value": 10
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_MEMCPY",
+                            "value": 11
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_ModeNotSupported",
+                            "value": 12
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_rErrHighLimitOverrun",
+                            "value": 13
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_rErrLowLimitUnderrun",
+                            "value": 14
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator1",
+                            "value": 15
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator2",
+                            "value": 16
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator3",
+                            "value": 17
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator4",
+                            "value": 18
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator5",
+                            "value": 19
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator6",
+                            "value": 20
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator7",
+                            "value": 21
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_NoFeedbackActuator8",
+                            "value": 22
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_tOverlap1Actuator",
+                            "value": 23
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iCountCtrl",
+                            "value": 24
+                        },
+                        {
+                            "label": "eHVACErrorCodes_iMaxOnLevel",
+                            "value": 25
+                        },
+                        {
+                            "label": "eHVACErrorCodes_tNoFeedbActuator",
+                            "value": 26
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_iNumberOfSequences",
+                            "value": 27
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_iMyNumberInSequence",
+                            "value": 28
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_iCurrentSequence",
+                            "value": 29
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_MEMSET",
+                            "value": 30
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iStep",
+                            "value": 31
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iNumberOfStepInProfile",
+                            "value": 32
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iNumberOfAggregates",
+                            "value": 33
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iAggregateSteps",
+                            "value": 34
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iNumberOfProfiles",
+                            "value": 35
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iProfile",
+                            "value": 36
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_rY_Max",
+                            "value": 37
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_rY_Min",
+                            "value": 38
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iAggregate",
+                            "value": 39
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_udiSecDelayUp",
+                            "value": 40
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_udiSecDelayDown",
+                            "value": 41
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_iNumberOfValues",
+                            "value": 42
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_LEN_Int",
+                            "value": 43
+                        },
+                        {
+                            "label": "eHVACErrorCodes_Error_LEN_Enum",
+                            "value": 44
+                        },
+                        {
+                            "label": "eHVACErrorCodes_InvalidParam_T1",
+                            "value": 45
+                        },
+                        {
+                            "label": "eHVACErrorCodes_ErrIdlrX0x",
+                            "value": 46
+                        }
+                    ]
+                },
+                {
+                    "$ref": "tchmi:general#/definitions/INT16"
+                }
+            ]
+        },
         "PLC1.Tc2_HVAC.E_HVACReqPump": {
             "allOf": [
                 {
@@ -2643,6 +2891,256 @@
                 "writeValue": {
                     "type": "string"
                 }
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bCtrlVoltage": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bCtrlVoltage",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bEnableLimitCtrl": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bEnableLimitCtrl",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bError": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bError",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bErrorGeneral": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bErrorGeneral",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bErrorHighLimit": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bErrorHighLimit",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bErrorLowLimit": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bErrorLowLimit",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bInvalidParameter": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bInvalidParameter",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bReset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bReset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.bSetDefault": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::bSetDefault",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.byError": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::byError",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.byState": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::byState",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BYTE"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.eDataSecurityType": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::eDataSecurityType",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACDataSecurityType"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.eErrorCode": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::eErrorCode",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.iHighRange": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::iHighRange",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.iLowRange": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::iLowRange",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.iRawValue": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::iRawValue",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/INT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.rHighLimit": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::rHighLimit",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.rHighRange": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::rHighRange",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.rLowLimit": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::rLowLimit",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.rLowRange": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::rLowRange",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.rOffset": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::rOffset",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.rPresentValue": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::rPresentValue",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.tCtrlCycleTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::tCtrlCycleTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.tFilterTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::tFilterTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.AnalogInput.tTaskCycleTime": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::AnalogInput::tTaskCycleTime",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/TIME"
             },
             "USEMAPPING": true
         },

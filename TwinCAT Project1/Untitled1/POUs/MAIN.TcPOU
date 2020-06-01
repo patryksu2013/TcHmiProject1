@@ -18,7 +18,8 @@ Motor3Speed();
 TwoPointActuatorMode();
 ThreePointActuatorMode();
 TemperatureSensorEx2();
-OverwriteAnalog();]]></ST>
+OverwriteAnalog();
+AnalogInput();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="154" Count="0" />
@@ -32,6 +33,7 @@ OverwriteAnalog();]]></ST>
       <LineId Id="301" Count="0" />
       <LineId Id="304" Count="0" />
       <LineId Id="307" Count="0" />
+      <LineId Id="310" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>

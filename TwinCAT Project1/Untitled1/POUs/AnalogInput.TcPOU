@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="AnalogInput" Id="{f48a5320-1f0c-4c1d-baf5-2586d5979277}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM AnalogInput
+VAR
+	fbHVACAnalogInput: FB_HVACAnalogInput;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	iRawValue: INT;
+	tTaskCycleTime: TIME;
+	tCtrlCycleTime: TIME;
+	bEnableLimitCtrl: BOOL;
+	bCtrlVoltage: BOOL;
+	bReset: BOOL;
+	iHighRange: INT;
+	iLowRange: INT;
+	rHighRange: REAL;
+	rLowRange: REAL;
+	rHighLimit: REAL;
+	rLowLimit: REAL;
+	tFilterTime: TIME;
+	rOffset: REAL;
+	rPresentValue: REAL;
+	byState: BYTE;
+	bError: BOOL;
+	eErrorCode: Tc2_HVAC.E_HVACErrorCodes;
+	bErrorHighLimit: BOOL;
+	bErrorLowLimit: BOOL;
+	bErrorGeneral: BOOL;
+	byError: BYTE;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACAnalogInput(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	iRawValue:=iRawValue, 
+	tTaskCycleTime:=tTaskCycleTime, 
+	tCtrlCycleTime:=tCtrlCycleTime, 
+	bEnableLimitCtrl:=bEnableLimitCtrl, 
+	bCtrlVoltage:=bCtrlVoltage, 
+	bReset:=bReset, 
+	rPresentValue=>rPresentValue, 
+	byState=>byState, 
+	bError=>bError, 
+	eErrorCode=>eErrorCode, 
+	bErrorHighLimit=>bErrorHighLimit, 
+	bErrorLowLimit=>bErrorLowLimit, 
+	bErrorGeneral=>bErrorGeneral, 
+	byError=>byError, 
+	bInvalidParameter=>bInvalidParameter, 
+	iHighRange:=iHighRange, 
+	iLowRange:=iLowRange, 
+	rHighRange:=rHighRange, 
+	rLowRange:=rLowRange, 
+	rHighLimit:=rHighLimit, 
+	rLowLimit:=rLowLimit, 
+	tFilterTime:=tFilterTime, 
+	rOffset:=rOffset);]]></ST>
+    </Implementation>
+    <LineIds Name="AnalogInput">
+      <LineId Id="7" Count="24" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

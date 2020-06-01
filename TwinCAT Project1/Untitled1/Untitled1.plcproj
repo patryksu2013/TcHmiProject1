@@ -20,6 +20,9 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\AnalogInput.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\AntiBlockingPump.TcPOU">
       <SubType>Code</SubType>
     </Compile>
