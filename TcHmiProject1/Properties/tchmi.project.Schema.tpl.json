@@ -129,6 +129,22 @@
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_3_FB_HVACAnalogInput"
     },
+    "UserControls_3_FB_HVACAnalogOutputEx": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls_3\\FB_HVACAnalogOutputEx.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_3_FB_HVACAnalogOutputEx"
+    },
+    "UserControls_3_FB_HVACAnalogOutputEx+AntiBlockingDamper": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "tchmi-user-control-host",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls_3\\FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/UserControls_3_FB_HVACAnalogOutputEx+AntiBlockingDamper"
+    },
     "UserControls_3_FB_HVACTemperatureSensorEx2": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",

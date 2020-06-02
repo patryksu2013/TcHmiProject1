@@ -296,6 +296,18 @@
     <Content Include="Default.view">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogOutputEx.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogOutputEx.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_3\FB_HVACAnalogInput.usercontrol">
       <SubType>Content</SubType>
     </Content>

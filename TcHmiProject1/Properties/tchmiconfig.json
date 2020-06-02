@@ -85,6 +85,12 @@
       "url": "UserControls_3/FB_HVACAnalogInput.usercontrol"
     },
     {
+      "url": "UserControls_3/FB_HVACAnalogOutputEx.usercontrol"
+    },
+    {
+      "url": "UserControls_3/FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol"
+    },
+    {
       "url": "UserControls_3/FB_HVACTemperatureSensorEx2.usercontrol"
     },
     {

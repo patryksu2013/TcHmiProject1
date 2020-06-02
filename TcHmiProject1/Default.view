@@ -75,4 +75,12 @@
 
 </div>
 
+<div id="FB_HVACAnalogOutputEx_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="0" data-tchmi-bystate="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="340" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControls_3/FB_HVACAnalogOutputEx.usercontrol" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-sname="FB_HVACAnalogOutputEx">
+
+</div>
+
+<div id="FB_HVACAnalogOutputEx+AntiBlockingDamper_1" data-tchmi-type="tchmi-user-control-host" data-tchmi-byerror="0" data-tchmi-bystate="0" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-left="450" data-tchmi-left-unit="px"  data-tchmi-target-user-control="UserControls_3/FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px">
+
+</div>
+
 </div>
