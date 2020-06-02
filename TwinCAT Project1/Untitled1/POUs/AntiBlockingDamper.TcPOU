@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="AntiBlockingDamper" Id="{70360c3b-cad5-4429-b8a3-c2b61cacea83}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM AntiBlockingDamper
+VAR
+	fbHVACAntiBlockingDamper: FB_HVACAntiBlockingDamper;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	bDisable: BOOL;
+	ryDamper: REAL;
+	dtSystemTime: DATE_AND_TIME;
+	bReset: BOOL;
+	eAntiBlockingMode: E_HVACAntiBlockingMode;
+	iHoursDowntime: INT;
+	iDayWeekly: INT;
+	iHour: INT;
+	iMinute: INT;
+	iLenghtImpulse: INT;
+	rQDamper: REAL;
+	iQDamper: INT;
+	bQAntiBlocking: BOOL;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACAntiBlockingDamper(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	bDisable:=bDisable, 
+	ryDamper:=ryDamper, 
+	dtSystemTime:=dtSystemTime, 
+	bReset:=bReset, 
+	eAntiBlockingMode:=eAntiBlockingMode, 
+	iHoursDowntime:=iHoursDowntime, 
+	iDayWeekly:=iDayWeekly, 
+	iHour:=iHour, 
+	iMinute:=iMinute, 
+	iLenghtImpulse:=iLenghtImpulse, 
+	rQDamper=>rQDamper, 
+	iQDamper=>iQDamper, 
+	bQAntiBlocking=>bQAntiBlocking, 
+	bInvalidParameter=>bInvalidParameter);]]></ST>
+    </Implementation>
+    <LineIds Name="AntiBlockingDamper">
+      <LineId Id="7" Count="16" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

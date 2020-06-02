@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="AnalogOutputEx" Id="{99f4734a-2538-4ab5-9eb9-ee32d4bbfcec}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM AnalogOutputEx
+VAR
+	fbHVACAnalogOutputEx: FB_HVACAnalogOutputEx;
+	eDataSecurityType: E_HVACDataSecurityType;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	rSetpoint: REAL;
+	bCtrlVoltage: BOOL;
+	eCtrlModeAnalogOutput: E_HVACAnalogOutputMode;
+	rYManual: REAL;
+	rFeedb: REAL;
+	bFrost: BOOL;
+	bReset: BOOL;
+	rX2: REAL;
+	rX1: REAL;
+	iY2: INT;
+	iY1: INT;
+	bDirection: BOOL;
+	bEnableFeedbCtrl: BOOL;
+	rHysteresisFeedbCtrl: REAL;
+	tDelayFeedbCtrl: TIME;
+	rY: REAL;
+	iYTerminal: INT;
+	eStateModeAnalogOutput: Tc2_HVAC.E_HVACAnalogOutputMode;
+	bManualMode: BOOL;
+	byState: BYTE;
+	bErrorFeedb: BOOL;
+	bErrorGeneral: BOOL;
+	byError: BYTE;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbHVACAnalogOutputEx(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	rSetpoint:=rSetpoint, 
+	bCtrlVoltage:=bCtrlVoltage, 
+	eCtrlModeAnalogOutput:=eCtrlModeAnalogOutput, 
+	rYManual:=rYManual, 
+	rFeedb:=rFeedb, 
+	bFrost:=bFrost, 
+	bReset:=bReset, 
+	rY=>rY, 
+	iYTerminal=>iYTerminal, 
+	eStateModeAnalogOutput=>eStateModeAnalogOutput, 
+	bManualMode=>bManualMode, 
+	byState=>byState, 
+	bErrorFeedb=>bErrorFeedb, 
+	bErrorGeneral=>bErrorGeneral, 
+	byError=>byError, 
+	bInvalidParameter=>bInvalidParameter, 
+	rX2:=rX2, 
+	rX1:=rX1, 
+	iY2:=iY2, 
+	iY1:=iY1, 
+	bDirection:=bDirection, 
+	bEnableFeedbCtrl:=bEnableFeedbCtrl, 
+	rHysteresisFeedbCtrl:=rHysteresisFeedbCtrl, 
+	tDelayFeedbCtrl:=tDelayFeedbCtrl);]]></ST>
+    </Implementation>
+    <LineIds Name="AnalogOutputEx">
+      <LineId Id="7" Count="26" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

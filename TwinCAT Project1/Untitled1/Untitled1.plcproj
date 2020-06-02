@@ -23,6 +23,12 @@
     <Compile Include="POUs\AnalogInput.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\AnalogOutputEx.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\AntiBlockingDamper.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\AntiBlockingPump.TcPOU">
       <SubType>Code</SubType>
     </Compile>

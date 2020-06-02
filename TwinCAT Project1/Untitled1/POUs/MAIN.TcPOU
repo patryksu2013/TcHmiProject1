@@ -19,7 +19,9 @@ TwoPointActuatorMode();
 ThreePointActuatorMode();
 TemperatureSensorEx2();
 OverwriteAnalog();
-AnalogInput();]]></ST>
+AnalogInput();
+AnalogOutputEx();
+AntiBlockingDamper();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="154" Count="0" />
@@ -34,6 +36,7 @@ AnalogInput();]]></ST>
       <LineId Id="304" Count="0" />
       <LineId Id="307" Count="0" />
       <LineId Id="310" Count="0" />
+      <LineId Id="313" Count="1" />
     </LineIds>
   </POU>
 </TcPlcObject>
