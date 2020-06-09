@@ -1437,36 +1437,6 @@
     "id": 5,
     "value": "5",
     "text": "eHVACActuatorMode_Speed4_BMS"
-  },
-  {
-    "id": 6,
-    "value": "6",
-    "text": "eHVACActuatorMode_Auto_OP"
-  },
-  {
-    "id": 7,
-    "value": "7",
-    "text": "eHVACActuatorMode_Off_OP"
-  },
-  {
-    "id": 8,
-    "value": "8",
-    "text": "eHVACActuatorMode_Speed1_OP"
-  },
-  {
-    "id": 9,
-    "value": "9",
-    "text": "eHVACActuatorMode_Speed2_OP"
-  },
-  {
-    "id": 10,
-    "value": "10",
-    "text": "eHVACActuatorMode_Speed3_OP"
-  },
-  {
-    "id": 11,
-    "value": "11",
-    "text": "eHVACActuatorMode_Speed4_OP"
   }
 ]
 </script>

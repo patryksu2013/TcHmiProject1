@@ -740,7 +740,7 @@
             </div>
 
 </div>
-        <div id="TcHmiContainer_Service_19" data-tchmi-type="tchmi-container" data-tchmi-height="390" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Visible" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Service_19" data-tchmi-type="tchmi-container" data-tchmi-height="390" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 
             <div id="TcHmiTextblock_iYTerminalText_19" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="iYTerminal">
 
