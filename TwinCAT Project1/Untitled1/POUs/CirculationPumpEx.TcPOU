@@ -4,17 +4,17 @@
     <Declaration><![CDATA[PROGRAM CirculationPumpEx
 VAR
 	fbHVACCirculationPumpEx: FB_HVACCirculationPumpEx;
-	eDataSecurityType: E_HVACDataSecurityType;
+	eDataSecurityType: E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
 	bSetDefault: BOOL;
-	bEnable: BOOL;
+	bEnable: BOOL := TRUE;
 	bExternal: BOOL;
 	eCtrlModeActuator: E_HVACActuatorMode;
 	rOutsideTemp: REAL;
 	rValvePosition: REAL;
 	bFeedbPump: BOOL;
 	bPumpProtec: BOOL;
-	bManSwitch: BOOL;
-	bCtrlVoltage: BOOL;
+	bManSwitch: BOOL := TRUE;
+	bCtrlVoltage: BOOL := TRUE;
 	bReset: BOOL;
 	bPump: BOOL;
 	byState: BYTE;

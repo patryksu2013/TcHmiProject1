@@ -33,6 +33,21 @@
       "propertyGetterName": "getRY"
     },
     {
+      "name": "data-tchmi-rsetpoint",
+      "displayName": "rSetpoint",
+      "visible": true,
+      "type": "tchmi:general#/definitions/REAL",
+      "category": "FB_HVACAnalogOutputEx - Operator",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "rSetpoint",
+      "propertySetterName": "setRSetpoint",
+      "propertyGetterName": "getRSetpoint"
+    },
+    {
       "name": "data-tchmi-estatemodeanalogoutput",
       "displayName": "eStateModeAnalogOutput",
       "visible": true,

@@ -169,7 +169,7 @@
         </script>
 
     </div>
-    <div id="TcHmiContainer_Popup_18" data-tchmi-type="tchmi-container" data-tchmi-height="495" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-locked="False" data-tchmi-top="0" data-tchmi-left="0">
+    <div id="TcHmiContainer_Popup_18" data-tchmi-type="tchmi-container" data-tchmi-height="530" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-locked="False" data-tchmi-top="0" data-tchmi-left="0">
 
         <div id="TcHmiTextblock_sName_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
 
@@ -370,12 +370,30 @@
 }
 </script>
 </div>
-<div id="TcHmiContainer_Operator_18" data-tchmi-type="tchmi-container" data-tchmi-height="345" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+<div id="TcHmiContainer_Operator_18" data-tchmi-type="tchmi-container" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
-            <div id="TcHmiTextblock_eErrorCodeText_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="eErrorCode" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_ValueText1_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="iRawValue" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
 </div>
-<div id="TcHmiTextblock_eErrorCode_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_Value1_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%iRawValue%/pp%">
+
+
+
+
+
+</div>
+<div id="TcHmiTextblock_ValueText2_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="rPresentValue" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
+
+</div>
+<div id="TcHmiTextblock_Value2_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%f%GaugeValueFormatter(%pp%rPresentValue%/pp%, 2)%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
+
+
+
+</div>
+<div id="TcHmiTextblock_ValueText3_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="eErrorCode" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
+
+</div>
+<div id="TcHmiTextblock_Value3_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
 
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -401,7 +419,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -422,7 +440,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -443,7 +461,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -464,7 +482,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -485,7 +503,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -506,7 +524,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -527,7 +545,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -548,7 +566,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -569,7 +587,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -590,7 +608,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -611,7 +629,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -632,7 +650,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -653,7 +671,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -674,7 +692,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -695,7 +713,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -716,7 +734,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -737,7 +755,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -758,7 +776,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -779,7 +797,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -800,7 +818,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -821,7 +839,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -842,7 +860,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -863,7 +881,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -884,7 +902,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -905,7 +923,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -926,7 +944,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -947,7 +965,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -968,7 +986,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -989,7 +1007,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1010,7 +1028,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1031,7 +1049,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1052,7 +1070,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1073,7 +1091,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1094,7 +1112,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1115,7 +1133,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1136,7 +1154,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1157,7 +1175,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1178,7 +1196,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1199,7 +1217,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1220,7 +1238,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1241,7 +1259,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1262,7 +1280,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1283,7 +1301,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1304,7 +1322,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1325,7 +1343,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
                 "valueType": "tchmi:general#/definitions/String",
                 "value": {
                   "objectType": "StaticValue",
@@ -1342,7 +1360,7 @@
             {
               "objectType": "WriteToSymbol",
               "active": true,
-              "symbolExpression": "%ctrl%TcHmiTextblock_eErrorCode_18::Text%/ctrl%",
+              "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
               "valueType": "tchmi:general#/definitions/String",
               "value": {
                 "objectType": "StaticValue",
@@ -1360,14 +1378,14 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_Error_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="byError" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiTextblock_Status_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="byState" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
 
             </div>
-            <div id="TcHmiTextblock_Status_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="byState" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiTextblock_Error_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="byError" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
 
             </div>
 
-            <div id="TcHmiEllipse_State1_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+            <div id="TcHmiEllipse_State1_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
                 
 
@@ -1380,11 +1398,11 @@
 }
 </script>
 </div>
-            <div id="TcHmiTextblock_State1_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="limit value monitoring" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_State1_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="limit value monitoring" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiEllipse_State7_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+            <div id="TcHmiEllipse_State7_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
                 
 
@@ -1397,10 +1415,10 @@
 }
 </script>
 </div>
-            <div id="TcHmiTextblock_State7_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="sensor supply voltage" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
+            <div id="TcHmiTextblock_State7_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="sensor supply voltage" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11">
 
             </div>
-<div id="TcHmiEllipse_Error0_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="104" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+<div id="TcHmiEllipse_Error0_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
                 
 
@@ -1413,11 +1431,11 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_Error0_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bError" data-tchmi-top="104" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_Error0_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bError" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiEllipse_Error1_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+            <div id="TcHmiEllipse_Error1_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
                 
 
@@ -1430,11 +1448,11 @@
 }
 </script>
 </div>
-            <div id="TcHmiTextblock_Error1_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bInvalidParameter" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Error1_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bInvalidParameter" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiEllipse_Error2_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+            <div id="TcHmiEllipse_Error2_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
                 
 
@@ -1447,11 +1465,11 @@
 }
 </script>
 </div>
-            <div id="TcHmiTextblock_Error2_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bErrorGeneral" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Error2_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bErrorGeneral" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiEllipse_Error3_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+            <div id="TcHmiEllipse_Error3_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
                 
 
@@ -1464,11 +1482,11 @@
 }
 </script>
 </div>
-            <div id="TcHmiTextblock_Error3_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bErrorLowLimit" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Error3_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bErrorLowLimit" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
-            <div id="TcHmiEllipse_Error4_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+            <div id="TcHmiEllipse_Error4_18" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
                 
 
@@ -1482,12 +1500,12 @@
 </script>
 </div>
 
-            <div id="TcHmiTextblock_Error4_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bErrorHighLimit" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error4_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bErrorHighLimit" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
 </div>
-        <div id="TcHmiContainer_Service_18" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Service_18" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
 
             <div id="TcHmiToggleButton_bSetDefault_18" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="bSetDefault" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
 

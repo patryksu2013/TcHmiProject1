@@ -18,6 +18,21 @@
       "propertyGetterName": "getSName"
     },
     {
+      "name": "data-tchmi-irawvalue",
+      "displayName": "iRawValue",
+      "visible": true,
+      "type": "tchmi:general#/definitions/INT",
+      "category": "FB_HVACAnalogInput - Operator",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "iRawValue",
+      "propertySetterName": "setIRawValue",
+      "propertyGetterName": "getIRawValue"
+    },
+    {
       "name": "data-tchmi-rpresentvalue",
       "displayName": "rPresentValue",
       "visible": true,
