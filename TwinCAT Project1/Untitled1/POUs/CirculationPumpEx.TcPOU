@@ -11,8 +11,8 @@ VAR
 	eCtrlModeActuator: E_HVACActuatorMode;
 	rOutsideTemp: REAL;
 	rValvePosition: REAL;
-	bFeedbPump: BOOL;
-	bPumpProtec: BOOL;
+	bFeedbPump: BOOL := TRUE;
+	bPumpProtec: BOOL := TRUE;
 	bManSwitch: BOOL := TRUE;
 	bCtrlVoltage: BOOL := TRUE;
 	bReset: BOOL;

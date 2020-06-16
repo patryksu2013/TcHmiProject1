@@ -11,9 +11,9 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10131</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10132</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
-    <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3003</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
     <HmiRecent>1.10.1336.404</HmiRecent>
   </PropertyGroup>

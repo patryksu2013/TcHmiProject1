@@ -29,6 +29,18 @@
           {
             "objectType": "WriteToSymbol",
             "active": true,
+            "symbolExpression": "%pp%bRotate_Internal%/pp%",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": false
+            },
+            "asyncWait": true
+          },
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
             "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
             "valueType": "tchmi:framework#/definitions/Path",
             "value": {
@@ -223,6 +235,18 @@
           {
             "objectType": "WriteToSymbol",
             "active": true,
+            "symbolExpression": "%pp%bRotate_Internal%/pp%",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": false
+            },
+            "asyncWait": true
+          },
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
             "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
             "valueType": "tchmi:framework#/definitions/Path",
             "value": {
@@ -414,6 +438,18 @@
           }
         ],
         "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bRotate_Internal%/pp%",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/Boolean",
+              "value": false
+            },
+            "asyncWait": true
+          },
           {
             "objectType": "WriteToSymbol",
             "active": true,
