@@ -1477,7 +1477,7 @@
             </script>
         </div>
 
-        <div id="TcHmiContainer_Operator_10" data-tchmi-type="tchmi-container" data-tchmi-height="495" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Operator_10" data-tchmi-type="tchmi-container" data-tchmi-height="495" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
             <div id="TcHmiTextblock_SelectMode_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Wybór trybu pracy" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 
@@ -1770,7 +1770,7 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_Error3_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorMotorprotecSpeed1" data-tchmi-top="185" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_Error3_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorMotorprotec Speed1" data-tchmi-top="185" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
@@ -1788,7 +1788,7 @@
                 </script>
             </div>
 
-            <div id="TcHmiTextblock_Error4_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorMotorprotecSpeed2" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error4_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorMotorprotec Speed2" data-tchmi-top="225" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
@@ -1806,7 +1806,7 @@
                 </script>
             </div>
 
-            <div id="TcHmiTextblock_Error5_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorMotorprotecSpeed3" data-tchmi-top="265" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error5_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorMotorprotec Speed3" data-tchmi-top="265" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
@@ -1824,7 +1824,7 @@
                 </script>
             </div>
 
-            <div id="TcHmiTextblock_Error6_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedbContactorSpeed1" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error6_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedbContactor Speed1" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
             <div id="TcHmiEllipse_Error7_10" data-tchmi-type="tchmi-ellipse" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="345" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px">
@@ -1841,7 +1841,7 @@
                 </script>
             </div>
 
-            <div id="TcHmiTextblock_Error7_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedbContactorSpeed2" data-tchmi-top="345" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error7_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedbContactor Speed2" data-tchmi-top="345" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
@@ -1859,7 +1859,7 @@
                 </script>
             </div>
 
-            <div id="TcHmiTextblock_Error8_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedbContactorSpeed3" data-tchmi-top="385" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error8_10" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left="200" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedbContactor Speed3" data-tchmi-top="385" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
@@ -1882,7 +1882,7 @@
             </div>
 
         </div>
-        <div id="TcHmiContainer_Service_10" data-tchmi-type="tchmi-container" data-tchmi-height="540" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Service_10" data-tchmi-type="tchmi-container" data-tchmi-height="540" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
 
             <div id="TcHmiToggleButton_bSetDefault_10" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="bSetDefault" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
 
