@@ -223,6 +223,9 @@
     <Content Include="Localization\pl-PL.tpl.localization">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_2\FB_HVAC2PointActuator_Localization.xls">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_2\FB_HVAC3PointActuator_2.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -245,6 +248,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVAC2PointActuator.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_2\FB_HVAC3PointActuator_Localization.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_2\FB_HVACMotor2Speed_Localization.xls">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVACMotor3Speed.usercontrol">
@@ -314,6 +323,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Default.view">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_2\FB_HVACMotor3Speed_Localization.xls">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogInput.localization">

@@ -1073,7 +1073,7 @@
   }
 ]
 </script>
-    <div id="TcHmiImage_Outside_12" data-tchmi-type="tchmi-image" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Visible" data-tchmi-src="Imports/Images/Actuator/symbol_outside.svg">
+    <div id="TcHmiImage_Outside_12" data-tchmi-type="tchmi-image" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Actuator/symbol_outside.svg">
 
 
 
@@ -1109,7 +1109,7 @@
             []
         </script>
     </div>
-<div id="TcHmiImage_Direction_12" data-tchmi-type="tchmi-image" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-width="30" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiImage_Direction_12" data-tchmi-type="tchmi-image" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-width="30" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
 
 
@@ -1310,7 +1310,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_Feedb_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_12::RenderedHeight%/ctrl%/3%/f%" data-tchmi-creator-visibility="Visible" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-top-unit="%" data-tchmi-top="0" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rFeedb%/pp%, 0),'%')%/f%">
+<div id="TcHmiTextblock_Feedb_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_12::RenderedHeight%/ctrl%/3%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-top-unit="%" data-tchmi-top="0" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rFeedb%/pp%, 0),'%')%/f%">
 
         <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
             {
@@ -1340,7 +1340,7 @@
             ]
         </script>
     </div>
-    <div id="TcHmiTextblock_Mode_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_12::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Visible" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
+    <div id="TcHmiTextblock_Mode_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_12::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
 
         <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
             {
@@ -1595,7 +1595,7 @@
             }
         </script>
 
-        <div id="TcHmiTextblock_Operator_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="Operator" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed">
+        <div id="TcHmiTextblock_Operator_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text="%l%FB_HVAC3PointActuator_Operator%/l%">
 
 
 
@@ -1685,7 +1685,7 @@
             </script>
         </div>
 
-        <div id="TcHmiTextblock_Service_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-text="Serwis" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
+        <div id="TcHmiTextblock_Service_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
 
 
 
@@ -1786,7 +1786,7 @@
         </div>
 <div id="TcHmiContainer_Operator_12" data-tchmi-type="tchmi-container" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
-            <div id="TcHmiTextblock_SelectMode_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="Wybór trybu pracy" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+            <div id="TcHmiTextblock_SelectMode_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_eCtrlModeActuator%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 
             </div>
             <div id="TcHmiCombobox_SelectMode_12" data-tchmi-type="tchmi-combobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-selected-index="%pp%eCtrlModeActuator%/pp%">
@@ -1866,11 +1866,11 @@
                     ]
                 </script>
             </div>
-            <div id="TcHmiTextblock_Status_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="byState" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_State_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_byState%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiTextblock_Error_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="Errors" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_Errors%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
@@ -1887,7 +1887,7 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_State0_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="Enable" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_State0_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bEnable%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
@@ -1904,7 +1904,7 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_State1_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="Manual Switch" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_State1_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bManualSwitch%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
@@ -1921,7 +1921,7 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_State2_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="Enable Feedback Control" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_State2_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bEnableFeedbCtrl%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
@@ -1938,7 +1938,7 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_State3_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="Control Voltage" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_State3_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bCtrlVoltage%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
@@ -1955,7 +1955,7 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_State4_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="Reset" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_State4_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bReset%/l%" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
@@ -2036,7 +2036,7 @@
                     ]
                 </script>
             </div>
-            <div id="TcHmiTextblock_bErrorFeedb_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bErrorFeedb" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_bErrorFeedb_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bErrorFeedb%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
@@ -2116,14 +2116,14 @@
                 </script>
             </div>
 
-            <div id="TcHmiTextblock_bInvalidParameter_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="bInvalidParameter" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+            <div id="TcHmiTextblock_bInvalidParameter_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bInvalidParameter%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
             </div>
 
         </div>
-        <div id="TcHmiContainer_Service_12" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Service_12" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
 
-            <div id="TcHmiToggleButton_bSetDefault_12" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="bSetDefault" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
+            <div id="TcHmiToggleButton_bSetDefault_12" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bSetDefault%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
 
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -2201,7 +2201,7 @@
                 </script>
             </div>
 
-            <div id="TcHmiToggleButton_bReset_12" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="bReset" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
+            <div id="TcHmiToggleButton_bReset_12" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bReset%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
 
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -2272,7 +2272,7 @@
                     ]
                 </script>
             </div>
-            <div id="TcHmiToggleButton_bEnableFeedbCtrl_12" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="bEnableFeedbCtrl" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bEnableFeedbCtrl%/pp%">
+            <div id="TcHmiToggleButton_bEnableFeedbCtrl_12" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_bEnableFeedbCtrl%/l%" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bEnableFeedbCtrl%/pp%">
 
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -2343,7 +2343,7 @@
                     ]
                 </script>
             </div>
-            <div id="TcHmiTextblock_Service1_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="rMinValueFeedb">
+            <div id="TcHmiTextblock_Service1_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="120" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVAC3PointActuator_rMinValueFeedb%/l%">
 
             </div>
             <div id="TcHmiTextbox_Service1_12" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rMinValueFeedb%/pp%, 2)%/f%">
@@ -2387,7 +2387,7 @@
                 </script>
             </div>
 
-        <div id="TcHmiTextblock_Service2_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="rMaxValueFeedb">
+        <div id="TcHmiTextblock_Service2_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVAC3PointActuator_rMaxValueFeedb%/l%">
 
             </div>
 
@@ -2432,7 +2432,7 @@
                 </script>
             </div>
 
-<div id="TcHmiTextblock_Service3_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="260" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="rHysteresisFeedb">
+<div id="TcHmiTextblock_Service3_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="260" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVAC3PointActuator_rHysteresisFeedb%/l%">
 
             </div>
 
@@ -2477,7 +2477,7 @@
                 </script>
             </div>
 
-<div id="TcHmiTextblock_Service4_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="330" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="tStrokeTime">
+<div id="TcHmiTextblock_Service4_12" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="330" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVAC3PointActuator_tStrokeTime%/l%">
 
             </div>
 
@@ -2523,7 +2523,7 @@
             </div>
 
 </div>
-        <div id="TcHmiButton_Close_12" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="Zamknij" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed">
+        <div id="TcHmiButton_Close_12" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_HVAC3PointActuator_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed">
 
             <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
                 [
