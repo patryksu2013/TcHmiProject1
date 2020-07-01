@@ -1,15 +1,5 @@
 {
     "USERS": {
-        "Operator": {
-            "ENABLED": true,
-            "PASSWORD": "b90e252175685a8e09bd670e744e024fe9e4b8acec0ea0c218270e609ae411f7",
-            "SALT": "+3HlmTzuc/XHzL87pkRXSWJbgj4hf6m4g6zclsPCk2RxY8pqAAZ/VXH6KgHxDZyidZY7GbA4nJlvmjfGMhrxAA=="
-        },
-        "Serwisant": {
-            "ENABLED": true,
-            "PASSWORD": "541b01399e741cea447a8ad99fc94d64060553b3c24aab53ca30c906d1144dd9",
-            "SALT": "0eZcR8Rn9TUYpNncykfZ81wvEP3l4M9rjyOtb2nrPN52TrGtVko48HEHrRMDTegtfZTLlJaO8NG/IxFc7Hp1AA=="
-        },
         "__SystemAdministrator": {
             "ENABLED": false,
             "PASSWORD": "",

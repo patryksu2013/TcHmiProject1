@@ -1,8 +1,33 @@
 ﻿{
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/LocalizationDescription.Schema.json",
   "locale": "en-US",
   "localizedText": {
-    "Text1": "Hello World!",
-    "Text2": "I'm a localized text."
-  }
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rValueOut": "Value Out",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rPresentValue": "Present Value",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_Operator": "Operator",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_Service": "Service",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_OverwriteAnalog": "Manual Overwrite",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_iRawValue": "Raw Value",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_udiError": "Error bytes",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bInvalidParameter": "Invalid Parameter",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorHighLimit": "Error High Limit",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorShortCircuit": "Error Short Circuit",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorSensor": "Error Sensor",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorGeneral": "General Error",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorLowLimit": "Error Low Limit",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorBrokenSensor": "Error Broken Sensor",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorConversionFactor": "Error Conversion Factor",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bSetDefault": "Set Default",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bReset": "Reset",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_iConversionFactor": "Conversion Factor",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rOffset": "Offset",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rHighLimit": "High Limit",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rLowLimit": "Low Limit",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rReplacementValue": "Replacement Value",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rSmoothFactor": "Smooth Factor",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_iTemperatureSensorMode": "Temperature Sensor Mode",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_eCtrlMode": "Control Mode",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_rManualValue": "Manual Value",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_Close": "Close"
+  },
+  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/LocalizationDescription.Schema.json"
 }

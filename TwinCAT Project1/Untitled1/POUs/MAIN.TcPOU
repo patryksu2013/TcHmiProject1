@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="MAIN" Id="{2a4304f3-537e-43d1-b89c-af5d9907262c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	locale : ARRAY [0..99] OF STRING;
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[CirculationPumpEx();

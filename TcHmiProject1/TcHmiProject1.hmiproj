@@ -11,12 +11,12 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10132</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10136</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3003</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
     <HmiRecent>1.10.1336.372</HmiRecent>
-    <HmiDefaultLanguage>pl-PL</HmiDefaultLanguage>
+    <HmiDefaultLanguage>client</HmiDefaultLanguage>
     <HmiTimeFormatLocale>client</HmiTimeFormatLocale>
   </PropertyGroup>
   <PropertyGroup>
@@ -205,6 +205,18 @@
     <Content Include="Imports\Images\toolbox_pressed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Localization\CopyOf_pl-PL.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\en-US.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\en-US.tpl.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\FB_HVACAnalogInput.localization">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Localization\pl-PL.localization">
       <SubType>Content</SubType>
     </Content>
@@ -304,10 +316,19 @@
     <Content Include="Default.view">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogInput.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogInput_Localization.xls">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper_Localization.xls">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogOutputEx.usercontrol">
@@ -322,16 +343,28 @@
     <Content Include="UserControls_3\FB_HVACAnalogInput.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_3\FB_HVACAnalogOutputEx_Localization.xls">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog_Localization.xls">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2_Localization.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="View1.view">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />
@@ -471,22 +504,6 @@
       <Visible>true</Visible>
     </Content>
     <Content Include="Images\Beckhoff_Logo.svg">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
-    </Content>
-    <Content Include="Localization\de-DE.localization">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
-    </Content>
-    <Content Include="Localization\de-DE.tpl.localization">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
-    </Content>
-    <Content Include="Localization\en-US.localization">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
-    </Content>
-    <Content Include="Localization\en-US.tpl.localization">
       <SubType>Content</SubType>
       <Visible>true</Visible>
     </Content>

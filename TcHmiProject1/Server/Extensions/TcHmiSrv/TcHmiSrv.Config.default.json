@@ -1,7 +1,7 @@
 {
     "ANALYZE_MAPPINGUSAGE": false,
     "AUTHCLIENTCERTIFICATE": false,
-    "AUTO_LOGINUSER": "Operator",
+    "AUTO_LOGINUSER": "__SystemAdministrator",
     "AUTO_LOGOFF": "P30D",
     "CACHEENABLED": true,
     "CACHEMAXAGE": "P30D",
@@ -20,11 +20,19 @@
     "DEFAULTDOCUMENT": [
         "Default.html"
     ],
-    "DEFAULTLOCALE": "pl-PL",
+    "DEFAULTLOCALE": "client",
     "DEFAULTTIMEFORMATLOCALE": "client",
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
     "DEFINITIONS": {
+        "PLC1.ARRAY (0..99) OF STRING(80)": {
+            "items": {
+                "$ref": "tchmi:general#/definitions/STRING(80)"
+            },
+            "maxItems": 100,
+            "minItems": 100,
+            "type": "array"
+        },
         "PLC1.ARRAY (1..2) OF Tc2_HVAC.FB_HVACTimeConSec": {
             "items": {
                 "$ref": "#/definitions/PLC1.Tc2_HVAC.FB_HVACTimeConSec"
@@ -4128,6 +4136,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.MAIN.locale": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::locale",
+            "SCHEMA": {
+                "$ref": "tchmi:server#/definitions/PLC1.ARRAY (0..99) OF STRING(80)"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.MAIN.locale.0": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "ADS",
+            "MAPPING": "PLC1::MAIN::locale[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/STRING(80)"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Motor1Speed.bAuto": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -7547,24 +7575,6 @@
     },
     "USERGROUPUSERS": {
         "TcHmiUserManagement": {
-            "Operator": {
-                "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
-                "USERGROUPUSERS_GROUPS": [
-                    "__SystemUsers"
-                ],
-                "USERGROUPUSERS_LOCALE": "client",
-                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
-                "USERGROUPUSERS_TIMEZONE": "project"
-            },
-            "Serwisant": {
-                "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
-                "USERGROUPUSERS_GROUPS": [
-                    "__SystemUsers"
-                ],
-                "USERGROUPUSERS_LOCALE": "client",
-                "USERGROUPUSERS_TIMEFORMATLOCALE": "project",
-                "USERGROUPUSERS_TIMEZONE": "project"
-            },
             "__SystemAdministrator": {
                 "USERGROUPUSERS_AUTO_LOGOFF": "P30D",
                 "USERGROUPUSERS_GROUPS": [
