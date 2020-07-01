@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="ThreePointActuatorMode" Id="{13b0f26e-9d80-4e1f-941a-2f4b51cb14bd}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM ThreePointActuatorMode
 VAR
 	fbHVAC3PointActuator: FB_HVAC3PointActuator;
-	eDataSecurityType: E_HVACDataSecurityType;
+	eDataSecurityType: E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
 	bSetDefault: BOOL;
 	bEnable: BOOL;
 	bAutoOpen: BOOL;

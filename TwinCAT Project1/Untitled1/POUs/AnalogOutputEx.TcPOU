@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="AnalogOutputEx" Id="{99f4734a-2538-4ab5-9eb9-ee32d4bbfcec}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM AnalogOutputEx
 VAR
 	fbHVACAnalogOutputEx: FB_HVACAnalogOutputEx;
-	eDataSecurityType: E_HVACDataSecurityType;
+	eDataSecurityType: E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
 	bSetDefault: BOOL;
 	bEnable: BOOL;
 	rSetpoint: REAL;

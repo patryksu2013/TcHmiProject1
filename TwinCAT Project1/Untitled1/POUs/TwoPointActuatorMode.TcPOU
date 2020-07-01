@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="TwoPointActuatorMode" Id="{cdb39446-830f-45fb-bd98-129bacd43e40}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM TwoPointActuatorMode
 VAR
 	fbHVAC2PointActuator: FB_HVAC2PointActuator;
-	eDataSecurityType: E_HVACDataSecurityType;
+	eDataSecurityType: E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
 	bSetDefault: BOOL;
 	bEnable: BOOL;
 	bIn: BOOL;

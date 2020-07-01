@@ -20,7 +20,7 @@
     "DEFAULTDOCUMENT": [
         "Default.html"
     ],
-    "DEFAULTLOCALE": "client",
+    "DEFAULTLOCALE": "pl-PL",
     "DEFAULTTIMEFORMATLOCALE": "client",
     "DEFAULTTIMEZONE": "client",
     "DEFAULTUSERGROUP": "__SystemUsers",
@@ -2354,6 +2354,17 @@
                     }
                 },
                 "type": "object"
+            },
+            "USEMAPPING": true
+        },
+        "GetCurrentUser.locale": {
+            "ACCESS": 3,
+            "CUSTOMERDATA": "",
+            "DOMAIN": "TcHmiSrv",
+            "MAPPING": "GetCurrentUser::locale",
+            "SCHEMA": {
+                "function": true,
+                "type": "string"
             },
             "USEMAPPING": true
         },

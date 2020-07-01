@@ -16,6 +16,8 @@
     <HmiCommunicationServerPort>3003</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
     <HmiRecent>1.10.1336.372</HmiRecent>
+    <HmiDefaultLanguage>pl-PL</HmiDefaultLanguage>
+    <HmiTimeFormatLocale>client</HmiTimeFormatLocale>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -201,6 +203,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\toolbox_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\pl-PL.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\pl-PL.tpl.localization">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVAC3PointActuator_2.usercontrol">

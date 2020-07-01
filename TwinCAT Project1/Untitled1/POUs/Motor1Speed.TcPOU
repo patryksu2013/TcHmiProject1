@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="Motor1Speed" Id="{c58c5a8f-8c81-458f-bb7a-c11646322c46}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Motor1Speed
 VAR
 	fbHVACMotor1Speed: FB_HVACMotor1Speed;
-	eDataSecurityType: E_HVACDataSecurityType;
+	eDataSecurityType: E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
 	bSetDefault: BOOL;
 	bEnable: BOOL;
 	bAuto: BOOL;

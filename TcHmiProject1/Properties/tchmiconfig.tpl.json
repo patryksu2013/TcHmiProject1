@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/TchmiConfig.Schema.json",
   "basePath": "./Libraries",
-  "locale": "client",
+  "locale": "pl-PL",
   "scaleMode": "None",
   "startupView": "Default.view",
   "loginPage": null,
@@ -112,7 +112,8 @@
   "actionTemplates": [],
   "languages": {
     "de-DE": "Localization\\de-DE.localization",
-    "en-US": "Localization\\en-US.localization"
+    "en-US": "Localization\\en-US.localization",
+    "pl-PL": "Localization\\pl-PL.localization"
   },
   "creatorSettings": {
     "viewport": {

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="Work" Id="{b9737889-12cb-4d36-b1d4-37b8d941cb2b}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Work
 VAR
 	fbHVACWork: FB_HVACWork;
-	eDataSecurityType: E_HVACDataSecurityType;
+	eDataSecurityType: E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
 	bSetDefault: BOOL;
 	bOn: BOOL;
 	bResetHours: BOOL;

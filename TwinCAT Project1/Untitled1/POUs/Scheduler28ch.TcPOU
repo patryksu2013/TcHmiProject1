@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="Scheduler28ch" Id="{f0a626e8-2500-4a42-8a19-7fa86e2f5fca}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM Scheduler28ch
 VAR
 	fbHVACScheduler28ch:FB_HVACScheduler28ch;
-	eDataSecurityType:E_HVACDataSecurityType;
+	eDataSecurityType:E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
 	bSetDefault:BOOL;
 	bEnable:BOOL;
 	dtSystemTime:DT;
