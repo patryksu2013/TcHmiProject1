@@ -752,7 +752,7 @@
             []
         </script>
     </div>
-    <div id="TcHmiTextblock_Mode_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Visible" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+    <div id="TcHmiTextblock_Mode_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
         <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
@@ -1069,7 +1069,7 @@
             ]
         </script>
     </div>
-<div id="TcHmiTextblock_Speed_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Visible" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-top="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+<div id="TcHmiTextblock_Speed_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-top="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
         <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
@@ -1244,7 +1244,7 @@
             }
         </script>
 
-        <div id="TcHmiTextblock_Operator_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed">
+        <div id="TcHmiTextblock_Operator_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -1316,7 +1316,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -1329,12 +1329,25 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
 }
 </script>
 </div>
 
-        <div id="TcHmiTextblock_Service_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="170" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
+        <div id="TcHmiTextblock_Service_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="165" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -1410,7 +1423,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -1423,7 +1436,7 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
 }
 </script>
 
@@ -1432,9 +1445,22 @@
   "color": "None"
 }
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
 </div>
 
-        <div id="TcHmiContainer_Operator_9" data-tchmi-type="tchmi-container" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Operator_9" data-tchmi-type="tchmi-container" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
             <div id="TcHmiTextblock_SelectMode_9" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_eCtrlModeActuator%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 

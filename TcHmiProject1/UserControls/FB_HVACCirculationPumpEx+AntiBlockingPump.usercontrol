@@ -1033,7 +1033,7 @@
 
         </div>
 
-        <div id="TcHmiTextblock_Operator_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACCirculationPumpEx+AntiBlockingPump_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+        <div id="TcHmiTextblock_Operator_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACCirculationPumpEx+AntiBlockingPump_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
             <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1129,7 +1129,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -1142,12 +1142,25 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
 }
 </script>
 </div>
 
-        <div id="TcHmiTextblock_Service_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="115" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACCirculationPumpEx+AntiBlockingPump_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
+        <div id="TcHmiTextblock_Service_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACCirculationPumpEx+AntiBlockingPump_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -1245,7 +1258,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -1258,7 +1271,7 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
 }
 </script>
 
@@ -1267,9 +1280,22 @@
   "color": "None"
 }
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
 </div>
 
-        <div id="TcHmiTextblock_Antiblocking_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACCirculationPumpEx+AntiBlockingPump_Antiblocking%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
+        <div id="TcHmiTextblock_Antiblocking_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACCirculationPumpEx+AntiBlockingPump_Antiblocking%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
             <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -1363,7 +1389,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -1376,7 +1402,7 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
 }
 </script>
 
@@ -1385,9 +1411,22 @@
   "color": "None"
 }
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
 </div>
 
-        <div id="TcHmiContainer_Operator_1" data-tchmi-type="tchmi-container" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Operator_1" data-tchmi-type="tchmi-container" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
             <div id="TcHmiTextblock_SelectMode_1" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACCirculationPumpEx+AntiBlockingPump_eAntiBlockingMode%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed">
 

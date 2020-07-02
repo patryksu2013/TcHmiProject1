@@ -456,7 +456,7 @@
     "FB_HVACTemperatureSensorEx2+OverwriteAnalog_Service": "Service",
     "FB_HVACTemperatureSensorEx2+OverwriteAnalog_OverwriteAnalog": "Overwrite",
     "FB_HVACTemperatureSensorEx2+OverwriteAnalog_iRawValue": "Raw Value",
-    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_udiError": "Error bytes",
+    "FB_HVACTemperatureSensorEx2+OverwriteAnalog_udiError": "Errors byte",
     "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bInvalidParameter": "Invalid Parameter",
     "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorHighLimit": "Error High Limit",
     "FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorShortCircuit": "Error Short Circuit",

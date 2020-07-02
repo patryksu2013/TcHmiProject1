@@ -382,7 +382,7 @@
 				]
 			</script>
 		</div>
-<div id="TcHmiTextblock_1-7_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="213.75" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="1-7">
+<div id="TcHmiTextblock_1-7_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="226.25" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="1-7">
 
 
 			<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -504,7 +504,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -517,11 +517,24 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
 }
 </script>
 </div>
-<div id="TcHmiTextblock_8-14_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="233.75" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="213.75" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="8-14">
+<div id="TcHmiTextblock_8-14_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="226.25" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="226.25" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="8-14">
 
 
 			<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -647,7 +660,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -660,11 +673,24 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
 }
 </script>
 </div>
-<div id="TcHmiTextblock_15-21_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="457.5" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="213.75" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="15-21">
+<div id="TcHmiTextblock_15-21_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="452.5" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="226.25" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="15-21">
 
 
 			<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -790,7 +816,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -803,11 +829,24 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
 }
 </script>
 </div>
-<div id="TcHmiTextblock_22-28_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="681.25" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="213.75" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="22-28">
+<div id="TcHmiTextblock_22-28_5" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="678.75" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="226.25" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="22-28">
 
 
 			<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -933,7 +972,7 @@
   "left": 1,
   "right": 1,
   "top": 1,
-  "bottom": 1,
+  "bottom": 0,
   "leftUnit": "px",
   "rightUnit": "px",
   "topUnit": "px",
@@ -946,7 +985,20 @@
   "left": "Solid",
   "right": "Solid",
   "top": "Solid",
-  "bottom": "Solid"
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
 }
 </script>
 </div>

@@ -398,7 +398,7 @@
 }
 </script>
 </div>
-<div id="TcHmiContainer_Operator_18" data-tchmi-type="tchmi-container" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+<div id="TcHmiContainer_Operator_18" data-tchmi-type="tchmi-container" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
             <div id="TcHmiTextblock_ValueText1_18" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_iRawValue%/l%">
 
@@ -1554,6 +1554,12 @@
 
 
 
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(230, 230, 250, 1)"
+}
+</script>
 </div>
         <div id="TcHmiContainer_Service_18" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
 
