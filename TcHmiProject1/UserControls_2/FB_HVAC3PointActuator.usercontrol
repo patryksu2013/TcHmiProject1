@@ -1664,7 +1664,7 @@
 
             <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": 0,
+  "left": 1,
   "right": 1,
   "top": 1,
   "bottom": 0,
@@ -1771,7 +1771,7 @@
 
             <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
-  "left": 0,
+  "left": 1,
   "right": 1,
   "top": 1,
   "bottom": 0,
