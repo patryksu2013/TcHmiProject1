@@ -102,10 +102,6 @@
     {
       "url": "Default.view",
       "preload": false
-    },
-    {
-      "url": "View1.view",
-      "preload": false
     }
   ],
   "userFunctions": [],

@@ -11,7 +11,7 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10137</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10138</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3003</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
@@ -277,6 +277,9 @@
     <Content Include="UserControls_2\FB_HVAC3PointActuator_Localization.xls">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_2\FB_HVACMotor1Speed_Localization.xls">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="UserControls_2\FB_HVACMotor2Speed_Localization.xls">
       <SubType>Content</SubType>
     </Content>
@@ -398,9 +401,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2_Localization.xls">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="View1.view">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />

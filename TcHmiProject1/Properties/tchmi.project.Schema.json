@@ -1,6 +1,13 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
+    "localizationArray": {
+      "items": {
+        "$ref": "tchmi:general#/definitions/String"
+      },
+      "type": "array",
+      "minItems": 1
+    },
     "UserControls_FB_HVACCirculationPumpEx": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "tchmi-user-control-host",
@@ -160,13 +167,6 @@
       "frameworkUserControlConfig": "UserControls_3\\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/UserControls_3_FB_HVACTemperatureSensorEx2+OverwriteAnalog"
-    },
-    "localizationArray": {
-      "items": {
-        "$ref": "tchmi:general#/definitions/String"
-      },
-      "type": "array",
-      "minItems": 1
     }
   }
 }
