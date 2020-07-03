@@ -15,7 +15,7 @@
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
     <HmiCommunicationServerPort>3004</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
-    <HmiRecent>1.10.1336.372</HmiRecent>
+    <HmiRecent>1.10.1336.404</HmiRecent>
     <HmiDefaultLanguage>client</HmiDefaultLanguage>
     <HmiTimeFormatLocale>client</HmiTimeFormatLocale>
   </PropertyGroup>

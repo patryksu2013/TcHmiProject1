@@ -12,7 +12,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0_21'));\n//\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1_21'));\n//\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7_21'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0_21'));\n\t\tstatusArr.push();\n\t\tstatusArr.push();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7_21'));\n        for (let index = 0; index < statusArr.length; index++) {\n        \tif (index != 2 && index != 3) {\n\t\t\t    if (value & (1 << index)) {\n\t\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t} else {\n\t\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t}\n\t    \t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -66,7 +66,7 @@
         "objectType": "JavaScript",
         "active": true,
         "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        console.log(value);\n        var status = new TcHmi.Controls.get('TcHmiEllipse_Error1_21');\n\t\t    if (value & (1 << 1)) {\n        \t\tconsole.log(\"red\");\n\t\t\t\tstatus.setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n        \t\tconsole.log(\"gray\");\n\t\t\t\tstatus.setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n    } else {\n        // Handle error... \n    }\n});"
+          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var status = new TcHmi.Controls.get('TcHmiEllipse_Error1_21');\n\t\t    if (value & (1 << 1)) {\n\t\t\t\tstatus.setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatus.setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n    } else {\n        // Handle error... \n    }\n});"
         ],
         "injectContextObject": false,
         "asyncWait": true,
@@ -82,6 +82,206 @@
 
 
 
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%bStageOff%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bStageOff%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiTextblock_Mode_21::Text%/ctrl%",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/String",
+              "value": "Off"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%bStageAuto%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bStageAuto%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiTextblock_Mode_21::Text%/ctrl%",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/String",
+              "value": "Auto"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%bStage01%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bStage01%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiTextblock_Mode_21::Text%/ctrl%",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/String",
+              "value": "S01"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%bStage02%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bStage02%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiTextblock_Mode_21::Text%/ctrl%",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/String",
+              "value": "S02"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%bStage03%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bStage03%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiTextblock_Mode_21::Text%/ctrl%",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/String",
+              "value": "S03"
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>
 <div id="TcHmiContainer_Dim_21" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed">
 
@@ -92,7 +292,7 @@
         </script>
 
     </div>
-    <div id="TcHmiContainer_Popup_21" data-tchmi-type="tchmi-container" data-tchmi-height="610" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-locked="False">
+    <div id="TcHmiContainer_Popup_21" data-tchmi-type="tchmi-container" data-tchmi-height="610" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-locked="False">
 
         <div id="TcHmiTextblock_sName_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
 
