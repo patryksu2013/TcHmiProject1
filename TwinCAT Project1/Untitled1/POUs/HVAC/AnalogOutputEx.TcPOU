@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
-  <POU Name="AnalogOutputEx" Id="{99f4734a-2538-4ab5-9eb9-ee32d4bbfcec}" SpecialFunc="None">
+  <POU Name="AnalogOutputEx" Id="{3de34637-d188-46b3-bf3f-7a94d0c8f3a9}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM AnalogOutputEx
 VAR
 	fbHVACAnalogOutputEx: FB_HVACAnalogOutputEx;

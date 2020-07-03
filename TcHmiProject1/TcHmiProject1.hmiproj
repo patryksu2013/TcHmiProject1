@@ -11,9 +11,9 @@
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10138</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10139</HmiCommunicationRouterPort>
     <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
-    <HmiCommunicationServerPort>3003</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3004</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
     <HmiRecent>1.10.1336.372</HmiRecent>
     <HmiDefaultLanguage>client</HmiDefaultLanguage>
@@ -403,6 +403,12 @@
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2_Localization.xls">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls_4\FB_BARFanCoil.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_4\FB_BARFanCoil.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include=".hmipkgs" />
     <Folder Include="Imports\Images\Actuator_2" />
     <Folder Include="Imports\Images\Motor" />
@@ -417,6 +423,7 @@
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\Videos" />
     <Folder Include="Localization" />
+    <Folder Include="UserControls_4" />
     <Folder Include="UserControls_3" />
     <Folder Include="UserControls_2" />
     <Folder Include="Server\Extensions\ADS" />

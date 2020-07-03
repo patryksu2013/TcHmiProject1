@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <POU Name="BARFanCoil" Id="{7698306f-8d7f-4e78-abd1-c407410e9149}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM BARFanCoil
+VAR
+	fbBARFanCoil: FB_BARFanCoil;
+	eDataSecurityType: E_HVACDataSecurityType := E_HVACDataSecurityType.eHVACDataSecurityType_Idle;
+	bSetDefault: BOOL;
+	bEnable: BOOL;
+	eCtrlFct: E_BARCtrlFct;
+	rSetpoint: REAL;
+	rRoomTemp: REAL;
+	bStageUp: BOOL;
+	bStageDown: BOOL;
+	iStageManual: INT;
+	bReset: BOOL;
+	rDeviationXW_Stage01: REAL;
+	rDeviationXW_Stage02: REAL;
+	rDeviationXW_Stage03: REAL;
+	rHysteresisRange: REAL;
+	udiSecMINPowerOnTime: UDINT;
+	iFctModeFanCoil: INT;
+	udiTimePeriod: UDINT;
+	bStageOff: BOOL;
+	bStageAuto: BOOL;
+	bStage01: BOOL;
+	bStage02: BOOL;
+	bStage03: BOOL;
+	bFanCoilActive: BOOL;
+	bPresence: BOOL;
+	byState: BYTE;
+	byError: BYTE;
+	udiSecRT_MINPowerOnTime: UDINT;
+	udiRT_TimePeriod: UDINT;
+	bInvalidParameter: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbBARFanCoil(
+	eDataSecurityType:=eDataSecurityType, 
+	bSetDefault:=bSetDefault, 
+	bEnable:=bEnable, 
+	eCtrlFct:=eCtrlFct, 
+	rSetpoint:=rSetpoint, 
+	rRoomTemp:=rRoomTemp, 
+	bStageUp:=bStageUp, 
+	bStageDown:=bStageDown, 
+	iStageManual:=iStageManual, 
+	bReset:=bReset, 
+	bStageOff=>bStageOff, 
+	bStageAuto=>bStageAuto, 
+	bStage01=>bStage01, 
+	bStage02=>bStage02, 
+	bStage03=>bStage03, 
+	bFanCoilActive=>bFanCoilActive, 
+	bPresence=>bPresence, 
+	byState=>byState, 
+	byError=>byError, 
+	udiSecRT_MINPowerOnTime=>udiSecRT_MINPowerOnTime, 
+	udiRT_TimePeriod=>udiRT_TimePeriod, 
+	bInvalidParameter=>bInvalidParameter, 
+	rDeviationXW_Stage01:=rDeviationXW_Stage01, 
+	rDeviationXW_Stage02:=rDeviationXW_Stage02, 
+	rDeviationXW_Stage03:=rDeviationXW_Stage03, 
+	rHysteresisRange:=rHysteresisRange, 
+	udiSecMINPowerOnTime:=udiSecMINPowerOnTime, 
+	iFctModeFanCoil:=iFctModeFanCoil, 
+	udiTimePeriod:=udiTimePeriod);]]></ST>
+    </Implementation>
+    <LineIds Name="BARFanCoil">
+      <LineId Id="11" Count="28" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,1199 @@
+﻿<div id="FB_BARFanCoil" data-tchmi-type="tchmi-user-control"
+     data-tchmi-top="0" data-tchmi-left="0"
+     data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
+     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%">
+
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%byState%/pp%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0_21'));\n//\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1_21'));\n//\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6_21'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7_21'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "FB_BARFanCoil.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Dim_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Popup_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim_21');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup_21');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "%pp%byError%/pp%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        console.log(value);\n        var status = new TcHmi.Controls.get('TcHmiEllipse_Error1_21');\n\t\t    if (value & (1 << 1)) {\n        \t\tconsole.log(\"red\");\n\t\t\t\tstatus.setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n        \t\tconsole.log(\"gray\");\n\t\t\t\tstatus.setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n    } else {\n        // Handle error... \n    }\n});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
+<div id="TcHmiTextblock_Mode_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-width="30" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-right="0" data-tchmi-bottom="0">
+
+
+
+
+
+</div>
+<div id="TcHmiContainer_Dim_21" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed">
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(0, 0, 0, 1)"
+            }
+        </script>
+
+    </div>
+    <div id="TcHmiContainer_Popup_21" data-tchmi-type="tchmi-container" data-tchmi-height="610" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-locked="False">
+
+        <div id="TcHmiTextblock_sName_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+        </div>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(255, 255, 255, 1)"
+            }
+        </script>
+
+        <div id="TcHmiTextblock_Operator_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+
+
+
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiTextblock_Operator_21.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Operator_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_Operator_21::BorderColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": null
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Service_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_Service_21::BorderColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Work_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_Work_21::BorderColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+        
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+
+        <div id="TcHmiTextblock_Service_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="165" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+
+
+
+
+
+
+
+
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiTextblock_Service_21.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Operator_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_Operator_21::BorderColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Service_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_Service_21::BorderColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": null
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Work_21::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiTextblock_Work_21::BorderColor%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Color",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Color",
+          "value": {
+            "color": "None"
+          }
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+        
+<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+{
+  "left": 1,
+  "right": 1,
+  "top": 1,
+  "bottom": 0,
+  "leftUnit": "px",
+  "rightUnit": "px",
+  "topUnit": "px",
+  "bottomUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+{
+  "left": "Solid",
+  "right": "Solid",
+  "top": "Solid",
+  "bottom": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 0.0,
+  "bottomRight": 0.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+</div>
+
+        <div id="TcHmiContainer_Operator_21" data-tchmi-type="tchmi-container" data-tchmi-height="525" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+
+            <div id="TcHmiTextblock_ValueText1_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_rSetpoint%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+
+</div>
+<div id="TcHmiTextblock_Value1_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rSetpoint%/pp%, 2)%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center">
+
+</div>
+<div id="TcHmiTextblock_ValueText2_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_rRoomTemp%/l%" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+
+</div>
+<div id="TcHmiTextblock_Value2_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rRoomTemp%/pp%, 2)%/f%" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center">
+
+</div>
+<div id="TcHmiButton_bStageUp_21" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_bStageUp%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bStageUp%/pp%">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_bStageUp_21.onPressed",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bStageUp%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bStageUp%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": false
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bStageUp%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiButton_bStageDown_21" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_bStageDown%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bStageDown%/pp%">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_bStageDown_21.onPressed",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "expressions": [
+          {
+            "compare1": {
+              "objectType": "Symbol",
+              "symbolExpression": "%pp%bStageDown%/pp%"
+            },
+            "compare2": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "compareOperator": "==",
+            "logic": null
+          }
+        ],
+        "true": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bStageDown%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": false
+            },
+            "asyncWait": true
+          }
+        ],
+        "false": [
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%pp%bStageDown%/pp%",
+            "valueType": "tchmi:general#/definitions/BOOL",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/BOOL",
+              "value": true
+            },
+            "asyncWait": true
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_SelectModeText_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_eCtrlFct%/l%" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+<div id="TcHmiCombobox_SelectMode_21" data-tchmi-type="tchmi-combobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-selected-index="%pp%eCtrlFct%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
+[
+  {
+    "id": 0,
+    "value": "0",
+    "text": "eBARCtrlFct_Off"
+  },
+  {
+    "id": 1,
+    "value": "1",
+    "text": "eBARCtrlFct_Heating"
+  },
+  {
+    "id": 2,
+    "value": "2",
+    "text": "eBARCtrlFct_Cooling"
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiCombobox_SelectMode_21.onSelectionChanged",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%eCtrlFct%/pp%",
+        "valueType": "tchmi:general#/definitions/INT",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%ctrl%TcHmiCombobox_SelectMode_21::SelectedValue%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_State_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byState%/l%" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiTextblock_Error_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byError%/l%" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiEllipse_State0_21" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+                
+
+                
+
+            
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
+</div>
+            <div id="TcHmiTextblock_State0_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byState.0%/l%" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiEllipse_State3_21" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="285" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+                
+
+                
+
+            
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
+</div>
+            <div id="TcHmiTextblock_State3_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byState.3%/l%" data-tchmi-top="285" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiEllipse_State4_21" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="335" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+                
+
+                
+
+            
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
+</div>
+            <div id="TcHmiTextblock_State4_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byState.4%/l%" data-tchmi-top="335" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiEllipse_State5_21" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="385" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+                
+
+                
+
+            
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
+</div>
+            <div id="TcHmiTextblock_State5_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byState.5%/l%" data-tchmi-top="385" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiEllipse_State6_21" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="435" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+                
+
+                
+
+            
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
+</div>
+            <div id="TcHmiTextblock_State6_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byState.6%/l%" data-tchmi-top="435" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiEllipse_State7_21" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="485" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+                
+
+                
+
+            
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
+</div>
+            <div id="TcHmiTextblock_State7_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byState.7%/l%" data-tchmi-top="485" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+            <div id="TcHmiEllipse_Error1_21" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+                
+
+                
+
+            
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "color": "rgba(128, 128, 128, 1)"
+}
+</script>
+
+
+</div>
+            <div id="TcHmiTextblock_Error1_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_BARFanCoil_byError.1%/l%" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+
+</div>
+        <div id="TcHmiContainer_Service_21" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed">
+
+            <div id="TcHmiToggleButton_bSetDefault_21" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%" data-tchmi-text="%l%FB_BARFanCoil_bSetDefault%/l%">
+
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+
+
+
+
+
+
+
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiToggleButton_bSetDefault_21.onPressed",
+                    "actions": [
+                    {
+                    "objectType": "Condition",
+                    "active": true,
+                    "expressions": [
+                    {
+                    "compare1": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%pp%bSetDefault%/pp%"
+                    },
+                    "compare2": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                    },
+                    "compareOperator": "==",
+                    "logic": null
+                    }
+                    ],
+                    "true": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%bSetDefault%/pp%",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                    },
+                    "asyncWait": true
+                    }
+                    ],
+                    "false": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%bSetDefault%/pp%",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                    },
+                    "asyncWait": true
+                    }
+                    ],
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+            </div>
+
+            <div id="TcHmiToggleButton_bReset_21" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%" data-tchmi-text="%l%FB_BARFanCoil_bReset%/l%">
+
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiToggleButton_bReset_21.onPressed",
+                    "actions": [
+                    {
+                    "objectType": "Condition",
+                    "active": true,
+                    "expressions": [
+                    {
+                    "compare1": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%pp%bReset%/pp%"
+                    },
+                    "compare2": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                    },
+                    "compareOperator": "==",
+                    "logic": null
+                    }
+                    ],
+                    "true": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%bReset%/pp%",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                    },
+                    "asyncWait": true
+                    }
+                    ],
+                    "false": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%bReset%/pp%",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                    },
+                    "asyncWait": true
+                    }
+                    ],
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+            </div>
+            <div id="TcHmiTextblock_Service1_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_BARFanCoil_rDeviationXW_Stage01%/l%">
+
+            </div>
+
+            <div id="TcHmiTextblock_Service2_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_BARFanCoil_rDeviationXW_Stage02%/l%">
+
+            </div>
+            <div id="TcHmiTextbox_Service1_21" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rDeviationXW_Stage01%/pp%, 2)%/f%">
+                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                    {
+                    "top": 3,
+                    "right": 3,
+                    "bottom": 3,
+                    "left": 3
+                    }
+                </script>
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiTextbox_Service1_21.onUserInteractionFinished",
+                    "actions": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%udiSecStopDelay%/pp%",
+                    "valueType": "tchmi:general#/definitions/UDINT",
+                    "value": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%ctrl%TcHmiTextbox_Service1_21::Text%/ctrl%"
+                    },
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+            </div>
+
+            <div id="TcHmiTextbox_Service2_21" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rDeviationXW_Stage02%/pp%, 2)%/f%" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                    {
+                    "top": 3,
+                    "right": 3,
+                    "bottom": 3,
+                    "left": 3
+                    }
+                </script>
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiTextbox_Service2_21.onUserInteractionFinished",
+                    "actions": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%udiSecFeedbPumpDelay%/pp%",
+                    "valueType": "tchmi:general#/definitions/UDINT",
+                    "value": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%ctrl%TcHmiTextbox_Service2_21::Text%/ctrl%"
+                    },
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+            </div>
+            <div id="TcHmiTextblock_Service3_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_BARFanCoil_rDeviationXW_Stage03%/l%">
+
+            </div>
+
+            <div id="TcHmiTextblock_Service4_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_BARFanCoil_rHysteresisRange%/l%">
+
+            </div>
+
+            <div id="TcHmiTextbox_Service3_21" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rDeviationXW_Stage03%/pp%, 2)%/f%">
+                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                    {
+                    "top": 3,
+                    "right": 3,
+                    "bottom": 3,
+                    "left": 3
+                    }
+                </script>
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiTextbox_Service3_21.onUserInteractionFinished",
+                    "actions": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%rOutsideTempHighLimit%/pp%",
+                    "valueType": "tchmi:general#/definitions/REAL",
+                    "value": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%ctrl%TcHmiTextbox_Service3_21::Text%/ctrl%"
+                    },
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+            </div>
+
+            <div id="TcHmiTextbox_Service4_21" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rHysteresisRange%/pp%, 2)%/f%">
+                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                    {
+                    "top": 3,
+                    "right": 3,
+                    "bottom": 3,
+                    "left": 3
+                    }
+                </script>
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiTextbox_Service4_21.onUserInteractionFinished",
+                    "actions": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%rOutsideTempLowLimit%/pp%",
+                    "valueType": "tchmi:general#/definitions/REAL",
+                    "value": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%ctrl%TcHmiTextbox_Service4_21::Text%/ctrl%"
+                    },
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+            </div>
+            <div id="TcHmiTextblock_Service5_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_BARFanCoil_udiSecMINPowerOnTime%/l%">
+
+            </div>
+
+            <div id="TcHmiTextblock_Service6_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_BARFanCoil_iFctModeFanCoil%/l%">
+
+            </div>
+
+            <div id="TcHmiTextbox_Service5_21" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%pp%udiSecMINPowerOnTime%/pp%" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                    {
+                    "top": 3,
+                    "right": 3,
+                    "bottom": 3,
+                    "left": 3
+                    }
+                </script>
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiTextbox_Service5_21.onUserInteractionFinished",
+                    "actions": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%rValvePositionLimitOn%/pp%",
+                    "valueType": "tchmi:general#/definitions/REAL",
+                    "value": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%ctrl%TcHmiTextbox_Service5_21::Text%/ctrl%"
+                    },
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+            </div>
+
+            <div id="TcHmiTextbox_Service6_21" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%pp%iFctModeFanCoil%/pp%" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                    {
+                    "top": 3,
+                    "right": 3,
+                    "bottom": 3,
+                    "left": 3
+                    }
+                </script>
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                    [
+                    {
+                    "event": "TcHmiTextbox_Service6_21.onUserInteractionFinished",
+                    "actions": [
+                    {
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%pp%rValvePositionLimitOff%/pp%",
+                    "valueType": "tchmi:general#/definitions/REAL",
+                    "value": {
+                    "objectType": "Symbol",
+                    "symbolExpression": "%ctrl%TcHmiTextbox_Service6_21::Text%/ctrl%"
+                    },
+                    "asyncWait": true
+                    }
+                    ]
+                    }
+                    ]
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+            </div>
+
+            <div id="TcHmiTextblock_Service7_21" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%l%FB_BARFanCoil_udiTimePeriod%/l%">
+
+            </div>
+
+        <div id="TcHmiTextbox_Service7_21" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%udiTimePeriod%/pp%">
+                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+                    {
+                    "top": 3,
+                    "right": 3,
+                    "bottom": 3,
+                    "left": 3
+                    }
+                </script>
+
+
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiTextbox_Service7_21.onUserInteractionFinished",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%pp%udiTimePeriod%/pp%",
+        "valueType": "tchmi:general#/definitions/UDINT",
+        "value": {
+          "objectType": "Symbol",
+          "symbolExpression": "%ctrl%TcHmiTextbox_Service7_21::Text%/ctrl%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+            </div>
+
+</div>
+        <div id="TcHmiButton_Close_21" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_BARFanCoil_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed">
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "TcHmiButton_Close_21.onPressed",
+                "actions": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiContainer_Dim_21::Visibility%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiContainer_Popup_21::Visibility%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+
+</div>
+
+</div>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
-  <POU Name="AnalogInput" Id="{f48a5320-1f0c-4c1d-baf5-2586d5979277}" SpecialFunc="None">
+  <POU Name="AnalogInput" Id="{79296950-bf6f-462d-8d39-89de1d2c44dc}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM AnalogInput
 VAR
 	fbHVACAnalogInput: FB_HVACAnalogInput;

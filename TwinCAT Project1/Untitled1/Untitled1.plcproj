@@ -20,64 +20,68 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\AnalogInput.TcPOU">
+    <Compile Include="POUs\BARFanCoil.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\AnalogOutputEx.TcPOU">
+    <Compile Include="POUs\HVAC\AnalogInput.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\AntiBlockingDamper.TcPOU">
+    <Compile Include="POUs\HVAC\AnalogOutputEx.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\AntiBlockingPump.TcPOU">
+    <Compile Include="POUs\HVAC\AntiBlockingDamper.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\CirculationPumpEx.TcPOU">
+    <Compile Include="POUs\HVAC\AntiBlockingPump.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\CirculationPumpEx.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\Motor1Speed.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\Motor2Speed.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\Motor3Speed.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\OverwriteAnalog.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\Scheduler28ch.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\Scheduler7ch.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\SchedulerPublicHolidays.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\SchedulerSpecialPeriods.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\TemperatureSensorEx2.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\ThreePointActuatorMode.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\TwoPointActuatorMode.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\HVAC\Work.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Motor1Speed.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Motor2Speed.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Motor3Speed.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\OverwriteAnalog.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Scheduler7ch.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Scheduler28ch.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\SchedulerSpecialPeriods.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\SchedulerPublicHolidays.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\TemperatureSensorEx2.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\ThreePointActuatorMode.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\TwoPointActuatorMode.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\Work.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DUTs" />
     <Folder Include="GVLs" />
+    <Folder Include="POUs\HVAC" />
     <Folder Include="VISUs" />
     <Folder Include="POUs" />
   </ItemGroup>

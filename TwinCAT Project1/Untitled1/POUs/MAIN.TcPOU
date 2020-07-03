@@ -3,7 +3,7 @@
   <POU Name="MAIN" Id="{2a4304f3-537e-43d1-b89c-af5d9907262c}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	locale : ARRAY [0..99] OF STRING;
+	
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[CirculationPumpEx();
@@ -22,7 +22,8 @@ TemperatureSensorEx2();
 OverwriteAnalog();
 AnalogInput();
 AnalogOutputEx();
-AntiBlockingDamper();]]></ST>
+AntiBlockingDamper();
+BARFanCoil();]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
       <LineId Id="154" Count="0" />
@@ -38,6 +39,7 @@ AntiBlockingDamper();]]></ST>
       <LineId Id="307" Count="0" />
       <LineId Id="310" Count="0" />
       <LineId Id="313" Count="1" />
+      <LineId Id="319" Count="0" />
     </LineIds>
   </POU>
 </TcPlcObject>
