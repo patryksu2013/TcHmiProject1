@@ -205,6 +205,9 @@
     <Content Include="Imports\Images\toolbox_pressed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="import_this_to_localization.xls">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Localization\CopyOf_pl-PL.localization">
       <SubType>Content</SubType>
     </Content>
@@ -407,6 +410,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_4\FB_BARFanCoil.usercontrol.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls_4\FB_BARFanCoil_Localization.xls">
       <SubType>Content</SubType>
     </Content>
     <Folder Include=".hmipkgs" />
