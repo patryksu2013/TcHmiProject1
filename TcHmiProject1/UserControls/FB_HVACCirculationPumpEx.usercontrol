@@ -1,682 +1,717 @@
 ﻿<div id="FB_HVACCirculationPumpEx" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
   <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-    [{
-        "event": "%pp%bPump%/pp%",
-        "actions": [{
-          "objectType": "Condition",
-          "active": true,
-          "asyncWait": true,
-          "parts": [{
-              "if": [{
-                "compare1": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%bError%/pp%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }],
-              "then": [{
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                  "valueType": "tchmi:general#/definitions/Boolean",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/Boolean",
-                    "value": false
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Path",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Path",
-                    "value": "Imports/Images/symbol_inside_red.svg"
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Visibility",
-                    "value": "Visible"
-                  },
-                  "asyncWait": true
-                }
-              ]
-            },
-            {
-              "else": [{
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Visibility",
-                    "value": "Collapsed"
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "Condition",
-                  "active": true,
-                  "asyncWait": true,
-                  "parts": [{
-                      "if": [{
-                        "compare1": {
-                          "objectType": "Symbol",
-                          "symbolExpression": "%pp%bPump%/pp%"
-                        },
-                        "compare2": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:general#/definitions/BOOL",
-                          "value": true
-                        },
-                        "compareOperator": "==",
-                        "logic": null
-                      }],
-                      "then": [{
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                          "valueType": "tchmi:general#/definitions/Boolean",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/Boolean",
-                            "value": true
-                          },
-                          "asyncWait": true
-                        },
-                        {
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:framework#/definitions/Path",
-                            "value": "Imports/Images/symbol_inside_green.svg"
-                          },
-                          "asyncWait": true
-                        }
-                      ]
-                    },
-                    {
-                      "else": [{
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                          "valueType": "tchmi:general#/definitions/Boolean",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/Boolean",
-                            "value": false
-                          },
-                          "asyncWait": true
-                        },
-                        {
-                          "objectType": "SwitchCase",
-                          "active": true,
-                          "compare": {
-                            "objectType": "Symbol",
-                            "symbolExpression": "%pp%eCtrlModeActuator%/pp%"
-                          },
-                          "cases": [{
-                              "caseValue": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                                "value": 1
-                              },
-                              "actions": [{
-                                "objectType": "WriteToSymbol",
-                                "active": true,
-                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": {
-                                  "objectType": "StaticValue",
-                                  "valueType": "tchmi:framework#/definitions/Path",
-                                  "value": "Imports/Images/symbol_inside_gray.svg"
-                                },
-                                "asyncWait": true
-                              }]
-                            },
-                            {
-                              "caseValue": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                                "value": 7
-                              },
-                              "actions": [{
-                                "objectType": "WriteToSymbol",
-                                "active": true,
-                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": {
-                                  "objectType": "StaticValue",
-                                  "valueType": "tchmi:framework#/definitions/Path",
-                                  "value": "Imports/Images/symbol_inside_gray.svg"
-                                },
-                                "asyncWait": true
-                              }]
-                            }
-                          ],
-                          "caseDefault": {
-                            "actions": [{
-                              "objectType": "WriteToSymbol",
-                              "active": true,
-                              "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                              "valueType": "tchmi:framework#/definitions/Path",
-                              "value": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": "Imports/Images/symbol_inside_black.svg"
-                              },
-                              "asyncWait": true
-                            }]
-                          },
-                          "asyncWait": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }]
-      },
+[
+  {
+    "event": "%pp%bPump%/pp%",
+    "actions": [
       {
-        "event": "%pp%bError%/pp%",
-        "actions": [{
-          "objectType": "Condition",
-          "active": true,
-          "asyncWait": true,
-          "parts": [{
-              "if": [{
-                "compare1": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%bError%/pp%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }],
-              "then": [{
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                  "valueType": "tchmi:general#/definitions/Boolean",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/Boolean",
-                    "value": false
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Path",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Path",
-                    "value": "Imports/Images/symbol_inside_red.svg"
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Visibility",
-                    "value": "Visible"
-                  },
-                  "asyncWait": true
-                }
-              ]
-            },
-            {
-              "else": [{
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Visibility",
-                    "value": "Collapsed"
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "Condition",
-                  "active": true,
-                  "asyncWait": true,
-                  "parts": [{
-                      "if": [{
-                        "compare1": {
-                          "objectType": "Symbol",
-                          "symbolExpression": "%pp%bPump%/pp%"
-                        },
-                        "compare2": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:general#/definitions/BOOL",
-                          "value": true
-                        },
-                        "compareOperator": "==",
-                        "logic": null
-                      }],
-                      "then": [{
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                          "valueType": "tchmi:general#/definitions/Boolean",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/Boolean",
-                            "value": true
-                          },
-                          "asyncWait": true
-                        },
-                        {
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:framework#/definitions/Path",
-                            "value": "Imports/Images/symbol_inside_green.svg"
-                          },
-                          "asyncWait": true
-                        }
-                      ]
-                    },
-                    {
-                      "else": [{
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                          "valueType": "tchmi:general#/definitions/Boolean",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/Boolean",
-                            "value": false
-                          },
-                          "asyncWait": true
-                        },
-                        {
-                          "objectType": "SwitchCase",
-                          "active": true,
-                          "compare": {
-                            "objectType": "Symbol",
-                            "symbolExpression": "%pp%eCtrlModeActuator%/pp%"
-                          },
-                          "cases": [{
-                              "caseValue": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                                "value": 1
-                              },
-                              "actions": [{
-                                "objectType": "WriteToSymbol",
-                                "active": true,
-                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": {
-                                  "objectType": "StaticValue",
-                                  "valueType": "tchmi:framework#/definitions/Path",
-                                  "value": "Imports/Images/symbol_inside_gray.svg"
-                                },
-                                "asyncWait": true
-                              }]
-                            },
-                            {
-                              "caseValue": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                                "value": 7
-                              },
-                              "actions": [{
-                                "objectType": "WriteToSymbol",
-                                "active": true,
-                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": {
-                                  "objectType": "StaticValue",
-                                  "valueType": "tchmi:framework#/definitions/Path",
-                                  "value": "Imports/Images/symbol_inside_gray.svg"
-                                },
-                                "asyncWait": true
-                              }]
-                            }
-                          ],
-                          "caseDefault": {
-                            "actions": [{
-                              "objectType": "WriteToSymbol",
-                              "active": true,
-                              "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                              "valueType": "tchmi:framework#/definitions/Path",
-                              "value": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": "Imports/Images/symbol_inside_black.svg"
-                              },
-                              "asyncWait": true
-                            }]
-                          },
-                          "asyncWait": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }]
-      },
-      {
-        "event": "%pp%eCtrlModeActuator%/pp%",
-        "actions": [{
-          "objectType": "Condition",
-          "active": true,
-          "asyncWait": true,
-          "parts": [{
-              "if": [{
-                "compare1": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%bError%/pp%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }],
-              "then": [{
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                  "valueType": "tchmi:general#/definitions/Boolean",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/Boolean",
-                    "value": false
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Path",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Path",
-                    "value": "Imports/Images/symbol_inside_red.svg"
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Visibility",
-                    "value": "Visible"
-                  },
-                  "asyncWait": true
-                }
-              ]
-            },
-            {
-              "else": [{
-                  "objectType": "WriteToSymbol",
-                  "active": true,
-                  "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
-                  "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:framework#/definitions/Visibility",
-                    "value": "Collapsed"
-                  },
-                  "asyncWait": true
-                },
-                {
-                  "objectType": "Condition",
-                  "active": true,
-                  "asyncWait": true,
-                  "parts": [{
-                      "if": [{
-                        "compare1": {
-                          "objectType": "Symbol",
-                          "symbolExpression": "%pp%bPump%/pp%"
-                        },
-                        "compare2": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:general#/definitions/BOOL",
-                          "value": true
-                        },
-                        "compareOperator": "==",
-                        "logic": null
-                      }],
-                      "then": [{
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                          "valueType": "tchmi:general#/definitions/Boolean",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/Boolean",
-                            "value": true
-                          },
-                          "asyncWait": true
-                        },
-                        {
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:framework#/definitions/Path",
-                            "value": "Imports/Images/symbol_inside_green.svg"
-                          },
-                          "asyncWait": true
-                        }
-                      ]
-                    },
-                    {
-                      "else": [{
-                          "objectType": "WriteToSymbol",
-                          "active": true,
-                          "symbolExpression": "%pp%bRotate_Internal%/pp%",
-                          "valueType": "tchmi:general#/definitions/Boolean",
-                          "value": {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/Boolean",
-                            "value": false
-                          },
-                          "asyncWait": true
-                        },
-                        {
-                          "objectType": "SwitchCase",
-                          "active": true,
-                          "compare": {
-                            "objectType": "Symbol",
-                            "symbolExpression": "%pp%eCtrlModeActuator%/pp%"
-                          },
-                          "cases": [{
-                              "caseValue": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                                "value": 1
-                              },
-                              "actions": [{
-                                "objectType": "WriteToSymbol",
-                                "active": true,
-                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": {
-                                  "objectType": "StaticValue",
-                                  "valueType": "tchmi:framework#/definitions/Path",
-                                  "value": "Imports/Images/symbol_inside_gray.svg"
-                                },
-                                "asyncWait": true
-                              }]
-                            },
-                            {
-                              "caseValue": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                                "value": 7
-                              },
-                              "actions": [{
-                                "objectType": "WriteToSymbol",
-                                "active": true,
-                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": {
-                                  "objectType": "StaticValue",
-                                  "valueType": "tchmi:framework#/definitions/Path",
-                                  "value": "Imports/Images/symbol_inside_gray.svg"
-                                },
-                                "asyncWait": true
-                              }]
-                            }
-                          ],
-                          "caseDefault": {
-                            "actions": [{
-                              "objectType": "WriteToSymbol",
-                              "active": true,
-                              "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
-                              "valueType": "tchmi:framework#/definitions/Path",
-                              "value": {
-                                "objectType": "StaticValue",
-                                "valueType": "tchmi:framework#/definitions/Path",
-                                "value": "Imports/Images/symbol_inside_black.svg"
-                              },
-                              "asyncWait": true
-                            }]
-                          },
-                          "asyncWait": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }]
-      },
-      {
-        "event": "%pp%byState%/pp%",
-        "actions": [{
-          "objectType": "JavaScript",
-          "active": true,
-          "sourceLines": [
-            "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
-          ],
-          "injectContextObject": false,
-          "asyncWait": true,
-          "waitMode": "Synchronous"
-        }]
-      },
-      {
-        "event": "%pp%byError%/pp%",
-        "actions": [{
-          "objectType": "JavaScript",
-          "active": true,
-          "sourceLines": [
-            "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << (index + 1))) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
-          ],
-          "injectContextObject": false,
-          "asyncWait": true,
-          "waitMode": "Synchronous"
-        }]
-      },
-      {
-        "event": "FB_HVACCirculationPumpEx.onPressed",
-        "actions": [{
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiContainer_Dim::Visibility%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/Visibility",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/Visibility",
-              "value": "Visible"
-            },
-            "asyncWait": true
-          },
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
           {
-            "objectType": "WriteToSymbol",
-            "active": true,
-            "symbolExpression": "%ctrl%TcHmiContainer_Popup::Visibility%/ctrl%",
-            "valueType": "tchmi:framework#/definitions/Visibility",
-            "value": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/Visibility",
-              "value": "Visible"
-            },
-            "asyncWait": true
-          },
-          {
-            "objectType": "JavaScript",
-            "active": true,
-            "sourceLines": [
-              "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%bError%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
             ],
-            "injectContextObject": false,
-            "asyncWait": true,
-            "waitMode": "Synchronous"
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "this.animation1.pause();"
+                ],
+                "injectContextObject": true,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/symbol_inside_red.svg"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%pp%bPump%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "JavaScript",
+                        "active": true,
+                        "sourceLines": [
+                          "this.animation1.run();"
+                        ],
+                        "injectContextObject": true,
+                        "asyncWait": true,
+                        "waitMode": "Synchronous"
+                      },
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Path",
+                          "value": "Imports/Images/symbol_inside_green.svg"
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "JavaScript",
+                        "active": true,
+                        "sourceLines": [
+                          "this.animation1.pause();"
+                        ],
+                        "injectContextObject": true,
+                        "asyncWait": true,
+                        "waitMode": "Synchronous"
+                      },
+                      {
+                        "objectType": "SwitchCase",
+                        "active": true,
+                        "compare": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%pp%eCtrlModeActuator%/pp%"
+                        },
+                        "cases": [
+                          {
+                            "caseValue": {
+                              "objectType": "StaticValue",
+                              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                              "value": 1
+                            },
+                            "actions": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:framework#/definitions/Path",
+                                  "value": "Imports/Images/symbol_inside_gray.svg"
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          },
+                          {
+                            "caseValue": {
+                              "objectType": "StaticValue",
+                              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                              "value": 7
+                            },
+                            "actions": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:framework#/definitions/Path",
+                                  "value": "Imports/Images/symbol_inside_gray.svg"
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          }
+                        ],
+                        "caseDefault": {
+                          "actions": [
+                            {
+                              "objectType": "WriteToSymbol",
+                              "active": true,
+                              "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                              "value": {
+                                "objectType": "StaticValue",
+                                "valueType": "tchmi:framework#/definitions/Path",
+                                "value": "Imports/Images/symbol_inside_black.svg"
+                              },
+                              "asyncWait": true
+                            }
+                          ]
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
           }
-        ]
-      },
-      {
-        "event": "FB_HVACCirculationPumpEx.onAttached",
-        "actions": [{
-          "objectType": "JavaScript",
-          "active": true,
-          "sourceLines": [
-            "var interval = setInterval(rotate, 100);\n\nfunction rotate () {\n\tvar rotatedElement = TcHmi.Controls.get('TcHmiImage_Inside');\n\tif (rotatedElement.getTransform() == null) {\n\t\tvar angle = 0.0;\n\t} else {\n\t\tvar angle = rotatedElement.getTransform()[0].angle;\n\t}\n\tvar paramVal = new TcHmi.Symbol('%pp%bRotate_Internal%/pp%').read();\n\tif (paramVal) {\n\t\trotatedElement.setTransform(\n\t\t[\n\t\t\t{\n\t\t\t    \"transformType\": \"Rotate\",\n\t\t\t    \"angle\": angle + 1.0,\n\t\t\t    \"angleUnit\": \"deg\"\n\t\t\t}\n\t\t]);\n\t}\n}"
-          ],
-          "injectContextObject": false,
-          "asyncWait": true,
-          "waitMode": "Synchronous"
-        }]
+        ],
+        "asyncWait": true
       }
     ]
-  </script>
+  },
+  {
+    "event": "%pp%bError%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%bError%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "this.animation1.pause();"
+                ],
+                "injectContextObject": true,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/symbol_inside_red.svg"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%pp%bPump%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "JavaScript",
+                        "active": true,
+                        "sourceLines": [
+                          "this.animation1.run();"
+                        ],
+                        "injectContextObject": true,
+                        "asyncWait": true,
+                        "waitMode": "Synchronous"
+                      },
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Path",
+                          "value": "Imports/Images/symbol_inside_green.svg"
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "JavaScript",
+                        "active": true,
+                        "sourceLines": [
+                          "this.animation1.pause();"
+                        ],
+                        "injectContextObject": true,
+                        "asyncWait": true,
+                        "waitMode": "Synchronous"
+                      },
+                      {
+                        "objectType": "SwitchCase",
+                        "active": true,
+                        "compare": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%pp%eCtrlModeActuator%/pp%"
+                        },
+                        "cases": [
+                          {
+                            "caseValue": {
+                              "objectType": "StaticValue",
+                              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                              "value": 1
+                            },
+                            "actions": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:framework#/definitions/Path",
+                                  "value": "Imports/Images/symbol_inside_gray.svg"
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          },
+                          {
+                            "caseValue": {
+                              "objectType": "StaticValue",
+                              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                              "value": 7
+                            },
+                            "actions": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:framework#/definitions/Path",
+                                  "value": "Imports/Images/symbol_inside_gray.svg"
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          }
+                        ],
+                        "caseDefault": {
+                          "actions": [
+                            {
+                              "objectType": "WriteToSymbol",
+                              "active": true,
+                              "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                              "value": {
+                                "objectType": "StaticValue",
+                                "valueType": "tchmi:framework#/definitions/Path",
+                                "value": "Imports/Images/symbol_inside_black.svg"
+                              },
+                              "asyncWait": true
+                            }
+                          ]
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%eCtrlModeActuator%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%bError%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "this.animation1.pause();"
+                ],
+                "injectContextObject": true,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/symbol_inside_red.svg"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Alarm::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%pp%bPump%/pp%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/BOOL",
+                          "value": true
+                        },
+                        "compareOperator": "==",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "JavaScript",
+                        "active": true,
+                        "sourceLines": [
+                          "this.animation1.run();"
+                        ],
+                        "injectContextObject": true,
+                        "asyncWait": true,
+                        "waitMode": "Synchronous"
+                      },
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                        "value": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:framework#/definitions/Path",
+                          "value": "Imports/Images/symbol_inside_green.svg"
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "JavaScript",
+                        "active": true,
+                        "sourceLines": [
+                          "this.animation1.pause();"
+                        ],
+                        "injectContextObject": true,
+                        "asyncWait": true,
+                        "waitMode": "Synchronous"
+                      },
+                      {
+                        "objectType": "SwitchCase",
+                        "active": true,
+                        "compare": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%pp%eCtrlModeActuator%/pp%"
+                        },
+                        "cases": [
+                          {
+                            "caseValue": {
+                              "objectType": "StaticValue",
+                              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                              "value": 1
+                            },
+                            "actions": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:framework#/definitions/Path",
+                                  "value": "Imports/Images/symbol_inside_gray.svg"
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          },
+                          {
+                            "caseValue": {
+                              "objectType": "StaticValue",
+                              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                              "value": 7
+                            },
+                            "actions": [
+                              {
+                                "objectType": "WriteToSymbol",
+                                "active": true,
+                                "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                                "value": {
+                                  "objectType": "StaticValue",
+                                  "valueType": "tchmi:framework#/definitions/Path",
+                                  "value": "Imports/Images/symbol_inside_gray.svg"
+                                },
+                                "asyncWait": true
+                              }
+                            ]
+                          }
+                        ],
+                        "caseDefault": {
+                          "actions": [
+                            {
+                              "objectType": "WriteToSymbol",
+                              "active": true,
+                              "symbolExpression": "%ctrl%TcHmiImage_Inside::Src%/ctrl%",
+                              "value": {
+                                "objectType": "StaticValue",
+                                "valueType": "tchmi:framework#/definitions/Path",
+                                "value": "Imports/Images/symbol_inside_black.svg"
+                              },
+                              "asyncWait": true
+                            }
+                          ]
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%byState%/pp%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "%pp%byError%/pp%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << (index + 1))) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "FB_HVACCirculationPumpEx.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Dim::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Popup::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "FB_HVACCirculationPumpEx.onInitialized",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "this.animation1 = new TcHmi.Animation('TcHmiImage_Inside', '');\nthis.animation1.addKeyframe('transform', 'rotate(0deg)', 0);\nthis.animation1.addKeyframe('transform', 'rotate(360deg)', 1);\nthis.animation1.duration(10000);\nthis.animation1.timingFunction('linear');\nthis.animation1.iterationCount('infinite');"
+        ],
+        "injectContextObject": true,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  }
+]
+</script>
 
   <div id="TcHmiImage_Outside" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-background-image-width-unit="px" data-tchmi-src="Imports/Images/symbol_outside_black.svg" data-tchmi-creator-visibility="Collapsed" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0">
 

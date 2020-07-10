@@ -1,22 +1,6 @@
 ﻿{
   "parameters": [
     {
-      "name": "data-tchmi-brotate_internal",
-      "displayName": "bRotate_Internal",
-      "visible": true,
-      "type": "tchmi:general#/definitions/Boolean",
-      "category": "",
-      "description": "",
-      "requiredOnCompile": false,
-      "readOnly": false,
-      "bindable": false,
-      "heritable": true,
-      "propertyName": "bRotate_Internal",
-      "propertySetterName": "setBRotate_Internal",
-      "propertyGetterName": "getBRotate_Internal",
-      "refTo": ""
-    },
-    {
       "name": "data-tchmi-sname",
       "displayName": "sName",
       "visible": true,
