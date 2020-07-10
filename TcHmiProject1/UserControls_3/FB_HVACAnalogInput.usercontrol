@@ -1,113 +1,86 @@
 ﻿<div id="FB_HVACAnalogInput" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%" data-tchmi-creator-locked="False">
 
-    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "%pp%byState%/pp%",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr[0] = undefined;\n        statusArr[1] = new TcHmi.Controls.get('TcHmiEllipse_State1_18');\n\t\tstatusArr[2] = undefined;\n\t\tstatusArr[3] = undefined;\n\t\tstatusArr[4] = undefined;\n\t\tstatusArr[5] = undefined;\n\t\tstatusArr[6] = undefined;\n\t\tstatusArr[7] = new TcHmi.Controls.get('TcHmiEllipse_State7_18');\n        for (let index = 0; index < statusArr.length; index++)\n        {\n        \tif(statusArr[index] != undefined)\n        \t{\n\t\t\t    if(value & (1 << index)) {\n\t\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t} else {\n\t\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t}\n    \t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
-    "event": "%pp%byError%/pp%",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n        statusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error0_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4_18'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
-    "event": "FB_HVACAnalogInput.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Dim_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
+  <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+    [{
+        "event": "%pp%byState%/pp%",
+        "actions": [{
+          "objectType": "JavaScript",
+          "active": true,
+          "sourceLines": [
+            "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr[0] = undefined;\n        statusArr[1] = new TcHmi.Controls.get('TcHmiEllipse_State1_18');\n\t\tstatusArr[2] = undefined;\n\t\tstatusArr[3] = undefined;\n\t\tstatusArr[4] = undefined;\n\t\tstatusArr[5] = undefined;\n\t\tstatusArr[6] = undefined;\n\t\tstatusArr[7] = new TcHmi.Controls.get('TcHmiEllipse_State7_18');\n        for (let index = 0; index < statusArr.length; index++)\n        {\n        \tif(statusArr[index] != undefined)\n        \t{\n\t\t\t    if(value & (1 << index)) {\n\t\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t} else {\n\t\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t\t}\n\t\t\t\t\t);\n\t\t\t\t}\n    \t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+          ],
+          "injectContextObject": false,
+          "asyncWait": true,
+          "waitMode": "Synchronous"
+        }]
       },
       {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Popup_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
+        "event": "%pp%byError%/pp%",
+        "actions": [{
+          "objectType": "JavaScript",
+          "active": true,
+          "sourceLines": [
+            "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n        statusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error0_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3_18'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4_18'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+          ],
+          "injectContextObject": false,
+          "asyncWait": true,
+          "waitMode": "Synchronous"
+        }]
       },
       {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim_18');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup_18');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]</script>
-<div id="TcHmiTextblock_Value_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="%f%GaugeValueFormatter(%pp%rPresentValue%/pp%, 2)%/f%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Value_18::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed">
-
-
-
-
-
-</div>
-<div id="TcHmiImage_Symbol_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="75" data-tchmi-height-unit="%" data-tchmi-width="75" data-tchmi-width-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="25" data-tchmi-left="12.5" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Analog/symbol_analog.svg">
-
-
-
-
-        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-            [
-            {
-            "virtualControlRight": "Serwis",
-            "controlRight": "operate"
-            }
-            ]
-        </script>
-
-        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-            []
-        </script>
-    
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "%pp%eErrorCode%/pp%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "asyncWait": true,
-        "parts": [
+        "event": "FB_HVACAnalogInput.onPressed",
+        "actions": [{
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiContainer_Dim_18::Visibility%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Visibility",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": "Visible"
+            },
+            "asyncWait": true
+          },
           {
-            "if": [
-              {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiContainer_Popup_18::Visibility%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Visibility",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": "Visible"
+            },
+            "asyncWait": true
+          },
+          {
+            "objectType": "JavaScript",
+            "active": true,
+            "sourceLines": [
+              "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim_18');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup_18');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
+            ],
+            "injectContextObject": false,
+            "asyncWait": true,
+            "waitMode": "Synchronous"
+          }
+        ]
+      }
+    ]
+  </script>
+  <div id="TcHmiTextblock_Value_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-text="%f%GaugeValueFormatter(%pp%rPresentValue%/pp%, 2)%/f%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Value_18::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed">
+
+  </div>
+  <div id="TcHmiImage_Symbol_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="75" data-tchmi-height-unit="%" data-tchmi-width="75" data-tchmi-width-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="25" data-tchmi-left="12.5" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Analog/symbol_analog.svg">
+
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [{
+        "event": "%pp%eErrorCode%/pp%",
+        "actions": [{
+          "objectType": "Condition",
+          "active": true,
+          "asyncWait": true,
+          "parts": [{
+              "if": [{
                 "compare1": {
                   "objectType": "Symbol",
                   "symbolExpression": "%pp%eErrorCode%/pp%"
@@ -119,10 +92,8 @@
                 },
                 "compareOperator": ">",
                 "logic": null
-              }
-            ],
-            "then": [
-              {
+              }],
+              "then": [{
                 "objectType": "WriteToSymbol",
                 "active": true,
                 "symbolExpression": "%ctrl%TcHmiImage_Symbol_18::Src%/ctrl%",
@@ -133,12 +104,10 @@
                   "value": "Imports/Images/Analog/symbol_analog_error.svg"
                 },
                 "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
+              }]
+            },
+            {
+              "else": [{
                 "objectType": "WriteToSymbol",
                 "active": true,
                 "symbolExpression": "%ctrl%TcHmiImage_Symbol_18::Src%/ctrl%",
@@ -149,1776 +118,1479 @@
                   "value": "Imports/Images/Analog/symbol_analog.svg"
                 },
                 "asyncWait": true
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]</script>
-</div>
-
-    <div id="TcHmiContainer_Dim_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
-
-        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-            {
-            "color": "rgba(0, 0, 0, 1)"
+              }]
             }
-        </script>
+          ]
+        }]
+      }]
+    </script>
+  </div>
+
+  <div id="TcHmiContainer_Dim_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
+
+    <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+      {
+        "color": "rgba(0, 0, 0, 1)"
+      }
+    </script>
+
+  </div>
+  <div id="TcHmiContainer_Popup_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="530" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-locked="False" data-tchmi-top="0" data-tchmi-left="0">
+
+    <div id="TcHmiTextblock_sName_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
 
     </div>
-    <div id="TcHmiContainer_Popup_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="530" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-locked="False" data-tchmi-top="0" data-tchmi-left="0">
 
-        <div id="TcHmiTextblock_sName_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
-
-        </div>
-
-        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-            {
-            "color": "rgba(255, 255, 255, 1)"
-            }
-        </script>
-
-        <div id="TcHmiTextblock_Operator_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-
-
-
-
-
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextblock_Operator_18.onPressed",
-    "actions": [
+    <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
       {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Operator_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Operator_18::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": null
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Service_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Service_18::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": {
-            "color": "None"
-          }
-        },
-        "asyncWait": true
+        "color": "rgba(255, 255, 255, 1)"
       }
-    ]
-  }
-]</script>
-        
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
+    </script>
 
-<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-{
-  "left": "Solid",
-  "right": "Solid",
-  "top": "Solid",
-  "bottom": "None"
-}
-</script>
+    <div id="TcHmiTextblock_Operator_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 0.0,
-  "bottomRight": 0.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-
-
-</div>
-
-        <div id="TcHmiTextblock_Service_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="165" data-tchmi-left-unit="px" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text="%l%FB_HVACAnalogInput_Service%/l%">
-
-
-
-
-
-
-
-
-
-
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextblock_Service_18.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Operator_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Operator_18::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": {
-            "color": "None"
-          }
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Service_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Service_18::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": null
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-        
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-{
-  "left": "Solid",
-  "right": "Solid",
-  "top": "Solid",
-  "bottom": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 0.0,
-  "bottomRight": 0.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
-<div id="TcHmiContainer_Operator_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
-
-            <div id="TcHmiTextblock_ValueText1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_iRawValue%/l%">
-
-
-
-</div>
-<div id="TcHmiTextblock_Value1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%iRawValue%/pp%">
-
-
-
-
-
-</div>
-<div id="TcHmiTextblock_ValueText2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_rPresentValue%/l%">
-
-
-
-</div>
-<div id="TcHmiTextblock_Value2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%f%GaugeValueFormatter(%pp%rPresentValue%/pp%, 2)%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
-
-
-
-</div>
-<div id="TcHmiTextblock_ValueText3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_eErrorCode%/l%">
-
-
-
-</div>
-<div id="TcHmiTextblock_Value3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "%pp%eErrorCode%/pp%",
-    "actions": [
-      {
-        "objectType": "SwitchCase",
-        "active": true,
-        "compare": {
-          "objectType": "Symbol",
-          "symbolExpression": "%pp%eErrorCode%/pp%"
-        },
-        "cases": [
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 0
+      <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [{
+          "event": "TcHmiTextblock_Operator_18.onPressed",
+          "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Operator_18::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Visible"
+              },
+              "asyncWait": true
             },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_NoError"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 1
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_tTaskCycleTime"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 2
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_tCtrlCycleTime"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 3
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_rDeadRange"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 4
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_rDeadBand"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 5
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_rKpIsLessThanZero"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 6
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_tTi"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 7
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_tTv"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 8
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_tTd"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 9
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_fBaseTime"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 10
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_rYMaxIsLessThanrYMin"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 11
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_MEMCPY"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 12
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_ModeNotSupported"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 13
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_rErrHighLimitOverrun"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 14
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_rErrLowLimitUnderrun"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 15
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator1"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 16
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator2"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 17
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator3"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 18
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator4"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 19
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator5"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 20
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator6"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 21
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator7"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 22
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_NoFeedbackActuator8"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 23
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_tOverlap1Actuator"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 24
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iCountCtrl"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 25
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_iMaxOnLevel"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 26
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_tNoFeedbActuator"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 27
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_iNumberOfSequences"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 28
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_iMyNumberOfSequences"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 29
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_iCurrentSequences"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 30
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_MEMSET"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 31
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iStep"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 32
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iNumberOfStepInProfile"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 33
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iNumberOfAggregates"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 34
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iAggregateSteps"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 35
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iNumberOfProfiles"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 36
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iProfile"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 37
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_rY_Max"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 38
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_rY_Min"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 39
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iAggregate"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 40
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_udiSecDelayUp"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 41
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_udiSecDelayDown"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 42
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_InvalidParam_iNumberOfValues"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 43
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_LEN_Int"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
-              "value": 44
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "eHVACErrorCodes_Error_LEN_Enum"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "caseDefault": {
-          "actions": [
             {
               "objectType": "WriteToSymbol",
               "active": true,
-              "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
-              "valueType": "tchmi:general#/definitions/String",
+              "symbolExpression": "%ctrl%TcHmiTextblock_Operator_18::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
               "value": {
                 "objectType": "StaticValue",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": "Unknown value"
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": null
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Service_18::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiTextblock_Service_18::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": {
+                  "color": "None"
+                }
               },
               "asyncWait": true
             }
           ]
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-</div>
-<div id="TcHmiTextblock_Status_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_byState%/l%">
-
-            
-
-</div>
-<div id="TcHmiTextblock_Error_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_byError%/l%">
-
-            
-
-</div>
-
-            <div id="TcHmiEllipse_State1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bLimitValueMonitoring%/l%">
-
-            </div>
-
-            <div id="TcHmiEllipse_State7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-text="%l%FB_HVACAnalogInput_bSensorSupplyVoltage%/l%">
-
-            </div>
-<div id="TcHmiEllipse_Error0_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-<div id="TcHmiTextblock_Error0_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bError%/l%">
-
-            
-
-</div>
-
-            <div id="TcHmiEllipse_Error1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_Error1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bInvalidParameter%/l%">
-
-            
-
-</div>
-
-            <div id="TcHmiEllipse_Error2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_Error2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bErrorGeneral%/l%">
-
-            
-
-</div>
-
-            <div id="TcHmiEllipse_Error3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_Error3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bErrorLowLimit%/l%" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
-
-            
-
-</div>
-
-            <div id="TcHmiEllipse_Error4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-
-            <div id="TcHmiTextblock_Error4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bErrorHighLimit%/l%" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-            </div>
-
-
-
-
-
-
-
-</div>
-        <div id="TcHmiContainer_Service_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
-
-            <div id="TcHmiToggleButton_bSetDefault_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bSetDefault%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
-
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-
-
-
-
-
-
-
-
-
-                
-            </div>
-
-            <div id="TcHmiToggleButton_bReset_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bReset%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
-
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-
-
-
-                
-            </div>
-            <div id="TcHmiTextblock_Service1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_iHighRange%/l%">
-
-            </div>
-<div id="TcHmiTextbox_Service1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%iHighRange|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-            <div id="TcHmiTextblock_Service2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_iLowRange%/l%">
-
-            </div>
-
-            <div id="TcHmiTextbox_Service2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%pp%iLowRange|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-<div id="TcHmiTextblock_Service3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rHighRange%/l%">
-
-            </div>
-<div id="TcHmiTextbox_Service3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rHighRange%/pp%, 2)%/f%">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextbox_Service3_18.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%rHighRange%/pp%",
-        "valueType": "tchmi:general#/definitions/REAL",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service3_18::Text%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-<div id="TcHmiTextblock_Service4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rLowRange%/l%">
-
-            </div>
-
-            <div id="TcHmiTextbox_Service4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rLowRange%/pp%, 2)%/f%">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextbox_Service4_18.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%rLowRange%/pp%",
-        "valueType": "tchmi:general#/definitions/REAL",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service4_18::Text%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-            <div id="TcHmiTextblock_Service5_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rHighLimit%/l%">
-
-            </div>
-
-            <div id="TcHmiTextbox_Service5_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rHighLimit%/pp%, 2)%/f%">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextbox_Service5_18.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%rHighLimit%/pp%",
-        "valueType": "tchmi:general#/definitions/REAL",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service5_18::Text%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-        <div id="TcHmiTextblock_Service6_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rLowLimit%/l%">
-
-            </div>
-
-<div id="TcHmiTextbox_Service6_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rLowLimit%/pp%, 2)%/f%">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextbox_Service6_18.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%rLowLimit%/pp%",
-        "valueType": "tchmi:general#/definitions/REAL",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service6_18::Text%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-<div id="TcHmiTextblock_Service7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_tFilterTime%/l%">
-
-            </div>
-
-<div id="TcHmiTextbox_Service7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tFilterTime|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-<div id="TcHmiTextblock_Service8_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rOffset%/l%">
-
-            </div>
-
-<div id="TcHmiTextbox_Service8_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rOffset%/pp%, 2)%/f%">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextbox_Service8_18.onUserInteractionFinished",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%rOffset%/pp%",
-        "valueType": "tchmi:general#/definitions/REAL",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiTextbox_Service8_18::Text%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-</div>
-        <div id="TcHmiButton_Close_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-bottom="10" data-tchmi-top-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="10">
-
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiButton_Close_18.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Dim_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Popup_18::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-        </div>
-
-
-
-
-
-
-
-</div>
+        }]
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 0,
+          "leftUnit": "px",
+          "rightUnit": "px",
+          "topUnit": "px",
+          "bottomUnit": "px"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+        {
+          "left": "Solid",
+          "right": "Solid",
+          "top": "Solid",
+          "bottom": "None"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+        {
+          "topLeft": 5.0,
+          "topRight": 5.0,
+          "bottomLeft": 0.0,
+          "bottomRight": 0.0,
+          "topLeftUnit": "px",
+          "topRightUnit": "px",
+          "bottomLeftUnit": "px",
+          "bottomRightUnit": "px"
+        }
+      </script>
+
+    </div>
+
+    <div id="TcHmiTextblock_Service_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="165" data-tchmi-left-unit="px" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text="%l%FB_HVACAnalogInput_Service%/l%">
+
+      <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [{
+          "event": "TcHmiTextblock_Service_18.onPressed",
+          "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Operator_18::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiTextblock_Operator_18::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": {
+                  "color": "None"
+                }
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Service_18::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Visible"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiTextblock_Service_18::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": null
+              },
+              "asyncWait": true
+            }
+          ]
+        }]
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 0,
+          "leftUnit": "px",
+          "rightUnit": "px",
+          "topUnit": "px",
+          "bottomUnit": "px"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+        {
+          "left": "Solid",
+          "right": "Solid",
+          "top": "Solid",
+          "bottom": "None"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+        {
+          "color": "None"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+        {
+          "topLeft": 5.0,
+          "topRight": 5.0,
+          "bottomLeft": 0.0,
+          "bottomRight": 0.0,
+          "topLeftUnit": "px",
+          "topRightUnit": "px",
+          "bottomLeftUnit": "px",
+          "bottomRightUnit": "px"
+        }
+      </script>
+    </div>
+    <div id="TcHmiContainer_Operator_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="380" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+
+      <div id="TcHmiTextblock_ValueText1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_iRawValue%/l%">
+
+      </div>
+      <div id="TcHmiTextblock_Value1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%iRawValue%/pp%">
+
+      </div>
+      <div id="TcHmiTextblock_ValueText2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_rPresentValue%/l%">
+
+      </div>
+      <div id="TcHmiTextblock_Value2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%f%GaugeValueFormatter(%pp%rPresentValue%/pp%, 2)%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
+
+      </div>
+      <div id="TcHmiTextblock_ValueText3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_eErrorCode%/l%">
+
+      </div>
+      <div id="TcHmiTextblock_Value3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100">
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [{
+            "event": "%pp%eErrorCode%/pp%",
+            "actions": [{
+              "objectType": "SwitchCase",
+              "active": true,
+              "compare": {
+                "objectType": "Symbol",
+                "symbolExpression": "%pp%eErrorCode%/pp%"
+              },
+              "cases": [{
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 0
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_NoError"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 1
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_tTaskCycleTime"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 2
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_tCtrlCycleTime"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 3
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_rDeadRange"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 4
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_rDeadBand"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 5
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_rKpIsLessThanZero"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 6
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_tTi"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 7
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_tTv"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 8
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_tTd"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 9
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_fBaseTime"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 10
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_rYMaxIsLessThanrYMin"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 11
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_MEMCPY"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 12
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_ModeNotSupported"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 13
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_rErrHighLimitOverrun"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 14
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_rErrLowLimitUnderrun"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 15
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator1"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 16
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator2"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 17
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator3"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 18
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator4"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 19
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator5"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 20
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator6"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 21
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator7"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 22
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_NoFeedbackActuator8"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 23
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_tOverlap1Actuator"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 24
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iCountCtrl"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 25
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_iMaxOnLevel"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 26
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_tNoFeedbActuator"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 27
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_iNumberOfSequences"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 28
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_iMyNumberOfSequences"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 29
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_iCurrentSequences"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 30
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_MEMSET"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 31
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iStep"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 32
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iNumberOfStepInProfile"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 33
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iNumberOfAggregates"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 34
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iAggregateSteps"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 35
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iNumberOfProfiles"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 36
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iProfile"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 37
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_rY_Max"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 38
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_rY_Min"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 39
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iAggregate"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 40
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_udiSecDelayUp"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 41
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_udiSecDelayDown"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 42
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_InvalidParam_iNumberOfValues"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 43
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_LEN_Int"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                {
+                  "caseValue": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+                    "value": 44
+                  },
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/String",
+                      "value": "eHVACErrorCodes_Error_LEN_Enum"
+                    },
+                    "asyncWait": true
+                  }]
+                }
+              ],
+              "caseDefault": {
+                "actions": [{
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%ctrl%TcHmiTextblock_Value3_18::Text%/ctrl%",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "Unknown value"
+                  },
+                  "asyncWait": true
+                }]
+              },
+              "asyncWait": true
+            }]
+          }]
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Status_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_byState%/l%">
+
+      </div>
+      <div id="TcHmiTextblock_Error_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="100" data-tchmi-text="%l%FB_HVACAnalogInput_byError%/l%">
+
+      </div>
+
+      <div id="TcHmiEllipse_State1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bLimitValueMonitoring%/l%">
+
+      </div>
+
+      <div id="TcHmiEllipse_State7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-text="%l%FB_HVACAnalogInput_bSensorSupplyVoltage%/l%">
+
+      </div>
+      <div id="TcHmiEllipse_Error0_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Error0_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="140" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bError%/l%">
+
+      </div>
+
+      <div id="TcHmiEllipse_Error1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Error1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bInvalidParameter%/l%">
+
+      </div>
+
+      <div id="TcHmiEllipse_Error2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Error2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-top="240" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_bErrorGeneral%/l%">
+
+      </div>
+
+      <div id="TcHmiEllipse_Error3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Error3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bErrorLowLimit%/l%" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+
+      </div>
+
+      <div id="TcHmiEllipse_Error4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+
+      <div id="TcHmiTextblock_Error4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bErrorHighLimit%/l%" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+      </div>
+
+    </div>
+    <div id="TcHmiContainer_Service_18" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
+
+      <div id="TcHmiToggleButton_bSetDefault_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bSetDefault%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
+
+      </div>
+
+      <div id="TcHmiToggleButton_bReset_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_bReset%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
+
+      </div>
+      <div id="TcHmiTextblock_Service1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_iHighRange%/l%">
+
+      </div>
+      <div id="TcHmiTextbox_Service1_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%iHighRange|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextblock_Service2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_iLowRange%/l%">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service2_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%pp%iLowRange|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+      <div id="TcHmiTextblock_Service3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rHighRange%/l%">
+
+      </div>
+      <div id="TcHmiTextbox_Service3_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rHighRange%/pp%, 2)%/f%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [{
+            "event": "TcHmiTextbox_Service3_18.onUserInteractionFinished",
+            "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%pp%rHighRange%/pp%",
+              "valueType": "tchmi:general#/definitions/REAL",
+              "value": {
+                "objectType": "Symbol",
+                "symbolExpression": "%ctrl%TcHmiTextbox_Service3_18::Text%/ctrl%"
+              },
+              "asyncWait": true
+            }]
+          }]
+        </script>
+
+      </div>
+      <div id="TcHmiTextblock_Service4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rLowRange%/l%">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service4_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rLowRange%/pp%, 2)%/f%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [{
+            "event": "TcHmiTextbox_Service4_18.onUserInteractionFinished",
+            "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%pp%rLowRange%/pp%",
+              "valueType": "tchmi:general#/definitions/REAL",
+              "value": {
+                "objectType": "Symbol",
+                "symbolExpression": "%ctrl%TcHmiTextbox_Service4_18::Text%/ctrl%"
+              },
+              "asyncWait": true
+            }]
+          }]
+        </script>
+
+      </div>
+      <div id="TcHmiTextblock_Service5_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rHighLimit%/l%">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service5_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rHighLimit%/pp%, 2)%/f%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [{
+            "event": "TcHmiTextbox_Service5_18.onUserInteractionFinished",
+            "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%pp%rHighLimit%/pp%",
+              "valueType": "tchmi:general#/definitions/REAL",
+              "value": {
+                "objectType": "Symbol",
+                "symbolExpression": "%ctrl%TcHmiTextbox_Service5_18::Text%/ctrl%"
+              },
+              "asyncWait": true
+            }]
+          }]
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextblock_Service6_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rLowLimit%/l%">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service6_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rLowLimit%/pp%, 2)%/f%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [{
+            "event": "TcHmiTextbox_Service6_18.onUserInteractionFinished",
+            "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%pp%rLowLimit%/pp%",
+              "valueType": "tchmi:general#/definitions/REAL",
+              "value": {
+                "objectType": "Symbol",
+                "symbolExpression": "%ctrl%TcHmiTextbox_Service6_18::Text%/ctrl%"
+              },
+              "asyncWait": true
+            }]
+          }]
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextblock_Service7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_tFilterTime%/l%">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service7_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tFilterTime|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextblock_Service8_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACAnalogInput_rOffset%/l%">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service8_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rOffset%/pp%, 2)%/f%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+          [{
+            "event": "TcHmiTextbox_Service8_18.onUserInteractionFinished",
+            "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%pp%rOffset%/pp%",
+              "valueType": "tchmi:general#/definitions/REAL",
+              "value": {
+                "objectType": "Symbol",
+                "symbolExpression": "%ctrl%TcHmiTextbox_Service8_18::Text%/ctrl%"
+              },
+              "asyncWait": true
+            }]
+          }]
+        </script>
+
+      </div>
+
+    </div>
+    <div id="TcHmiButton_Close_18" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_HVACAnalogInput_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-bottom="10" data-tchmi-top-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="10">
+
+      <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [{
+          "event": "TcHmiButton_Close_18.onPressed",
+          "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Dim_18::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Popup_18::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            }
+          ]
+        }]
+      </script>
+    </div>
+
+  </div>
 
 </div>

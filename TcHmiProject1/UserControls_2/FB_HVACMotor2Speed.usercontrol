@@ -1,17 +1,14 @@
 ﻿<div id="FB_HVACMotor2Speed" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%" data-tchmi-top-unit="px">
 
-    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "%pp%eStateModeActuator%/pp%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "asyncWait": true,
-        "parts": [
-          {
-            "if": [
-              {
+  <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+    [{
+        "event": "%pp%eStateModeActuator%/pp%",
+        "actions": [{
+          "objectType": "Condition",
+          "active": true,
+          "asyncWait": true,
+          "parts": [{
+              "if": [{
                 "compare1": {
                   "objectType": "Symbol",
                   "symbolExpression": "%pp%bErrorGeneral%/pp%"
@@ -23,10 +20,8 @@
                 },
                 "compareOperator": "==",
                 "logic": null
-              }
-            ],
-            "then": [
-              {
+              }],
+              "then": [{
                 "objectType": "WriteToSymbol",
                 "active": true,
                 "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
@@ -37,756 +32,652 @@
                   "value": "Imports/Images/Motor/symbol_inside_red.svg"
                 },
                 "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "SwitchCase",
-                "active": true,
-                "compare": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%eStateModeActuator%/pp%"
-                },
-                "cases": [
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 0
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_black.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 1
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_gray.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 2
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 3
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 4
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 5
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 6
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_black.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 7
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_gray.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 8
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 9
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 10
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 11
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  }
-                ],
-                "caseDefault": {
-                  "actions": [
-                    {
-                      "objectType": "WriteToSymbol",
-                      "active": true,
-                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                      "valueType": "tchmi:framework#/definitions/Path",
-                      "value": {
-                        "objectType": "StaticValue",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": "Imports/Images/Motor/symbol_inside_black.svg"
-                      },
-                      "asyncWait": true
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "event": "%pp%bErrorGeneral%/pp%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "asyncWait": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%bErrorGeneral%/pp%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": true
-                },
-                "compareOperator": "==",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/Path",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Path",
-                  "value": "Imports/Images/Motor/symbol_inside_red.svg"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "SwitchCase",
-                "active": true,
-                "compare": {
-                  "objectType": "Symbol",
-                  "symbolExpression": "%pp%eStateModeActuator%/pp%"
-                },
-                "cases": [
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 0
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_black.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 1
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_gray.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 2
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 3
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 4
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 5
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 6
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_black.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 7
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_gray.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 8
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 9
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 10
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "caseValue": {
-                      "objectType": "StaticValue",
-                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-                      "value": 11
-                    },
-                    "actions": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Path",
-                          "value": "Imports/Images/Motor/symbol_inside_green.svg"
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  }
-                ],
-                "caseDefault": {
-                  "actions": [
-                    {
-                      "objectType": "WriteToSymbol",
-                      "active": true,
-                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
-                      "valueType": "tchmi:framework#/definitions/Path",
-                      "value": {
-                        "objectType": "StaticValue",
-                        "valueType": "tchmi:framework#/definitions/Path",
-                        "value": "Imports/Images/Motor/symbol_inside_black.svg"
-                      },
-                      "asyncWait": true
-                    }
-                  ]
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "event": "%pp%byState%/pp%",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7_9'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
-    "event": "%pp%byError%/pp%",
-    "actions": [
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error5_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error6_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error7_9'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << (index + 1))) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  },
-  {
-    "event": "FB_HVACMotor2Speed.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Dim_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Popup_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "JavaScript",
-        "active": true,
-        "sourceLines": [
-          "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim_9');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup_9');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
-      }
-    ]
-  }
-]</script>
-    <div id="TcHmiImage_Outside_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Motor/symbol_outside.svg">
-
-
-
-
-        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-            [
-            {
-            "virtualControlRight": "Serwis",
-            "controlRight": "operate"
-            }
-            ]
-        </script>
-
-        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-            []
-        </script>
-    </div>
-<div id="TcHmiImage_Inside_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Motor/symbol_inside_black.svg">
-
-
-
-
-        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-            [
-            {
-            "virtualControlRight": "Serwis",
-            "controlRight": "operate"
-            }
-            ]
-        </script>
-
-        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-            []
-        </script>
-    </div>
-    <div id="TcHmiTextblock_Mode_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
-
-        <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(0, 0, 0, 1)"
-}
-</script>
-
-        <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "%pp%eStateModeActuator%/pp%",
-    "actions": [
-      {
-        "objectType": "SwitchCase",
-        "active": true,
-        "compare": {
-          "objectType": "Symbol",
-          "symbolExpression": "%pp%eStateModeActuator%/pp%"
-        },
-        "cases": [
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 0
+              }]
             },
-            "actions": [
-              {
+            {
+              "else": [{
+                "objectType": "SwitchCase",
+                "active": true,
+                "compare": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%eStateModeActuator%/pp%"
+                },
+                "cases": [{
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 0
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 1
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_gray.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 2
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 3
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 4
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 5
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 6
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 7
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_gray.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 8
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 9
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 10
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 11
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  }
+                ],
+                "caseDefault": {
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/Path",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                "asyncWait": true
+              }]
+            }
+          ]
+        }]
+      },
+      {
+        "event": "%pp%bErrorGeneral%/pp%",
+        "actions": [{
+          "objectType": "Condition",
+          "active": true,
+          "asyncWait": true,
+          "parts": [{
+              "if": [{
+                "compare1": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%bErrorGeneral%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }],
+              "then": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Path",
+                  "value": "Imports/Images/Motor/symbol_inside_red.svg"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "else": [{
+                "objectType": "SwitchCase",
+                "active": true,
+                "compare": {
+                  "objectType": "Symbol",
+                  "symbolExpression": "%pp%eStateModeActuator%/pp%"
+                },
+                "cases": [{
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 0
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 1
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_gray.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 2
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 3
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 4
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 5
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 6
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 7
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_gray.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 8
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 9
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 10
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  },
+                  {
+                    "caseValue": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                      "value": 11
+                    },
+                    "actions": [{
+                      "objectType": "WriteToSymbol",
+                      "active": true,
+                      "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/Path",
+                        "value": "Imports/Images/Motor/symbol_inside_green.svg"
+                      },
+                      "asyncWait": true
+                    }]
+                  }
+                ],
+                "caseDefault": {
+                  "actions": [{
+                    "objectType": "WriteToSymbol",
+                    "active": true,
+                    "symbolExpression": "%ctrl%TcHmiImage_Inside_9::Src%/ctrl%",
+                    "valueType": "tchmi:framework#/definitions/Path",
+                    "value": {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:framework#/definitions/Path",
+                      "value": "Imports/Images/Motor/symbol_inside_black.svg"
+                    },
+                    "asyncWait": true
+                  }]
+                },
+                "asyncWait": true
+              }]
+            }
+          ]
+        }]
+      },
+      {
+        "event": "%pp%byState%/pp%",
+        "actions": [{
+          "objectType": "JavaScript",
+          "active": true,
+          "sourceLines": [
+            "TcHmi.Symbol.readEx2('%pp%byState%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State0_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State1_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State2_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State3_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State4_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State5_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State6_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_State7_9'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << index)) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(0, 128, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+          ],
+          "injectContextObject": false,
+          "asyncWait": true,
+          "waitMode": "Synchronous"
+        }]
+      },
+      {
+        "event": "%pp%byError%/pp%",
+        "actions": [{
+          "objectType": "JavaScript",
+          "active": true,
+          "sourceLines": [
+            "TcHmi.Symbol.readEx2('%pp%byError%/pp%', function (data) {\n    if (data.error === TcHmi.Errors.NONE) {\n        var value = data.value;\n        var statusArr = new Array();\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error1_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error2_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error3_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error4_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error5_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error6_9'));\n\t\tstatusArr.push(new TcHmi.Controls.get('TcHmiEllipse_Error7_9'));\n        for (let index = 0; index < statusArr.length; index++)\n        {\n\t\t    if(value & (1 << (index + 1))) {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(255, 0, 0, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t} else {\n\t\t\t\tstatusArr[index].setFillColor(\n\t\t\t\t\t{\n\t\t\t\t\t\tcolor: \"rgba(128, 128, 128, 1)\"\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n    } else {\n        // Handle error... \n    }\n});\n"
+          ],
+          "injectContextObject": false,
+          "asyncWait": true,
+          "waitMode": "Synchronous"
+        }]
+      },
+      {
+        "event": "FB_HVACMotor2Speed.onPressed",
+        "actions": [{
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiContainer_Dim_9::Visibility%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Visibility",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": "Visible"
+            },
+            "asyncWait": true
+          },
+          {
+            "objectType": "WriteToSymbol",
+            "active": true,
+            "symbolExpression": "%ctrl%TcHmiContainer_Popup_9::Visibility%/ctrl%",
+            "valueType": "tchmi:framework#/definitions/Visibility",
+            "value": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": "Visible"
+            },
+            "asyncWait": true
+          },
+          {
+            "objectType": "JavaScript",
+            "active": true,
+            "sourceLines": [
+              "var dimCtrl = TcHmi.Controls.get('TcHmiContainer_Dim_9');\nvar popupCtrl = TcHmi.Controls.get('TcHmiContainer_Popup_9');\n\nTcHmi.View.get().addChild(dimCtrl);\nTcHmi.View.get().addChild(popupCtrl);\n\nvar width = TcHmi.View.get().getRenderedWidth();\nvar height = TcHmi.View.get().getRenderedHeight();\n\nvar popupCtrlWidth = popupCtrl.getWidth();\nvar popupCtrlHeight = popupCtrl.getHeight();\n\npopupCtrl.setLeft((width/2)-(popupCtrlWidth/2));\npopupCtrl.setTop((height/2)-(popupCtrlHeight/2));"
+            ],
+            "injectContextObject": false,
+            "asyncWait": true,
+            "waitMode": "Synchronous"
+          }
+        ]
+      }
+    ]
+  </script>
+  <div id="TcHmiImage_Outside_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Motor/symbol_outside.svg">
+
+  </div>
+  <div id="TcHmiImage_Inside_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Motor/symbol_inside_black.svg">
+
+  </div>
+  <div id="TcHmiTextblock_Mode_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+
+    <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+      {
+        "color": "rgba(0, 0, 0, 1)"
+      }
+    </script>
+
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [{
+        "event": "%pp%eStateModeActuator%/pp%",
+        "actions": [{
+          "objectType": "SwitchCase",
+          "active": true,
+          "compare": {
+            "objectType": "Symbol",
+            "symbolExpression": "%pp%eStateModeActuator%/pp%"
+          },
+          "cases": [{
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 0
+              },
+              "actions": [{
                 "objectType": "WriteToSymbol",
                 "active": true,
                 "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
@@ -797,244 +688,220 @@
                   "value": "A"
                 },
                 "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 1
+              }]
             },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 2
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 3
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 4
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 5
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "M"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 6
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "L"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 7
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "L"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 8
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "L"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 9
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "L"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 10
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "L"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 11
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "L"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "caseDefault": {
-          "actions": [
             {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 1
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 2
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 3
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 4
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 5
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "M"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 6
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 7
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 8
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 9
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 10
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 11
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "L"
+                },
+                "asyncWait": true
+              }]
+            }
+          ],
+          "caseDefault": {
+            "actions": [{
               "objectType": "WriteToSymbol",
               "active": true,
               "symbolExpression": "%ctrl%TcHmiTextblock_Mode_9::Text%/ctrl%",
@@ -1045,87 +912,39 @@
                 "value": ""
               },
               "asyncWait": true
-            }
-          ]
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
+            }]
+          },
+          "asyncWait": true
+        }]
+      }]
+    </script>
 
+  </div>
+  <div id="TcHmiTextblock_Speed_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-top="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
 
-        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-            []
-        </script>
-
-        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-            [
-            {
-            "accessright": "operate",
-            "group": "Serwisanci",
-            "permission": "Allow"
-            },
-            {
-            "accessright": "operate",
-            "group": "Operatorzy",
-            "permission": "Deny"
-            }
-            ]
-        </script>
-    </div>
-<div id="TcHmiTextblock_Speed_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-word-wrap="False" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-width-unit="%" data-tchmi-width="30" data-tchmi-text-font-size-unit="px" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_Mode_9::RenderedHeight%/ctrl%/2%/f%" data-tchmi-creator-visibility="Collapsed" data-tchmi-right="0" data-tchmi-right-unit="%" data-tchmi-top="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
-
-        <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(0, 0, 0, 1)"
-}
-</script>
-
-        
-
-
-        <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-            []
-        </script>
-
-        <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-            [
-            {
-            "accessright": "operate",
-            "group": "Serwisanci",
-            "permission": "Allow"
-            },
-            {
-            "accessright": "operate",
-            "group": "Operatorzy",
-            "permission": "Deny"
-            }
-            ]
-        </script>
-    
-
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "%pp%eStateModeActuator%/pp%",
-    "actions": [
+    <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
       {
-        "objectType": "SwitchCase",
-        "active": true,
-        "compare": {
-          "objectType": "Symbol",
-          "symbolExpression": "%pp%eStateModeActuator%/pp%"
-        },
-        "cases": [
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 2
-            },
-            "actions": [
-              {
+        "color": "rgba(0, 0, 0, 1)"
+      }
+    </script>
+
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+      [{
+        "event": "%pp%eStateModeActuator%/pp%",
+        "actions": [{
+          "objectType": "SwitchCase",
+          "active": true,
+          "compare": {
+            "objectType": "Symbol",
+            "symbolExpression": "%pp%eStateModeActuator%/pp%"
+          },
+          "cases": [{
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 2
+              },
+              "actions": [{
                 "objectType": "WriteToSymbol",
                 "active": true,
                 "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
@@ -1136,76 +955,68 @@
                   "value": "1"
                 },
                 "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 3
+              }]
             },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "2"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 8
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "1"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
-              "value": 3
-            },
-            "actions": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
-                "valueType": "tchmi:general#/definitions/String",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "value": "2"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "caseDefault": {
-          "actions": [
             {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 3
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "2"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 8
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "1"
+                },
+                "asyncWait": true
+              }]
+            },
+            {
+              "caseValue": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+                "value": 3
+              },
+              "actions": [{
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
+                "valueType": "tchmi:general#/definitions/String",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "2"
+                },
+                "asyncWait": true
+              }]
+            }
+          ],
+          "caseDefault": {
+            "actions": [{
               "objectType": "WriteToSymbol",
               "active": true,
               "symbolExpression": "%ctrl%TcHmiTextblock_Speed_9::Text%/ctrl%",
@@ -1216,868 +1027,651 @@
                 "value": ""
               },
               "asyncWait": true
+            }]
+          },
+          "asyncWait": true
+        }]
+      }]
+    </script>
+  </div>
+
+  <div id="TcHmiContainer_Dim_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed">
+
+    <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+      {
+        "color": "rgba(0, 0, 0, 1)"
+      }
+    </script>
+
+  </div>
+  <div id="TcHmiContainer_Popup_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="610" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
+
+    <div id="TcHmiTextblock_sName_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
+
+    </div>
+
+    <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+      {
+        "color": "rgba(255, 255, 255, 1)"
+      }
+    </script>
+
+    <div id="TcHmiTextblock_Operator_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+      <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [{
+          "event": "TcHmiTextblock_Operator_9.onPressed",
+          "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Operator_9::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Visible"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiTextblock_Operator_9::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": null
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Service_9::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiTextblock_Service_9::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": {
+                  "color": "None"
+                }
+              },
+              "asyncWait": true
             }
           ]
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-</div>
+        }]
+      </script>
 
-    <div id="TcHmiContainer_Dim_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed">
+      <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 0,
+          "leftUnit": "px",
+          "rightUnit": "px",
+          "topUnit": "px",
+          "bottomUnit": "px"
+        }
+      </script>
 
-        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+      <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+        {
+          "left": "Solid",
+          "right": "Solid",
+          "top": "Solid",
+          "bottom": "None"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+        {
+          "topLeft": 5.0,
+          "topRight": 5.0,
+          "bottomLeft": 0.0,
+          "bottomRight": 0.0,
+          "topLeftUnit": "px",
+          "topRightUnit": "px",
+          "bottomLeftUnit": "px",
+          "bottomRightUnit": "px"
+        }
+      </script>
+    </div>
+
+    <div id="TcHmiTextblock_Service_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="165" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+      <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [{
+          "event": "TcHmiTextblock_Service_9.onPressed",
+          "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Operator_9::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            },
             {
-            "color": "rgba(0, 0, 0, 1)"
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiTextblock_Operator_9::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": {
+                  "color": "None"
+                }
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Service_9::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Visible"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiTextblock_Service_9::BorderColor%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Color",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Color",
+                "value": null
+              },
+              "asyncWait": true
             }
+          ]
+        }]
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+        {
+          "left": 1,
+          "right": 1,
+          "top": 1,
+          "bottom": 0,
+          "leftUnit": "px",
+          "rightUnit": "px",
+          "topUnit": "px",
+          "bottomUnit": "px"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+        {
+          "left": "Solid",
+          "right": "Solid",
+          "top": "Solid",
+          "bottom": "None"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+        {
+          "color": "None"
+        }
+      </script>
+
+      <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+        {
+          "topLeft": 5.0,
+          "topRight": 5.0,
+          "bottomLeft": 0.0,
+          "bottomRight": 0.0,
+          "topLeftUnit": "px",
+          "topRightUnit": "px",
+          "bottomLeftUnit": "px",
+          "bottomRightUnit": "px"
+        }
+      </script>
+    </div>
+
+    <div id="TcHmiContainer_Operator_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+
+      <div id="TcHmiTextblock_SelectMode_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_eCtrlModeActuator%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
+
+      </div>
+      <div id="TcHmiCombobox_SelectMode_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-selected-index="%pp%eCtrlModeActuator|BindingMode=TwoWay|BindingEvent=onSelectionChanged%/pp%">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
         </script>
 
-    </div>
-    <div id="TcHmiContainer_Popup_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="610" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px">
-
-        <div id="TcHmiTextblock_sName_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed">
-
-        </div>
-
-        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+        <script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
+          [{
+              "id": 0,
+              "value": "0",
+              "text": "eHVACActuatorMode_Auto_BMS"
+            },
             {
-            "color": "rgba(255, 255, 255, 1)"
+              "id": 1,
+              "value": "1",
+              "text": "eHVACActuatorMode_Off_BMS"
+            },
+            {
+              "id": 2,
+              "value": "2",
+              "text": "eHVACActuatorMode_Speed1_BMS"
+            },
+            {
+              "id": 3,
+              "value": "3",
+              "text": "eHVACActuatorMode_Speed2_BMS"
+            },
+            {
+              "id": 4,
+              "value": "4",
+              "text": "eHVACActuatorMode_Speed3_BMS"
+            },
+            {
+              "id": 5,
+              "value": "5",
+              "text": "eHVACActuatorMode_Speed4_BMS"
             }
+          ]
         </script>
 
-        <div id="TcHmiTextblock_Operator_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+      </div>
 
+      <div id="TcHmiTextblock_Error_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_byError%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
+      </div>
+      <div id="TcHmiTextblock_State_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_byState%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
+      </div>
 
+      <div id="TcHmiEllipse_State0_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
-
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextblock_Operator_9.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Operator_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Operator_9::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": null
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Service_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Service_9::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": {
-            "color": "None"
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
           }
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-        
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State0_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bEnable%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
-<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-{
-  "left": "Solid",
-  "right": "Solid",
-  "top": "Solid",
-  "bottom": "None"
-}
-</script>
+      </div>
 
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 0.0,
-  "bottomRight": 0.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
+      <div id="TcHmiEllipse_State1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-        <div id="TcHmiTextblock_Service_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="165" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="165" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-
-
-
-
-
-
-
-
-
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiTextblock_Service_9.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Operator_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Operator_9::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": {
-            "color": "None"
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
           }
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Service_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiTextblock_Service_9::BorderColor%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Color",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Color",
-          "value": null
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-        
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 1,
-  "right": 1,
-  "top": 1,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
-{
-  "left": "Solid",
-  "right": "Solid",
-  "top": "Solid",
-  "bottom": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
-{
-  "topLeft": 5.0,
-  "topRight": 5.0,
-  "bottomLeft": 0.0,
-  "bottomRight": 0.0,
-  "topLeftUnit": "px",
-  "topRightUnit": "px",
-  "bottomLeftUnit": "px",
-  "bottomRightUnit": "px"
-}
-</script>
-</div>
-
-        <div id="TcHmiContainer_Operator_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="520" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
-
-            <div id="TcHmiTextblock_SelectMode_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_eCtrlModeActuator%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
-
-            </div>
-<div id="TcHmiCombobox_SelectMode_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-selected-index="%pp%eCtrlModeActuator|BindingMode=TwoWay|BindingEvent=onSelectionChanged%/pp%">
-<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-{
-  "top": 3,
-  "right": 3,
-  "bottom": 3,
-  "left": 3
-}
-</script>
-
-
-<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
-[
-  {
-    "id": 0,
-    "value": "0",
-    "text": "eHVACActuatorMode_Auto_BMS"
-  },
-  {
-    "id": 1,
-    "value": "1",
-    "text": "eHVACActuatorMode_Off_BMS"
-  },
-  {
-    "id": 2,
-    "value": "2",
-    "text": "eHVACActuatorMode_Speed1_BMS"
-  },
-  {
-    "id": 3,
-    "value": "3",
-    "text": "eHVACActuatorMode_Speed2_BMS"
-  },
-  {
-    "id": 4,
-    "value": "4",
-    "text": "eHVACActuatorMode_Speed3_BMS"
-  },
-  {
-    "id": 5,
-    "value": "5",
-    "text": "eHVACActuatorMode_Speed4_BMS"
-  }
-]
-</script>
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bMotorSpeed1%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+
+      </div>
+
+      <div id="TcHmiEllipse_State2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bMotorSpeed2%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+
+      </div>
+      <div id="TcHmiEllipse_State3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateAutoSpeed1%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+
+      </div>
+      <div id="TcHmiEllipse_State4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateAutoSpeed2%/l%" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+
+      </div>
 
+      <div id="TcHmiEllipse_State5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-</div>
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateRepairSwitch%/l%" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
-            <div id="TcHmiTextblock_Error_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_byError%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+      </div>
 
-            </div>
-            <div id="TcHmiTextblock_State_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_byState%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-            </div>
-
-            <div id="TcHmiEllipse_State0_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+      <div id="TcHmiEllipse_State6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-                
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateManSwitch%/l%" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
-                
+      </div>
 
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State0_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bEnable%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+      <div id="TcHmiEllipse_State7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="455" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-            </div>
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_State7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bCtrlVoltage%/l%" data-tchmi-top="455" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
-            <div id="TcHmiEllipse_State1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+      </div>
 
-                
+      <div id="TcHmiEllipse_Error1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-                
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Error1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bInvalidParameter%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bMotorSpeed1%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+      </div>
 
-            </div>
+      <div id="TcHmiEllipse_Error2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-            <div id="TcHmiEllipse_State2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Error2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorGeneral%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
-                
+      </div>
 
-                
+      <div id="TcHmiEllipse_Error3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bMotorSpeed2%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
+      <div id="TcHmiTextblock_Error3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorMotorprotecSpeed1%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 
-            </div>
-<div id="TcHmiEllipse_State3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+      </div>
 
-                
+      <div id="TcHmiEllipse_Error4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-                
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
 
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-<div id="TcHmiTextblock_State3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateAutoSpeed1%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+      <div id="TcHmiTextblock_Error4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorMotorprotecSpeed2%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
-            </div>
-<div id="TcHmiEllipse_State4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+      </div>
 
-                
+      <div id="TcHmiEllipse_Error5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-                
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
 
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-<div id="TcHmiTextblock_State4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateAutoSpeed2%/l%" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+      <div id="TcHmiTextblock_Error5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorFeedbContactorSpeed1%/l%" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
-            </div>
+      </div>
 
-            <div id="TcHmiEllipse_State5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+      <div id="TcHmiEllipse_Error6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-                
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
 
-                
+      <div id="TcHmiTextblock_Error6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorFeedbContactorSpeed2%/l%" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateRepairSwitch%/l%" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+      </div>
+      <div id="TcHmiEllipse_Error7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
 
-            </div>
+        <script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+          {
+            "color": "rgba(128, 128, 128, 1)"
+          }
+        </script>
+      </div>
 
-            <div id="TcHmiEllipse_State6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
+      <div id="TcHmiTextblock_Error7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorFeedbProcess%/l%" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bStateManSwitch%/l%" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
-
-            </div>
-
-            <div id="TcHmiEllipse_State7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="455" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_State7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bCtrlVoltage%/l%" data-tchmi-top="455" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
-
-            </div>
-
-            <div id="TcHmiEllipse_Error1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_Error1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bInvalidParameter%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
-
-            </div>
-
-            <div id="TcHmiEllipse_Error2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_Error2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorGeneral%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
-
-            </div>
-
-            <div id="TcHmiEllipse_Error3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-            <div id="TcHmiTextblock_Error3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorMotorprotecSpeed1%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
-
-            </div>
-
-            <div id="TcHmiEllipse_Error4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-
-            <div id="TcHmiTextblock_Error4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorMotorprotecSpeed2%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-            </div>
-
-        <div id="TcHmiEllipse_Error5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-
-<div id="TcHmiTextblock_Error5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorFeedbContactorSpeed1%/l%" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-            </div>
-
-<div id="TcHmiEllipse_Error6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-
-<div id="TcHmiTextblock_Error6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorFeedbContactorSpeed2%/l%" data-tchmi-top="355" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-            </div>
-<div id="TcHmiEllipse_Error7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px">
-
-                
-
-                
-
-            
-<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
-{
-  "color": "rgba(128, 128, 128, 1)"
-}
-</script>
-</div>
-
-<div id="TcHmiTextblock_Error7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bErrorFeedbProcess%/l%" data-tchmi-top="405" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-            </div>
-
-</div>
-        <div id="TcHmiContainer_Service_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
-
-            <div id="TcHmiToggleButton_bSetDefault_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bSetDefault%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
-
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-
-
-
-
-
-
-
-
-
-                
-            </div>
-
-            <div id="TcHmiToggleButton_bReset_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bReset%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
-
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-
-
-
-                
-            </div>
-            <div id="TcHmiTextblock_Service1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tStartDelay%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-<div id="TcHmiTextblock_Service2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tStopDelay%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-<div id="TcHmiTextbox_Service1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tStartDelay|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-            <div id="TcHmiTextbox_Service2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%pp%tStopDelay|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-<div id="TcHmiTextblock_Service3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelayFeedbContractorSpeed1%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-<div id="TcHmiTextblock_Service4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelayFeedbContractorSpeed2%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-<div id="TcHmiTextbox_Service3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelayFeedbContactorSpeed1|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-            <div id="TcHmiTextbox_Service4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelayFeedbContactorSpeed2|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-            <div id="TcHmiTextblock_Service5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tFeedbProcessTimer%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-<div id="TcHmiTextblock_Service6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelayFeedbProcess%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-
-            <div id="TcHmiTextbox_Service5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tFeedbProcessTimer|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-<div id="TcHmiTextbox_Service6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelayFeedbProcess|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-<div id="TcHmiTextblock_Service7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelaySpeed1%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-<div id="TcHmiTextblock_Service8_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelaySpeed1ToSpeed2%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-
-<div id="TcHmiTextbox_Service7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelaySpeed1|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-<div id="TcHmiTextbox_Service8_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelaySpeed1ToSpeed2|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-<div id="TcHmiTextblock_Service9_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelaySpeed2ToSpeed1%/l%" data-tchmi-text-font-size-unit="px">
-
-            </div>
-
-<div id="TcHmiTextbox_Service9_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="375" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelaySpeed2ToSpeed1|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
-                <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
-                    {
-                    "top": 3,
-                    "right": 3,
-                    "bottom": 3,
-                    "left": 3
-                    }
-                </script>
-
-
-                
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-            </div>
-
-</div>
-        <div id="TcHmiButton_Close_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed">
-
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
-  {
-    "event": "TcHmiButton_Close_9.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Dim_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      },
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%TcHmiContainer_Popup_9::Visibility%/ctrl%",
-        "valueType": "tchmi:framework#/definitions/Visibility",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Collapsed"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]</script>
-        </div>
+      </div>
 
     </div>
+    <div id="TcHmiContainer_Service_9" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
+
+      <div id="TcHmiToggleButton_bSetDefault_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bSetDefault%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%">
+
+      </div>
+
+      <div id="TcHmiToggleButton_bReset_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_bReset%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
+
+      </div>
+      <div id="TcHmiTextblock_Service1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tStartDelay%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+      <div id="TcHmiTextblock_Service2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tStopDelay%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+      <div id="TcHmiTextbox_Service1_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tStartDelay|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextbox_Service2_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%pp%tStopDelay|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+      <div id="TcHmiTextblock_Service3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelayFeedbContractorSpeed1%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+      <div id="TcHmiTextblock_Service4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelayFeedbContractorSpeed2%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+      <div id="TcHmiTextbox_Service3_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelayFeedbContactorSpeed1|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextbox_Service4_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelayFeedbContactorSpeed2|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+      <div id="TcHmiTextblock_Service5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tFeedbProcessTimer%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+      <div id="TcHmiTextblock_Service6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelayFeedbProcess%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service5_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tFeedbProcessTimer|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextbox_Service6_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelayFeedbProcess|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextblock_Service7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelaySpeed1%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+      <div id="TcHmiTextblock_Service8_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="270" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelaySpeed1ToSpeed2%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service7_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelaySpeed1|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextbox_Service8_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelaySpeed1ToSpeed2|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+      <div id="TcHmiTextblock_Service9_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="340" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACMotor2Speed_tDelaySpeed2ToSpeed1%/l%" data-tchmi-text-font-size-unit="px">
+
+      </div>
+
+      <div id="TcHmiTextbox_Service9_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="375" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%pp%tDelaySpeed2ToSpeed1|BindingMode=TwoWay|BindingEvent=onUserInteractionFinished%/pp%" data-tchmi-text-font-size-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+          {
+            "top": 3,
+            "right": 3,
+            "bottom": 3,
+            "left": 3
+          }
+        </script>
+
+      </div>
+
+    </div>
+    <div id="TcHmiButton_Close_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_HVACMotor2Speed_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Collapsed">
+
+      <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+        [{
+          "event": "TcHmiButton_Close_9.onPressed",
+          "actions": [{
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Dim_9::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            },
+            {
+              "objectType": "WriteToSymbol",
+              "active": true,
+              "symbolExpression": "%ctrl%TcHmiContainer_Popup_9::Visibility%/ctrl%",
+              "valueType": "tchmi:framework#/definitions/Visibility",
+              "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Visibility",
+                "value": "Collapsed"
+              },
+              "asyncWait": true
+            }
+          ]
+        }]
+      </script>
+    </div>
+
+  </div>
 
 </div>
