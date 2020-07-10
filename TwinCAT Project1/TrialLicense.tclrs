@@ -1,10 +1,15 @@
 <?xml version="1.0"?>
 <TcLicenseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2011/11/TcLicenseInfo">
 	<LicenseInfo>
-		<SystemId>{86341A99-869A-1184-4B5B-C430F3A9B4C4}</SystemId>
-		<IssueTime>2020-07-03T10:15:00</IssueTime>
-		<ExpireTime>2020-07-11T00:00:00</ExpireTime>
-		<LicenseKey>18bf2d0076eeff768ead5375c177c9cb8b1b90fca503d90e21ba7f165290806df99fa1f51f56641423305b0cc9217ec3a52385e6c1bd3a0f1f1bca2e70604c4e66f86ae597c21160479ca13b2c2b9d208661344e9b5efb8e854534f6f73ddedd65f3b986e5818232f2c5b647883b32f830edcaff91d984d32397e10c688527b545d534d9a8f241b8634d20ea0d4f92a8d77445d89a38543092dac841aa381b3174166b3f384de844ff29bfbb2b74a009c59b56313ffb58e2326a5f543ca412ba79dbf2f295590b54ccddb9c5fe63ef9a65b152a8490d48d9864b1a28dac6a3c998186c8dcbd34fded464d6271830f4275cb20cedae568d5a817d482f1c51b0b1</LicenseKey>
+		<SystemId>{3B910196-80AB-39C3-FFD4-A3F10753A2DB}</SystemId>
+		<IssueTime>2020-07-10T13:04:00</IssueTime>
+		<ExpireTime>2020-07-18T00:00:00</ExpireTime>
+		<LicenseKey>74e0b03e0f1c27901bf44b2237af9d0b335ec3a24170c031bf0ea6974866f5b288f896b53919b0833339bb36fa6f21c2f3db74b1cca3cbe5555abfc49153ce7410cb829eee7f02b3f6373cb3977ccd1fdac05e6e4b6d458babc2997a91470e4864b76c4c64890e69494760fd87a3a1c864cab20e145284c8384915dbe26b0311112c63ff4d72004c1b68cbf2adc810af509766ede6b65e417b55b5551e97fca8df6658046bdf808d1cf79c22b9983d0b8b2f83b20f6cabf6ee4892225a14c7ee0235200421ae59987f61b8f526cd336f611a5e70d49c6e52873e673d021da8b668d5fb3c1613c91f477cad930d64d9d289ec17f9c3fea7c58f3360f0974c521c</LicenseKey>
+		<License>
+			<LicenseId>{AECBCEB9-4222-4369-8961-4A7488DAE203}</LicenseId>
+			<Name>TC3 HVAC</Name>
+			<OrderNo>TF8000</OrderNo>
+		</License>
 		<License>
 			<LicenseId>{37E5160D-987B-4640-888D-0F97727B53E2}</LicenseId>
 			<Name>TC3 HMI Clients</Name>
@@ -29,11 +34,6 @@
 			<LicenseId>{796D380F-D49E-4C0C-A05F-500052FAC883}</LicenseId>
 			<Name>TC3 HMI Server</Name>
 			<OrderNo>TF2000</OrderNo>
-		</License>
-		<License>
-			<LicenseId>{AECBCEB9-4222-4369-8961-4A7488DAE203}</LicenseId>
-			<Name>TC3 HVAC</Name>
-			<OrderNo>TF8000</OrderNo>
 		</License>
 		<License>
 			<LicenseId>{66689887-CCBD-452C-AC9A-039D997C6E66}</LicenseId>

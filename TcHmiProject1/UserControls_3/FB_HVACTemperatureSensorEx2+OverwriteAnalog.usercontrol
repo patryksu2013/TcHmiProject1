@@ -1,10 +1,6 @@
-﻿<div id="FB_HVACTemperatureSensorEx2+OverwriteAnalog" data-tchmi-type="tchmi-user-control"
-     data-tchmi-top="0" data-tchmi-left="0"
-     data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%"
-     data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%" data-tchmi-creator-locked="False">
+﻿<div id="FB_HVACTemperatureSensorEx2+OverwriteAnalog" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-creator-visibility="Visible" data-tchmi-tooltip="%pp%sName%/pp%" data-tchmi-creator-locked="False">
 
-    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+    <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "%pp%udiError%/pp%",
     "actions": [
@@ -59,9 +55,8 @@
       }
     ]
   }
-]
-</script>
-    <div id="TcHmiImage_Symbol_16" data-tchmi-type="tchmi-image" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Temperature/symbol_temperature.svg">
+]</script>
+    <div id="TcHmiImage_Symbol_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-visibility="Collapsed" data-tchmi-src="Imports/Images/Temperature/symbol_temperature.svg">
 
 
 
@@ -79,20 +74,20 @@
             []
         </script>
     </div>
-<div id="TcHmiTextblock_rPresentValueText_16" data-tchmi-type="tchmi-textblock" data-tchmi-word-wrap="True" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rPresentValueText_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rPresentValue_short%/l%">
+<div id="TcHmiTextblock_rPresentValueText_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-word-wrap="True" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rPresentValueText_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rPresentValue_short%/l%">
 
 </div>
-<div id="TcHmiTextblock_rPresentValue_16" data-tchmi-type="tchmi-textblock" data-tchmi-word-wrap="True" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rPresentValue%/pp%, 1), '°')%/f%" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rPresentValue_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-top="25" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="0">
+<div id="TcHmiTextblock_rPresentValue_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-word-wrap="True" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rPresentValue%/pp%, 1), '°')%/f%" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rPresentValue_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-top="25" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="0">
 
 </div>
-<div id="TcHmiTextblock_rValueOutText_16" data-tchmi-type="tchmi-textblock" data-tchmi-word-wrap="True" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rValueOutText_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-top="50" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rValueOut_short%/l%">
+<div id="TcHmiTextblock_rValueOutText_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-word-wrap="True" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rValueOutText_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-top="50" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rValueOut_short%/l%">
 
 </div>
-<div id="TcHmiTextblock_rValueOut_16" data-tchmi-type="tchmi-textblock" data-tchmi-word-wrap="True" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rValueOut%/pp%, 1), '°')%/f%" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rValueOut_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-bottom="0">
+<div id="TcHmiTextblock_rValueOut_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-word-wrap="True" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rValueOut%/pp%, 1), '°')%/f%" data-tchmi-bottom-unit="%" data-tchmi-width-unit="%" data-tchmi-width="70" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-text-font-size="%f%%ctrl%TcHmiTextblock_rValueOut_16::RenderedHeight%/ctrl%/2%/f%" data-tchmi-right-unit="%" data-tchmi-right="0" data-tchmi-bottom="0">
 
 </div>
 
-    <div id="TcHmiContainer_Dim_16" data-tchmi-type="tchmi-container" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed">
+    <div id="TcHmiContainer_Dim_16" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-opacity="0.6" data-tchmi-visibility="Collapsed" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Collapsed">
 
         <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
             {
@@ -101,9 +96,9 @@
         </script>
 
     </div>
-    <div id="TcHmiContainer_Popup_16" data-tchmi-type="tchmi-container" data-tchmi-height="445" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-top="0" data-tchmi-left="0">
+    <div id="TcHmiContainer_Popup_16" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="445" data-tchmi-height-unit="px" data-tchmi-width="330" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-top="0" data-tchmi-left="0">
 
-        <div id="TcHmiTextblock_sName_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible">
+        <div id="TcHmiTextblock_sName_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text="%pp%sName%/pp%" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Collapsed" data-tchmi-visibility="Visible">
 
         </div>
 
@@ -113,15 +108,14 @@
             }
         </script>
 
-        <div id="TcHmiTextblock_Operator_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+        <div id="TcHmiTextblock_Operator_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_Operator%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
 
 
 
 
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextblock_Operator_16.onPressed",
     "actions": [
@@ -203,8 +197,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -242,7 +235,7 @@
 </script>
 </div>
 
-        <div id="TcHmiTextblock_Service_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
+        <div id="TcHmiTextblock_Service_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="110" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_Service%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -253,8 +246,7 @@
 
 
 
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextblock_Service_16.onPressed",
     "actions": [
@@ -336,8 +328,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -380,15 +371,14 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_OverwriteAnalog_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_OverwriteAnalog%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiTextblock_OverwriteAnalog_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="220" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_OverwriteAnalog%/l%" data-tchmi-top="45" data-tchmi-top-unit="px" data-tchmi-width="110" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 
 
 
 
 
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextblock_OverwriteAnalog_16.onPressed",
     "actions": [
@@ -470,8 +460,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
             <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -514,25 +503,25 @@
 }
 </script>
 </div>
-        <div id="TcHmiContainer_Operator_16" data-tchmi-type="tchmi-container" data-tchmi-height="295" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Operator_16" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="295" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-visibility="Visible" data-tchmi-creator-locked="False">
 
-            <div id="TcHmiTextblock_ValueText1_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_iRawValue%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
-
-            </div>
-<div id="TcHmiTextblock_Value1_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%iRawValue%/pp%, 2)%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_ValueText1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_iRawValue%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
-<div id="TcHmiTextblock_ValueText2_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rPresentValue%/l%" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiTextblock_Value1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%iRawValue%/pp%, 2)%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
-<div id="TcHmiTextblock_Value2_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rPresentValue%/pp%, 1), '°')%/f%" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiTextblock_ValueText2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rPresentValue%/l%" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
-<div id="TcHmiTextblock_Error_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_udiError%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+<div id="TcHmiTextblock_Value2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%f%Concatenate(GaugeValueFormatter(%pp%rPresentValue%/pp%, 1), '°')%/f%" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Right" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+            </div>
+<div id="TcHmiTextblock_Error_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_udiError%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error1_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -545,11 +534,11 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_Error1_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bInvalidParameter%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bInvalidParameter%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error2_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -562,11 +551,11 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_Error2_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorGeneral%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorGeneral%/l%" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error3_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error3_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -579,11 +568,11 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_Error3_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorHighLimit%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error3_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorHighLimit%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error4_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error4_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -596,11 +585,11 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_Error4_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorLowLimit%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error4_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorLowLimit%/l%" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error5_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error5_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -613,11 +602,11 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_Error5_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorShortCircuit%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error5_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorShortCircuit%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error6_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error6_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -630,11 +619,11 @@
                     }
                 </script>
             </div>
-            <div id="TcHmiTextblock_Error6_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorBrokenSensor%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error6_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorBrokenSensor%/l%" data-tchmi-top="205" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error7_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error7_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -648,15 +637,15 @@
                 </script>
             </div>
 
-            <div id="TcHmiTextblock_Error7_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorSensor%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error7_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorSensor%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiTextblock_Error8_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorConversionFactor%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiTextblock_Error8_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="210" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bErrorConversionFactor%/l%" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
 
             </div>
 
-            <div id="TcHmiEllipse_Error8_16" data-tchmi-type="tchmi-ellipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
+            <div id="TcHmiEllipse_Error8_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="255" data-tchmi-top-unit="px" data-tchmi-width="40" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible">
 
 
 
@@ -671,87 +660,9 @@
             </div>
 
 </div>
-        <div id="TcHmiContainer_Service_16" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
+        <div id="TcHmiContainer_Service_16" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed" data-tchmi-creator-locked="False">
 
-            <div id="TcHmiToggleButton_bSetDefault_16" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bSetDefault%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%" data-tchmi-creator-locked="False">
-
-
-                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
-                    []
-                </script>
-
-                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
-                    []
-                </script>
-
-
-
-
-
-
-
-
-
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-                    [
-                    {
-                    "event": "TcHmiToggleButton_bSetDefault_16.onPressed",
-                    "actions": [
-                    {
-                    "objectType": "Condition",
-                    "active": true,
-                    "expressions": [
-                    {
-                    "compare1": {
-                    "objectType": "Symbol",
-                    "symbolExpression": "%pp%bSetDefault%/pp%"
-                    },
-                    "compare2": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": true
-                    },
-                    "compareOperator": "==",
-                    "logic": null
-                    }
-                    ],
-                    "true": [
-                    {
-                    "objectType": "WriteToSymbol",
-                    "active": true,
-                    "symbolExpression": "%pp%bSetDefault%/pp%",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": false
-                    },
-                    "asyncWait": true
-                    }
-                    ],
-                    "false": [
-                    {
-                    "objectType": "WriteToSymbol",
-                    "active": true,
-                    "symbolExpression": "%pp%bSetDefault%/pp%",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": true
-                    },
-                    "asyncWait": true
-                    }
-                    ],
-                    "asyncWait": true
-                    }
-                    ]
-                    }
-                    ]
-                </script>
-            </div>
-
-            <div id="TcHmiToggleButton_bReset_16" data-tchmi-type="tchmi-toggle-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bReset%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
+            <div id="TcHmiToggleButton_bSetDefault_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bSetDefault%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bSetDefault%/pp%" data-tchmi-creator-locked="False">
 
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
@@ -764,68 +675,34 @@
 
 
 
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-                    [
-                    {
-                    "event": "TcHmiToggleButton_bReset_16.onPressed",
-                    "actions": [
-                    {
-                    "objectType": "Condition",
-                    "active": true,
-                    "expressions": [
-                    {
-                    "compare1": {
-                    "objectType": "Symbol",
-                    "symbolExpression": "%pp%bReset%/pp%"
-                    },
-                    "compare2": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": true
-                    },
-                    "compareOperator": "==",
-                    "logic": null
-                    }
-                    ],
-                    "true": [
-                    {
-                    "objectType": "WriteToSymbol",
-                    "active": true,
-                    "symbolExpression": "%pp%bReset%/pp%",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": false
-                    },
-                    "asyncWait": true
-                    }
-                    ],
-                    "false": [
-                    {
-                    "objectType": "WriteToSymbol",
-                    "active": true,
-                    "symbolExpression": "%pp%bReset%/pp%",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": {
-                    "objectType": "StaticValue",
-                    "valueType": "tchmi:general#/definitions/BOOL",
-                    "value": true
-                    },
-                    "asyncWait": true
-                    }
-                    ],
-                    "asyncWait": true
-                    }
-                    ]
-                    }
-                    ]
-                </script>
+
+
+
+
+
+
+                
             </div>
-            <div id="TcHmiTextblock_Service1_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_iConversionFactor%/l%" data-tchmi-top="60">
+
+            <div id="TcHmiToggleButton_bReset_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_bReset%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-state-symbol="%pp%bReset%/pp%">
+
+
+                <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
+                    []
+                </script>
+
+                <script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+                    []
+                </script>
+
+
+
+                
+            </div>
+            <div id="TcHmiTextblock_Service1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_iConversionFactor%/l%" data-tchmi-top="60">
 
             </div>
-            <div id="TcHmiCombobox_Service1_16" data-tchmi-type="tchmi-combobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-selected-index="%pp%iConversionFactor%/pp%">
+            <div id="TcHmiCombobox_Service1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="95" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-selected-index="%pp%iConversionFactor|BindingMode=TwoWay|BindingEvent=onSelectionChanged%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -851,33 +728,14 @@
 ]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiCombobox_Service1_16.onSelectionChanged",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%iConversionFactor%/pp%",
-        "valueType": "tchmi:general#/definitions/INT",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiCombobox_Service1_16::SelectedIndex%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
+
 </div>
 
-            <div id="TcHmiTextblock_Service2_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rOffset%/l%">
+            <div id="TcHmiTextblock_Service2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="60" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rOffset%/l%">
 
             </div>
 
-            <div id="TcHmiTextbox_Service2_16" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="96" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rOffset%/pp%, 2)%/f%">
+            <div id="TcHmiTextbox_Service2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="96" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rOffset%/pp%, 2)%/f%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -888,8 +746,7 @@
                 </script>
 
 
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextbox_Service2_16.onUserInteractionFinished",
     "actions": [
@@ -906,8 +763,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
                     []
@@ -917,10 +773,10 @@
                     []
                 </script>
             </div>
-            <div id="TcHmiTextblock_Service3_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rHighLimit%/l%">
+            <div id="TcHmiTextblock_Service3_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rHighLimit%/l%">
 
             </div>
-            <div id="TcHmiTextbox_Service3_16" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rHighLimit%/pp%, 2)%/f%">
+            <div id="TcHmiTextbox_Service3_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rHighLimit%/pp%, 2)%/f%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -931,8 +787,7 @@
                 </script>
 
 
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextbox_Service3_16.onUserInteractionFinished",
     "actions": [
@@ -949,8 +804,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
                     []
@@ -960,11 +814,11 @@
                     []
                 </script>
             </div>
-            <div id="TcHmiTextblock_Service4_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rLowLimit%/l%">
+            <div id="TcHmiTextblock_Service4_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="130" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rLowLimit%/l%">
 
             </div>
 
-            <div id="TcHmiTextbox_Service4_16" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rLowLimit%/pp%, 2)%/f%">
+            <div id="TcHmiTextbox_Service4_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="165" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rLowLimit%/pp%, 2)%/f%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -975,8 +829,7 @@
                 </script>
 
 
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextbox_Service4_16.onUserInteractionFinished",
     "actions": [
@@ -993,8 +846,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
                     []
@@ -1004,11 +856,11 @@
                     []
                 </script>
             </div>
-            <div id="TcHmiTextblock_Service5_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rReplacementValue%/l%">
+            <div id="TcHmiTextblock_Service5_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rReplacementValue%/l%">
 
             </div>
 
-            <div id="TcHmiTextbox_Service5_16" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rReplacementValue%/pp%, 2)%/f%">
+            <div id="TcHmiTextbox_Service5_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rReplacementValue%/pp%, 2)%/f%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1019,8 +871,7 @@
                 </script>
 
 
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextbox_Service5_16.onUserInteractionFinished",
     "actions": [
@@ -1037,8 +888,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
                     []
@@ -1049,11 +899,11 @@
                 </script>
             </div>
 
-        <div id="TcHmiTextblock_Service6_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rSmoothFactor%/l%">
+        <div id="TcHmiTextblock_Service6_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="200" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rSmoothFactor%/l%">
 
             </div>
 
-<div id="TcHmiTextbox_Service6_16" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rSmoothFactor%/pp%, 2)%/f%">
+<div id="TcHmiTextbox_Service6_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="160" data-tchmi-left-unit="px" data-tchmi-top="235" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rSmoothFactor%/pp%, 2)%/f%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1064,8 +914,7 @@
                 </script>
 
 
-                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+                <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextbox_Service6_16.onUserInteractionFinished",
     "actions": [
@@ -1082,8 +931,7 @@
       }
     ]
   }
-]
-</script>
+]</script>
 
                 <script data-tchmi-target-attribute="data-tchmi-virtual-control-right-mappings" type="application/json">
                     []
@@ -1094,11 +942,11 @@
                 </script>
             </div>
 
-<div id="TcHmiTextblock_Service7_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-top="270" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_iTemperatureSensorMode%/l%">
+<div id="TcHmiTextblock_Service7_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-top="270" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_iTemperatureSensorMode%/l%">
 
             </div>
 
-<div id="TcHmiCombobox_Service7_16" data-tchmi-type="tchmi-combobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-selected-index="%pp%iTemperatureSensorMode%/pp%">
+<div id="TcHmiCombobox_Service7_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="305" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-selected-index="%pp%iTemperatureSensorMode|BindingMode=TwoWay|BindingEvent=onSelectionChanged%/pp%">
                 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
                     {
                     "top": 3,
@@ -1134,36 +982,17 @@
 ]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiCombobox_Service7_16.onSelectionChanged",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%iTemperatureSensorMode%/pp%",
-        "valueType": "tchmi:general#/definitions/INT",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiCombobox_Service7_16::SelectedIndex%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-</div>
-
-</div>
-<div id="TcHmiContainer_OverwriteAnalog_16" data-tchmi-type="tchmi-container" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed">
-
-<div id="TcHmiTextblock_OverwriteAnalog1_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_eCtrlMode%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
 
 </div>
 
-<div id="TcHmiCombobox_OverwriteAnalog1_16" data-tchmi-type="tchmi-combobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-selected-index="%pp%eCtrlMode%/pp%">
+</div>
+<div id="TcHmiContainer_OverwriteAnalog_16" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="330" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="80" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Collapsed">
+
+<div id="TcHmiTextblock_OverwriteAnalog1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_eCtrlMode%/l%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-visibility="Visible">
+
+</div>
+
+<div id="TcHmiCombobox_OverwriteAnalog1_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-combobox-text="Select" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-selected-index="%pp%eCtrlMode|BindingMode=TwoWay|BindingEvent=onSelectionChanged%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1189,33 +1018,14 @@
 ]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiCombobox_OverwriteAnalog1_16.onSelectionChanged",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%pp%eCtrlMode%/pp%",
-        "valueType": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACCtrlMode",
-        "value": {
-          "objectType": "Symbol",
-          "symbolExpression": "%ctrl%TcHmiCombobox_OverwriteAnalog1_16::SelectedIndex%/ctrl%"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-</div>
-
-<div id="TcHmiTextblock_OverwriteAnalog2_16" data-tchmi-type="tchmi-textblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rManualValue%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 
 </div>
 
-<div id="TcHmiTextbox_OverwriteAnalog2_16" data-tchmi-type="tchmi-textbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rManualValue%/pp%, 2)%/f%">
+<div id="TcHmiTextblock_OverwriteAnalog2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_rManualValue%/l%" data-tchmi-top="70" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
+
+</div>
+
+<div id="TcHmiTextbox_OverwriteAnalog2_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="25" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="105" data-tchmi-top-unit="px" data-tchmi-width="310" data-tchmi-width-unit="px" data-tchmi-text="%f%GaugeValueFormatter(%pp%rManualValue%/pp%, 2)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -1226,8 +1036,7 @@
 </script>
 
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
   {
     "event": "TcHmiTextbox_OverwriteAnalog2_16.onUserInteractionFinished",
     "actions": [
@@ -1244,46 +1053,43 @@
       }
     ]
   }
-]
-</script>
+]</script>
 </div>
 
 </div>
-        <div id="TcHmiButton_Close_16" data-tchmi-type="tchmi-button" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Visible">
+        <div id="TcHmiButton_Close_16" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-text="%l%FB_HVACTemperatureSensorEx2+OverwriteAnalog_Close%/l%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right="10" data-tchmi-bottom="10" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-creator-visibility="Visible">
 
-            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-                [
-                {
-                "event": "TcHmiButton_Close_16.onPressed",
-                "actions": [
-                {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiContainer_Dim_16::Visibility%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/Visibility",
-                "value": {
-                "objectType": "StaticValue",
-                "valueType": "tchmi:framework#/definitions/Visibility",
-                "value": "Collapsed"
-                },
-                "asyncWait": true
-                },
-                {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%TcHmiContainer_Popup_16::Visibility%/ctrl%",
-                "valueType": "tchmi:framework#/definitions/Visibility",
-                "value": {
-                "objectType": "StaticValue",
-                "valueType": "tchmi:framework#/definitions/Visibility",
-                "value": "Collapsed"
-                },
-                "asyncWait": true
-                }
-                ]
-                }
-                ]
-            </script>
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">[
+  {
+    "event": "TcHmiButton_Close_16.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Dim_16::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%TcHmiContainer_Popup_16::Visibility%/ctrl%",
+        "valueType": "tchmi:framework#/definitions/Visibility",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]</script>
         </div>
 
 </div>

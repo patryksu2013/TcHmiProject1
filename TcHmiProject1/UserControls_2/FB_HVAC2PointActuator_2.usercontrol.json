@@ -4,18 +4,17 @@
       "name": "data-tchmi-sname",
       "displayName": "sName",
       "visible": true,
-      "type": "tchmi:general#/definitions/String",
+      "type": "tchmi:general#/definitions/STRING(80)",
       "category": "FB_HVAC2PointActuator",
       "description": "",
-      "defaultValue": "",
-      "defaultValueInternal": "",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bout",
@@ -30,7 +29,8 @@
       "heritable": true,
       "propertyName": "bOut",
       "propertySetterName": "setBOut",
-      "propertyGetterName": "getBOut"
+      "propertyGetterName": "getBOut",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-berrorlimitswitch",
@@ -45,7 +45,8 @@
       "heritable": true,
       "propertyName": "bErrorLimitSwitch",
       "propertySetterName": "setBErrorLimitSwitch",
-      "propertyGetterName": "getBErrorLimitSwitch"
+      "propertyGetterName": "getBErrorLimitSwitch",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-binvalidparameter",
@@ -60,41 +61,40 @@
       "heritable": true,
       "propertyName": "bInvalidParameter",
       "propertySetterName": "setBInvalidParameter",
-      "propertyGetterName": "getBInvalidParameter"
+      "propertyGetterName": "getBInvalidParameter",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-estatemodeactuator",
       "displayName": "eStateModeActuator",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVAC2PointActuator - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "eStateModeActuator",
       "propertySetterName": "setEStateModeActuator",
-      "propertyGetterName": "getEStateModeActuator"
+      "propertyGetterName": "getEStateModeActuator",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ectrlmodeactuator",
       "displayName": "eCtrlModeActuator",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVAC2PointActuatorMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVAC2PointActuator - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "eCtrlModeActuator",
       "propertySetterName": "setECtrlModeActuator",
-      "propertyGetterName": "getECtrlModeActuator"
+      "propertyGetterName": "getECtrlModeActuator",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bystate",
@@ -103,15 +103,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVAC2PointActuator - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byState",
       "propertySetterName": "setByState",
-      "propertyGetterName": "getByState"
+      "propertyGetterName": "getByState",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bsetdefault",
@@ -126,7 +125,8 @@
       "heritable": true,
       "propertyName": "bSetDefault",
       "propertySetterName": "setBSetDefault",
-      "propertyGetterName": "getBSetDefault"
+      "propertyGetterName": "getBSetDefault",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -141,7 +141,8 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-benablelimitswitch",
@@ -156,7 +157,8 @@
       "heritable": true,
       "propertyName": "bEnableLimitSwitch",
       "propertySetterName": "setBEnableLimitSwitch",
-      "propertyGetterName": "getBEnableLimitSwitch"
+      "propertyGetterName": "getBEnableLimitSwitch",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tstroketime",
@@ -165,18 +167,17 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVAC2PointActuator - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tStrokeTime",
       "propertySetterName": "setTStrokeTime",
-      "propertyGetterName": "getTStrokeTime"
+      "propertyGetterName": "getTStrokeTime",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

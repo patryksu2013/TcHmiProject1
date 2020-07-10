@@ -508,5 +508,5 @@
     "FB_BARFanCoil_udiTimePeriod": "Okres czasu",
     "FB_BARFanCoil_Close": "Zamknij"
   },
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/LocalizationDescription.Schema.json"
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/LocalizationDescription.Schema.json"
 }

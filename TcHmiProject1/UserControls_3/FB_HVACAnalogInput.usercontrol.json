@@ -4,18 +4,17 @@
       "name": "data-tchmi-sname",
       "displayName": "sName",
       "visible": true,
-      "type": "tchmi:general#/definitions/String",
+      "type": "tchmi:general#/definitions/STRING(80)",
       "category": "FB_HVACAnalogInput",
       "description": "",
-      "defaultValue": "",
-      "defaultValueInternal": "",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-irawvalue",
@@ -30,7 +29,8 @@
       "heritable": true,
       "propertyName": "iRawValue",
       "propertySetterName": "setIRawValue",
-      "propertyGetterName": "getIRawValue"
+      "propertyGetterName": "getIRawValue",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rpresentvalue",
@@ -45,13 +45,14 @@
       "heritable": true,
       "propertyName": "rPresentValue",
       "propertySetterName": "setRPresentValue",
-      "propertyGetterName": "getRPresentValue"
+      "propertyGetterName": "getRPresentValue",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-eerrorcode",
       "displayName": "eErrorCode",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACErrorCodes",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAnalogInput - Operator",
       "description": "",
       "requiredOnCompile": false,
@@ -60,7 +61,8 @@
       "heritable": true,
       "propertyName": "eErrorCode",
       "propertySetterName": "setEErrorCode",
-      "propertyGetterName": "getEErrorCode"
+      "propertyGetterName": "getEErrorCode",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bystate",
@@ -69,15 +71,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACAnalogInput - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byState",
       "propertySetterName": "setByState",
-      "propertyGetterName": "getByState"
+      "propertyGetterName": "getByState",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-byerror",
@@ -86,15 +87,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACAnalogInput - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byError",
       "propertySetterName": "setByError",
-      "propertyGetterName": "getByError"
+      "propertyGetterName": "getByError",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bsetdefault",
@@ -109,7 +109,8 @@
       "heritable": true,
       "propertyName": "bSetDefault",
       "propertySetterName": "setBSetDefault",
-      "propertyGetterName": "getBSetDefault"
+      "propertyGetterName": "getBSetDefault",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -124,7 +125,8 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ihighrange",
@@ -139,7 +141,8 @@
       "heritable": true,
       "propertyName": "iHighRange",
       "propertySetterName": "setIHighRange",
-      "propertyGetterName": "getIHighRange"
+      "propertyGetterName": "getIHighRange",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ilowrange",
@@ -154,7 +157,8 @@
       "heritable": true,
       "propertyName": "iLowRange",
       "propertySetterName": "setILowRange",
-      "propertyGetterName": "getILowRange"
+      "propertyGetterName": "getILowRange",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rhighrange",
@@ -169,7 +173,8 @@
       "heritable": true,
       "propertyName": "rHighRange",
       "propertySetterName": "setRHighRange",
-      "propertyGetterName": "getRHighRange"
+      "propertyGetterName": "getRHighRange",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rlowrange",
@@ -184,7 +189,8 @@
       "heritable": true,
       "propertyName": "rLowRange",
       "propertySetterName": "setRLowRange",
-      "propertyGetterName": "getRLowRange"
+      "propertyGetterName": "getRLowRange",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rhighlimit",
@@ -199,7 +205,8 @@
       "heritable": true,
       "propertyName": "rHighLimit",
       "propertySetterName": "setRHighLimit",
-      "propertyGetterName": "getRHighLimit"
+      "propertyGetterName": "getRHighLimit",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rlowlimit",
@@ -214,7 +221,8 @@
       "heritable": true,
       "propertyName": "rLowLimit",
       "propertySetterName": "setRLowLimit",
-      "propertyGetterName": "getRLowLimit"
+      "propertyGetterName": "getRLowLimit",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tfiltertime",
@@ -229,7 +237,8 @@
       "heritable": true,
       "propertyName": "tFilterTime",
       "propertySetterName": "setTFilterTime",
-      "propertyGetterName": "getTFilterTime"
+      "propertyGetterName": "getTFilterTime",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-roffset",
@@ -244,10 +253,11 @@
       "heritable": true,
       "propertyName": "rOffset",
       "propertySetterName": "setROffset",
-      "propertyGetterName": "getROffset"
+      "propertyGetterName": "getROffset",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

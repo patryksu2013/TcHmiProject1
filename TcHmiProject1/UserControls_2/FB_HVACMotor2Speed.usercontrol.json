@@ -4,18 +4,17 @@
       "name": "data-tchmi-sname",
       "displayName": "sName",
       "visible": true,
-      "type": "tchmi:general#/definitions/String",
+      "type": "tchmi:general#/definitions/STRING(80)",
       "category": "FB_HVACMotor2Speed",
       "description": "",
-      "defaultValue": "",
-      "defaultValueInternal": "",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bmotorspeed1",
@@ -30,7 +29,8 @@
       "heritable": true,
       "propertyName": "bMotorSpeed1",
       "propertySetterName": "setBMotorSpeed1",
-      "propertyGetterName": "getBMotorSpeed1"
+      "propertyGetterName": "getBMotorSpeed1",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bmotorspeed2",
@@ -45,7 +45,8 @@
       "heritable": true,
       "propertyName": "bMotorSpeed2",
       "propertySetterName": "setBMotorSpeed2",
-      "propertyGetterName": "getBMotorSpeed2"
+      "propertyGetterName": "getBMotorSpeed2",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-berrorgeneral",
@@ -60,41 +61,40 @@
       "heritable": true,
       "propertyName": "bErrorGeneral",
       "propertySetterName": "setBErrorGeneral",
-      "propertyGetterName": "getBErrorGeneral"
+      "propertyGetterName": "getBErrorGeneral",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-estatemodeactuator",
       "displayName": "eStateModeActuator",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACMotor2Speed - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "eStateModeActuator",
       "propertySetterName": "setEStateModeActuator",
-      "propertyGetterName": "getEStateModeActuator"
+      "propertyGetterName": "getEStateModeActuator",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ectrlmodeactuator",
       "displayName": "eCtrlModeActuator",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACMotor2Speed - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "eCtrlModeActuator",
       "propertySetterName": "setECtrlModeActuator",
-      "propertyGetterName": "getECtrlModeActuator"
+      "propertyGetterName": "getECtrlModeActuator",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bystate",
@@ -103,15 +103,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACMotor2Speed - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byState",
       "propertySetterName": "setByState",
-      "propertyGetterName": "getByState"
+      "propertyGetterName": "getByState",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-byerror",
@@ -120,15 +119,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACMotor2Speed - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byError",
       "propertySetterName": "setByError",
-      "propertyGetterName": "getByError"
+      "propertyGetterName": "getByError",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bsetdefault",
@@ -143,7 +141,8 @@
       "heritable": true,
       "propertyName": "bSetDefault",
       "propertySetterName": "setBSetDefault",
-      "propertyGetterName": "getBSetDefault"
+      "propertyGetterName": "getBSetDefault",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -158,7 +157,8 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tstartdelay",
@@ -167,15 +167,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tStartDelay",
       "propertySetterName": "setTStartDelay",
-      "propertyGetterName": "getTStartDelay"
+      "propertyGetterName": "getTStartDelay",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tstopdelay",
@@ -184,15 +183,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tStopDelay",
       "propertySetterName": "setTStopDelay",
-      "propertyGetterName": "getTStopDelay"
+      "propertyGetterName": "getTStopDelay",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tdelayfeedbcontactorspeed1",
@@ -201,15 +199,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tDelayFeedbContactorSpeed1",
       "propertySetterName": "setTDelayFeedbContactorSpeed1",
-      "propertyGetterName": "getTDelayFeedbContactorSpeed1"
+      "propertyGetterName": "getTDelayFeedbContactorSpeed1",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tdelayfeedbcontactorspeed2",
@@ -218,15 +215,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tDelayFeedbContactorSpeed2",
       "propertySetterName": "setTDelayFeedbContactorSpeed2",
-      "propertyGetterName": "getTDelayFeedbContactorSpeed2"
+      "propertyGetterName": "getTDelayFeedbContactorSpeed2",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tfeedbprocesstimer",
@@ -235,15 +231,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tFeedbProcessTimer",
       "propertySetterName": "setTFeedbProcessTimer",
-      "propertyGetterName": "getTFeedbProcessTimer"
+      "propertyGetterName": "getTFeedbProcessTimer",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tdelayfeedbprocess",
@@ -252,15 +247,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tDelayFeedbProcess",
       "propertySetterName": "setTDelayFeedbProcess",
-      "propertyGetterName": "getTDelayFeedbProcess"
+      "propertyGetterName": "getTDelayFeedbProcess",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tdelayspeed1",
@@ -269,15 +263,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tDelaySpeed1",
       "propertySetterName": "setTDelaySpeed1",
-      "propertyGetterName": "getTDelaySpeed1"
+      "propertyGetterName": "getTDelaySpeed1",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tdelayspeed1tospeed2",
@@ -286,15 +279,14 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tDelaySpeed1ToSpeed2",
       "propertySetterName": "setTDelaySpeed1ToSpeed2",
-      "propertyGetterName": "getTDelaySpeed1ToSpeed2"
+      "propertyGetterName": "getTDelaySpeed1ToSpeed2",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tdelayspeed2tospeed1",
@@ -303,18 +295,17 @@
       "type": "tchmi:general#/definitions/TIME",
       "category": "FB_HVACMotor2Speed - Service",
       "description": "",
-      "defaultValue": "PT0S",
-      "defaultValueInternal": "PT0S",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "tDelaySpeed2ToSpeed1",
       "propertySetterName": "setTDelaySpeed2ToSpeed1",
-      "propertyGetterName": "getTDelaySpeed2ToSpeed1"
+      "propertyGetterName": "getTDelaySpeed2ToSpeed1",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

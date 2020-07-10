@@ -4,18 +4,17 @@
       "name": "data-tchmi-sname",
       "displayName": "sName",
       "visible": true,
-      "type": "tchmi:general#/definitions/String",
+      "type": "tchmi:general#/definitions/STRING(80)",
       "category": "FB_HVACAnalogOutputEx",
       "description": "",
-      "defaultValue": "",
-      "defaultValueInternal": "",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ry",
@@ -30,7 +29,8 @@
       "heritable": true,
       "propertyName": "rY",
       "propertySetterName": "setRY",
-      "propertyGetterName": "getRY"
+      "propertyGetterName": "getRY",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rsetpoint",
@@ -45,13 +45,14 @@
       "heritable": true,
       "propertyName": "rSetpoint",
       "propertySetterName": "setRSetpoint",
-      "propertyGetterName": "getRSetpoint"
+      "propertyGetterName": "getRSetpoint",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-estatemodeanalogoutput",
       "displayName": "eStateModeAnalogOutput",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACAnalogOutputMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAnalogOutputEx - Operator",
       "description": "",
       "requiredOnCompile": false,
@@ -60,7 +61,8 @@
       "heritable": true,
       "propertyName": "eStateModeAnalogOutput",
       "propertySetterName": "setEStateModeAnalogOutput",
-      "propertyGetterName": "getEStateModeAnalogOutput"
+      "propertyGetterName": "getEStateModeAnalogOutput",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bystate",
@@ -69,15 +71,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACAnalogOutputEx - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byState",
       "propertySetterName": "setByState",
-      "propertyGetterName": "getByState"
+      "propertyGetterName": "getByState",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-byerror",
@@ -86,15 +87,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACAnalogOutputEx - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byError",
       "propertySetterName": "setByError",
-      "propertyGetterName": "getByError"
+      "propertyGetterName": "getByError",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rfeedb",
@@ -109,13 +109,14 @@
       "heritable": true,
       "propertyName": "rFeedb",
       "propertySetterName": "setRFeedb",
-      "propertyGetterName": "getRFeedb"
+      "propertyGetterName": "getRFeedb",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ectrlmodeanalogoutput",
       "displayName": "eCtrlModeAnalogOutput",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACAnalogOutputMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAnalogOutputEx - Operator",
       "description": "",
       "requiredOnCompile": false,
@@ -124,7 +125,8 @@
       "heritable": true,
       "propertyName": "eCtrlModeAnalogOutput",
       "propertySetterName": "setECtrlModeAnalogOutput",
-      "propertyGetterName": "getECtrlModeAnalogOutput"
+      "propertyGetterName": "getECtrlModeAnalogOutput",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rymanual",
@@ -139,7 +141,8 @@
       "heritable": true,
       "propertyName": "rYManual",
       "propertySetterName": "setRYManual",
-      "propertyGetterName": "getRYManual"
+      "propertyGetterName": "getRYManual",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-iyterminal",
@@ -154,7 +157,8 @@
       "heritable": true,
       "propertyName": "iYTerminal",
       "propertySetterName": "setIYTerminal",
-      "propertyGetterName": "getIYTerminal"
+      "propertyGetterName": "getIYTerminal",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bsetdefault",
@@ -169,7 +173,8 @@
       "heritable": true,
       "propertyName": "bSetDefault",
       "propertySetterName": "setBSetDefault",
-      "propertyGetterName": "getBSetDefault"
+      "propertyGetterName": "getBSetDefault",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -184,7 +189,8 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rx2",
@@ -199,7 +205,8 @@
       "heritable": true,
       "propertyName": "rX2",
       "propertySetterName": "setRX2",
-      "propertyGetterName": "getRX2"
+      "propertyGetterName": "getRX2",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rx1",
@@ -214,7 +221,8 @@
       "heritable": true,
       "propertyName": "rX1",
       "propertySetterName": "setRX1",
-      "propertyGetterName": "getRX1"
+      "propertyGetterName": "getRX1",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-iy2",
@@ -229,7 +237,8 @@
       "heritable": true,
       "propertyName": "iY2",
       "propertySetterName": "setIY2",
-      "propertyGetterName": "getIY2"
+      "propertyGetterName": "getIY2",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-iy1",
@@ -244,7 +253,8 @@
       "heritable": true,
       "propertyName": "iY1",
       "propertySetterName": "setIY1",
-      "propertyGetterName": "getIY1"
+      "propertyGetterName": "getIY1",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bdirection",
@@ -259,7 +269,8 @@
       "heritable": true,
       "propertyName": "bDirection",
       "propertySetterName": "setBDirection",
-      "propertyGetterName": "getBDirection"
+      "propertyGetterName": "getBDirection",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-benablefeedbctrl",
@@ -274,7 +285,8 @@
       "heritable": true,
       "propertyName": "bEnableFeedbCtrl",
       "propertySetterName": "setBEnableFeedbCtrl",
-      "propertyGetterName": "getBEnableFeedbCtrl"
+      "propertyGetterName": "getBEnableFeedbCtrl",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rhysteresisfeedbctrl",
@@ -289,7 +301,8 @@
       "heritable": true,
       "propertyName": "rHysteresisFeedbCtrl",
       "propertySetterName": "setRHysteresisFeedbCtrl",
-      "propertyGetterName": "getRHysteresisFeedbCtrl"
+      "propertyGetterName": "getRHysteresisFeedbCtrl",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tdelayfeedbctrl",
@@ -304,7 +317,8 @@
       "heritable": true,
       "propertyName": "tDelayFeedbCtrl",
       "propertySetterName": "setTDelayFeedbCtrl",
-      "propertyGetterName": "getTDelayFeedbCtrl"
+      "propertyGetterName": "getTDelayFeedbCtrl",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bqantiblocking",
@@ -319,7 +333,8 @@
       "heritable": true,
       "propertyName": "bQAntiBlocking",
       "propertySetterName": "setBQAntiBlocking",
-      "propertyGetterName": "getBQAntiBlocking"
+      "propertyGetterName": "getBQAntiBlocking",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-binvalidparameter",
@@ -334,13 +349,14 @@
       "heritable": true,
       "propertyName": "bInvalidParameter",
       "propertySetterName": "setBInvalidParameter",
-      "propertyGetterName": "getBInvalidParameter"
+      "propertyGetterName": "getBInvalidParameter",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-eantiblockingmode",
       "displayName": "eAntiBlockingMode",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACAntiBlockingMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAntiBlockingDamper - Serwis",
       "description": "",
       "requiredOnCompile": false,
@@ -349,7 +365,8 @@
       "heritable": true,
       "propertyName": "eAntiBlockingMode",
       "propertySetterName": "setEAntiBlockingMode",
-      "propertyGetterName": "getEAntiBlockingMode"
+      "propertyGetterName": "getEAntiBlockingMode",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ihoursdowntime",
@@ -364,7 +381,8 @@
       "heritable": true,
       "propertyName": "iHoursDowntime",
       "propertySetterName": "setIHoursDowntime",
-      "propertyGetterName": "getIHoursDowntime"
+      "propertyGetterName": "getIHoursDowntime",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-idayweekly",
@@ -379,7 +397,8 @@
       "heritable": true,
       "propertyName": "iDayWeekly",
       "propertySetterName": "setIDayWeekly",
-      "propertyGetterName": "getIDayWeekly"
+      "propertyGetterName": "getIDayWeekly",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ihour",
@@ -394,7 +413,8 @@
       "heritable": true,
       "propertyName": "iHour",
       "propertySetterName": "setIHour",
-      "propertyGetterName": "getIHour"
+      "propertyGetterName": "getIHour",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-iminute",
@@ -409,7 +429,8 @@
       "heritable": true,
       "propertyName": "iMinute",
       "propertySetterName": "setIMinute",
-      "propertyGetterName": "getIMinute"
+      "propertyGetterName": "getIMinute",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ilengthimpulse",
@@ -424,10 +445,11 @@
       "heritable": true,
       "propertyName": "iLengthImpulse",
       "propertySetterName": "setILengthImpulse",
-      "propertyGetterName": "getILengthImpulse"
+      "propertyGetterName": "getILengthImpulse",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

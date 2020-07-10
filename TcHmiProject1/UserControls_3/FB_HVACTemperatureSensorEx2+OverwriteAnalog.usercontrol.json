@@ -4,18 +4,17 @@
       "name": "data-tchmi-sname",
       "displayName": "sName",
       "visible": true,
-      "type": "tchmi:general#/definitions/String",
+      "type": "tchmi:general#/definitions/STRING(80)",
       "category": "FB_HVACTemperatureSensorEx2",
       "description": "",
-      "defaultValue": "",
-      "defaultValueInternal": "",
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-irawvalue",
@@ -30,7 +29,8 @@
       "heritable": true,
       "propertyName": "iRawValue",
       "propertySetterName": "setIRawValue",
-      "propertyGetterName": "getIRawValue"
+      "propertyGetterName": "getIRawValue",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rpresentvalue",
@@ -45,7 +45,8 @@
       "heritable": true,
       "propertyName": "rPresentValue",
       "propertySetterName": "setRPresentValue",
-      "propertyGetterName": "getRPresentValue"
+      "propertyGetterName": "getRPresentValue",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-udierror",
@@ -60,7 +61,8 @@
       "heritable": true,
       "propertyName": "udiError",
       "propertySetterName": "setUdiError",
-      "propertyGetterName": "getUdiError"
+      "propertyGetterName": "getUdiError",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bsetdefault",
@@ -75,7 +77,8 @@
       "heritable": true,
       "propertyName": "bSetDefault",
       "propertySetterName": "setBSetDefault",
-      "propertyGetterName": "getBSetDefault"
+      "propertyGetterName": "getBSetDefault",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -90,7 +93,8 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-iconversionfactor",
@@ -105,7 +109,8 @@
       "heritable": true,
       "propertyName": "iConversionFactor",
       "propertySetterName": "setIConversionFactor",
-      "propertyGetterName": "getIConversionFactor"
+      "propertyGetterName": "getIConversionFactor",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-roffset",
@@ -120,7 +125,8 @@
       "heritable": true,
       "propertyName": "rOffset",
       "propertySetterName": "setROffset",
-      "propertyGetterName": "getROffset"
+      "propertyGetterName": "getROffset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rhighlimit",
@@ -135,7 +141,8 @@
       "heritable": true,
       "propertyName": "rHighLimit",
       "propertySetterName": "setRHighLimit",
-      "propertyGetterName": "getRHighLimit"
+      "propertyGetterName": "getRHighLimit",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rlowlimit",
@@ -150,7 +157,8 @@
       "heritable": true,
       "propertyName": "rLowLimit",
       "propertySetterName": "setRLowLimit",
-      "propertyGetterName": "getRLowLimit"
+      "propertyGetterName": "getRLowLimit",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rreplacementvalue",
@@ -165,7 +173,8 @@
       "heritable": true,
       "propertyName": "rReplacementValue",
       "propertySetterName": "setRReplacementValue",
-      "propertyGetterName": "getRReplacementValue"
+      "propertyGetterName": "getRReplacementValue",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rsmoothfactor",
@@ -180,7 +189,8 @@
       "heritable": true,
       "propertyName": "rSmoothFactor",
       "propertySetterName": "setRSmoothFactor",
-      "propertyGetterName": "getRSmoothFactor"
+      "propertyGetterName": "getRSmoothFactor",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-itemperaturesensormode",
@@ -195,7 +205,8 @@
       "heritable": true,
       "propertyName": "iTemperatureSensorMode",
       "propertySetterName": "setITemperatureSensorMode",
-      "propertyGetterName": "getITemperatureSensorMode"
+      "propertyGetterName": "getITemperatureSensorMode",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rvalueout",
@@ -210,13 +221,14 @@
       "heritable": true,
       "propertyName": "rValueOut",
       "propertySetterName": "setRValueOut",
-      "propertyGetterName": "getRValueOut"
+      "propertyGetterName": "getRValueOut",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ectrlmode",
       "displayName": "eCtrlMode",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACCtrlMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACOverwriteAnalog - Serwis",
       "description": "",
       "requiredOnCompile": false,
@@ -225,7 +237,8 @@
       "heritable": true,
       "propertyName": "eCtrlMode",
       "propertySetterName": "setECtrlMode",
-      "propertyGetterName": "getECtrlMode"
+      "propertyGetterName": "getECtrlMode",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rmanualvalue",
@@ -240,10 +253,11 @@
       "heritable": true,
       "propertyName": "rManualValue",
       "propertySetterName": "setRManualValue",
-      "propertyGetterName": "getRManualValue"
+      "propertyGetterName": "getRManualValue",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

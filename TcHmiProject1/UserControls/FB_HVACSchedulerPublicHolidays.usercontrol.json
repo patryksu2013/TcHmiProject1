@@ -13,7 +13,8 @@
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-boutput",
@@ -28,7 +29,8 @@
       "heritable": true,
       "propertyName": "bOutput",
       "propertySetterName": "setBOutput",
-      "propertyGetterName": "getBOutput"
+      "propertyGetterName": "getBOutput",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tnexton",
@@ -43,7 +45,8 @@
       "heritable": true,
       "propertyName": "tNextOn",
       "propertySetterName": "setTNextOn",
-      "propertyGetterName": "getTNextOn"
+      "propertyGetterName": "getTNextOn",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-tnextoff",
@@ -58,7 +61,8 @@
       "heritable": true,
       "propertyName": "tNextOff",
       "propertySetterName": "setTNextOff",
-      "propertyGetterName": "getTNextOff"
+      "propertyGetterName": "getTNextOff",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-binvalidparameter",
@@ -73,13 +77,14 @@
       "heritable": true,
       "propertyName": "bInvalidParameter",
       "propertySetterName": "setBInvalidParameter",
-      "propertyGetterName": "getBInvalidParameter"
+      "propertyGetterName": "getBInvalidParameter",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-arrholiday",
       "displayName": "arrHoliday",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.ARRAY (1..20) OF Tc2_HVAC.ST_HVACPeriod",
+      "type": "tchmi:server#/definitions/PLC1.ARRAY (1..20) OF Tc2_HVAC.ST_HVACHoliday",
       "category": "FB_HVACSchedulerPublicHolidays - Serwis",
       "description": "",
       "requiredOnCompile": false,
@@ -88,7 +93,8 @@
       "heritable": true,
       "propertyName": "arrHoliday",
       "propertySetterName": "setArrHoliday",
-      "propertyGetterName": "getArrHoliday"
+      "propertyGetterName": "getArrHoliday",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-benable",
@@ -103,7 +109,8 @@
       "heritable": true,
       "propertyName": "bEnable",
       "propertySetterName": "setBEnable",
-      "propertyGetterName": "getBEnable"
+      "propertyGetterName": "getBEnable",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -118,10 +125,11 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

@@ -13,7 +13,8 @@
       "heritable": true,
       "propertyName": "bRotate_Internal",
       "propertySetterName": "setBRotate_Internal",
-      "propertyGetterName": "getBRotate_Internal"
+      "propertyGetterName": "getBRotate_Internal",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-sname",
@@ -28,7 +29,8 @@
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bpump",
@@ -43,7 +45,8 @@
       "heritable": true,
       "propertyName": "bPump",
       "propertySetterName": "setBPump",
-      "propertyGetterName": "getBPump"
+      "propertyGetterName": "getBPump",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-berror",
@@ -58,24 +61,24 @@
       "heritable": true,
       "propertyName": "bError",
       "propertySetterName": "setBError",
-      "propertyGetterName": "getBError"
+      "propertyGetterName": "getBError",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ectrlmodeactuator",
       "displayName": "eCtrlModeActuator",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACActuatorMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACCirculationPumpEx - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "eCtrlModeActuator",
       "propertySetterName": "setECtrlModeActuator",
-      "propertyGetterName": "getECtrlModeActuator"
+      "propertyGetterName": "getECtrlModeActuator",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bystate",
@@ -84,15 +87,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACCirculationPumpEx - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byState",
       "propertySetterName": "setByState",
-      "propertyGetterName": "getByState"
+      "propertyGetterName": "getByState",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-byerror",
@@ -101,15 +103,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_HVACCirculationPumpEx - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byError",
       "propertySetterName": "setByError",
-      "propertyGetterName": "getByError"
+      "propertyGetterName": "getByError",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-udisecstopdelay",
@@ -118,15 +119,14 @@
       "type": "tchmi:general#/definitions/UDINT",
       "category": "FB_HVACCirculationPumpEx - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "udiSecStopDelay",
       "propertySetterName": "setUdiSecStopDelay",
-      "propertyGetterName": "getUdiSecStopDelay"
+      "propertyGetterName": "getUdiSecStopDelay",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-udisecfeedbpumpdelay",
@@ -135,15 +135,14 @@
       "type": "tchmi:general#/definitions/UDINT",
       "category": "FB_HVACCirculationPumpEx - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "udiSecFeedbPumpDelay",
       "propertySetterName": "setUdiSecFeedbPumpDelay",
-      "propertyGetterName": "getUdiSecFeedbPumpDelay"
+      "propertyGetterName": "getUdiSecFeedbPumpDelay",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-routsidetemphighlimit",
@@ -152,15 +151,14 @@
       "type": "tchmi:general#/definitions/REAL",
       "category": "FB_HVACCirculationPumpEx - Service",
       "description": "",
-      "defaultValue": 0.0,
-      "defaultValueInternal": 0.0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "rOutsideTempHighLimit",
       "propertySetterName": "setROutsideTempHighLimit",
-      "propertyGetterName": "getROutsideTempHighLimit"
+      "propertyGetterName": "getROutsideTempHighLimit",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-routsidetemplowlimit",
@@ -169,15 +167,14 @@
       "type": "tchmi:general#/definitions/REAL",
       "category": "FB_HVACCirculationPumpEx - Service",
       "description": "",
-      "defaultValue": 0.0,
-      "defaultValueInternal": 0.0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "rOutsideTempLowLimit",
       "propertySetterName": "setROutsideTempLowLimit",
-      "propertyGetterName": "getROutsideTempLowLimit"
+      "propertyGetterName": "getROutsideTempLowLimit",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rvalvepositionlimiton",
@@ -186,15 +183,14 @@
       "type": "tchmi:general#/definitions/REAL",
       "category": "FB_HVACCirculationPumpEx - Service",
       "description": "",
-      "defaultValue": 0.0,
-      "defaultValueInternal": 0.0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "rValvePositionLimitOn",
       "propertySetterName": "setRValvePositionLimitOn",
-      "propertyGetterName": "getRValvePositionLimitOn"
+      "propertyGetterName": "getRValvePositionLimitOn",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rvalvepositionlimitoff",
@@ -203,15 +199,14 @@
       "type": "tchmi:general#/definitions/REAL",
       "category": "FB_HVACCirculationPumpEx - Service",
       "description": "",
-      "defaultValue": 0.0,
-      "defaultValueInternal": 0.0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "rValvePositionLimitOff",
       "propertySetterName": "setRValvePositionLimitOff",
-      "propertyGetterName": "getRValvePositionLimitOff"
+      "propertyGetterName": "getRValvePositionLimitOff",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ereqpump",
@@ -220,15 +215,14 @@
       "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACReqPump",
       "category": "FB_HVACCirculationPumpEx - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "eReqPump",
       "propertySetterName": "setEReqPump",
-      "propertyGetterName": "getEReqPump"
+      "propertyGetterName": "getEReqPump",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bsetdefault",
@@ -243,7 +237,8 @@
       "heritable": true,
       "propertyName": "bSetDefault",
       "propertySetterName": "setBSetDefault",
-      "propertyGetterName": "getBSetDefault"
+      "propertyGetterName": "getBSetDefault",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -258,7 +253,8 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bqantiblocking",
@@ -273,24 +269,24 @@
       "heritable": true,
       "propertyName": "bQAntiBlocking",
       "propertySetterName": "setBQAntiBlocking",
-      "propertyGetterName": "getBQAntiBlocking"
+      "propertyGetterName": "getBQAntiBlocking",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-eantiblockingmode",
       "displayName": "eAntiBlockingMode",
       "visible": true,
-      "type": "tchmi:server#/definitions/PLC1.Tc2_HVAC.E_HVACAntiBlockingMode",
+      "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAntiBlockingPump - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "eAntiBlockingMode",
       "propertySetterName": "setEAntiBlockingMode",
-      "propertyGetterName": "getEAntiBlockingMode"
+      "propertyGetterName": "getEAntiBlockingMode",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ihoursdowntime",
@@ -299,15 +295,14 @@
       "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAntiBlockingPump - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "iHoursDowntime",
       "propertySetterName": "setIHoursDowntime",
-      "propertyGetterName": "getIHoursDowntime"
+      "propertyGetterName": "getIHoursDowntime",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-idayweekly",
@@ -316,15 +311,14 @@
       "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAntiBlockingPump - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "iDayWeekly",
       "propertySetterName": "setIDayWeekly",
-      "propertyGetterName": "getIDayWeekly"
+      "propertyGetterName": "getIDayWeekly",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ihour",
@@ -333,15 +327,14 @@
       "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAntiBlockingPump - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "iHour",
       "propertySetterName": "setIHour",
-      "propertyGetterName": "getIHour"
+      "propertyGetterName": "getIHour",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-iminute",
@@ -350,15 +343,14 @@
       "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAntiBlockingPump - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "iMinute",
       "propertySetterName": "setIMinute",
-      "propertyGetterName": "getIMinute"
+      "propertyGetterName": "getIMinute",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ilengthimpulse",
@@ -367,15 +359,14 @@
       "type": "tchmi:general#/definitions/INT",
       "category": "FB_HVACAntiBlockingPump - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "iLengthImpulse",
       "propertySetterName": "setILengthImpulse",
-      "propertyGetterName": "getILengthImpulse"
+      "propertyGetterName": "getILengthImpulse",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bqalarmlevel",
@@ -390,7 +381,8 @@
       "heritable": true,
       "propertyName": "bQAlarmLevel",
       "propertySetterName": "setBQAlarmLevel",
-      "propertyGetterName": "getBQAlarmLevel"
+      "propertyGetterName": "getBQAlarmLevel",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bqwarnlevel",
@@ -405,7 +397,8 @@
       "heritable": true,
       "propertyName": "bQWarnLevel",
       "propertySetterName": "setBQWarnLevel",
-      "propertyGetterName": "getBQWarnLevel"
+      "propertyGetterName": "getBQWarnLevel",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rhours",
@@ -414,15 +407,14 @@
       "type": "tchmi:general#/definitions/REAL",
       "category": "FB_HVACWork - Service",
       "description": "",
-      "defaultValue": 0.0,
-      "defaultValueInternal": 0.0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "rHours",
       "propertySetterName": "setRHours",
-      "propertyGetterName": "getRHours"
+      "propertyGetterName": "getRHours",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-uicount",
@@ -431,15 +423,14 @@
       "type": "tchmi:general#/definitions/UINT",
       "category": "FB_HVACWork - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "uiCount",
       "propertySetterName": "setUiCount",
-      "propertyGetterName": "getUiCount"
+      "propertyGetterName": "getUiCount",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-uiwarnlevel",
@@ -448,15 +439,14 @@
       "type": "tchmi:general#/definitions/UINT",
       "category": "FB_HVACWork - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "uiWarnLevel",
       "propertySetterName": "setUiWarnLevel",
-      "propertyGetterName": "getUiWarnLevel"
+      "propertyGetterName": "getUiWarnLevel",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-uialarmlevel",
@@ -465,15 +455,14 @@
       "type": "tchmi:general#/definitions/UINT",
       "category": "FB_HVACWork - Service",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "uiAlarmLevel",
       "propertySetterName": "setUiAlarmLevel",
-      "propertyGetterName": "getUiAlarmLevel"
+      "propertyGetterName": "getUiAlarmLevel",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-benablewarnlevel",
@@ -488,7 +477,8 @@
       "heritable": true,
       "propertyName": "bEnableWarnLevel",
       "propertySetterName": "setBEnableWarnLevel",
-      "propertyGetterName": "getBEnableWarnLevel"
+      "propertyGetterName": "getBEnableWarnLevel",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-benablealarmlevel",
@@ -503,10 +493,11 @@
       "heritable": true,
       "propertyName": "bEnableAlarmLevel",
       "propertySetterName": "setBEnableAlarmLevel",
-      "propertyGetterName": "getBEnableAlarmLevel"
+      "propertyGetterName": "getBEnableAlarmLevel",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

@@ -1,13 +1,13 @@
 ﻿{
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/TchmiConfig.Schema.json",
-  "basePath": "./Libraries",
-  "locale": "client",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
   "scaleMode": "None",
   "startupView": "Default.view",
-  "loginPage": null,
+  "loginPage": "",
   "tcHmiServer": {
     "websocketIntervalTime": 500,
     "websocketTimeout": 10000,
+    "websocketSystemTimeout": 60000,
     "websocketSubscriptionMode": "Change"
   },
   "activeTheme": "Base",
@@ -23,6 +23,11 @@
           "name": "Themes/Base/Style.css",
           "description": "",
           "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "Theme Stylesheet",
+          "type": "Stylesheet"
         }
       ],
       "replacesThemeForControls": []
@@ -37,31 +42,7 @@
   ],
   "userControls": [
     {
-      "url": "UserControls/FB_HVACCirculationPumpEx.usercontrol"
-    },
-    {
-      "url": "UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol"
-    },
-    {
-      "url": "UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol"
-    },
-    {
-      "url": "UserControls/FB_HVACCirculationPumpEx+Work.usercontrol"
-    },
-    {
-      "url": "UserControls/FB_HVACScheduler28ch.usercontrol"
-    },
-    {
-      "url": "UserControls/FB_HVACScheduler7ch.usercontrol"
-    },
-    {
-      "url": "UserControls/FB_HVACSchedulerPublicHolidays.usercontrol"
-    },
-    {
-      "url": "UserControls/FB_HVACSchedulerSpecialPeriods.usercontrol"
-    },
-    {
-      "url": "UserControls_2/FB_HVAC2PointActuator.usercontrol"
+      "url": "UserControls_2/FB_HVAC3PointActuator_2.usercontrol"
     },
     {
       "url": "UserControls_2/FB_HVAC2PointActuator_2.usercontrol"
@@ -70,31 +51,55 @@
       "url": "UserControls_2/FB_HVAC3PointActuator.usercontrol"
     },
     {
-      "url": "UserControls_2/FB_HVAC3PointActuator_2.usercontrol"
-    },
-    {
-      "url": "UserControls_2/FB_HVACMotor1Speed.usercontrol"
-    },
-    {
-      "url": "UserControls_2/FB_HVACMotor2Speed.usercontrol"
+      "url": "UserControls_2/FB_HVAC2PointActuator.usercontrol"
     },
     {
       "url": "UserControls_2/FB_HVACMotor3Speed.usercontrol"
     },
     {
-      "url": "UserControls_3/FB_HVACAnalogInput.usercontrol"
+      "url": "UserControls_2/FB_HVACMotor2Speed.usercontrol"
     },
     {
-      "url": "UserControls_3/FB_HVACAnalogOutputEx.usercontrol"
+      "url": "UserControls_2/FB_HVACMotor1Speed.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACSchedulerPublicHolidays.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACSchedulerSpecialPeriods.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACScheduler28ch.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACCirculationPumpEx+Work.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACCirculationPumpEx.usercontrol"
+    },
+    {
+      "url": "UserControls/FB_HVACScheduler7ch.usercontrol"
     },
     {
       "url": "UserControls_3/FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol"
     },
     {
-      "url": "UserControls_3/FB_HVACTemperatureSensorEx2.usercontrol"
+      "url": "UserControls_3/FB_HVACAnalogOutputEx.usercontrol"
+    },
+    {
+      "url": "UserControls_3/FB_HVACAnalogInput.usercontrol"
     },
     {
       "url": "UserControls_3/FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol"
+    },
+    {
+      "url": "UserControls_3/FB_HVACTemperatureSensorEx2.usercontrol"
     },
     {
       "url": "UserControls_4/FB_BARFanCoil.usercontrol"
@@ -104,7 +109,8 @@
   "views": [
     {
       "url": "Default.view",
-      "preload": false
+      "preload": false,
+      "keepAlive": false
     }
   ],
   "userFunctions": [],
@@ -117,10 +123,25 @@
     "en-US": "Localization\\en-US.localization",
     "pl-PL": "Localization\\pl-PL.localization"
   },
+  "disableLoadingOptimization": false,
   "creatorSettings": {
     "viewport": {
       "defaultWidth": 1024,
       "defaultHeight": 768
     }
-  }
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    }
+  ]
 }

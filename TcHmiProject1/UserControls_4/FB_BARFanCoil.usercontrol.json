@@ -13,7 +13,8 @@
       "heritable": true,
       "propertyName": "sName",
       "propertySetterName": "setSName",
-      "propertyGetterName": "getSName"
+      "propertyGetterName": "getSName",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rsetpoint",
@@ -28,7 +29,8 @@
       "heritable": true,
       "propertyName": "rSetpoint",
       "propertySetterName": "setRSetpoint",
-      "propertyGetterName": "getRSetpoint"
+      "propertyGetterName": "getRSetpoint",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rroomtemp",
@@ -43,7 +45,8 @@
       "heritable": true,
       "propertyName": "rRoomTemp",
       "propertySetterName": "setRRoomTemp",
-      "propertyGetterName": "getRRoomTemp"
+      "propertyGetterName": "getRRoomTemp",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bstageup",
@@ -58,7 +61,8 @@
       "heritable": true,
       "propertyName": "bStageUp",
       "propertySetterName": "setBStageUp",
-      "propertyGetterName": "getBStageUp"
+      "propertyGetterName": "getBStageUp",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bstagedown",
@@ -73,7 +77,8 @@
       "heritable": true,
       "propertyName": "bStageDown",
       "propertySetterName": "setBStageDown",
-      "propertyGetterName": "getBStageDown"
+      "propertyGetterName": "getBStageDown",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ectrlfct",
@@ -88,7 +93,8 @@
       "heritable": true,
       "propertyName": "eCtrlFct",
       "propertySetterName": "setECtrlFct",
-      "propertyGetterName": "getECtrlFct"
+      "propertyGetterName": "getECtrlFct",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-istagemanual",
@@ -103,7 +109,8 @@
       "heritable": true,
       "propertyName": "iStageManual",
       "propertySetterName": "setIStageManual",
-      "propertyGetterName": "getIStageManual"
+      "propertyGetterName": "getIStageManual",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bstageoff",
@@ -118,7 +125,8 @@
       "heritable": true,
       "propertyName": "bStageOff",
       "propertySetterName": "setBStageOff",
-      "propertyGetterName": "getBStageOff"
+      "propertyGetterName": "getBStageOff",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bstageauto",
@@ -133,7 +141,8 @@
       "heritable": true,
       "propertyName": "bStageAuto",
       "propertySetterName": "setBStageAuto",
-      "propertyGetterName": "getBStageAuto"
+      "propertyGetterName": "getBStageAuto",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bstage01",
@@ -148,7 +157,8 @@
       "heritable": true,
       "propertyName": "bStage01",
       "propertySetterName": "setBStage01",
-      "propertyGetterName": "getBStage01"
+      "propertyGetterName": "getBStage01",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bstage02",
@@ -163,7 +173,8 @@
       "heritable": true,
       "propertyName": "bStage02",
       "propertySetterName": "setBStage02",
-      "propertyGetterName": "getBStage02"
+      "propertyGetterName": "getBStage02",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bstage03",
@@ -178,7 +189,8 @@
       "heritable": true,
       "propertyName": "bStage03",
       "propertySetterName": "setBStage03",
-      "propertyGetterName": "getBStage03"
+      "propertyGetterName": "getBStage03",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bfancoilactive",
@@ -193,7 +205,8 @@
       "heritable": true,
       "propertyName": "bFanCoilActive",
       "propertySetterName": "setBFanCoilActive",
-      "propertyGetterName": "getBFanCoilActive"
+      "propertyGetterName": "getBFanCoilActive",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-binvalidparameter",
@@ -208,7 +221,8 @@
       "heritable": true,
       "propertyName": "bInvalidParameter",
       "propertySetterName": "setBInvalidParameter",
-      "propertyGetterName": "getBInvalidParameter"
+      "propertyGetterName": "getBInvalidParameter",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bystate",
@@ -217,15 +231,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_BARFanCoil - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byState",
       "propertySetterName": "setByState",
-      "propertyGetterName": "getByState"
+      "propertyGetterName": "getByState",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-byerror",
@@ -234,15 +247,14 @@
       "type": "tchmi:general#/definitions/BYTE",
       "category": "FB_BARFanCoil - Operator",
       "description": "",
-      "defaultValue": 0,
-      "defaultValueInternal": 0,
       "requiredOnCompile": false,
       "readOnly": false,
       "bindable": true,
       "heritable": true,
       "propertyName": "byError",
       "propertySetterName": "setByError",
-      "propertyGetterName": "getByError"
+      "propertyGetterName": "getByError",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-bsetdefault",
@@ -257,7 +269,8 @@
       "heritable": true,
       "propertyName": "bSetDefault",
       "propertySetterName": "setBSetDefault",
-      "propertyGetterName": "getBSetDefault"
+      "propertyGetterName": "getBSetDefault",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-breset",
@@ -272,7 +285,8 @@
       "heritable": true,
       "propertyName": "bReset",
       "propertySetterName": "setBReset",
-      "propertyGetterName": "getBReset"
+      "propertyGetterName": "getBReset",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rdeviationxw_stage01",
@@ -287,7 +301,8 @@
       "heritable": true,
       "propertyName": "rDeviationXW_Stage01",
       "propertySetterName": "setRDeviationXW_Stage01",
-      "propertyGetterName": "getRDeviationXW_Stage01"
+      "propertyGetterName": "getRDeviationXW_Stage01",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rdeviationxw_stage02",
@@ -302,7 +317,8 @@
       "heritable": true,
       "propertyName": "rDeviationXW_Stage02",
       "propertySetterName": "setRDeviationXW_Stage02",
-      "propertyGetterName": "getRDeviationXW_Stage02"
+      "propertyGetterName": "getRDeviationXW_Stage02",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rdeviationxw_stage03",
@@ -317,7 +333,8 @@
       "heritable": true,
       "propertyName": "rDeviationXW_Stage03",
       "propertySetterName": "setRDeviationXW_Stage03",
-      "propertyGetterName": "getRDeviationXW_Stage03"
+      "propertyGetterName": "getRDeviationXW_Stage03",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-rhysteresisrange",
@@ -332,7 +349,8 @@
       "heritable": true,
       "propertyName": "rHysteresisRange",
       "propertySetterName": "setRHysteresisRange",
-      "propertyGetterName": "getRHysteresisRange"
+      "propertyGetterName": "getRHysteresisRange",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-udisecminpowerontime",
@@ -347,7 +365,8 @@
       "heritable": true,
       "propertyName": "udiSecMINPowerOnTime",
       "propertySetterName": "setUdiSecMINPowerOnTime",
-      "propertyGetterName": "getUdiSecMINPowerOnTime"
+      "propertyGetterName": "getUdiSecMINPowerOnTime",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-ifctmodefancoil",
@@ -362,7 +381,8 @@
       "heritable": true,
       "propertyName": "iFctModeFanCoil",
       "propertySetterName": "setIFctModeFanCoil",
-      "propertyGetterName": "getIFctModeFanCoil"
+      "propertyGetterName": "getIFctModeFanCoil",
+      "refTo": ""
     },
     {
       "name": "data-tchmi-uditimeperiod",
@@ -377,10 +397,11 @@
       "heritable": true,
       "propertyName": "udiTimePeriod",
       "propertySetterName": "setUdiTimePeriod",
-      "propertyGetterName": "getUdiTimePeriod"
+      "propertyGetterName": "getUdiTimePeriod",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
-  "$schema": "C:/TwinCAT/Functions/TE2000-HMI-Engineering/Infrastructure/TcHmiFramework/Latest/Schema/UserControlConfig.Schema.json",
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.726.0-beta/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
   "description": ""
 }

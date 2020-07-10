@@ -1,23 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <TcHmiDirectory>$(registry:HKEY_LOCAL_MACHINE\Software\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
     <TcHmiDirectory Condition="'$(TcHmiDirectory)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Wow6432Node\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
     <AvailablePlatforms>TwinCAT HMI</AvailablePlatforms>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <TcHmiCreatorVersion>(1.5,1.10]</TcHmiCreatorVersion>
+    <TcHmiCreatorVersion>[1.12,]</TcHmiCreatorVersion>
     <HmiTitle>Please enter your Title...</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
     <Name>TcHmiProject1</Name>
-    <HmiCommunicationRouterPort>10139</HmiCommunicationRouterPort>
-    <HmiFrameworkVersion>Latest</HmiFrameworkVersion>
+    <HmiCommunicationRouterPort>10140</HmiCommunicationRouterPort>
     <HmiCommunicationServerPort>3004</HmiCommunicationServerPort>
     <HmiInitial>1.10.1336.372</HmiInitial>
     <HmiRecent>1.10.1336.404</HmiRecent>
     <HmiDefaultLanguage>client</HmiDefaultLanguage>
     <HmiTimeFormatLocale>client</HmiTimeFormatLocale>
+    <TargetFrameworkMoniker>native,Version=v1.12.0,Profile=tchmi</TargetFrameworkMoniker>
+    <TargetFramework>native1.12-tchmi</TargetFramework>
+    <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
+    <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
+    <HmiUseX64>True</HmiUseX64>
+    <HmiServerVersion>Latest</HmiServerVersion>
+    <EnableTypeScript>true</EnableTypeScript>
+    <HmiCommunicationServerAuthPort>13004</HmiCommunicationServerAuthPort>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -53,6 +62,9 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>TwinCAT HMI</PlatformTarget>
   </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(TypeScriptSdkDir)\$(LastKnownTypeScriptVersion)\build\Microsoft.TypeScript.targets" Condition="Exists('$(TypeScriptSdkDir)\$(LastKnownTypeScriptVersion)\build\Microsoft.TypeScript.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="'$(RestoreProjectStyle)' == 'PackageReference'" />
   <PropertyGroup>
     <PreBuildEventDependsOn />
   </PropertyGroup>
@@ -74,9 +86,24 @@
 		</BuildDependsOn>
   </PropertyGroup>
   <Target Name="Build" DependsOnTargets="$(BuildDependsOn)" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ExtensionSetup>
+      <TcHmiRecipeManagement rid="win-x64" targetPlatform="native" />
+      <TcHmiSqliteHistorize rid="win-x64" targetPlatform="native" />
+      <TcHmiEventLogger rid="win-x64" targetPlatform="native" />
+    </ExtensionSetup>
+  </PropertyGroup>
   <Target Name="CoreBuild">
+    <!-- TypeScript START -->
+    <CallTarget Targets="FindConfigFiles" Condition="$(TypeScriptSdkDir) != ''" />
+    <CallTarget Targets="CompileTypeScript" Condition="$(TypeScriptSdkDir) != ''" />
+    <CallTarget Targets="PreComputeCompileTypeScript" Condition="$(TypeScriptSdkDir) != ''" />
+    <CallTarget Targets="PreComputeCompileTypeScriptWithTSConfig" Condition="$(TypeScriptSdkDir) != ''" />
+    <CallTarget Targets="CompileTypeScriptWithTSConfig" Condition="$(TypeScriptSdkDir) != ''" />
+    <CallTarget Targets="GetTypeScriptOutputForPublishing" Condition="$(TypeScriptSdkDir) != ''" />
+    <!-- TypeScript END -->
     <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Clean" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" />
-    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Build" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" References="@(TcHmiReference)" />
+    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Build" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" ProjectFiles="@(Content)" VirtualMappings="$(TcHmi_VirtualMappings)" />
     <TcHmiMSBuild.Publish.TcHmiGenerator TaskAction="EntryPage" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" TcHmiServerAddress="$(TcHmi_ServerAddress)" TcHmiServerPort="$(TcHmi_ServerPort)">
       <Output TaskParameter="Result" PropertyName="TaskResult0" />
     </TcHmiMSBuild.Publish.TcHmiGenerator>
@@ -208,23 +235,115 @@
     <Content Include="import_this_to_localization.xls">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Localization\CopyOf_pl-PL.localization">
-      <SubType>Content</SubType>
-    </Content>
+    <Content Include="KeyboardLayouts\German - compact.keyboard.json" />
+    <Content Include="KeyboardLayouts\US - compact.keyboard.json" />
     <Content Include="Localization\en-US.localization">
       <SubType>Content</SubType>
+      <DependentUpon>Localization\en-US.tpl.localization</DependentUpon>
     </Content>
     <Content Include="Localization\en-US.tpl.localization">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Localization\FB_HVACAnalogInput.localization">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Localization\pl-PL.localization">
       <SubType>Content</SubType>
+      <DependentUpon>Localization\pl-PL.tpl.localization</DependentUpon>
     </Content>
     <Content Include="Localization\pl-PL.tpl.localization">
       <SubType>Content</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="packages.xsd">
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\BaseStyle.css">
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-320x534.png">
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-420x200.png">
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-800x600.png">
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="tsconfig.json">
+      <DependentUpon>tsconfig.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="tsconfig.tpl.json">
+      <Visible>true</Visible>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx+AntiBlockingPump+Work_Localization.xls">
       <SubType>Content</SubType>
@@ -258,24 +377,28 @@
     </Content>
     <Content Include="UserControls_2\FB_HVAC3PointActuator_2.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_2\FB_HVAC3PointActuator_2.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_2\FB_HVAC2PointActuator_2.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVAC2PointActuator_2.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_2\FB_HVAC2PointActuator_2.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_2\FB_HVAC3PointActuator.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVAC3PointActuator.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_2\FB_HVAC3PointActuator.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_2\FB_HVAC2PointActuator.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVAC2PointActuator.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_2\FB_HVAC2PointActuator.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_2\FB_HVAC3PointActuator_Localization.xls">
       <SubType>Content</SubType>
@@ -291,74 +414,82 @@
     </Content>
     <Content Include="UserControls_2\FB_HVACMotor3Speed.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_2\FB_HVACMotor3Speed.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_2\FB_HVACMotor2Speed.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVACMotor2Speed.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_2\FB_HVACMotor2Speed.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_2\FB_HVACMotor1Speed.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVACMotor1Speed.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_2\FB_HVACMotor1Speed.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACSchedulerPublicHolidays.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACSchedulerPublicHolidays.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACSchedulerPublicHolidays.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACSchedulerSpecialPeriods.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACSchedulerSpecialPeriods.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACSchedulerSpecialPeriods.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACScheduler28ch.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACScheduler28ch.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACScheduler28ch.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACCirculationPumpEx+AntiBlockingPump+Work.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACCirculationPumpEx+AntiBlockingPump.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx+Work.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx+Work.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACCirculationPumpEx+Work.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACCirculationPumpEx.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACCirculationPumpEx.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\FB_HVACScheduler7ch.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\FB_HVACScheduler7ch.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls\FB_HVACScheduler7ch.usercontrol</DependentUpon>
     </Content>
     <Content Include="Default.view">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_2\FB_HVACMotor3Speed_Localization.xls">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UserControls_3\FB_HVACAnalogInput.localization">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogInput_Localization.xls">
@@ -369,6 +500,7 @@
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogOutputEx+AntiBlockingDamper_Localization.xls">
       <SubType>Content</SubType>
@@ -378,12 +510,14 @@
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogOutputEx.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_3\FB_HVACAnalogOutputEx.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogInput.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogInput.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_3\FB_HVACAnalogInput.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_3\FB_HVACAnalogOutputEx_Localization.xls">
       <SubType>Content</SubType>
@@ -393,6 +527,7 @@
     </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2+OverwriteAnalog_Localization.xls">
       <SubType>Content</SubType>
@@ -402,6 +537,7 @@
     </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_3\FB_HVACTemperatureSensorEx2.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_3\FB_HVACTemperatureSensorEx2_Localization.xls">
       <SubType>Content</SubType>
@@ -411,43 +547,43 @@
     </Content>
     <Content Include="UserControls_4\FB_BARFanCoil.usercontrol.json">
       <SubType>Content</SubType>
+      <DependentUpon>UserControls_4\FB_BARFanCoil.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls_4\FB_BARFanCoil_Localization.xls">
       <SubType>Content</SubType>
     </Content>
-    <Folder Include=".hmipkgs" />
     <Folder Include="Imports\Images\Actuator_2" />
     <Folder Include="Imports\Images\Motor" />
     <Folder Include="Imports\Images\Actuator" />
     <Folder Include="Imports\Images\Actuator_common" />
     <Folder Include="Imports\Images\Analog" />
     <Folder Include="Imports\Images\Temperature" />
-    <Folder Include="Libraries" />
     <Folder Include="Images" />
     <Folder Include="Images\Manifest" />
     <Folder Include="Imports" />
     <Folder Include="Imports\Images" />
     <Folder Include="Imports\Videos" />
+    <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
+    <Folder Include="Themes\Base\Images\" />
     <Folder Include="UserControls_4" />
     <Folder Include="UserControls_3" />
     <Folder Include="UserControls_2" />
-    <Folder Include="Server\Extensions\ADS" />
-    <Folder Include="Server\Extensions\TcHmiEventLogger" />
-    <Folder Include="Server\Extensions\TcHmiLua" />
-    <Folder Include="Server\Extensions\TcHmiRecipeManagement" />
-    <Folder Include="Server\Extensions\TcHmiSqliteHistorize" />
-    <Folder Include="Server\Extensions\TcHmiSqliteLogger" />
-    <Folder Include="Server\Extensions\TcHmiSrv" />
-    <Folder Include="Server\Extensions\TcHmiTextStorage" />
-    <Folder Include="Server\Extensions\TcHmiUserManagement" />
+    <Folder Include="Server\ADS" />
+    <Folder Include="Server\TcHmiEventLogger" />
+    <Folder Include="Server\TcHmiLua" />
+    <Folder Include="Server\TcHmiRecipeManagement" />
+    <Folder Include="Server\TcHmiSqliteHistorize" />
+    <Folder Include="Server\TcHmiSqliteLogger" />
+    <Folder Include="Server\TcHmiSrv" />
+    <Folder Include="Server\TcHmiTextStorage" />
+    <Folder Include="Server\TcHmiUserManagement" />
     <Folder Include="Themes" />
     <Folder Include="Themes\Base\" />
     <Folder Include="Fonts" />
     <Folder Include="Server">
       <WorkingDirectory>TcHmiProject1</WorkingDirectory>
     </Folder>
-    <Folder Include="Server\Extensions" />
     <Content Include=".tfignore">
       <SubType>Content</SubType>
       <Visible>false</Visible>
@@ -455,10 +591,6 @@
     <Content Include=".gitignore">
       <SubType>Content</SubType>
       <Visible>false</Visible>
-    </Content>
-    <Content Include=".hmipkgs\packages.hmipkgs">
-      <SubType>Content</SubType>
-      <Visible>true</Visible>
     </Content>
     <Content Include="FavIcon.ico">
       <SubType>Content</SubType>
@@ -472,76 +604,76 @@
       <SubType>Content</SubType>
       <Visible>true</Visible>
     </Content>
-    <Content Include="Server\Extensions\ADS\ADS.Config.default.json">
+    <Content Include="Server\ADS\ADS.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\ADS\ADS.Config.remote.json">
+    <Content Include="Server\ADS\ADS.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\ADS\ADS.Storage.json">
+    <Content Include="Server\ADS\ADS.Storage.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiEventLogger\TcHmiEventLogger.Config.default.json">
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiEventLogger\TcHmiEventLogger.Config.remote.json">
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiEventLogger\TcHmiEventLogger.Storage.json">
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Storage.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiLua\TcHmiLua.Config.default.json">
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiLua\TcHmiLua.Config.remote.json">
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiLua\TcHmiLua.Storage.json">
+    <Content Include="Server\TcHmiLua\TcHmiLua.Storage.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.default.json">
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.remote.json">
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiRecipeManagement\TcHmiRecipeManagement.Storage.json">
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Storage.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.default.json">
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.remote.json">
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Storage.json">
+    <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Storage.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSrv\TcHmiSrv.Config.default.json">
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSrv\TcHmiSrv.Config.remote.json">
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiSrv\TcHmiSrv.Storage.json">
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Storage.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Server\Extensions\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Themes\Base\Base.theme">
@@ -592,6 +724,7 @@
     <Content Include="Properties\tchmiconfig.json">
       <SubType>Content</SubType>
       <Visible>true</Visible>
+      <DependentUpon>Properties\tchmiconfig.tpl.json</DependentUpon>
     </Content>
     <Content Include="Properties\tchmi.framework.Schema.tpl.json">
       <SubType>Content</SubType>
@@ -600,6 +733,7 @@
     <Content Include="Properties\tchmi.framework.Schema.json">
       <SubType>Content</SubType>
       <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.framework.Schema.tpl.json</DependentUpon>
     </Content>
     <Content Include="Properties\tchmi.project.Schema.tpl.json">
       <SubType>Content</SubType>
@@ -608,6 +742,7 @@
     <Content Include="Properties\tchmi.project.Schema.json">
       <SubType>Content</SubType>
       <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.project.Schema.tpl.json</DependentUpon>
     </Content>
     <Content Include="Properties\tchmipublish.config.json">
       <SubType>Content</SubType>
